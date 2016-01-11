@@ -18,6 +18,8 @@
 \DeclareGraphicsExtensions{.pdf,.jpg, .png}
 \graphicspath{{./figs/}}
 
+\usepackage{acronym} 
+
 \loadglsentries{glossary}
 \makeglossaries
 
@@ -67,19 +69,31 @@
 \addcontentsline{toc}{chapter}{List of Algorithms}
 \cleardoublepage
 
-%% include if relevant
-\printglossary[title=List of Symbols, style=long]
-\cleardoublepage
-\glsaddall[]
+\chapter*{Acronyms}
+\begin{acronym}
+\acro{SWIFT}{Structured what-if technique}
+\end{acronym}
 
-%% include if relevant
-\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
-\cleardoublepage
+% include if relevant
+%\printglossary[title=List of Symbols, style=long]
+%\cleardoublepage
+%\glsaddall[]
+
+% include if relevant
+%\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
+%\cleardoublepage
 
 \pagenumbering{arabic}
 \pagestyle{ruled}
 \include{example_chapter}
 %% include here the other chapters
+
+\include{introduction_chapter}
+\include{theory_chapter}
+\include{implementation_chapter}
+\include{testing_chapter}
+\include{discussion_chapter}
+\include{conclusion_chapter}
 
 \renewcommand*{\bibname}{References}
 \bibliographystyle{alpha}

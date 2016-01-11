@@ -20,6 +20,7 @@
 \catcode`"\active
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
+\reset@newl@bel
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -48,12 +49,18 @@
 \@writefile{toc}{\contentsline {chapter}{List of Figures}{ix}{section*.1}}
 \@writefile{toc}{\contentsline {chapter}{List of Tables}{xi}{section*.2}}
 \@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xiii}{chapter*.3}}
+\newacro{SWIFT}[\AC@hyperlink{SWIFT}{SWIFT}]{Structured what-if technique}
 \@input{example_chapter.aux}
+\@input{introduction_chapter.aux}
+\@input{theory_chapter.aux}
+\@input{implementation_chapter.aux}
+\@input{testing_chapter.aux}
+\@input{discussion_chapter.aux}
+\@input{conclusion_chapter.aux}
 \bibstyle{alpha}
 \bibdata{main}
-\memsetcounter{lastsheet}{25}
-\memsetcounter{lastpage}{3}
-\@xdylanguage{main}{english}
-\@gls@codepage{main}{utf8}
-\@xdylanguage{acronym}{english}
-\@gls@codepage{acronym}{utf8}
+\bibcite{Author:year:XYZ}{{NNYY}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{toc}{\contentsline {chapter}{References}{19}{section*.7}}
+\memsetcounter{lastsheet}{37}
+\memsetcounter{lastpage}{19}
