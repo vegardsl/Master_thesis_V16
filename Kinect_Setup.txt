@@ -1,0 +1,5 @@
+Kinect setup
+
+- Koble til enheten. Drivere vil automatisk bli lastet ned.
+- Last den Kinect SDK. Versjon 1.7 er siste til Windows 7.
+- Vil bli propet til å laste ned Kinect for Windows Dev Kit v1.7.
