@@ -1,0 +1,50 @@
+Setting up PCL in Windows 7 with MSVC2013
+
+Cmake 3.4.0
+
+
+Boost 1.60
+
+Already compiled
+
+
+Eigen 3.2.7
+
+Only headers
+
+
+Flann 1.8.4
+
+Configure and generate in cmake
+
+BUILD_PYTHON_BINDINGS = OFF
+BUILD_MATLAB_BINDINGS = OFF
+
+edit flann/src/cpp/flann/util/serialization.h
+after BASIC_TYPE_SERIALIZER(bool);// in version 1.8.4 line#91
+add three lines:
+
+#ifdef _MSC_VER 
+ BASIC_TYPE_SERIALIZER(unsigned __int64);
+#endif
+
+
+QHULL
+2015.1 (2012.1)
+
+Having issues in Cmake
+
+
+
+OpenNI2 2.2.0
+download installer
+
+
+QT 5.5
+Download installer
+
+
+VTK 6.3.0
+
+VTK_Group_Qt = ON
+VTK_QT_VERSION = 5
