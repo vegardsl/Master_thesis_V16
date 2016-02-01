@@ -17,10 +17,13 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode`"\active
+\catcode `"\active 
+\reset@newl@bel
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
-\reset@newl@bel
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -46,10 +49,11 @@
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{ix}{section*.1}}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{xi}{section*.2}}
-\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xiii}{chapter*.3}}
+\@writefile{toc}{\contentsline {chapter}{List of Acronyms}{ix}{chapter*.1}}
 \newacro{SWIFT}[\AC@hyperlink{SWIFT}{SWIFT}]{Structured what-if technique}
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{xi}{section*.2}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{xiii}{section*.3}}
+\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xv}{chapter*.4}}
 \@input{example_chapter.aux}
 \@input{introduction_chapter.aux}
 \@input{theory_chapter.aux}
@@ -61,6 +65,6 @@
 \bibdata{main}
 \bibcite{Author:year:XYZ}{{NNYY}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {chapter}{References}{19}{section*.7}}
+\@writefile{toc}{\contentsline {chapter}{References}{17}{section*.7}}
 \memsetcounter{lastsheet}{37}
-\memsetcounter{lastpage}{19}
+\memsetcounter{lastpage}{17}
