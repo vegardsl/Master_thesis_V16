@@ -7,6 +7,7 @@
 \contentsline {chapter}{List of Figures}{xi}{section*.2}
 \contentsline {chapter}{List of Tables}{xiii}{section*.3}
 \contentsline {chapter}{List of Algorithms}{xv}{chapter*.4}
+<<<<<<< HEAD
 \contentsline {chapter}{\chapternumberline {1}Example}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}First section}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}First subsection with some $\mathcal {M}ath$ symbol}{2}{subsection.1.1.1}
@@ -38,3 +39,33 @@
 \contentsline {section}{\numberline {7.2}Task Fulfillment}{15}{section.7.2}
 \contentsline {section}{\numberline {7.3}Final Conclusion}{15}{section.7.3}
 \contentsline {chapter}{References}{17}{section*.7}
+=======
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}About the Thesis}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Mobile Robotic Maintenance}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Future Goal (The final product)}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}State of the Art in Autonomous Robots}{1}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Implementation Overview}{1}{section.1.3}
+\contentsline {section}{\numberline {1.4}Thesis Structure}{1}{section.1.4}
+\contentsline {chapter}{\chapternumberline {2}Background Theory}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Software Tools}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Point Cloud Library}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}ROS}{3}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Qt}{3}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Current Research and Applications}{3}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Modern Sensors in Autonomous Robots}{3}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}The Kinect Sensor (RGB-D sensors)}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}LIDAR}{3}{subsection.2.2.2}
+\contentsline {chapter}{\chapternumberline {3}Implementation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Implementation 1}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Implementatpon 2}{5}{section.3.2}
+\contentsline {chapter}{\chapternumberline {4}Testing}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Test Plan}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Results}{7}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Discussion}{9}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{11}{section.6.1}
+\contentsline {section}{\numberline {6.2}Task Fulfilment}{11}{section.6.2}
+\contentsline {section}{\numberline {6.3}Final Conclusion}{11}{section.6.3}
+\contentsline {chapter}{References}{13}{section*.6}
+>>>>>>> origin/master

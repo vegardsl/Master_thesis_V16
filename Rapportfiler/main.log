@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.21)  1 FEB 2016 16:47
+=======
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  1 FEB 2016 23:27
+>>>>>>> origin/master
 entering extended mode
 **main.tex
 (main.tex
@@ -1592,10 +1596,32 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package glossaries Info: Writing glossary file main.glo on input line 24.
 \glo@acronym@file=\write7
 Package glossaries Info: Writing glossary file main.acn on input line 24.
+<<<<<<< HEAD
  (main.aux (abstract_english.aux) (abstract_norwegian.aux) (preface.aux)
 (example_chapter.aux) (introduction_chapter.aux) (theory_chapter.aux)
 (implementation_chapter.aux) (testing_chapter.aux) (discussion_chapter.aux)
 (conclusion_chapter.aux))
+=======
+
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.aux
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\abstract_englis
+h.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\abstract_norweg
+ian.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\preface.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\introduction_ch
+apter.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\theory_chapter.
+aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\implementation_
+chapter.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\testing_chapter
+.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\discussion_chap
+ter.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\conclusion_chap
+ter.aux))
+>>>>>>> origin/master
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
@@ -1664,7 +1690,12 @@ LaTeX Info: Redefining \nameref on input line 26.
 (main.out) (main.out)
 \@outlinefile=\write8
 \c@lstlisting=\count331
+<<<<<<< HEAD
  <./figs/ntnu-logo.pdf, id=143, 241.4922pt x 52.79724pt>
+=======
+
+<./figs/ntnu-logo.pdf, id=131, 241.4922pt x 52.79724pt>
+>>>>>>> origin/master
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1734,6 +1765,7 @@ l.41 \include{abstract_english}
 ] [6
 
 
+<<<<<<< HEAD
 ] (main.toc [7]) [8] [9
 
 
@@ -1813,6 +1845,67 @@ l.90 \include{example_chapter}
 
 
 ]) [15] (main.bbl [16
+=======
+]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.toc
+[7]) [8] [9
+
+
+] [10
+
+]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.lof)
+[11] [12
+
+]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.lot)
+[13] [14
+
+]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.loa)
+[15
+
+] [16
+
+]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\introduction_ch
+apter.tex) [1
+
+
+]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\theory_chapter.
+tex [2
+
+
+
+]) [3]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\implementation_
+chapter.tex [4
+
+
+
+]) [5]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\testing_chapter
+.tex [6
+
+
+
+]) [7]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\discussion_chap
+ter.tex [8
+
+
+
+]) [9]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\conclusion_chap
+ter.tex [10
+
+
+
+]) [11]
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.bbl
+[12
+>>>>>>> origin/master
 
 
 ]
@@ -1823,11 +1916,16 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
+<<<<<<< HEAD
 [17]
+=======
+[13]
+>>>>>>> origin/master
 \tf@toc=\write9
 \tf@lof=\write10
 \tf@lot=\write11
 \tf@loa=\write12
+<<<<<<< HEAD
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
  (main.aux (abstract_english.aux) (abstract_norwegian.aux) (preface.aux)
@@ -1874,4 +1972,52 @@ PDF statistics:
  465 PDF objects out of 1000 (max. 8388607)
  79 named destinations out of 1000 (max. 500000)
  27422 words of extra memory for PDF output out of 29859 (max. 10000000)
+=======
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+ (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.aux
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\abstract_englis
+h.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\abstract_norweg
+ian.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\preface.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\introduction_ch
+apter.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\theory_chapter.
+aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\implementation_
+chapter.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\testing_chapter
+.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\discussion_chap
+ter.aux)
+(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\conclusion_chap
+ter.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7017ABB277EE69C4B89876C91F5D76F2;1997.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+ ) 
+Here is how much of TeX's memory you used:
+ 21348 strings out of 493921
+ 313734 string characters out of 3147278
+ 566971 words of memory out of 3000000
+ 24024 multiletter control sequences out of 15000+200000
+ 77410 words of font info for 95 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 58i,11n,45p,1504b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmssbx10.pfb>
+Output written on main.pdf (33 pages, 221834 bytes).
+PDF statistics:
+ 353 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 17158 words of extra memory for PDF output out of 17280 (max. 10000000)
+>>>>>>> origin/master
 

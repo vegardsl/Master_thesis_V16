@@ -2,6 +2,7 @@
 \BOOKMARK [0][-]{section*.2}{List of Figures}{}% 2
 \BOOKMARK [0][-]{section*.3}{List of Tables}{}% 3
 \BOOKMARK [0][-]{chapter*.4}{List of Algorithms}{}% 4
+<<<<<<< HEAD
 \BOOKMARK [0][-]{chapter.1}{Example}{}% 5
 \BOOKMARK [1][-]{section.1.1}{First section}{chapter.1}% 6
 \BOOKMARK [2][-]{subsection.1.1.1}{First subsection with some Math symbol}{section.1.1}% 7
@@ -33,3 +34,33 @@
 \BOOKMARK [1][-]{section.7.2}{Task Fulfillment}{chapter.7}% 33
 \BOOKMARK [1][-]{section.7.3}{Final Conclusion}{chapter.7}% 34
 \BOOKMARK [0][-]{section*.7}{References}{}% 35
+=======
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [1][-]{section.1.1}{About the Thesis}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Mobile Robotic Maintenance}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{Future Goal \(The final product\)}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{State of the Art in Autonomous Robots}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{Implementation Overview}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{Thesis Structure}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Background Theory}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Software Tools}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Point Cloud Library}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.2}{ROS}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.3}{Qt}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.4}{Current Research and Applications}{section.2.1}% 17
+\BOOKMARK [1][-]{section.2.2}{Modern Sensors in Autonomous Robots}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{The Kinect Sensor \(RGB-D sensors\)}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{LIDAR}{section.2.2}% 20
+\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Implementation 1}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Implementatpon 2}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Testing}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Test Plan}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Results}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 27
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{Task Fulfilment}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.3}{Final Conclusion}{chapter.6}% 31
+\BOOKMARK [0][-]{section*.6}{References}{}% 32
+>>>>>>> origin/master

@@ -4,8 +4,11 @@
 \select@language {norsk}
 \select@language {english}
 \addvspace {10pt}
+<<<<<<< HEAD
 \contentsline {table}{\numberline {1.1}{\ignorespaces A table}}{3}{table.1.1}
 \addvspace {10pt}
+=======
+>>>>>>> origin/master
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
