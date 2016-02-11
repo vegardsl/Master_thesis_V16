@@ -2,6 +2,13 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 A level-1 auxiliary file: abstract_english.aux
 A level-1 auxiliary file: abstract_norwegian.aux
 A level-1 auxiliary file: preface.aux
-A level-1 auxiliary file: example_chapter.aux
+A level-1 auxiliary file: introduction_chapter.aux
+A level-1 auxiliary file: theory_chapter.aux
+A level-1 auxiliary file: implementation_chapter.aux
+A level-1 auxiliary file: testing_chapter.aux
+A level-1 auxiliary file: discussion_chapter.aux
+A level-1 auxiliary file: conclusion_chapter.aux
 The style file: alpha.bst
+I found no \citation commands---while reading file main.aux
 Database file #1: main.bib
+(There was 1 error message)
