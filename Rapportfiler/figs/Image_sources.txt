@@ -1,0 +1,4 @@
+Image identifier	Url-source	Date retrieved
+
+kinect360:	http://www.xbox.com/en-US/xbox-360/accessories/kinect	22/2
+kinect360_exp:	https://msdn.microsoft.com/en-us/library/jj131033.aspx	22/2
