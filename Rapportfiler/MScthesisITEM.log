@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2016.2.29)  29 FEB 2016 11:25
+entering extended mode
+**C:/Users/vegarsl/Documents/Master_thesis_V16/Rapportfiler/MScthesisITEM.cls
+(C:/Users/vegarsl/Documents/Master_thesis_V16/Rapportfiler/MScthesisITEM.cls
+! Undefined control sequence.
+l.4 \NeedsTeXFormat
+                   {LaTeX2e}
+? 
+! Emergency stop.
+l.4 \NeedsTeXFormat
+                   {LaTeX2e}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

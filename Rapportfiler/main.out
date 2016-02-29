@@ -22,33 +22,34 @@
 \BOOKMARK [1][-]{section.2.3}{ROS}{chapter.2}% 22
 \BOOKMARK [2][-]{subsection.2.3.1}{Introduction}{section.2.3}% 23
 \BOOKMARK [2][-]{subsection.2.3.2}{Important ROS Concepts}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.3}{Structure of a ROS Application}{section.2.3}% 25
-\BOOKMARK [1][-]{section.2.4}{Software}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.4.1}{Qt}{section.2.4}% 27
-\BOOKMARK [2][-]{subsection.2.4.2}{PCL}{section.2.4}% 28
-\BOOKMARK [1][-]{section.2.5}{The Kinect Sensor}{chapter.2}% 29
-\BOOKMARK [1][-]{section.2.6}{Software Tools}{chapter.2}% 30
-\BOOKMARK [2][-]{subsection.2.6.1}{Point Cloud Library}{section.2.6}% 31
-\BOOKMARK [2][-]{subsection.2.6.2}{ROS}{section.2.6}% 32
-\BOOKMARK [2][-]{subsection.2.6.3}{Qt}{section.2.6}% 33
-\BOOKMARK [2][-]{subsection.2.6.4}{Current Research and Applications}{section.2.6}% 34
-\BOOKMARK [1][-]{section.2.7}{Modern Sensors in Autonomous Robots}{chapter.2}% 35
-\BOOKMARK [2][-]{subsection.2.7.1}{Depth Cameras}{section.2.7}% 36
-\BOOKMARK [2][-]{subsection.2.7.2}{Laser Scanners \(LIDAR\)}{section.2.7}% 37
-\BOOKMARK [2][-]{subsection.2.7.3}{Odometers}{section.2.7}% 38
-\BOOKMARK [2][-]{subsection.2.7.4}{Sensor Fusion}{section.2.7}% 39
-\BOOKMARK [1][-]{section.2.8}{RTAB-Map}{chapter.2}% 40
-\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 41
-\BOOKMARK [1][-]{section.3.1}{Simulations}{chapter.3}% 42
-\BOOKMARK [1][-]{section.3.2}{Implementatpon 2}{chapter.3}% 43
-\BOOKMARK [0][-]{chapter.4}{Testing}{}% 44
-\BOOKMARK [1][-]{section.4.1}{Testplan}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.2}{Test Plan}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 48
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 49
-\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 50
-\BOOKMARK [1][-]{section.6.2}{Task Fulfillment}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.3}{Task Fulfilment}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.4}{Final Conclusion}{chapter.6}% 53
-\BOOKMARK [0][-]{section*.17}{References}{}% 54
+\BOOKMARK [2][-]{subsection.2.3.3}{ROS-Related Tools}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.4}{Structure of a ROS Application}{section.2.3}% 26
+\BOOKMARK [1][-]{section.2.4}{Software}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.4.1}{Qt}{section.2.4}% 28
+\BOOKMARK [2][-]{subsection.2.4.2}{PCL}{section.2.4}% 29
+\BOOKMARK [1][-]{section.2.5}{The Kinect Sensor}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.6}{Software Tools}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.6.1}{Point Cloud Library}{section.2.6}% 32
+\BOOKMARK [2][-]{subsection.2.6.2}{ROS}{section.2.6}% 33
+\BOOKMARK [2][-]{subsection.2.6.3}{Qt}{section.2.6}% 34
+\BOOKMARK [2][-]{subsection.2.6.4}{Current Research and Applications}{section.2.6}% 35
+\BOOKMARK [1][-]{section.2.7}{Introduction to Sensors in Autonomous Robots}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.7.1}{Depth Cameras}{section.2.7}% 37
+\BOOKMARK [2][-]{subsection.2.7.2}{Plannar Laser Sensors \(LIDAR\)}{section.2.7}% 38
+\BOOKMARK [2][-]{subsection.2.7.3}{Odometers}{section.2.7}% 39
+\BOOKMARK [2][-]{subsection.2.7.4}{Sensor Fusion}{section.2.7}% 40
+\BOOKMARK [1][-]{section.2.8}{RTAB-Map}{chapter.2}% 41
+\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 42
+\BOOKMARK [1][-]{section.3.1}{Simulations}{chapter.3}% 43
+\BOOKMARK [1][-]{section.3.2}{Implementatpon 2}{chapter.3}% 44
+\BOOKMARK [0][-]{chapter.4}{Testing}{}% 45
+\BOOKMARK [1][-]{section.4.1}{Testplan}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.2}{Test Plan}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 48
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 49
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
+\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.2}{Task Fulfillment}{chapter.6}% 52
+\BOOKMARK [1][-]{section.6.3}{Task Fulfilment}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.4}{Final Conclusion}{chapter.6}% 54
+\BOOKMARK [0][-]{section*.23}{References}{}% 55

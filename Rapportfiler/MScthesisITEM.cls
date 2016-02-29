@@ -311,7 +311,7 @@
          Supervisor:            & \@supervisor    \\
        \end{tabular}\par
       }\vspace{.5cm}
-      {\noindent Norwegian University of Science and Technology\\Department of Telematics}
+      {\noindent Norwegian University of Science and Technology\\Department of Engineering Cybernetics}
     }%
     \null
   \endgroup%

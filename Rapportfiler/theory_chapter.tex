@@ -20,11 +20,20 @@ Coordinate systems are essential in the field of robotics.
 
 \subsection{Introduction}
 
-Roots of the \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework, which eventually became \ac{ROS}. This framework can be used under the BSD open-source license, which means that ... Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation and everything in between. 
+The \ac{ROS} is a 
+Roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework, which eventually became \ac{ROS}. This framework can be used under the BSD open-source license, which means that ... Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation and everything in between. 
 
 \subsection{Important ROS Concepts}
 
-The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website (INSERT LINK HERE), as well as in any book on \ac{ROS} (see \cite{A BOOK ON ROS}). 
+The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website (INSERT LINK HERE), as well as in any book on \ac{ROS} (for example \cite{A BOOK ON ROS}). 
+
+\subsection{ROS-Related Tools}
+
+\subsubsection{Robot Modelling In URDF}
+
+\subsubsection{Visialization in RVIZ}
+
+\subsubsection{Simulation in Gazebo}
 
 \subsection{Structure of a ROS Application}
 
@@ -47,7 +56,7 @@ The following descriptions are included in order to provide a complete, self-con
 
 \subsection{Current Research and Applications}
 
-\section{Modern Sensors in Autonomous Robots}
+\section{Introduction to Sensors in Autonomous Robots}
 
 \subsection{Depth Cameras}
 
@@ -61,13 +70,13 @@ Different variations of depth cameras will usually fall into one of two categori
 
 Active sensors depend on some form of projection onto the surroundings. For depth cameras, the projection is usually in the form of laser or infra red light. In RGB-D cameras it is essential that the projected light is distinguishable from the visible spectrum. The Kinect sensor used in this project is an example of an active RGB-D sensor. A proper introduction to the Kinect, will follow shortly.
 
-\subsubsection{Natural User Interfaces}
+\subsubsection{Natural User Interfaces - Origin of the Kinect}
 
-Forslag:
+\textbf{Forslag 1:}
 When a group of designers are developing a new \ac{GUI}, they will often use a conceptual model when planning their design. The conceptual model is the mental model the designers want to put into the head of the user. All users will develop their own individual mental model, which is their high level understanding of how the \ac{GUI} works. A conceptual model may contain metaphors for things  the user already is familiar with. A painting program for example may use a metaphor for a canvas, paint brushes and palettes. When the mouse icon changes to a paint brush, most users will have an intuitive understanding of what it can do and how it is used. A \ac{NUI} will seek to remove the metaphors and create a more seamless interaction between the user and the machine. Some \ac{NUI}s may allow a user to write text with a pen instead of a keyboard, or dictate a letter with their voice while the computer converts audio into text. 
 
-Forslag:
-The idea behind a \ac{NUI} is to make \ac{HMI} as seamless and natural as possible. A \ac{NUI} allows the user to communicate without tools such as a keyboard or a mouse. Initially starting as ideas and rare research projects, \ac{NUI}s can now be considered to have become ubiquitous, where the most common form is the touch screen found in smart phones and tablets. 
+\textbf{Forslag 2:}
+The idea behind a \ac{NUI} is to make \ac{HMI} as seamless and natural as possible. A \ac{NUI} allows the user to communicate without tools such as a keyboard or a mouse. From starting as ideas, science fiction and rare research projects, \ac{NUI}s can now be considered to be ubiquitous. Today, the most common form of \ac{NUI}s is the touch screen found in smart phones and tablets. 
 
 The Microsoft Kinect sensor was initially designed as a \ac{NUI} for the Xbox 360 gaming console. The sensor allows users to use gestures and sounds to play console games. Later on, Microsoft has released SDKs, enabling developers to create \ac{NUI} applications for for Windows. 
 
@@ -75,9 +84,9 @@ The modern RGB-D sensors which are commonly used in robot research projects toda
 
 \subsubsection{Kinect for Xbox 360}
 
-Kinect for Xbox 360 is the RGB-D sensor used in this project. The device was initially intended as a \ac{NUI} for gaming and 
+Kinect for Xbox 360 is the RGB-D sensor used in this project. The device was initially intended as a \ac{NUI} for gaming and office applications. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is eqipped with a depth sensor, a regular color camera, a microphone array and a tilt motor. The color camera in combination with the depth sensor forms what is usually referred to as a rgb-d sensor, i.e. a combined color and depth camera. This feature, combined with the relaticely low cost and accessability of the sensor as contributed to make the Kinect a very popular in research projects related to \ac{SLAM} and robotics.
 
-The depth sensor 
+Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware that it is becoming increasingly difficult, if not impossible, to get hold of a new Kinect for Xbox 360. 
 
 \begin{figure}[p]
     \centering
@@ -94,7 +103,10 @@ The depth sensor
 \end{figure}
 
 
-\subsection{Laser Scanners (LIDAR)}
+\subsection{Plannar Laser Sensors (LIDAR)}
+
+\subsubsection{Scanning Laser Range Finder, URG-04LX-UG01}
+
 
 \subsection{Odometers}
 
