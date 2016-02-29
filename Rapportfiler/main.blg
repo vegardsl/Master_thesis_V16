@@ -9,6 +9,9 @@ A level-1 auxiliary file: testing_chapter.aux
 A level-1 auxiliary file: discussion_chapter.aux
 A level-1 auxiliary file: conclusion_chapter.aux
 The style file: alpha.bst
-I found no \citation commands---while reading file main.aux
 Database file #1: main.bib
-(There was 1 error message)
+Warning--I didn't find a database entry for "BCD_license"
+Warning--I didn't find a database entry for "kinect_book"
+Warning--to sort, need author or key in ROS_install
+Warning--to sort, need author or key in ROS_history
+(There were 4 warnings)

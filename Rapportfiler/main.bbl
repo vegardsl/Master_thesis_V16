@@ -1,3 +1,18 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{QGS15}
+
+\bibitem[QGS15]{rosbook15}
+Morgan Quigley, Brian Gerkey, and William~D. Smart.
+\newblock {\em Programming Robots with ROS}.
+\newblock O'Reilly Media, Inc., December 2015.
+
+\bibitem[ROSa]{ROS_history}
+{ROS} history.
+\newblock \url{http://www.ros.org/history/}.
+\newblock Accessed: 2016-02-28.
+
+\bibitem[ROSb]{ROS_install}
+{ROS} installation.
+\newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
+\newblock Accessed: 2016-02-29.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  29 FEB 2016 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  29 FEB 2016 17:51
 entering extended mode
 **main.tex
 (main.tex
@@ -1763,93 +1763,80 @@ Package acronym Info: Label `acro:ROS' newly defined as it shall be overridden
 although it is yet undefined on input line 23.
 Package acronym Info: Label `acro:STAIR' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 24.
+although it is yet undefined on input line 25.
 Package acronym Info: Label `acro:PR' newly defined as it shall be overridden
-although it is yet undefined on input line 24.
+although it is yet undefined on input line 25.
 
 
-Package natbib Warning: Citation `A BOOK ON ROS' on page 3 undefined on input l
-ine 28.
+Package natbib Warning: Citation `BCD_license' on page 3 undefined on input lin
+e 25.
 
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 4266) has occurred while \output is active []
-
- [3]
-[4]
+ [4]
+[5]
 Package acronym Info: Label `acro:GUI' newly defined as it shall be overridden
-although it is yet undefined on input line 76.
+although it is yet undefined on input line 93.
 Package acronym Info: Label `acro:NUI' newly defined as it shall be overridden
-although it is yet undefined on input line 76.
+although it is yet undefined on input line 93.
 Package acronym Info: Label `acro:HMI' newly defined as it shall be overridden
-although it is yet undefined on input line 79.
- [5]
+although it is yet undefined on input line 96.
+ [6]
 Package acronym Info: Label `acro:MIT' newly defined as it shall be overridden
-although it is yet undefined on input line 87.
+although it is yet undefined on input line 104.
 
 
-Package acronym Warning: Acronym `MIT' is not defined on input line 87.
-
-
-Package acronym Warning: Acronym `MIT' is not defined on input line 87.
-
-
-Package natbib Warning: Citation `kinect_book' on page 6 undefined on input lin
-e 87.
+Package natbib Warning: Citation `kinect_book' on page 7 undefined on input lin
+e 104.
 
 Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
 
-although it is yet undefined on input line 87.
-<./figs/kinect360.png, id=438, 963.6pt x 451.6875pt>
+although it is yet undefined on input line 104.
+<./figs/kinect360.png, id=467, 963.6pt x 451.6875pt>
 File: ./figs/kinect360.png Graphic file (type png)
 
 <use ./figs/kinect360.png>
-Package pdftex.def Info: ./figs/kinect360.png used on input line 93.
+Package pdftex.def Info: ./figs/kinect360.png used on input line 110.
 (pdftex.def)             Requested size: 291.20111pt x 136.49976pt.
 
-<./figs/kinect360_exp.png, id=439, 432.86719pt x 222.07968pt>
+<./figs/kinect360_exp.png, id=468, 432.86719pt x 222.07968pt>
 File: ./figs/kinect360_exp.png Graphic file (type png)
 
 <use ./figs/kinect360_exp.png>
-Package pdftex.def Info: ./figs/kinect360_exp.png used on input line 100.
+Package pdftex.def Info: ./figs/kinect360_exp.png used on input line 117.
 (pdftex.def)             Requested size: 291.20111pt x 149.40594pt.
-) [6] [7pdfTeX warning (ext4): destination with the same identifier (name{figur
+) [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.120 \include{theory_chapter}
+l.126 \include{theory_chapter}
                               pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.120 \include{theory_chapter}
+l.126 \include{theory_chapter}
                                <./figs/kinect360.png> <./figs/kinect360_exp.png
->] (implementation_chapter.tex [8
-
-
-
-]
+>] (implementation_chapter.tex
 Package acronym Info: Label `acro:URDF' newly defined as it shall be overridden
 
 although it is yet undefined on input line 10.
-
-
-Package acronym Warning: Acronym `URDF' is not defined on input line 10.
-
-
-Package acronym Warning: Acronym `URDF' is not defined on input line 10.
-
-) [9] (testing_chapter.tex [10
+) [9
 
 
 
-]) [11] (discussion_chapter.tex [12
+] (testing_chapter.tex [10
 
 
 
-]) [13]
-(conclusion_chapter.tex [14
+]) [11]
+(discussion_chapter.tex [12
+
+
+
+]) [13] (conclusion_chapter.tex [14
 
 
 
@@ -1858,9 +1845,6 @@ Package acronym Warning: Acronym `URDF' is not defined on input line 10.
 
 ]
 bibitemlist
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
 )
 
 Package natbib Warning: There were undefined citations.
@@ -1875,25 +1859,25 @@ This document will not have a glossary.
 \tf@lof=\write10
 \tf@lot=\write11
 \tf@loa=\write12
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
  (main.aux (abstract_english.aux) (abstract_norwegian.aux) (preface.aux)
 (introduction_chapter.aux) (theory_chapter.aux) (implementation_chapter.aux)
 (testing_chapter.aux) (discussion_chapter.aux) (conclusion_chapter.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7AA6F502652AF9B418803A7ADDBFD855;3528.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
+(rerunfilecheck)             Checksum: 24350D9BDD32BF6426A329FC8E9C55EA;3529.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 22123 strings out of 493698
- 323898 string characters out of 3144406
- 601003 words of memory out of 3000000
- 24770 multiletter control sequences out of 15000+200000
- 79921 words of font info for 90 fonts, out of 3000000 for 9000
+ 22151 strings out of 493698
+ 324262 string characters out of 3144406
+ 601148 words of memory out of 3000000
+ 24779 multiletter control sequences out of 15000+200000
+ 80253 words of font info for 94 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 58i,12n,45p,1857b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,13n,45p,1857b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
@@ -1902,9 +1886,9 @@ r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program
 /fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pf
 b>
-Output written on main.pdf (37 pages, 378455 bytes).
+Output written on main.pdf (37 pages, 392788 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
  19400 words of extra memory for PDF output out of 20736 (max. 10000000)
 

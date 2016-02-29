@@ -20,12 +20,29 @@ Coordinate systems are essential in the field of robotics.
 
 \subsection{Introduction}
 
-The \ac{ROS} is a 
-Roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework, which eventually became \ac{ROS}. This framework can be used under the BSD open-source license, which means that ... Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation and everything in between. 
+The \ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be taylored to meet the demands of a wide range of robots with variyng complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can in many be percieved as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recomended \cite{ROS_install}.
+
+Roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework, which eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. This framework can be used under the BSD open-source license, which means that ...\cite{BCD_license} Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation and everything in between. 
 
 \subsection{Important ROS Concepts}
 
-The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website (INSERT LINK HERE), as well as in any book on \ac{ROS} (for example \cite{A BOOK ON ROS}). 
+The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website (INSERT LINK HERE), as well as in any book on \ac{ROS} (for example \cite{rosbook15}). 
+
+\subsubsection{The ROS Graph}
+
+A \ac{ROS} system comprise a set of small programs that communicate with each other. 
+
+\subsubsection{roscore}
+
+The \textit{roscore} is an essensial part of any \ac{ROS} system. It enables nodes to communicate with each other.
+
+\subsubsection{Topics}
+
+\subsubsection{Services}
+
+\subsubsection{rosbridge}
+
+\subsubsection{title}
 
 \subsection{ROS-Related Tools}
 
@@ -84,9 +101,9 @@ The modern RGB-D sensors which are commonly used in robot research projects toda
 
 \subsubsection{Kinect for Xbox 360}
 
-Kinect for Xbox 360 is the RGB-D sensor used in this project. The device was initially intended as a \ac{NUI} for gaming and office applications. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is eqipped with a depth sensor, a regular color camera, a microphone array and a tilt motor. The color camera in combination with the depth sensor forms what is usually referred to as a rgb-d sensor, i.e. a combined color and depth camera. This feature, combined with the relaticely low cost and accessability of the sensor as contributed to make the Kinect a very popular in research projects related to \ac{SLAM} and robotics.
+Kinect for Xbox 360 is the RGB-D sensor used in this project. The device was initially intended as a \ac{NUI} for gaming and office applications. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is equipped with a depth sensor, a regular color camera, a microphone array and a tilt motor. The color camera in combination with the depth sensor forms what is usually referred to as a rgb-d sensor, i.e. a combined color and depth camera. This feature, combined with the relaticely low cost and accessability of the sensor as contributed to make the Kinect a very popular in research projects related to \ac{SLAM} and robotics.
 
-Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware that it is becoming increasingly difficult, if not impossible, to get hold of a new Kinect for Xbox 360. 
+Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware of that it is becoming increasingly difficult, if not already impossible, to get hold of a new Kinect for Xbox 360. 
 
 \begin{figure}[p]
     \centering
@@ -104,6 +121,8 @@ Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One,
 
 
 \subsection{Plannar Laser Sensors (LIDAR)}
+
+A plannar laser sensor, also known as e.g. laser proximity sensors or laser radars, can all be referred to as LIDARs. 
 
 \subsubsection{Scanning Laser Range Finder, URG-04LX-UG01}
 
