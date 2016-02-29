@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  28 FEB 2016 19:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  29 FEB 2016 11:18
 entering extended mode
 **main.tex
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.tex
@@ -1678,7 +1678,7 @@ LaTeX Info: Redefining \nameref on input line 26.
 \@outlinefile=\write8
 \c@lstlisting=\count331
 
-<./figs/ntnu-logo.pdf, id=202, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=218, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1726,24 +1726,25 @@ l.22 \end{titlingpage}
 
 ])
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\abstract_englis
-h.texpdfTeX warning (ext4): destination with the same identifier (name{page.i})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 \noindent \Blindtext[5][1]
-                               [1
-
-
-])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) h
-as been already used, duplicate ignored
+h.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.i}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.41 \include{abstract_english}
-                                [2]
+                                [1
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 \cleardoublepage
+                      [2
+
+
+]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\abstract_norweg
 ian.tex) [3
-
-
 
 ] [4
 
@@ -1840,14 +1841,14 @@ Package acronym Warning: Acronym `HMI' is not defined on input line 70.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-<./figs/kinect360.png, id=402, 963.6pt x 451.6875pt>
+<./figs/kinect360.png, id=419, 963.6pt x 451.6875pt>
 File: ./figs/kinect360.png Graphic file (type png)
 
 <use ./figs/kinect360.png>
 Package pdftex.def Info: ./figs/kinect360.png used on input line 84.
 (pdftex.def)             Requested size: 291.20111pt x 136.49976pt.
 
-<./figs/kinect360_exp.png, id=403, 432.86719pt x 222.07968pt>
+<./figs/kinect360_exp.png, id=420, 432.86719pt x 222.07968pt>
 File: ./figs/kinect360_exp.png Graphic file (type png)
 
 <use ./figs/kinect360_exp.png>
@@ -1873,7 +1874,18 @@ chapter.tex [8
 
 
 
-]) [9]
+]
+Package acronym Info: Label `acro:URDF' newly defined as it shall be overridden
+
+although it is yet undefined on input line 10.
+
+
+Package acronym Warning: Acronym `URDF' is not defined on input line 10.
+
+
+Package acronym Warning: Acronym `URDF' is not defined on input line 10.
+
+) [9]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\testing_chapter
 .tex [10
 
@@ -1936,35 +1948,29 @@ ter.aux)
 ter.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: BD9AD0AF590736932323133D84A35390;3146
-(rerunfilecheck)             After:  8199714F8C20DD5647F692C65C894D9A;3479.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7DAD021C4B469A85EC3FCF7E4D9552A4;3440.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 21466 strings out of 493921
- 315155 string characters out of 3147278
- 567645 words of memory out of 3000000
- 24089 multiletter control sequences out of 15000+200000
- 76477 words of font info for 100 fonts, out of 3000000 for 9000
+ 21467 strings out of 493921
+ 315225 string characters out of 3147278
+ 567703 words of memory out of 3000000
+ 24104 multiletter control sequences out of 15000+200000
+ 80170 words of font info for 93 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  58i,12n,45p,1504b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmssbx10.pfb>
-Output written on main.pdf (37 pages, 369400 bytes).
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pf
+b>
+Output written on main.pdf (37 pages, 374086 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 17312 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 19392 words of extra memory for PDF output out of 20736 (max. 10000000)
 

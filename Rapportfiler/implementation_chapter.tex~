@@ -9,12 +9,12 @@ Implementation procedure for mobile robot:
 	\item Write interfaces for the motor drivers.
 	\item Create a description of the physical structure and properties of the robot in \ac{URDF}. 
 	\item Extend the model to enable simulation in Gazebo.
-	\item Publish coordinate transform data via \textit{tf} and visualize it in rviz.
+	\item Publish coordinate transform data via \italic{tf} and visualize it in rviz.
 	\item Add sensors, with driver and simulation support.
 	\item Apply algorithms for navigation and other functionality. 
 
 \end{itemize}
 
-\section{Simulations}
+\section{Implementation 1}
 
 \section{Implementatpon 2}

@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {2.2}Modelling and Simulation}{3}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Some Terminology}{3}{subsection.2.2.1}
 \contentsline {subsubsection}{Coordinate Systems and Poses}{3}{section*.5}
-\contentsline {subsection}{\numberline {2.2.2}Modelling in the Unified Robot Description Format}{3}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Robot Modelling}{3}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Simulating in Gazebo}{3}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}ROS}{3}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Introduction}{3}{subsection.2.3.1}
@@ -48,7 +48,7 @@
 \contentsline {subsection}{\numberline {2.7.4}Sensor Fusion}{6}{subsection.2.7.4}
 \contentsline {section}{\numberline {2.8}RTAB-Map}{6}{section.2.8}
 \contentsline {chapter}{\chapternumberline {3}Implementation}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Implementation 1}{9}{section.3.1}
+\contentsline {section}{\numberline {3.1}Simulations}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Implementatpon 2}{9}{section.3.2}
 \contentsline {chapter}{\chapternumberline {4}Testing}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testplan}{11}{section.4.1}
@@ -60,4 +60,4 @@
 \contentsline {section}{\numberline {6.2}Task Fulfillment}{15}{section.6.2}
 \contentsline {section}{\numberline {6.3}Task Fulfilment}{15}{section.6.3}
 \contentsline {section}{\numberline {6.4}Final Conclusion}{15}{section.6.4}
-\contentsline {chapter}{References}{17}{section*.16}
+\contentsline {chapter}{References}{17}{section*.17}
