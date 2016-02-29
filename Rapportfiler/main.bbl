@@ -1,5 +1,12 @@
 \begin{thebibliography}{QGS15}
 
+\bibitem[LM14]{RTAB_map}
+M.~Labbé and F.~Michaud.
+\newblock Online global loop closure detection for large-scale multi-session
+  graph-based slam.
+\newblock In {\em Intelligent Robots and Systems (IROS 2014), 2014 IEEE/RSJ
+  International Conference on}, pages 2661--2666, Sept 2014.
+
 \bibitem[QGS15]{rosbook15}
 Morgan Quigley, Brian Gerkey, and William~D. Smart.
 \newblock {\em Programming Robots with ROS}.
@@ -14,5 +21,10 @@ Morgan Quigley, Brian Gerkey, and William~D. Smart.
 {ROS} installation.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
+
+\bibitem[WA12]{kinect_book}
+Jarrett Webb and James Ashley.
+\newblock {\em Beginning Kinect Programming with the Microsoft Kinect SDK}.
+\newblock Apress, 2012.
 
 \end{thebibliography}
