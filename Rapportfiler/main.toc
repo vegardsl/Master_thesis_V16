@@ -3,11 +3,11 @@
 \select@language {english}
 \select@language {norsk}
 \select@language {english}
-\contentsline {chapter}{List of Acronyms}{ix}{chapter*.1}
-\contentsline {chapter}{List of Acronyms}{ix}{chapter*.1}
-\contentsline {chapter}{List of Figures}{xi}{section*.2}
-\contentsline {chapter}{List of Tables}{xiii}{section*.3}
-\contentsline {chapter}{List of Algorithms}{xv}{chapter*.4}
+\contentsline {chapter}{List of Acronyms}{xi}{chapter*.1}
+\contentsline {chapter}{List of Acronyms}{xi}{chapter*.1}
+\contentsline {chapter}{List of Figures}{xiii}{section*.2}
+\contentsline {chapter}{List of Tables}{xv}{section*.3}
+\contentsline {chapter}{List of Algorithms}{xvii}{chapter*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}About the Thesis}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Autonomous Mobile Robotic Maintenance}{1}{section.1.2}
@@ -23,22 +23,28 @@
 \contentsline {section}{\numberline {2.2}Modelling and Simulation}{3}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Some Terminology}{3}{subsection.2.2.1}
 \contentsline {subsubsection}{Coordinate Systems and Poses}{3}{section*.5}
+\contentsline {subsubsection}{Robot Joints}{3}{section*.6}
 \contentsline {subsection}{\numberline {2.2.2}Robot Modelling}{3}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Simulating in Gazebo}{3}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}ROS}{3}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Introduction}{3}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Important ROS Concepts}{4}{subsection.2.3.2}
-\contentsline {subsubsection}{The ROS Graph}{4}{section*.9}
-\contentsline {subsubsection}{roscore}{4}{section*.10}
-\contentsline {subsubsection}{Topics}{5}{section*.11}
-\contentsline {subsubsection}{Services}{5}{section*.12}
-\contentsline {subsubsection}{rosbridge}{5}{section*.13}
-\contentsline {subsubsection}{title}{5}{section*.14}
-\contentsline {subsection}{\numberline {2.3.3}ROS-Related Tools}{5}{subsection.2.3.3}
-\contentsline {subsubsection}{Robot Modelling In URDF}{5}{section*.15}
-\contentsline {subsubsection}{Visialization in RVIZ}{5}{section*.16}
-\contentsline {subsubsection}{Simulation in Gazebo}{5}{section*.17}
-\contentsline {subsection}{\numberline {2.3.4}Structure of a ROS Application}{5}{subsection.2.3.4}
+\contentsline {subsubsection}{The ROS Graph}{4}{section*.10}
+\contentsline {subsubsection}{roscore}{4}{section*.11}
+\contentsline {subsubsection}{Topics}{4}{section*.12}
+\contentsline {subsubsection}{Services}{4}{section*.13}
+\contentsline {subsubsection}{rosbridge}{4}{section*.14}
+\contentsline {subsubsection}{title}{4}{section*.15}
+\contentsline {subsection}{\numberline {2.3.3}ROS-Related Tools}{4}{subsection.2.3.3}
+\contentsline {subsubsection}{Robot Modelling In URDF}{4}{section*.16}
+\contentsline {subsubsection}{Visialization in RVIZ}{4}{section*.17}
+\contentsline {subsubsection}{Simulation in Gazebo}{4}{section*.18}
+\contentsline {subsection}{\numberline {2.3.4}Structure of a ROS Application}{4}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Notable Robots Running ROS}{4}{subsection.2.3.5}
+\contentsline {paragraph}{PR2 - Personal Robot 2}{4}{section*.19}
+\contentsline {paragraph}{TurtleBot}{5}{section*.20}
+\contentsline {paragraph}{Robonaut 2}{5}{section*.21}
+\contentsline {paragraph}{Example of an industrial robot with ROS goes here!}{5}{section*.23}
 \contentsline {section}{\numberline {2.4}Software}{5}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Qt}{5}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}PCL}{5}{subsection.2.4.2}
@@ -50,17 +56,22 @@
 \contentsline {subsection}{\numberline {2.6.4}Current Research and Applications}{5}{subsection.2.6.4}
 \contentsline {section}{\numberline {2.7}Introduction to Sensors in Autonomous Robots}{5}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Depth Cameras}{5}{subsection.2.7.1}
-\contentsline {subsubsection}{Different Methods for Depth Perception}{5}{section*.18}
-\contentsline {subsubsection}{Natural User Interfaces - Origin of the Kinect}{6}{section*.19}
-\contentsline {subsubsection}{Kinect for Xbox 360}{7}{section*.23}
+\contentsline {subsubsection}{Different Methods for Depth Perception}{5}{section*.24}
+\contentsline {subsubsection}{Natural User Interfaces - Origin of the Kinect}{6}{section*.25}
+\contentsline {subsubsection}{Kinect for Xbox 360}{7}{section*.29}
 \contentsline {subsection}{\numberline {2.7.2}Plannar Laser Sensors (LIDAR)}{7}{subsection.2.7.2}
-\contentsline {subsubsection}{Scanning Laser Range Finder, URG-04LX-UG01}{7}{section*.26}
+\contentsline {subsubsection}{Scanning Laser Range Finder, URG-04LX-UG01}{7}{section*.32}
 \contentsline {subsection}{\numberline {2.7.3}Odometers}{7}{subsection.2.7.3}
 \contentsline {subsection}{\numberline {2.7.4}Sensor Fusion}{7}{subsection.2.7.4}
 \contentsline {section}{\numberline {2.8}RTAB-Map}{7}{section.2.8}
 \contentsline {chapter}{\chapternumberline {3}Implementation}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Simulations}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Implementatpon 2}{9}{section.3.2}
+\contentsline {section}{\numberline {3.1}Modelling}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Physical Dimensions}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Coordinate Frames}{10}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Simulations}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}ROS Nodes for Motion Control}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}}{10}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}The Handheld Remote Control - "Robot Leash"}{10}{section.3.4}
 \contentsline {chapter}{\chapternumberline {4}Testing}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testplan}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}Results}{11}{section.4.2}
@@ -71,4 +82,19 @@
 \contentsline {section}{\numberline {6.2}Task Fulfillment}{15}{section.6.2}
 \contentsline {section}{\numberline {6.3}Task Fulfilment}{15}{section.6.3}
 \contentsline {section}{\numberline {6.4}Final Conclusion}{15}{section.6.4}
-\contentsline {chapter}{References}{17}{section*.30}
+\contentsline {chapter}{\chapternumberline {7}Setting Up the Project}{17}{chapter.7}
+\contentsline {section}{\numberline {7.1}Installation}{17}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Equipment List}{17}{subsection.7.1.1}
+\contentsline {subsubsection}{Item List}{17}{section*.35}
+\contentsline {subsubsection}{Compatibility Issues}{17}{section*.36}
+\contentsline {subsection}{\numberline {7.1.2}Install Ubuntu}{17}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Download ROS}{17}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Configuring the Project}{17}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Configuring the ROS Workspace}{17}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Configuring the Bluetooth Connection}{17}{subsection.7.2.2}
+\contentsline {chapter}{\chapternumberline {8}Troubleshooting}{19}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introduction}{19}{section.8.1}
+\contentsline {section}{\numberline {8.2}Gazebo}{19}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{19}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Dependency Issues When Installing \textit {gazebo2}}{19}{subsection.8.2.2}
+\contentsline {chapter}{References}{21}{section*.38}

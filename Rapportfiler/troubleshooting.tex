@@ -1,0 +1,37 @@
+\chapter{Troubleshooting}
+
+\section{Introduction}
+
+This part of the thesis contains answers to some of the problems that was encountered over the course od the semester. The solutions are not complete or comprehensive, but may provide some quick fixes for any students that may continue working with this project.
+
+\section{Gazebo}
+
+\subsection{\textcolor{red}{Error [Node.cc.90]} No namespace found}
+
+\textbf{Solution: } Remember to source the \textit{gazebo} installation. In this case, with \textit{gazebo-2.2} installed as recommended for \ac{ROS} Indigo, the setup file can be sourced by entering
+
+\begin{verbatim}
+	$ source /usr/share/gazebo-2.2/setup.sh
+\end{verbatim}
+
+\subsection{Dependency Issues When Installing \textit{gazebo2}}
+
+This problem was encountered after removing gazebo and then typing
+
+\begin{verbatim}
+$ sudo apt-get upgrade
+\end{verbatim}
+
+When typing 
+
+\begin{verbatim}
+$ sudo apt-get install -y gazebo2
+\end{verbatim}
+
+the installation failed because some dependencies had been upgraded to an incompatible version. To solve this, take note of the missing dependencies listed after entering the command above, open Ubuntu Software Center and select the History tab. Scroll down and locate the missing dependencies. They should have a red X next to them, indicating that they have been uninstalled. Then, enter the following command:
+
+\begin{verbatim}
+$ sudo apt-get install <NAME OF THE UNINSTALLED DEPENDENCY>
+\end{verbatim}
+
+\textit{gazebo2} 

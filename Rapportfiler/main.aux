@@ -17,10 +17,13 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode`"\active
+\catcode `"\active 
+\reset@newl@bel
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
-\reset@newl@bel
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -46,28 +49,32 @@
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
-\@writefile{toc}{\contentsline {chapter}{List of Acronyms}{ix}{chapter*.1}}
+\@writefile{toc}{\contentsline {chapter}{List of Acronyms}{xi}{chapter*.1}}
 \newacro{GUI}[\AC@hyperlink{GUI}{GUI}]{Graphical User Interface}
 \newacro{HMI}[\AC@hyperlink{HMI}{HMI}]{Human-Machine Interaction}
 \newacro{LIDAR}[\AC@hyperlink{LIDAR}{LIDAR}]{LIght Detection And Ranging}
 \newacro{MIT}[\AC@hyperlink{MIT}{MIT}]{Massachusetts Institute of Technology}
 \newacro{NUI}[\AC@hyperlink{NUI}{NUI}]{Natural user interface}
+\newacro{OCS}[\AC@hyperlink{OCS}{OCS}]{Operator Control Station}
 \newacro{PR}[\AC@hyperlink{PR}{PR}]{Personal Robot}
 \newacro{ROS}[\AC@hyperlink{ROS}{ROS}]{Robot Operating System}
 \newacro{RTAB-Map}[\AC@hyperlink{RTAB-Map}{RTAB-Map}]{Real-Time Appearance-Based Mapping}
+\newacro{SDF}[\AC@hyperlink{SDF}{SDF}]{Simulation Description Format}
 \newacro{SLAM}[\AC@hyperlink{SLAM}{SLAM}]{Simultanious Localization And Mapping}
 \newacro{STAIR}[\AC@hyperlink{STAIR}{STAIR}]{Stanford AI Robot}
 \newacro{URDF}[\AC@hyperlink{URDF}{URDF}]{Unified Robot Description Format}
-\@writefile{toc}{\contentsline {chapter}{List of Acronyms}{ix}{chapter*.1}}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{xi}{section*.2}}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{xiii}{section*.3}}
-\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xv}{chapter*.4}}
+\@writefile{toc}{\contentsline {chapter}{List of Acronyms}{xi}{chapter*.1}}
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{xiii}{section*.2}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{xv}{section*.3}}
+\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xvii}{chapter*.4}}
 \@input{introduction_chapter.aux}
 \@input{theory_chapter.aux}
 \@input{implementation_chapter.aux}
 \@input{testing_chapter.aux}
 \@input{discussion_chapter.aux}
 \@input{conclusion_chapter.aux}
+\@input{setup.aux}
+\@input{troubleshooting.aux}
 \bibstyle{alpha}
 \bibdata{main}
 \bibcite{RTAB_map}{{LM14}{}{{}}{{}}}
@@ -76,6 +83,6 @@
 \bibcite{ROS_install}{{ROSb}{}{{}}{{}}}
 \bibcite{kinect_book}{{WA12}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {chapter}{References}{17}{section*.30}}
-\memsetcounter{lastsheet}{37}
-\memsetcounter{lastpage}{17}
+\@writefile{toc}{\contentsline {chapter}{References}{21}{section*.38}}
+\memsetcounter{lastsheet}{43}
+\memsetcounter{lastpage}{21}

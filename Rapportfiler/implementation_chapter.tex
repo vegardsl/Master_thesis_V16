@@ -15,7 +15,46 @@ Implementation procedure for mobile robot:
 
 \end{itemize}
 
+\section{Modelling}
+
+\subsection{Physical Dimensions}
+
+The inertia tensor:
+
+\begin{equation}
+    	I = \begin{bmatrix}
+    	I_{xx} & I_{xy} & I_{xz} \\[0.3em]
+    	I_{yx} & I_{yy} & I_{yz} \\[0.3em]
+    	I_{zx} & I_{zy} & I_{zz}
+    	\end{bmatrix}
+\end{equation}
+
+Inertia tensor for a solid, uniform cylinder where the radius $r$ is measured in parallel to the $x - y$ plane, and $h$ is parallel to the $z$ axis:
+\begin{equation}
+I_{cylinder} = \frac{1}{12}m \begin{bmatrix}
+	(3 r^2 + h^2) & 0 & 0 \\[0.3em]
+	0 & (3 r^2 + h^2) & 0 \\[0.3em]
+	0 & 0 & r^2
+	\end{bmatrix}
+\end{equation}
+
+Inertia tensor for a solid, uniform cuboid. The subscript of $l$ indicates which axis $l$ is measured along:
+\begin{equation}
+I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
+	(l_y^2 + l_z^2) & 0 & 0 \\[0.3em]
+	0 & (l_x^2 + l_z^2) & 0 \\[0.3em]
+	0 & 0 & (l_x^2 + l_y^2)
+\end{bmatrix}
+\end{equation}
+
+\subsection{Coordinate Frames}
+
 \section{Simulations}
 
+\section{ROS Nodes for Motion Control}
 
-\section{Implementatpon 2}
+\subsection{}
+
+\section{The Handheld Remote Control - "Robot Leash"}
+
+http://developer.samsung.com/technical-doc/view.do?v=T000000117
