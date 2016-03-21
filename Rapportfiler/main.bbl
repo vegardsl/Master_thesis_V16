@@ -1,5 +1,10 @@
 \begin{thebibliography}{QGS15}
 
+\bibitem[Kin]{Kintinous}
+Kintinous.
+\newblock \url{https://github.com/mp3guy/Kintinuous}.
+\newblock Accessed: 2016-03-21.
+
 \bibitem[LM14]{RTAB_map}
 M.~Labbé and F.~Michaud.
 \newblock Online global loop closure detection for large-scale multi-session

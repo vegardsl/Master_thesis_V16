@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  15 MAR 2016 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  21 MAR 2016 13:15
 entering extended mode
 **main.tex
 (main.tex
@@ -1666,7 +1666,7 @@ LaTeX Info: Redefining \nameref on input line 26.
 (main.out) (main.out)
 \@outlinefile=\write8
 \c@lstlisting=\count331
- <./figs/ntnu-logo.pdf, id=306, 241.4922pt x 52.79724pt>
+ <./figs/ntnu-logo.pdf, id=318, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1800,14 +1800,14 @@ Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
 
 although it is yet undefined on input line 124.
 
-<./figs/kinect360.png, id=592, 963.6pt x 451.6875pt>
+<./figs/kinect360.png, id=607, 963.6pt x 451.6875pt>
 File: ./figs/kinect360.png Graphic file (type png)
 
 <use ./figs/kinect360.png>
 Package pdftex.def Info: ./figs/kinect360.png used on input line 130.
 (pdftex.def)             Requested size: 291.20111pt x 136.49976pt.
 
-<./figs/kinect360_exp.png, id=593, 432.86719pt x 222.07968pt>
+<./figs/kinect360_exp.png, id=608, 432.86719pt x 222.07968pt>
 File: ./figs/kinect360_exp.png Graphic file (type png)
 
 <use ./figs/kinect360_exp.png>
@@ -1844,7 +1844,10 @@ although it is yet undefined on input line 10.
 
 
 
-]) [10] (testing_chapter.tex) [11
+]
+Package acronym Info: Label `acro:OCS' newly defined as it shall be overridden
+although it is yet undefined on input line 60.
+) [10] (testing_chapter.tex) [11
 
 
 
@@ -1857,8 +1860,18 @@ although it is yet undefined on input line 10.
 
 
 
-]) [15]
-(setup.tex [16
+]
+
+Package natbib Warning: Citation `keylist' on page 15 undefined on input line 8
+.
+
+
+Overfull \hbox (36.77847pt too wide) in paragraph at lines 12--13
+[]\T1/lmr/m/n/10 (-20) A guide on how to build Kinti-nous can be found at [][]h
+ttps://github.com/mp3guy/Kintinuous[][].
+ []
+
+) [15] (setup.tex [16
 
 
 
@@ -1879,13 +1892,13 @@ Package microtype Info: Loading generic settings for font family
  [19]) [20] (main.bbl
 bibitemlist
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--20
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
 []\T1/lmr/m/n/10 (+20) Reboot ubuntu.  [][]$http : / / askubuntu . com / questi
 ons / 4408 /$
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 16--20
+Underfull \hbox (badness 2035) in paragraph at lines 21--25
 $\T1/lmr/m/n/10 (+20) what-[]should-[]i-[]do-[]when-[]ubuntu-[]freezes / 36717 
 # 36717$[][].  Ac-cessed: 2016-03-
  []
@@ -1916,15 +1929,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2448125F34704F84D4BA06F4177246F9;5018.
+(rerunfilecheck)             Checksum: D5FE3F84CEDEED4582EBB179CD772859;5269.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
  ) 
 Here is how much of TeX's memory you used:
- 22313 strings out of 493698
- 326547 string characters out of 3144406
- 606545 words of memory out of 3000000
- 24869 multiletter control sequences out of 15000+200000
- 85222 words of font info for 100 fonts, out of 3000000 for 9000
+ 22333 strings out of 493698
+ 326804 string characters out of 3144406
+ 606661 words of memory out of 3000000
+ 24880 multiletter control sequences out of 15000+200000
+ 85388 words of font info for 102 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  58i,12n,45p,1857b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -1943,9 +1956,9 @@ fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (43 pages, 501731 bytes).
+Output written on main.pdf (43 pages, 506354 bytes).
 PDF statistics:
- 784 PDF objects out of 1000 (max. 8388607)
- 173 named destinations out of 1000 (max. 500000)
- 20592 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 807 PDF objects out of 1000 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
+ 20616 words of extra memory for PDF output out of 20736 (max. 10000000)
 
