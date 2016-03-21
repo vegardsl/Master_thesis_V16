@@ -12,6 +12,12 @@ Morgan Quigley, Brian Gerkey, and William~D. Smart.
 \newblock {\em Programming Robots with ROS}.
 \newblock O'Reilly Media, Inc., December 2015.
 
+\bibitem[Reb]{Reboot_Ubuntu}
+Reboot ubuntu.
+\newblock
+  \url{http://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes/36717#36717}.
+\newblock Accessed: 2016-03-14.
+
 \bibitem[ROSa]{ROS_history}
 {ROS} history.
 \newblock \url{http://www.ros.org/history/}.
