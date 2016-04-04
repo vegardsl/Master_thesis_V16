@@ -2,7 +2,34 @@
 \label{chp:theory} 
 
 
-\section{Modern Robotics}
+\section{Robotic Maintenance of Industrial Installations}
+
+\subsection{Introduction}
+
+This project is only a part of a larger long-term goal concerning robotic maintenance. The goal of this section is to put the following background theory, and the implementation described in chapter \ref{chp:implementation}, into the context of the larger topic, which is automated robotic maintenance on industrial installations. It is important to describe how maintenance and inspection of industrial installations is done today, before application of robotic maintenance is discussed.  
+
+\subsection{Potential Maintenance Tasks}
+
+Hidden failure modes: PFD: What is the probability that a device (Fire detector, shut down valve, etc.) will fail when needed? 
+Solution: Periodic maintenance.
+
+\subsection{Offshore Installations}
+
+\subsubsection{Corrosion}
+
+Offshore installations are regularly, if not continuously exposed to harsh weather conditions in the form of wind and seawater. Presence of seawater, either through direct contact or in the form of drops and vapour, forms a very corrosive environment. In addition, the offshore environment is classified as the most corrosive environment in ISO 12944\cite{ElReedy2012383}. Common corrosion prevention methods are\cite{ElReedy2012383}:
+
+\begin{itemize}
+	\item Sacrificial Anodes.
+	\item \ac{CP} in the form of a DC-current.
+	\item Protective coating.
+\end{itemize} 
+
+In terms of maintenance, the sacrificial anodes can be subjected to periodic inspections and replacements, which could be done a robot. \ac{CP} can more easily be implemented with automated self tests, and should normally not require any inspections and maintenance\cite{ElReedy2012383}. Application of protective coating should ideally be applied in the controlled environment of a workshop. If protective coating is to be applied at sea, one should strive to make the conditions as favourable as possible.
+
+\subsubsection{Fatigue}
+
+Waves, wind, water currents and other forces subject offshore installations to structural stress.
 
 \section{Modelling and Simulation}
 
