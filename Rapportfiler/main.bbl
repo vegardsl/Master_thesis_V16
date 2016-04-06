@@ -1,10 +1,20 @@
 \begin{thebibliography}{QGS15}
 
+\bibitem[DRC]{DRC}
+Darpa robotics challenge.
+\newblock \url{http://www.theroboticschallenge.org/overview}.
+\newblock Accessed: 2016-04-05.
+
 \bibitem[ER12]{ElReedy2012383}
 Mohamed~A. El-Reedy.
 \newblock Chapter 6 - corrosion protection.
 \newblock In Mohamed~A. El-Reedy, editor, {\em Offshore Structures}, pages 383
   -- 443. Gulf Professional Publishing, Boston, 2012.
+
+\bibitem[ifr]{ifr_statistics}
+International federation of robotics - statistics.
+\newblock \url{http://www.ifr.org/industrial-robots/statistics/}.
+\newblock Accessed: 2016-04-05.
 
 \bibitem[Kin]{Kintinous}
 Kintinous.
@@ -34,10 +44,22 @@ Reboot ubuntu.
 \newblock \url{http://www.ros.org/history/}.
 \newblock Accessed: 2016-02-28.
 
-\bibitem[ROSb]{ROS_install}
+\bibitem[ROSb]{ROS_industrial}
+Ros-industrial.
+\newblock \url{http://rosindustrial.org/the-challenge/}.
+\newblock Accessed: 2016-04-05.
+
+\bibitem[ROSc]{ROS_install}
 {ROS} installation.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
+
+\bibitem[SS14]{FSR2014_gas_leak}
+Thomas Barz Andreas Kroll Dirk~Schulz Samuel~Soldan, Jochen~Welle.
+\newblock Towards autonomous robotic systems for remote gas leak detection and
+  localization in industrial environments.
+\newblock In {\em Field and Service Robotics}, pages 233--247. Springer Berlin
+  Heidelberg, 2014.
 
 \bibitem[WA12]{kinect_book}
 Jarrett Webb and James Ashley.

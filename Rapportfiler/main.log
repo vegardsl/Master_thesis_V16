@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  4 APR 2016 23:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  5 APR 2016 22:28
 entering extended mode
 **main.tex
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.tex
@@ -1681,7 +1681,7 @@ LaTeX Info: Redefining \nameref on input line 26.
 \@outlinefile=\write8
 \c@lstlisting=\count331
 
-<./figs/ntnu-logo.pdf, id=334, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=342, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1765,11 +1765,11 @@ ian.tex) [3
 
 ] [11
 
-] [12
-
-]
+] [12]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.lof)
-[13] [14
+[13
+
+] [14
 
 ]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.lot)
@@ -1797,92 +1797,95 @@ Package acronym Info: Label `acro:CP' newly defined as it shall be overridden
 although it is yet undefined on input line 24.
  [3]
 Package acronym Info: Label `acro:ROS' newly defined as it shall be overridden
-although it is yet undefined on input line 54.
+although it is yet undefined on input line 64.
+ [4]
 Package acronym Info: Label `acro:STAIR' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 56.
+although it is yet undefined on input line 66.
 Package acronym Info: Label `acro:PR' newly defined as it shall be overridden
-although it is yet undefined on input line 56.
+although it is yet undefined on input line 66.
 
 
-Package natbib Warning: Citation `BCD_license' on page 4 undefined on input lin
-e 56.
+Package natbib Warning: Citation `BCD_license' on page 5 undefined on input lin
+e 66.
 
-[4]
+[5]
 Package acronym Info: Label `acro:ISS' newly defined as it shall be overridden
-although it is yet undefined on input line 98.
+although it is yet undefined on input line 108.
 
 
-Package acronym Warning: Acronym `ISS' is not defined on input line 98.
+Package acronym Warning: Acronym `ISS' is not defined on input line 108.
 
 
-Package acronym Warning: Acronym `ISS' is not defined on input line 98.
+Package acronym Warning: Acronym `ISS' is not defined on input line 108.
 
-[5] [6]
-Package acronym Info: Label `acro:GUI' newly defined as it shall be overridden
-although it is yet undefined on input line 140.
-Package acronym Info: Label `acro:NUI' newly defined as it shall be overridden
-although it is yet undefined on input line 140.
-Package acronym Info: Label `acro:HMI' newly defined as it shall be overridden
-although it is yet undefined on input line 143.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [6]
+Underfull \vbox (badness 1472) has occurred while \output is active []
+
  [7]
+Package acronym Info: Label `acro:GUI' newly defined as it shall be overridden
+although it is yet undefined on input line 150.
+Package acronym Info: Label `acro:NUI' newly defined as it shall be overridden
+although it is yet undefined on input line 150.
+Package acronym Info: Label `acro:HMI' newly defined as it shall be overridden
+although it is yet undefined on input line 153.
 Package acronym Info: Label `acro:MIT' newly defined as it shall be overridden
-although it is yet undefined on input line 151.
+although it is yet undefined on input line 161.
 Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
 
-although it is yet undefined on input line 151.
+although it is yet undefined on input line 161.
 
-<./figs/kinect360.png, id=642, 963.6pt x 451.6875pt>
+[8] <./figs/kinect360.png, id=667, 963.6pt x 451.6875pt>
 File: ./figs/kinect360.png Graphic file (type png)
 
 <use ./figs/kinect360.png>
-Package pdftex.def Info: ./figs/kinect360.png used on input line 157.
+Package pdftex.def Info: ./figs/kinect360.png used on input line 167.
 (pdftex.def)             Requested size: 291.20111pt x 136.49976pt.
 
-<./figs/kinect360_exp.png, id=643, 432.86719pt x 222.07968pt>
+<./figs/kinect360_exp.png, id=668, 432.86719pt x 222.07968pt>
 File: ./figs/kinect360_exp.png Graphic file (type png)
 
 <use ./figs/kinect360_exp.png>
-Package pdftex.def Info: ./figs/kinect360_exp.png used on input line 164.
+Package pdftex.def Info: ./figs/kinect360_exp.png used on input line 174.
 (pdftex.def)             Requested size: 291.20111pt x 149.40594pt.
 Package acronym Info: Label `acro:RTAB-map' newly defined as it shall be overri
 dden
-although it is yet undefined on input line 184.
+although it is yet undefined on input line 194.
 
 
-Package acronym Warning: Acronym `RTAB-map' is not defined on input line 184.
+Package acronym Warning: Acronym `RTAB-map' is not defined on input line 194.
 
 
-Package acronym Warning: Acronym `RTAB-map' is not defined on input line 184.
+Package acronym Warning: Acronym `RTAB-map' is not defined on input line 194.
 
-) [8] [9pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.2.1}) has been already used, duplicate ignored
+) [9] [10pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.135 \include{theory_chapter}
+l.141 \include{theory_chapter}
                               pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.135 \include{theory_chapter}
+l.141 \include{theory_chapter}
                                <C:/Users/Vegard/Documents/Skole/Master_thesis_V
 16/Rapportfiler/figs/kinect360.png> <C:/Users/Vegard/Documents/Skole/Master_the
 sis_V16/Rapportfiler/figs/kinect360_exp.png>]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\implementation_
-chapter.tex [10
+chapter.tex
+Package acronym Info: Label `acro:URDF' newly defined as it shall be overridden
+
+although it is yet undefined on input line 10.
+ [11
 
 
 
 ]
-Package acronym Info: Label `acro:URDF' newly defined as it shall be overridden
-
-although it is yet undefined on input line 10.
- [11]
 Package acronym Info: Label `acro:OCS' newly defined as it shall be overridden
 although it is yet undefined on input line 60.
 ) [12]
@@ -1904,23 +1907,31 @@ ter.tex [16
 
 
 ]
+Package acronym Info: Label `acro:AI' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+Package acronym Info: Label `acro:NDT' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
 
-Package natbib Warning: Citation `keylist' on page 17 undefined on input line 8
-.
+
+Package natbib Warning: Citation `keylist' on page 17 undefined on input line 1
+2.
 
 
-Overfull \hbox (36.77847pt too wide) in paragraph at lines 12--13
+Overfull \hbox (36.77847pt too wide) in paragraph at lines 16--17
 []\T1/lmr/m/n/10 (-20) A guide on how to build Kinti-nous can be found at [][]h
 ttps://github.com/mp3guy/Kintinuous[][].
  []
 
-) [17]
-(C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\setup.tex
-[18
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+[18] (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\setup.tex
+[19
 
 
 
-] [19]) [20]
+]) [20]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\troubleshooting
 .tex
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 13.
@@ -1939,13 +1950,19 @@ Package microtype Info: Loading generic settings for font family
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.bbl
 bibitemlist
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--31
+Underfull \hbox (badness 4927) in paragraph at lines 15--18
+[]\T1/lmr/m/n/10 (+20) International fed-er-a-tion of robotics - statis-tics.  
+[][]$http : / / www . ifr . org /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 []\T1/lmr/m/n/10 (+20) Reboot ubuntu.  [][]$http : / / askubuntu . com / questi
 ons / 4408 /$
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 27--31
+Underfull \hbox (badness 2035) in paragraph at lines 37--41
 $\T1/lmr/m/n/10 (+20) what-[]should-[]i-[]do-[]when-[]ubuntu-[]freezes / 36717 
 # 36717$[][].  Ac-cessed: 2016-03-
  []
@@ -1966,8 +1983,8 @@ This document will not have a glossary.
 \tf@lof=\write10
 \tf@lot=\write11
 \tf@loa=\write12
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
  (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.aux
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\abstract_englis
 h.aux)
@@ -1989,52 +2006,39 @@ ter.aux)
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\setup.aux)
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\troubleshooting
 .aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: EB27449427952636345A5779E209FF0C;5625
-(rerunfilecheck)             After:  5FEF9575315106C0EFE7AC1E5FA02410;5625.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: F516D7B28762E9E7295D2554F537CA06;5787.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 21726 strings out of 493921
- 319446 string characters out of 3147278
- 573876 words of memory out of 3000000
- 24239 multiletter control sequences out of 15000+200000
- 85684 words of font info for 105 fonts, out of 3000000 for 9000
+ 21763 strings out of 493921
+ 319947 string characters out of 3147278
+ 574233 words of memory out of 3000000
+ 24263 multiletter control sequences out of 15000+200000
+ 85944 words of font info for 107 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 58i,12n,45p,1504b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section*.42} has been referenced but does not exi
-st, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiK
-TeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
-ps/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.e
-nc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (45 pages, 515571 bytes).
+ 58i,13n,45p,1504b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+r7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (45 pages, 524625 bytes).
 PDF statistics:
- 850 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 20648 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 880 PDF objects out of 1000 (max. 8388607)
+ 199 named destinations out of 1000 (max. 500000)
+ 20664 words of extra memory for PDF output out of 20736 (max. 10000000)
 

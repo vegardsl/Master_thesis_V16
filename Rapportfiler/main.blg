@@ -14,8 +14,23 @@ The style file: alpha.bst
 Database file #1: main.bib
 Warning--I didn't find a database entry for "BCD_license"
 Warning--I didn't find a database entry for "keylist"
+Too many commas in name 1 of "Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, Dirk Schulz" for entry FSR2014_gas_leak
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, Dirk Schulz" for entry FSR2014_gas_leak
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, Dirk Schulz" for entry FSR2014_gas_leak
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, Dirk Schulz" for entry FSR2014_gas_leak
+while executing---line 1185 of file alpha.bst
+Warning--to sort, need author or key in ifr_statistics
+Warning--to sort, need author or key in ROS_industrial
+Warning--to sort, need author or key in DRC
 Warning--to sort, need author or key in ROS_install
 Warning--to sort, need author or key in ROS_history
 Warning--to sort, need author or key in Kintinous
 Warning--to sort, need author or key in Reboot_Ubuntu
-(There were 6 warnings)
+Too many commas in name 1 of "Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, Dirk Schulz" for entry FSR2014_gas_leak
+while executing---line 1250 of file alpha.bst
+Too many commas in name 1 of "Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, Dirk Schulz" for entry FSR2014_gas_leak
+while executing---line 1250 of file alpha.bst
+(There were 6 error messages)
