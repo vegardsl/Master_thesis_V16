@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Introduction}{5}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Important ROS Concepts}{5}{subsection.2.4.2}
 \contentsline {subsubsection}{The ROS Graph}{5}{section*.13}
-\contentsline {subsubsection}{roscore}{5}{section*.14}
+\contentsline {subsubsection}{roscore}{6}{section*.14}
 \contentsline {subsubsection}{Topics}{6}{section*.15}
 \contentsline {subsubsection}{Services}{6}{section*.16}
 \contentsline {subsubsection}{rosbridge}{6}{section*.17}
