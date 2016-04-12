@@ -27,13 +27,35 @@ Indigo, Ubuntu etc.
 
 \subsection{Configuring the Bluetooth Connection}
 
-The Qt framework is used to simplify the implementation of the Bluetooth connection between the \ac{ROS} graph and a remote device. Our \ac{ROS} installation for this project already includes some variant of Qt version 4.8. While useful for creating new \ac{GUI} applications, it lacks a Bluetooth API. The latest version of Qt, version 5.5, is equipped with libraries necessary for developing Bluetooth applications. This part of the guide explain how to create a Qt 5 application which can be build by \textit{catkin\_make} and run as a \textit{rosnode}.
+The Qt framework is used to simplify the implementation of the Bluetooth connection between the \ac{ROS} graph and a remote device. Our \ac{ROS} installation for this project already includes some variant of Qt version 4.8. While useful for creating new \ac{GUI} applications, it lacks a Bluetooth API. The latest version of Qt, version 5.x, is equipped with libraries necessary for developing Bluetooth applications. This part of the guide explain how to create a Qt 5 application which can be build by \textit{catkin\_make} and run as a \textit{rosnode}.
 
-\subsection{Adding the Qwt Plugin For Customizing QDial}
+\subsubsection{1 - Install Qt5}
 
-This is a ''howto'' guide on how to install the Qwt-plugin.The following is assumed:
+Installing Qt5 for Linux is a straight forward procedure. Go to \url{qt.io}, and download the free version of Qt. All necessary instructions are provided. Qt5 may be installed in the home folder.
 
-\begin{itemize}
-	\item Development is performed on Windows 7
-	\item Qt 5.x is installed at c:/Qt
-\end{itemize}
+\subsubsection{2- Enabling Qt5 in a ROS node}
+
+It is assumed that the \ac{ROS} package ''bluetooth\_server'', is located in a catkin workspace:
+\begin{verbatim}
+	<NAME OF CATKIN WORKSPACE>/src/bluetooth_server
+\end{verbatim}
+
+Inside this folder, open the file ''CMakeLists.txt'' and locate the following:
+
+\begin{verbatim}
+set(CMAKE_PREFIX_PATH "/home/vegard/Qt/5.5/gcc_64/lib/cmake/Qt5"
+					  "/home/vegard/Qt/5.5/gcc_64/lib/cmake/Qt5Core"
+					  "/home/vegard/Qt/5.5/gcc_64/lib/cmake/Qt5Bluetooth"
+\end{verbatim}
+
+Change these paths to the correct paths on your system.
+
+% FJERN DETTE DELKAPITTELET!
+%\subsection{Adding the Qwt Plugin For Customizing QDial}
+
+%This is a ''howto'' guide on how to install the Qwt-plugin.The following is assumed:
+
+%\begin{itemize}
+%	\item Development is performed on Windows 7
+%	\item Qt 5.x is installed at c:/Qt
+%\end{itemize}

@@ -1,4 +1,10 @@
-\begin{thebibliography}{QGS15}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{SWB{\etalchar{+}}14}
+
+\bibitem[Bog16]{cobotsEurope}
+Robert Bogue.
+\newblock Europe continues to lead the way in the collaborative robot business.
+\newblock {\em Industrial Robot: An International Journal}, 43(1):6--11, 2016.
 
 \bibitem[DRC]{DRC}
 Darpa robotics challenge.
@@ -54,8 +60,8 @@ Ros-industrial.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
 
-\bibitem[SS14]{FSR2014_gas_leak}
-Thomas Barz Andreas Kroll Dirk~Schulz Samuel~Soldan, Jochen~Welle.
+\bibitem[SWB{\etalchar{+}}14]{FSR2014_gas_leak}
+Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, and Dirk Schulz.
 \newblock Towards autonomous robotic systems for remote gas leak detection and
   localization in industrial environments.
 \newblock In {\em Field and Service Robotics}, pages 233--247. Springer Berlin

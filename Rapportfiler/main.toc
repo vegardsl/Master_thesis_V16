@@ -26,16 +26,16 @@
 \contentsline {subsubsection}{Corrosion}{3}{section*.5}
 \contentsline {subsubsection}{Fatigue}{4}{section*.7}
 \contentsline {section}{\numberline {2.2}Robotic Maintenance Today}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Modelling and Simulation}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Some Terminology}{4}{subsection.2.3.1}
-\contentsline {subsubsection}{Coordinate Systems and Poses}{4}{section*.8}
-\contentsline {subsubsection}{Robot Joints}{4}{section*.9}
+\contentsline {section}{\numberline {2.3}Modelling and Simulation}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Some Terminology}{5}{subsection.2.3.1}
+\contentsline {subsubsection}{Coordinate Systems and Poses}{5}{section*.8}
+\contentsline {subsubsection}{Robot Joints}{5}{section*.9}
 \contentsline {subsection}{\numberline {2.3.2}Robot Modelling}{5}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Simulating in Gazebo}{5}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}ROS}{5}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Introduction}{5}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Important ROS Concepts}{5}{subsection.2.4.2}
-\contentsline {subsubsection}{The ROS Graph}{5}{section*.13}
+\contentsline {subsubsection}{The ROS Graph}{6}{section*.13}
 \contentsline {subsubsection}{roscore}{6}{section*.14}
 \contentsline {subsubsection}{Topics}{6}{section*.15}
 \contentsline {subsubsection}{Services}{6}{section*.16}
@@ -50,7 +50,7 @@
 \contentsline {paragraph}{PR2 - Personal Robot 2}{6}{section*.22}
 \contentsline {paragraph}{TurtleBot}{6}{section*.23}
 \contentsline {paragraph}{Robonaut 2}{6}{section*.24}
-\contentsline {paragraph}{Example of an industrial robot with ROS goes here!}{6}{section*.26}
+\contentsline {paragraph}{Example of an industrial robot with ROS goes here!}{7}{section*.26}
 \contentsline {section}{\numberline {2.5}Software}{7}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Qt}{7}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}PCL}{7}{subsection.2.5.2}
@@ -64,7 +64,7 @@
 \contentsline {subsection}{\numberline {2.8.1}Depth Cameras}{7}{subsection.2.8.1}
 \contentsline {subsubsection}{Different Methods for Depth Perception}{7}{section*.27}
 \contentsline {subsubsection}{Natural User Interfaces - Origin of the Kinect}{8}{section*.28}
-\contentsline {subsubsection}{Kinect for Xbox 360}{8}{section*.32}
+\contentsline {subsubsection}{Kinect for Xbox 360}{9}{section*.32}
 \contentsline {subsection}{\numberline {2.8.2}Plannar Laser Sensors (LIDAR)}{9}{subsection.2.8.2}
 \contentsline {subsubsection}{Scanning Laser Range Finder, URG-04LX-UG01}{9}{section*.35}
 \contentsline {subsection}{\numberline {2.8.3}Odometers}{9}{subsection.2.8.3}
@@ -103,7 +103,8 @@
 \contentsline {section}{\numberline {7.2}Configuring the Project}{19}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Configuring the ROS Workspace}{19}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Configuring the Bluetooth Connection}{19}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Adding the Qwt Plugin For Customizing QDial}{20}{subsection.7.2.3}
+\contentsline {subsubsection}{1 - Install Qt5}{20}{section*.44}
+\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{20}{section*.45}
 \contentsline {chapter}{\chapternumberline {8}Troubleshooting}{21}{chapter.8}
 \contentsline {section}{\numberline {8.1}Introduction}{21}{section.8.1}
 \contentsline {section}{\numberline {8.2}Gazebo}{21}{section.8.2}
@@ -111,4 +112,4 @@
 \contentsline {subsection}{\numberline {8.2.2}Dependency Issues When Installing \textit {gazebo2}}{21}{subsection.8.2.2}
 \contentsline {section}{\numberline {8.3}Ubuntu}{22}{section.8.3}
 \contentsline {subsection}{\numberline {8.3.1}Ubuntu Freezes}{22}{subsection.8.3.1}
-\contentsline {chapter}{References}{23}{section*.45}
+\contentsline {chapter}{References}{23}{section*.47}

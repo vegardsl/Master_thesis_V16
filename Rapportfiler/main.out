@@ -74,12 +74,11 @@
 \BOOKMARK [1][-]{section.7.2}{Configuring the Project}{chapter.7}% 74
 \BOOKMARK [2][-]{subsection.7.2.1}{Configuring the ROS Workspace}{section.7.2}% 75
 \BOOKMARK [2][-]{subsection.7.2.2}{Configuring the Bluetooth Connection}{section.7.2}% 76
-\BOOKMARK [2][-]{subsection.7.2.3}{Adding the Qwt Plugin For Customizing QDial}{section.7.2}% 77
-\BOOKMARK [0][-]{chapter.8}{Troubleshooting}{}% 78
-\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 79
-\BOOKMARK [1][-]{section.8.2}{Gazebo}{chapter.8}% 80
-\BOOKMARK [2][-]{subsection.8.2.1}{Error [Node.cc.90] No namespace found}{section.8.2}% 81
-\BOOKMARK [2][-]{subsection.8.2.2}{Dependency Issues When Installing gazebo2}{section.8.2}% 82
-\BOOKMARK [1][-]{section.8.3}{Ubuntu}{chapter.8}% 83
-\BOOKMARK [2][-]{subsection.8.3.1}{Ubuntu Freezes}{section.8.3}% 84
-\BOOKMARK [0][-]{section*.45}{References}{}% 85
+\BOOKMARK [0][-]{chapter.8}{Troubleshooting}{}% 77
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 78
+\BOOKMARK [1][-]{section.8.2}{Gazebo}{chapter.8}% 79
+\BOOKMARK [2][-]{subsection.8.2.1}{Error [Node.cc.90] No namespace found}{section.8.2}% 80
+\BOOKMARK [2][-]{subsection.8.2.2}{Dependency Issues When Installing gazebo2}{section.8.2}% 81
+\BOOKMARK [1][-]{section.8.3}{Ubuntu}{chapter.8}% 82
+\BOOKMARK [2][-]{subsection.8.3.1}{Ubuntu Freezes}{section.8.3}% 83
+\BOOKMARK [0][-]{section*.47}{References}{}% 84
