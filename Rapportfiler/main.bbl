@@ -17,10 +17,22 @@ Mohamed~A. El-Reedy.
 \newblock In Mohamed~A. El-Reedy, editor, {\em Offshore Structures}, pages 383
   -- 443. Gulf Professional Publishing, Boston, 2012.
 
+\bibitem[GC13]{metraMartechGorle}
+Peter Gorle and Andrew Clive.
+\newblock Positive impact of industrial robots on employment.
+\newblock Technical report, METRA MARTECH Limited, Jan 2013.
+
 \bibitem[ifr]{ifr_statistics}
 International federation of robotics - statistics.
 \newblock \url{http://www.ifr.org/industrial-robots/statistics/}.
 \newblock Accessed: 2016-04-05.
+
+\bibitem[JWA{\etalchar{+}}12]{subseaAIV}
+J.~Jamieson, L.~Wilson, M.~Arredondo, K.~Evans, J.and~Hamilton, and
+  C~&~Sotzing.
+\newblock Autonomous inspection vehicle: A new dimension in life of field
+  operations.
+\newblock {\em Offshore Technology Conference}, April 2012.
 
 \bibitem[Kin]{Kintinous}
 Kintinous.
