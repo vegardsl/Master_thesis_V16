@@ -6,7 +6,7 @@
 
 \subsection{Introduction}
 
-This project is a small part of a larger long-term goal concerning robotic maintenance. The goal of this section is to put the following background theory, and the implementation described in chapter \ref{chp:implementation}, into the context of the larger topic, which is automated robotic maintenance on industrial installations. It is important to describe how maintenance and inspection of industrial installations is done today, before application of robotic maintenance is discussed.  
+This project is a small step towards a larger long-term goal concerning robotic maintenance. This section puts the following background theory, and the implementation described in chapter \ref{chp:implementation}, into the context of automated robotic maintenance on industrial installations. It is important to describe how maintenance and inspection of industrial installations is done today, before application of robotic maintenance is discussed.  
 
 \subsection{Potential Maintenance Tasks}
 
@@ -17,7 +17,7 @@ Solution: Periodic maintenance.
 
 \subsubsection{Corrosion}
 
-Offshore installations are regularly, if not continuously exposed to harsh weather conditions in the form of wind and seawater. Presence of seawater, either through direct contact or in the form of drops and vapour, forms a very corrosive environment. In addition, the offshore environment is classified as the most corrosive environment in ISO 12944\cite{ElReedy2012383}. Common corrosion prevention methods are\cite{ElReedy2012383}:
+Offshore installations are regularly, if not continuously, exposed to harsh weather conditions in the form of wind and seawater. Presence of seawater, either through direct contact or in the form of drops and vapor, forms a very corrosive environment. The offshore and marine environment is classified as the most corrosive environment in ISO 12944\cite{ElReedy2012383}. It is essential to provide countermeasures to ensure safe and reliable operation over the lifetime of the installation. Common corrosion prevention methods are\cite{ElReedy2012383}:
 
 \begin{itemize}
 	\item Sacrificial Anodes.
@@ -25,7 +25,7 @@ Offshore installations are regularly, if not continuously exposed to harsh weath
 	\item Protective coating.
 \end{itemize} 
 
-In terms of maintenance, the sacrificial anodes can be subjected to periodic inspections and replacements, which could be done a robot. \ac{CP} can more easily be implemented with automated self tests, and should normally not require any inspections and maintenance\cite{ElReedy2012383}. Application of protective coating should ideally be applied in the controlled environment of a workshop. If protective coating is to be applied at sea, one should strive to make the conditions as favourable as possible.
+In terms of maintenance, the sacrificial anodes can be subjected to periodic inspections and replacements, which could be done a robot. \ac{CP} can more easily be implemented with automated self tests, and should normally not require any inspections and maintenance\cite{ElReedy2012383}. Application of protective coating should ideally be applied in the controlled environment of a workshop. If protective coating is to be applied at sea, one should strive to make the conditions as favorable as possible. 
 
 \subsubsection{Fatigue}
 
@@ -45,15 +45,27 @@ A multitude of organizations and agents, e.g. \textit{ROS - Industrial}\cite{ROS
  
 The typical pre-programmed assembly robots still dominate the robotic market. They are usually found in manufacturing plants and large scale production\cite{ifr_statistics}, e.g. the automotive industry, where they perform dull, tedious tasks much faster and with higher accuracy than people. A notable trend in modern robotics is increased human-robot collaboration\cite{cobotsEurope}. Many new robots are being build for the human workspace, both in terms of safety and collaborative functionality. This trend is a step along the way of moving robots out of the controlled environment of a factory floor, and into the real world where a high degree of autonomy is required.
 
-A report by a market research firm\cite{metraMartechGorle}, referenced to by \ac{IFR}\footnote{http://www.ifr.org/robots-create-jobs/}, points to three areas with potential for robotic applications:
+A report by Metra Martech\cite{metraMartechGorle}, a market research firm referenced to by \ac{IFR}\footnote{http://www.ifr.org/robots-create-jobs/}, points to three areas with a high potential for robotic applications:
 
 \begin{itemize}
 	\item Dangerous jobs, e.g. handling dangerous materials or work in high risk environments.
-	\item Jobs that are economically infeasable in a high wage economy.
-	\item Work which is impossible or highly infeasable for humans, e.g. space exploration, subsea maintenance or assembly of heavy components.
+	\item Jobs that are economically infeasible in a high wage economy.
+	\item Work which is impossible or highly inconvenient for humans, e.g. space exploration, subsea maintenance or assembly of heavy components.
 \end{itemize}
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{subsea7AIV}
+	\end{center}
+	\caption{Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite{pressAIV}}
+\end{wrapfigure}
+
 All of these factors motivate the development of robots for autonomous robotic maintenance.
+Subsea maintenance is perhaps the field that have seen the greatest advancements in autonomous inspection and maintenance. As offshore installations are moved to the seabed, maintenance and inspection has become a significant challenge. This has resulted in a widespread use of \acp{ROV}. Recent developments in other fields, e.g. computer vision, human-robot collaboration and machine learning, has resulted in new \acp{AIV} and \acp{AUV} capable of performing inspection and simple maintenance tasks autonomously\cite{subseaAIV}\cite{Ridao2015227}. A driving factor behind the transition from \acp{ROV} to \acp{AUV} is cost reduction through increased offshore campaign efficiency.
+
+
+
+Robots in disaster response, relief and recovery solve many of the same problems faced by maintenance robots. Disaster areas, such as the Tsunami which struck Japan in 2011, has proved to be particularly demanding for robots. 
 
 There are particularily two fields \cite{subseaAIV}
 
@@ -77,13 +89,13 @@ Coordinate systems are essential in the field of robotics.
 
 \subsection{Introduction}
 
-The \ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be taylored to meet the demands of a wide range of robots with variyng complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can be percieved as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recomended \cite{ROS_install}.
+The \ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be tailored to meet the demands of a wide range of robots with varying complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can be perceived as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recommended \cite{ROS_install}.
 
 Roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework. This framework eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. The framework can be used under the BSD open-source license, which means that ...\cite{BCD_license} Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation, research and everything in between. 
 
 \subsection{Important ROS Concepts}
 
-The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website (INSERT LINK HERE), as well as in any book on \ac{ROS} (for example \cite{rosbook15}). 
+The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website \footnote{\url{http://www.ros.org/}}, as well as in any book on \ac{ROS} (for example \cite{rosbook15}). 
 
 \subsubsection{The ROS Graph}
 
@@ -119,11 +131,11 @@ PR2 is one of the first robots designed to run \ac{ROS} \cite{rosbook15}, and al
 
 \paragraph{TurtleBot} 
 
-The TurtleBot is a cheaper ROS-ready alternative to the PR2. 
+TurtleBot is a cheaper ROS-ready alternative to PR2. 
 
 \paragraph{Robonaut 2}
 
-Robonaut 2, a dexterous humanoid robot, currently resides within the \ac{ISS} 400 km above the earth's surface. In 2014, a SpaceX Dracon capsule brought \ac{ROS} as well as a pair of legs for Robonaut up to the \ac{ISS}\cite{http://www.ros.org/news/2014/09/ros-running-on-iss.html}. Robonaut is designed for research on human-robot collaboration in space, and human-like tasks. For more information, follow \href{https://vimeo.com/106993914}{\textbf{this link}}\footnote{https://vimeo.com/106993914} to a talk on \ac{ROS} in space from ROSCon 2014.
+Robonaut 2, a dexterous humanoid robot, currently resides within the \ac{ISS} 400 km above the earth's surface. In 2014, a SpaceX Dracon capsule brought \ac{ROS} as well as a pair of legs for Robonaut up to the \ac{ISS}\cite{ROS_space}. Robonaut is designed for research on human-robot collaboration in space, and human-like tasks. For more information, follow \href{https://vimeo.com/106993914}{\textbf{this link}}\footnote{\url{https://vimeo.com/106993914}} to a talk on \ac{ROS} in space from ROSCon 2014.
 
 Being the first robot with \ac{ROS} to be launched into space, 
 
@@ -199,7 +211,7 @@ Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One,
 
 \subsection{Plannar Laser Sensors (LIDAR)}
 
-A plannar laser sensor, also known as e.g. laser proximity sensors or laser radars, can all be referred to as LIDARs. 
+A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, can all be referred to as LIDARs. 
 
 \subsubsection{Scanning Laser Range Finder, URG-04LX-UG01}
 

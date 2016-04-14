@@ -28,8 +28,7 @@ International federation of robotics - statistics.
 \newblock Accessed: 2016-04-05.
 
 \bibitem[JWA{\etalchar{+}}12]{subseaAIV}
-J.~Jamieson, L.~Wilson, M.~Arredondo, K.~Evans, J.and~Hamilton, and
-  C~&~Sotzing.
+J.~Jamieson, L.~Wilson, M.~Arredondo, K.~Evans, J.and~Hamilton, and C~Sotzing.
 \newblock Autonomous inspection vehicle: A new dimension in life of field
   operations.
 \newblock {\em Offshore Technology Conference}, April 2012.
@@ -46,10 +45,22 @@ M.~Labbé and F.~Michaud.
 \newblock In {\em Intelligent Robots and Systems (IROS 2014), 2014 IEEE/RSJ
   International Conference on}, pages 2661--2666, Sept 2014.
 
+\bibitem[pre]{pressAIV}
+Press release: Subsea 7 completes design and build of first commercial
+  autonomous inspection vehicle (aiv).
+\newblock
+  \url{http://www.subsea7.com/content/dam/subsea7/Company%20News/2011/Subsea7completesdesignandbuildoffirstcommericalAIV.pdf}.
+\newblock Accessed: 2016-04-13.
+
 \bibitem[QGS15]{rosbook15}
 Morgan Quigley, Brian Gerkey, and William~D. Smart.
 \newblock {\em Programming Robots with ROS}.
 \newblock O'Reilly Media, Inc., December 2015.
+
+\bibitem[RCR{\etalchar{+}}15]{Ridao2015227}
+Pere Ridao, Marc Carreras, David Ribas, Pedro~J. Sanz, and Gabriel Oliver.
+\newblock Intervention auvs: The next challenge.
+\newblock {\em Annual Reviews in Control}, 40:227 -- 241, 2015.
 
 \bibitem[Reb]{Reboot_Ubuntu}
 Reboot ubuntu.
@@ -63,7 +74,7 @@ Reboot ubuntu.
 \newblock Accessed: 2016-02-28.
 
 \bibitem[ROSb]{ROS_industrial}
-Ros-industrial.
+{ROS}-industrial.
 \newblock \url{http://rosindustrial.org/the-challenge/}.
 \newblock Accessed: 2016-04-05.
 
@@ -71,6 +82,11 @@ Ros-industrial.
 {ROS} installation.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
+
+\bibitem[ROSd]{ROS_space}
+{ROS} on the iss.
+\newblock \url{http://www.ros.org/news/2014/09/ros-running-on-iss.html}.
+\newblock Accessed: 2016-04-10.
 
 \bibitem[SWB{\etalchar{+}}14]{FSR2014_gas_leak}
 Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, and Dirk Schulz.

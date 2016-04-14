@@ -12,15 +12,15 @@ A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: troubleshooting.aux
 The style file: alpha.bst
 Database file #1: main.bib
-Warning--I didn't find a database entry for "IFR"
 Warning--I didn't find a database entry for "BCD_license"
-Warning--I didn't find a database entry for "http://www.ros.org/news/2014/09/ros-running-on-iss.html"
 Warning--I didn't find a database entry for "keylist"
+Warning--to sort, need author or key in pressAIV
 Warning--to sort, need author or key in ifr_statistics
 Warning--to sort, need author or key in ROS_industrial
 Warning--to sort, need author or key in DRC
 Warning--to sort, need author or key in ROS_install
 Warning--to sort, need author or key in ROS_history
+Warning--to sort, need author or key in ROS_space
 Warning--to sort, need author or key in Kintinous
 Warning--to sort, need author or key in Reboot_Ubuntu
 (There were 11 warnings)
