@@ -2,3 +2,7 @@ Image identifier	Url-source	Date retrieved
 
 kinect360:	http://www.xbox.com/en-US/xbox-360/accessories/kinect	22/2
 kinect360_exp:	https://msdn.microsoft.com/en-us/library/jj131033.aspx	22/2
+
+USB-controller: http://www.intelitek.com/robots/usb-controller/
+PTU: http://www.flir.com/mcs/view/?id=63554
+Batteri: http://www.biltema.se/sv/Bil---MC/Bilreservdelar/Elsystem/Batteri/BATTERI-SMF-12V-45AH-2000029829/
