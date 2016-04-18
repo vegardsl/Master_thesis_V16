@@ -34,14 +34,8 @@ Waves, wind, water currents and other forces subject offshore installations to s
 \section{Robotic Maintenance Today}
 
 Gas leak detection: \cite{FSR2014_gas_leak}. DARPA robotic challenge. Industrial ROS.
-
-Today, robots outside of the R\&D laboratories and universities are usually put to perform a very limited set of specific tasks. Modern robots outperform humans in specific, repetitive and tedious tasks in controlled environments. For robotics in uncontrolled environments, there are still much research and development to be done. Several recent research papers(CITE en HAUG MED PAPERS!) indicate that significant advances are being made in the labs universities around the globe. Nevertheless, it is still some time before industrial robots will expand beyond repetitive and tedious tasks in controlled environments on on a large scale\cite{ifr_statistics}. A notable trend, and a step in the direction of uncontrolled environments, is increased human-robot collaboration\cite{cobotsEurope}.
-
-A multitude of organizations and agents, e.g. \textit{ROS - Industrial}\cite{ROS_industrial}, Springer with the Springer Tracts in Advanced Robotics as well as the DARPA Robotics Challenge (DRC)\cite{DRC}, aims to incite innovation and progress related to industrial robotics and uncontrolled environments. 
-
- through competition, information flow and collaboration.
-
- that could probe useful in robotic maintenance are being developed a
+ 
+\subsubsection{Trends and Potential}
  
 The typical pre-programmed assembly robots still dominate the robotic market. They are usually found in manufacturing plants and large scale production\cite{ifr_statistics}, e.g. the automotive industry, where they perform dull, tedious tasks much faster and with higher accuracy than people. A notable trend in modern robotics is increased human-robot collaboration\cite{cobotsEurope}. Many new robots are being build for the human workspace, both in terms of safety and collaborative functionality. This trend is a step along the way of moving robots out of the controlled environment of a factory floor, and into the real world where a high degree of autonomy is required.
 
@@ -53,21 +47,41 @@ A report by Metra Martech\cite{metraMartechGorle}, a market research firm refere
 	\item Work which is impossible or highly inconvenient for humans, e.g. space exploration, subsea maintenance or assembly of heavy components.
 \end{itemize}
 
+All of these factors motivate the development of robots for autonomous robotic maintenance.
+
+\subsubsection{Subsea Maintenance and Inspection}
+
 \begin{wrapfigure}{r}{0.5\textwidth}
+	\vspace{-20pt}
 	\begin{center}
 		\includegraphics[width=0.48\textwidth]{subsea7AIV}
 	\end{center}
+	
 	\caption{Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite{pressAIV}}
+	%\vspace{-20pt}
 \end{wrapfigure}
 
-All of these factors motivate the development of robots for autonomous robotic maintenance.
 Subsea maintenance is perhaps the field that have seen the greatest advancements in autonomous inspection and maintenance. As offshore installations are moved to the seabed, maintenance and inspection has become a significant challenge. This has resulted in a widespread use of \acp{ROV}. Recent developments in other fields, e.g. computer vision, human-robot collaboration and machine learning, has resulted in new \acp{AIV} and \acp{AUV} capable of performing inspection and simple maintenance tasks autonomously\cite{subseaAIV}\cite{Ridao2015227}. A driving factor behind the transition from \acp{ROV} to \acp{AUV} is cost reduction through increased offshore campaign efficiency.
 
+\subsubsection{Disaster Responce}
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+	%\vspace{-20pt}
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{HRP2_valve}
+	\end{center}
+	
+	\caption{Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)}
+	%\vspace{-20pt}
+\end{wrapfigure}
 
-Robots in disaster response, relief and recovery solve many of the same problems faced by maintenance robots. Disaster areas, such as the Tsunami which struck Japan in 2011, has proved to be particularly demanding for robots. 
+Robots in disaster response, relief and recovery solve many of the same problems faced by maintenance robots. Disasters, such as the Tsunami which struck Japan in 2011, has proved to be particularly demanding for robots, both in terms og technical difficulties as well as the process of deployment. Many of the robots which were deployed at Fukushima were already aging, and the operators had to receive training before deployment, thus increasing the response time\cite{doi:10.1108/01439911211249715}. A paper from Japan Atomic Energy Agency\cite{doi:10.1108/01439911211249715} highlights how the lack of stakeholder involvement could have been the cause of long response times. The same paper points out that the robots were developed for the sake of development, and not with emergency response as the main purpose\cite{doi:10.1108/01439911211249715}. 
 
-There are particularily two fields \cite{subseaAIV}
+\ac{DRC}\cite{DRC} was launched in response to the Fukushima disaster of 2011. The purpose of the competition is to accelerate innovation, research and development in robotics for disaster response in cases where humans cannot operate. Some of the tasks the competitors faces in 2015 include valve turning, traversing rubble and driving a vehicle through a course before egressing out of the vehicle.
+
+\subsubsection{Robotic Maintencance of Process Plants}
+
+Fraunhofer Institute for Manufacturing Engineering and Automation\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, \ac{MIMROex}, with capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. 
 
 \section{Modelling and Simulation}
 
@@ -95,23 +109,19 @@ Roots of \ac{ROS} can be traced back to Stanford University at the beginning of 
 
 \subsection{Important ROS Concepts}
 
-The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website \footnote{\url{http://www.ros.org/}}, as well as in any book on \ac{ROS} (for example \cite{rosbook15}). 
+The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website\footnote{\url{http://www.ros.org/}}, as well as in any book on \ac{ROS} (for example \cite{rosbook15}). 
 
 \subsubsection{The ROS Graph}
 
-A \ac{ROS} system comprise a set of small programs that communicate with each other. 
+A \ac{ROS} system comprise a set of small programs that communicate with each other through messages. These programs become nodes in the \ac{ROS} graph. The nodes communicate with each other by publishing and subscribing to topics that form the edges of the graph. A topic must have the format of one of the specific data types provided by \ac{ROS}. For example, a node which receives temperature data from a thermometer, may publish the data as a topic on the \ac{ROS} system with the type \texttt{sensor\_msgs/Temperature}. There are many other data formats, e.g. velocity messages, \texttt{geometry\_msgs/Twist}; images, \texttt{sensor\_msgs/Image}; odometry messages, \texttt{nav\_msgs/Odometry} and so on. Each node in the graph are typically POSIX processes, and the edges are TCP connections\cite{rosbook15}.
 
 \subsubsection{roscore}
 
-The \textit{roscore} is an essensial part of any \ac{ROS} system. It enables nodes to communicate with each other.
+\texttt{roscore} is an essensial part of any \ac{ROS} system as it enables nodes to communicate with each other. When a node is started, it will inform \texttt{roscore} of which topics it publishes and which topics it wish to subscribe to. Then, \texttt{roscore} will provide the information which allows the node to form a peer-to-peer connection to other nodes.
 
-\subsubsection{Topics}
+\subsubsection{Project Structure and catkin}
 
-\subsubsection{Services}
 
-\subsubsection{rosbridge}
-
-\subsubsection{title}
 
 \subsection{ROS-Related Tools}
 
@@ -168,7 +178,7 @@ TODO!!!!!!!!!!
 
 \subsubsection{Different Methods for Depth Perception}
 
-In the context of this thesis, a depth camera is considered to be a sensor which the functionality of a regular video camera 
+In the context of this thesis, a depth camera is considered to be a sensor which the functionality of a regular video camera combined with the ability to perceive a depth image.
 
 A depth camera can be described as a regular color video camera with the ability to create spatial images. In the context of this thesis, a depth camera can  more precisely be described as a RGB-D camera, which is short for red, green, blue and depth camera. A regular RGB camera will project a spatial scene onto a rectangular pixel grid, where each pixel contains intensity values for red, green and blue colors. These pixel values represents the detected scene. A major problem with RGB cameras is the significant loss of information. The information loss is mostly a consequence of 3d to 2d projection and digital quantization. RGB-D cameras have the means to reduce this information loss by mapping the pixel values to spatial coordinates, turning each pixel into voxels and the image into a point cloud of voxels. 
 
@@ -181,8 +191,10 @@ Active sensors depend on some form of projection onto the surroundings. For dept
 \textbf{Forslag 1:}
 When a group of designers are developing a new \ac{GUI}, they will often use a conceptual model when planning their design. The conceptual model is the mental model the designers want to put into the head of the user. All users will develop their own individual mental model, which is their high level understanding of how the \ac{GUI} works. A conceptual model may contain metaphors for things  the user already is familiar with. A painting program for example may use a metaphor for a canvas, paint brushes and palettes. When the mouse icon changes to a paint brush, most users will have an intuitive understanding of what it can do and how it is used. A \ac{NUI} will seek to remove the metaphors and create a more seamless interaction between the user and the machine. Some \ac{NUI}s may allow a user to write text with a pen instead of a keyboard, or dictate a letter with their voice while the computer converts audio into text. 
 
+
+
 \textbf{Forslag 2:}
-The idea behind a \ac{NUI} is to make \ac{HMI} as seamless and natural as possible. A \ac{NUI} allows the user to communicate without tools such as a keyboard or a mouse. From starting as ideas, science fiction and rare research projects, \ac{NUI}s can now be considered to be ubiquitous. Today, the most common form of \ac{NUI}s is the touch screen found in smart phones and tablets. 
+The idea behind a \ac{NUI} is to make \ac{HMI} as seamless and natural as possible. A \ac{NUI} allows the user to communicate without tools such as a keyboard or a mouse. For decades, \ac{NUI}s have only existed as ideas, science fiction or research projects. This has changed dramatically over the last ten years, and \ac{NUI}s can now be considered to be ubiquitous. Today, the most common form of \ac{NUI}s is the touch screen found in smart phones and tablets. 
 
 The Microsoft Kinect sensor was initially designed as a \ac{NUI} for the Xbox 360 gaming console. The sensor allows users to use gestures and sounds to play console games. Later on, Microsoft has released SDKs, enabling developers to create \ac{NUI} applications for for Windows. 
 
@@ -190,7 +202,7 @@ The modern RGB-D sensors which are commonly used in robot research projects toda
 
 \subsubsection{Kinect for Xbox 360}
 
-Kinect for Xbox 360 is the RGB-D sensor used in this project. The device was initially intended as a \ac{NUI} for gaming and office applications. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is equipped with a depth sensor, a regular color camera, a microphone array and a tilt motor. The color camera in combination with the depth sensor forms what is usually referred to as a rgb-d sensor, i.e. a combined color and depth camera. This feature, combined with the relaticely low cost and accessability of the sensor as contributed to make the Kinect a very popular in research projects related to \ac{SLAM} and robotics.
+Kinect for Xbox 360 is the RGB-D sensor used in this project. The device was initially intended as a \ac{NUI} for gaming and office applications. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is equipped with a depth sensor, a regular color camera, a microphone array and a tilt motor. The color camera in combination with the depth sensor forms what is usually referred to as a rgb-d sensor, i.e. a combined color and depth camera. This feature, combined with the relaticely low cost and accessability of the sensor as contributed to make the Kinect very popular in research projects related to \ac{SLAM} and robotics.
 
 Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware of that it is becoming increasingly difficult, if not already impossible, to get hold of a new Kinect for Xbox 360. 
 
@@ -221,6 +233,15 @@ A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, c
 \subsection{Sensor Fusion}
 
 
-\section{RTAB-Map}
+\section{Simultanious Localization and Mapping (SLAM)}
 
-\ac{RTAB-map} \cite{RTAB_map}.
+\subsection{Introdunction to SLAM}
+
+\ac{SLAM}, also known as \ac{CLM}, is a class of solutions to the problem of determining an agents location and pose in an unknown environment, while simultaneously mapping the same environment.
+
+\subsection{RTAB-Map}
+
+\ac{RTAB-Map} is a graph-based \ac{SLAM} system intended to handle the ''kidnapped robot-problem'' as well as multi-session mapping\cite{RTAB_map}. Both these problems become relevant whenever a robot is shut down and moved to a new unknown location in the same area. 
+
+\subsection{Octomap}
+

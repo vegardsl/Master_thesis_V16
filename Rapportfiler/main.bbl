@@ -33,6 +33,13 @@ J.~Jamieson, L.~Wilson, M.~Arredondo, K.~Evans, J.and~Hamilton, and C~Sotzing.
   operations.
 \newblock {\em Offshore Technology Conference}, April 2012.
 
+\bibitem[KFO12]{doi:10.1108/01439911211249715}
+Shinji Kawatsuma, Mineo Fukushima, and Takashi Okada.
+\newblock Emergency response by robots to fukushima daiichi accident: summary
+  and lessons learned.
+\newblock {\em Industrial Robot: An International Journal}, 39(5):428--435,
+  2012.
+
 \bibitem[Kin]{Kintinous}
 Kintinous.
 \newblock \url{https://github.com/mp3guy/Kintinuous}.
@@ -44,6 +51,11 @@ M.~Labbé and F.~Michaud.
   graph-based slam.
 \newblock In {\em Intelligent Robots and Systems (IROS 2014), 2014 IEEE/RSJ
   International Conference on}, pages 2661--2666, Sept 2014.
+
+\bibitem[MIM]{MIMROex}
+{MIMRO}ex, mobile maintenance and inspection robot for process plants.
+\newblock
+  \url{http://www.ipa.fraunhofer.de/fileadmin/user_upload/Kompetenzen/Roboter-_und_Assistenzsysteme/Industrielle_und_gewerbliche_Servicerobotik/English_Documents/Product_sheet_MIMROex_Mobile_maintenance_and_inspection_robot_for_process_plants.pdf}.
 
 \bibitem[pre]{pressAIV}
 Press release: Subsea 7 completes design and build of first commercial
@@ -73,17 +85,12 @@ Reboot ubuntu.
 \newblock \url{http://www.ros.org/history/}.
 \newblock Accessed: 2016-02-28.
 
-\bibitem[ROSb]{ROS_industrial}
-{ROS}-industrial.
-\newblock \url{http://rosindustrial.org/the-challenge/}.
-\newblock Accessed: 2016-04-05.
-
-\bibitem[ROSc]{ROS_install}
+\bibitem[ROSb]{ROS_install}
 {ROS} installation.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
 
-\bibitem[ROSd]{ROS_space}
+\bibitem[ROSc]{ROS_space}
 {ROS} on the iss.
 \newblock \url{http://www.ros.org/news/2014/09/ros-running-on-iss.html}.
 \newblock Accessed: 2016-04-10.

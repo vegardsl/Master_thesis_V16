@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 A level-1 auxiliary file: abstract_english.aux
 A level-1 auxiliary file: abstract_norwegian.aux
 A level-1 auxiliary file: preface.aux
+A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: introduction_chapter.aux
 A level-1 auxiliary file: theory_chapter.aux
 A level-1 auxiliary file: implementation_chapter.aux
@@ -16,8 +17,8 @@ Warning--I didn't find a database entry for "BCD_license"
 Warning--I didn't find a database entry for "keylist"
 Warning--to sort, need author or key in pressAIV
 Warning--to sort, need author or key in ifr_statistics
-Warning--to sort, need author or key in ROS_industrial
 Warning--to sort, need author or key in DRC
+Warning--to sort, need author or key in MIMROex
 Warning--to sort, need author or key in ROS_install
 Warning--to sort, need author or key in ROS_history
 Warning--to sort, need author or key in ROS_space
