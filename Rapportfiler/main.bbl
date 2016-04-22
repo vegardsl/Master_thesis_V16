@@ -45,6 +45,11 @@ Kintinous.
 \newblock \url{https://github.com/mp3guy/Kintinuous}.
 \newblock Accessed: 2016-03-21.
 
+\bibitem[KMP15]{AutonomousOG}
+K.~Kydd, S.~Macrez, and P.~Pourcel.
+\newblock {\em Autonomous Robot for Gas and Oil Sites}.
+\newblock Society of Petroleum Engineers, September 2015.
+
 \bibitem[LM14]{RTAB_map}
 M.~Labbé and F.~Michaud.
 \newblock Online global loop closure detection for large-scale multi-session

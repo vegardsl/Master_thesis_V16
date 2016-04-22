@@ -1,1 +1,2 @@
-web-video-server
+web_video_server
+hokuyo_node
