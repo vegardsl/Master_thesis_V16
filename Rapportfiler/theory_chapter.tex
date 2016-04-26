@@ -85,12 +85,12 @@ Robotic has several potential applications in topside process plants, and partic
 
 \begin{itemize}
 	\item \textbf{HSE} - Reduce risk exposure for personnel and environment. 
-	\item \textbf{Efficiency} - Accomplish more with less effort, resources and time. This means cost reduction by keeping downtime to a minimum with minimum effort.
+	\item \textbf{Efficiency} - Accomplish more with less effort, resources and time. This means cost reduction by keeping downtime to a minimum with the least amount of effort.
 \end{itemize} 
 
-Autonomous and teleoperated inspection and maintenance today is usually only found at subsea installations. Topside installations on the other hand are still maintained and inspected manually, with some notable exceptions. Small \acp{UAV} or \ac{RPAS} have become commonplace over the last decade. On topside installations, they are being used for visual inspection of inaccessible structural parts such as flare stacks or the outside of oil rigs. 
+Autonomous and teleoperated inspection and maintenance today is usually only found at subsea installations. Topside installations on the other hand are still maintained and inspected manually, with some notable exceptions. Small \acp{UAV} or \acp{RPAS} have become commonplace over the last decade. On topside installations, they are being used for visual inspection of inaccessible structural parts such as flare stacks or the outside of oil rigs. 
 
-Fraunhofer Institute for Manufacturing Engineering and Automation\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, \ac{MIMROex}, with capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. 
+Fraunhofer Institute for Manufacturing Engineering and Automation\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, called \ac{MIMROex}, with capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. 
 
 \section{Modelling and Simulation}
 
@@ -129,6 +129,8 @@ A \ac{ROS} system comprise a set of small programs that communicate with each ot
 \texttt{roscore} is an essensial part of any \ac{ROS} system as it enables nodes to communicate with each other. When a node is started, it will inform \texttt{roscore} of which topics it publishes and which topics it wish to subscribe to. Then, \texttt{roscore} will provide the information which allows the node to form a peer-to-peer connection to other nodes.
 
 \subsubsection{Project Structure and catkin}
+
+A \ac{ROS} project will usually utilize the catkin build system.
 
 
 

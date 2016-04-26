@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {2.4.5}Notable Robots Running ROS}{8}{subsection.2.4.5}
 \contentsline {paragraph}{PR2 - Personal Robot 2}{8}{section*.31}
 \contentsline {paragraph}{TurtleBot}{8}{section*.32}
-\contentsline {paragraph}{Robonaut 2}{8}{section*.33}
+\contentsline {paragraph}{Robonaut 2}{9}{section*.33}
 \contentsline {paragraph}{Example of an industrial robot with ROS goes here!}{9}{section*.35}
 \contentsline {section}{\numberline {2.5}Software}{9}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Qt}{9}{subsection.2.5.1}
@@ -111,9 +111,11 @@
 \contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{24}{section*.55}
 \contentsline {chapter}{\chapternumberline {8}Troubleshooting}{25}{chapter.8}
 \contentsline {section}{\numberline {8.1}Introduction}{25}{section.8.1}
-\contentsline {section}{\numberline {8.2}Gazebo}{25}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{25}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Dependency Issues When Installing \textit {gazebo2}}{25}{subsection.8.2.2}
-\contentsline {section}{\numberline {8.3}Ubuntu}{26}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Ubuntu Freezes}{26}{subsection.8.3.1}
-\contentsline {chapter}{References}{27}{section*.57}
+\contentsline {section}{\numberline {8.2}ROS}{25}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}\leavevmode {\color {red}ERROR:} tf2:ExtrapolationException}{25}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.3}Gazebo}{26}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{26}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Dependency Issues When Installing \textit {gazebo2}}{26}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}Ubuntu}{26}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Ubuntu Freezes}{26}{subsection.8.4.1}
+\contentsline {chapter}{References}{29}{section*.57}

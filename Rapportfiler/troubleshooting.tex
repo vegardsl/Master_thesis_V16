@@ -2,13 +2,25 @@
 
 \section{Introduction}
 
-This part contains proposed solutions to some of the problems that was encountered over the course od the semester. The solutions are not complete or comprehensive, but may provide some quick fixes for any students that may continue working with this project.
+This chapter contains proposed solutions to some of the problems that was encountered over the course od the semester. The solutions are not complete or comprehensive, but may provide some quick fixes for any students that may continue working with this project.
+
+\section{ROS}
+
+\subsection{\textcolor{red}{ERROR:} tf2:ExtrapolationException}
+When running the released ROS distribution binary of \texttt{RTAB-Map} installed with \texttt{apt-get} on the robot, the node would crash after a few iterations. The error message is as follows:
+
+\begin{verbatim}
+	Lookup would require extrapolation into the future, ..., when looking 
+	up transform from frame [laser] to frame [base_link].
+\end{verbatim}
+
+The requested transform is milliseconds ahead of ''now''. This issue was fixed by maintainers in March 2016\footnote{\url{https://github.com/introlab/rtabmap_ros/issues/54}}, but was not yet integrated into the released binary. During work with this project, the problem was solved by building \texttt{RTAB-Map} from source, where the most recent fixes are included. This is a straight forward procedure, which is described on the project's GitHub repository. 
 
 \section{Gazebo}
 
 \subsection{\textcolor{red}{Error [Node.cc.90]} No namespace found}
 
-\textbf{Solution: } Remember to source the \textit{gazebo} installation. In this case, with \textit{gazebo-2.2} installed as recommended for \ac{ROS} Indigo, the setup file can be sourced by entering
+\textbf{Solution: } Remember to source the \textit{gazebo} installation. In this case, with \textit{gazebo-2.2} installed as recommended for \ac{ROS} Indigo, the setup file can be sourced by typing
 
 \begin{verbatim}
 	$ source /usr/share/gazebo-2.2/setup.sh
