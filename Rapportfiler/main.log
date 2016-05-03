@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  28 APR 2016 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  3 MAY 2016 16:46
 entering extended mode
 **main.tex
 (main.tex
@@ -1872,8 +1872,11 @@ Package glossaries Info: Writing glossary file main.glo on input line 53.
 Package glossaries Info: Writing glossary file main.acn on input line 53.
  (main.aux (abstract_english.aux) (abstract_norwegian.aux) (preface.aux)
 (acronyms.aux) (introduction_chapter.aux) (TaskOutlineAndPlanning.aux)
-(theory_chapter.aux) (implementation_chapter.aux) (testing_chapter.aux)
-(discussion_chapter.aux) (conclusion_chapter.aux) (setup.aux)
+(theory_chapter.aux) (implementation_chapter.aux) (testing_chapter.aux
+
+LaTeX Warning: Label `fig:Incorrect_lc_detection' multiply defined.
+
+) (discussion_chapter.aux) (conclusion_chapter.aux) (setup.aux)
 (troubleshooting.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
@@ -1944,7 +1947,7 @@ LaTeX Info: Redefining \nameref on input line 55.
 \@outlinefile=\write9
 \c@lstlisting=\count350
  ABD: EveryShipout initializing macros
-<./figs/ntnu-logo.pdf, id=386, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=390, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -2015,29 +2018,25 @@ l.72 \cleardoublepage
 ] [6
 
 
-] (main.toc [7]
-Underfull \vbox (badness 1067) has occurred while \output is active []
-
- [8])
-[9] [10
+] (main.toc [7] [8]) [9] [10
 
 ] (main.lof) [11
 
 ] [12
 
-] (main.lot) [13] [14
+] (main.lot) [13]
+[14
 
 ] (acronyms.tex [15
 
 
-]) [16]
-(main.loa) [17
+]) [16] (main.loa) [17
 
 
 ] [18
 
 ] (introduction_chapter.tex
-<./figs/conseptDrawing.png, id=615, 1053.9375pt x 685.05937pt>
+<./figs/conseptDrawing.png, id=626, 1053.9375pt x 685.05937pt>
 File: ./figs/conseptDrawing.png Graphic file (type png)
 
 <use ./figs/conseptDrawing.png>
@@ -2072,7 +2071,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 42.
  [6]
-<./figs/subsea7AIV.png, id=669, 688.82344pt x 495.35063pt>
+<./figs/subsea7AIV.png, id=680, 688.82344pt x 495.35063pt>
 File: ./figs/subsea7AIV.png Graphic file (type png)
 
 <use ./figs/subsea7AIV.png>
@@ -2085,7 +2084,7 @@ although it is yet undefined on input line 64.
 Package acronym Info: Label `acro:AUV' newly defined as it shall be overridden
 although it is yet undefined on input line 64.
 
-<./figs/HRP2_valve.jpg, id=675, 1606.0pt x 1068.99374pt>
+<./figs/HRP2_valve.jpg, id=686, 1606.0pt x 1068.99374pt>
 File: ./figs/HRP2_valve.jpg Graphic file (type jpg)
 
 <use ./figs/HRP2_valve.jpg>
@@ -2153,14 +2152,14 @@ Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
 
 although it is yet undefined on input line 216.
 
-<./figs/kinect360.png, id=813, 963.6pt x 451.6875pt>
+<./figs/kinect360.png, id=824, 963.6pt x 451.6875pt>
 File: ./figs/kinect360.png Graphic file (type png)
 
 <use ./figs/kinect360.png>
 Package pdftex.def Info: ./figs/kinect360.png used on input line 222.
 (pdftex.def)             Requested size: 291.20111pt x 136.49976pt.
 
-<./figs/kinect360_exp.png, id=814, 432.86719pt x 222.07968pt>
+<./figs/kinect360_exp.png, id=825, 432.86719pt x 222.07968pt>
 File: ./figs/kinect360_exp.png Graphic file (type png)
 
 <use ./figs/kinect360_exp.png>
@@ -2194,18 +2193,59 @@ Package acronym Info: Label `acro:URDF' newly defined as it shall be overridden
 
 although it is yet undefined on input line 10.
  [17]
+<./figs/move_base_nodes.png, id=867, 1159.33125pt x 299.61937pt>
+File: ./figs/move_base_nodes.png Graphic file (type png)
+
+<use ./figs/move_base_nodes.png>
+Package pdftex.def Info: ./figs/move_base_nodes.png used on input line 58.
+(pdftex.def)             Requested size: 364.0pt x 94.06972pt.
 Package acronym Info: Label `acro:OCS' newly defined as it shall be overridden
-although it is yet undefined on input line 60.
-) [18] (testing_chapter.tex) [19
+although it is yet undefined on input line 65.
+) [18] [19pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.124 \include{implementation_chapter}
+                                       <./figs/move_base_nodes.png>]
+(testing_chapter.tex [20
 
 
 
 ]
-(discussion_chapter.tex [20
+<./figs/gazebo2_cropped.png, id=887, 1059.20718pt x 264.99pt>
+File: ./figs/gazebo2_cropped.png Graphic file (type png)
+
+<use ./figs/gazebo2_cropped.png>
+Package pdftex.def Info: ./figs/gazebo2_cropped.png used on input line 13.
+(pdftex.def)             Requested size: 364.0pt x 91.06583pt.
+
+<./figs/Incorrect_lc_detection_cropped.png, id=888, 426.09187pt x 325.215pt>
+File: ./figs/Incorrect_lc_detection_cropped.png Graphic file (type png)
+
+<use ./figs/Incorrect_lc_detection_cropped.png>
+Package pdftex.def Info: ./figs/Incorrect_lc_detection_cropped.png used on inpu
+t line 20.
+(pdftex.def)             Requested size: 364.0pt x 277.83841pt.
+) [21] [22pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.125 \include{testing_chapter}
+                               pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.125 \include{testing_chapter}
+                                <./figs/gazebo2_cropped.png> <./figs/Incorrect_
+lc_detection_cropped.png>] (discussion_chapter.tex) [23
 
 
 
-]) [21] (conclusion_chapter.tex [22
+]
+(conclusion_chapter.tex [24
 
 
 
@@ -2216,7 +2256,7 @@ Package acronym Info: Label `acro:NDT' newly defined as it shall be overridden
 although it is yet undefined on input line 8.
 
 
-Package natbib Warning: Citation `keylist' on page 23 undefined on input line 1
+Package natbib Warning: Citation `keylist' on page 25 undefined on input line 1
 2.
 
 
@@ -2228,23 +2268,8 @@ ttps://github.com/mp3guy/Kintinuous[][].
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
-[24] (setup.tex [25
-
-
-
-]) [26] (troubleshooting.tex
-Underfull \vbox (badness 2460) has occurred while \output is active []
-
- [27
-
-
-
-])
-[28] [29] (main.bbl [30
-
-
-]
+ [25]
+[26] (main.bbl
 bibitemlist
 
 Underfull \hbox (badness 4927) in paragraph at lines 26--29
@@ -2288,7 +2313,10 @@ $\T1/lmr/m/n/10 (+20) www . subsea7 . com / content / dam / subsea7 / Company %
  20News / 2011 /$
  []
 
-[31]
+[27
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 83--87
 []\T1/lmr/m/n/10 (+20) Reboot ubuntu.  [][]$http : / / askubuntu . com / questi
 ons / 4408 /$
@@ -2300,7 +2328,18 @@ $\T1/lmr/m/n/10 (+20) what-[]should-[]i-[]do-[]when-[]ubuntu-[]freezes / 36717
 # 36717$[][].  Ac-cessed: 2016-03-
  []
 
-)
+) [28] (setup.tex [29
+
+
+]) [30] (troubleshooting.tex
+Underfull \vbox (badness 2460) has occurred while \output is active []
+
+ [31
+
+
+
+])
+[32] [33]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2309,29 +2348,32 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[32]
 \tf@toc=\write10
 \tf@lof=\write11
 \tf@lot=\write12
 \tf@loa=\write13
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
- (main.aux (abstract_english.aux) (abstract_norwegian.aux) (preface.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+(main.aux (abstract_english.aux) (abstract_norwegian.aux) (preface.aux)
 (acronyms.aux) (introduction_chapter.aux) (TaskOutlineAndPlanning.aux)
 (theory_chapter.aux) (implementation_chapter.aux) (testing_chapter.aux)
 (discussion_chapter.aux) (conclusion_chapter.aux) (setup.aux)
 (troubleshooting.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3EA34B2D19689FB86DFE914B92FC87DF;6005.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+(rerunfilecheck)             Checksum: AAF0CDD2B2664AE297B044CB64817BEB;6079.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 32098 strings out of 493698
- 538361 string characters out of 3144406
- 791205 words of memory out of 3000000
- 34297 multiletter control sequences out of 15000+200000
+ 32123 strings out of 493698
+ 539035 string characters out of 3144406
+ 791461 words of memory out of 3000000
+ 34314 multiletter control sequences out of 15000+200000
  106996 words of font info for 136 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  60i,13n,78p,1857b,716s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2353,9 +2395,9 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (54 pages, 2138002 bytes).
+Output written on main.pdf (55 pages, 3025841 bytes).
 PDF statistics:
- 1090 PDF objects out of 1200 (max. 8388607)
- 250 named destinations out of 1000 (max. 500000)
- 26963 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1114 PDF objects out of 1200 (max. 8388607)
+ 255 named destinations out of 1000 (max. 500000)
+ 26986 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -126,22 +126,21 @@
 \include{discussion_chapter}
 \include{conclusion_chapter}
 
-\include{setup}
-\include{troubleshooting}
-
 \renewcommand*{\bibname}{References}
 \bibliographystyle{alpha}
 \bibliography{main}
 
 %% Uncomment the following if you have any appendix
-% \appendix
-% \addtocontents{toc}{%
-%  \protect\vspace{1em}% 
-%  \protect\noindent \bfseries \appendixtocname\protect\par
-%  \protect\vspace{-.5em}%
-% }
-% \renewcommand{\chaptername}{\appendixname}
+\appendix
+ \addtocontents{toc}{%
+  \protect\vspace{1em}% 
+  \protect\noindent \bfseries \appendixtocname\protect\par
+  \protect\vspace{-.5em}%
+ }
+ \renewcommand{\chaptername}{\appendixname}
 %% include below possible appendices (chapters)
+\include{setup}
+\include{troubleshooting}
 
 
 \end{document} 
