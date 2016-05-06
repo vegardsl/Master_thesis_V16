@@ -4,19 +4,22 @@
 \select@language {norsk}
 \select@language {english}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces System Concept. }}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces System Concept. \relax }}{2}{figure.caption.5}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}}}{7}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)}}{7}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Awesome Image}}{15}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Awesome Image}}{15}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{7}{figure.caption.12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{7}{figure.caption.17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Awesome Image\relax }}{15}{figure.caption.47}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Awesome Image\relax }}{15}{figure.caption.48}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Nodes and topics for motion control. }}{19}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Nodes and topics for motion control. \relax }}{20}{figure.caption.54}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Velocity command ramping. \relax }}{20}{figure.caption.55}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The two camera positions.\relax }}{21}{figure.caption.56}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt world'' in Gazebo. }}{22}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. }}{22}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt world'' in Gazebo. \relax }}{24}{figure.caption.57}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. \relax }}{24}{figure.caption.58}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{28}{figure.caption.71}
 \addvspace {10pt}
 \addvspace {10pt}

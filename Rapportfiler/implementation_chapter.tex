@@ -15,7 +15,7 @@ Implementation procedure for mobile robot:
 
 \end{itemize}
 
-\section{Modelling}
+\section{Modeling}
 
 \subsection{Physical Dimensions}
 
@@ -53,11 +53,32 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 
 \section{ROS Nodes for Motion Control}
 
+
+\subsection{Velocity Command Sources}
+
+There are four ways to control the robot:
+
+\begin{itemize}
+	\item Local keyboard input.
+	\item Wireless teleoperation from the \ac{OCS}.
+	\item Wireless teleoperation from a handheld Bluetooth device.
+	\item Commands from the navigation stack in \ac{ROS}.
+\end{itemize}
+
+
+
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=1\textwidth]{move_base_nodes}
 	\caption{Nodes and topics for motion control. }
 	\label{fig:move_base_nodes}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=1\textwidth]{velocity_ramp_cropped}
+	\caption{Velocity command ramping. }
+	\label{fig:velocity_ramp}
 \end{figure}
 
 \section{Operator Control Station (OCS)}
@@ -69,5 +90,25 @@ The \ac{OCS} allows an operator to control and monitor the robot through a graph
 A Qt-based \ac{GUI}...
 
 \section{The Handheld Remote Control - "Robot Leash"}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{device_select}
+		\caption{Camera pair mounted on the pan-tilt module.}
+		\label{fig:device_select}
+	\end{subfigure}
+		\begin{subfigure}[b]{0.30\textwidth}
+			\includegraphics[width=\textwidth]{bt_request}
+			\caption{Camera pair mounted on the pan-tilt module.}
+			\label{fig:bt_request}
+		\end{subfigure}
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{using_app}
+		\caption{Camera pair mounted on the pan-tilt module.}
+		\label{fig:using_app}
+	\end{subfigure}
+	\caption{\label{fig:app_screens}The two camera positions.}
+\end{figure}
 
 http://developer.samsung.com/technical-doc/view.do?v=T000000117
