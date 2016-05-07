@@ -12,14 +12,15 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Awesome Image\relax }}{15}{figure.caption.47}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Awesome Image\relax }}{15}{figure.caption.48}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Nodes and topics for motion control. \relax }}{20}{figure.caption.54}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Velocity command ramping. \relax }}{20}{figure.caption.55}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The two camera positions.\relax }}{21}{figure.caption.56}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Nodes and topics for motion control. \relax }}{20}{figure.caption.56}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Velocity command ramping. The blue line represents commands entering \texttt {''velocity\_ramp''}, while the red line shows the acceleration constrained output command.\relax }}{20}{figure.caption.57}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{21}{figure.caption.58}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt world'' in Gazebo. \relax }}{24}{figure.caption.57}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. \relax }}{24}{figure.caption.58}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{24}{figure.caption.59}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{24}{figure.caption.60}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{25}{figure.caption.61}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{28}{figure.caption.71}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{30}{figure.caption.76}
 \addvspace {10pt}
 \addvspace {10pt}

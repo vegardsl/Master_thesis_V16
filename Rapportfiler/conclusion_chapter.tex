@@ -17,17 +17,25 @@ A guide on how to build Kintinous can be found  at \href{Github}{https://github.
 
 \subsubsection{Improve the Communication Protocols}
 
-Communication between \ac{ROS} and the XMEGA A3BU, the Bluetooth device and the \ac{OCS} use the same pattern: A start byte \texttt{'':''}, the message with the speed setting and a stop byte \texttt{''Esc''}. In later projects, it could be convenient with a more robust and rich communication protocol with more options for remote operation. 
+Communication between \ac{ROS} and the XMEGA A3BU, the Bluetooth device and the \ac{OCS}, all use the same pattern: A start byte \texttt{'':''}, the message with the speed setting and a stop byte \texttt{''Esc''}. In later projects, it could be beneficial to implement a more robust and rich communication protocol with more options for remote operation. 
+
+\subsubsection{Implement a Fully Functional Operator Control Station}
+
+At the end of this project, the \ac{OCS} provided functionality for moving the robot, and displaying live video from the Kinect. 
 
 \subsection{Hardware}
 
 Several hardware-related issues became apparent over the course of the project - especially toward the final weeks. These issues are likely the results of many disconnected projects on the same hardware.
 
-\subsubsection{Kinect Sensor Placement}
+\subsubsection{Kinect Sensor Location}
 
 This is the first semester in which a Kinect has been used on the robot. At the moment, the sensor is placed directly over the \ac{LIDAR}. Because the depth sensor in the Kinect for XBOX 360 has a minimum range of roughly $0.5 m$, it cannot detect objects within reach of the robot arm. It is recommended to find a new location further back on the robot. 
 
-\subsubsection{On-board Computer}
+\subsubsection{Combine Stereo Cameras with Kinect-like Sensors}
+
+As mentioned, both active and passive depth cameras have limitations. The Kinect does function in direct sunlight, but it can measure depth in the dark. Passive depth sensors, for example stereo cameras, does depend on visible light to sense anything at all. While RTAB-Map does depend on visibility for loop closure detection, there are  other \ac{SLAM} methods, e.g. \textit{Kinect Fusion}, which do not. An implementation could use a light sensor to sense light that may interfere with the Kinect. Light levels could be compared to a threshold and switch between the stereo cameras or the Kinect depending on how well each sensor will work in the current conditions. 
+
+\subsubsection{On-board Computer Suitable for Moving Platforms}
 
 Because this author used his own computer to control the robot, all features related to \ac{ROS} was removed from the robot at the end of the project. A new computer should be equipped with \ac{SSD} storage
 
@@ -44,7 +52,7 @@ Because this author used his own computer to control the robot, all features rel
 	%\vspace{-20pt}
 \end{wrapfigure}
 
-There were mainly two issues with the omni-wheels this semester: They are worn out, and one wheel slipped out of the motor drive shaft. The rubber on a few of the perpendicular rollers is either loose or about to fall off the plastic rims. This causes the robot to shake, which could damage spinning hard disk drives or shake the sensors out of their calibrated positions.   
+There were mainly two issues with the omni-wheels this semester: They are worn out, and one wheel slipped out of the motor drive shaft. The rubber on a few of the perpendicular rollers is either loose or about to fall off the plastic rims. This causes the robot to shake, which can damage spinning hard disk drives or shake the sensors out of their calibrated positions.   
 
 
 

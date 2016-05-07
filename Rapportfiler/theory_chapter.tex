@@ -81,7 +81,7 @@ Robots in disaster response, relief and recovery solve many of the same problems
 
 \subsubsection{Robotic Maintencance of Process Plants}
 
-Robotic has several potential applications in topside process plants, and particularly in remote oil and gas installations. In light of the factors listed earlier, maintenance and service robots will be designed with the following goals in mind\cite{AutonomousOG}:
+Robotics has several potential applications in topside process plants, and particularly in remote oil and gas installations. In light of the factors listed earlier, maintenance and service robots will be designed with the following goals in mind\cite{AutonomousOG}:
 
 \begin{itemize}
 	\item \textbf{HSE} - Reduce risk exposure for personnel and environment. 
@@ -250,9 +250,20 @@ A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, c
 
 \ac{SLAM}, also known as \ac{CLM}, is a class of solutions to the problem of determining an agents location and pose in an unknown environment, while simultaneously mapping the same environment.
 
+\subsection{Hector SLAM}
+
 \subsection{RTAB-Map}
 
-\ac{RTAB-Map} is a graph-based \ac{SLAM} system intended to handle the ''kidnapped robot-problem'' as well as multi-session mapping\cite{RTAB_map}. Both these problems become relevant whenever a robot is shut down and moved to a new unknown location in the same area. 
+\ac{RTAB-Map} is a graph-based \ac{SLAM} system intended to handle the ''kidnapped robot-problem'' as well as multi-session mapping\cite{RTAB_map}. Both these problems become relevant whenever a robot is shut down and moved to a new unknown location in the same area. \ac{RTAB-Map} is the core feature in the implementation that is described in this thesis. Some factors which motivated the use of \ac{RTAB-Map} are:
+
+\begin{itemize}
+	\item It is a \ac{SLAM} method which requires an RGB-D sensor, for example a Kinect.
+	\item \ac{RTAB-Map} has a \ac{ROS} wrapper, \texttt{rtabmap\_ros}, which eases the process of integrating it with the mobile robot.
+	\item It includes obstacle detection in 3d.
+	\item It can use \ac{SURF} or \ac{SIFT} from OpenCV for object recognition.
+	\item It has a long-term memory intended for large scale multi-session mapping.
+\end{itemize}
 
 \subsection{Octomap}
 
+\section{Navigation}
