@@ -17,6 +17,10 @@ Implementation procedure for mobile robot:
 
 \section{Modeling}
 
+\subsection{Introduction}
+
+
+
 \subsection{Physical Dimensions}
 
 The inertia tensor:
@@ -49,6 +53,20 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 
 \subsection{Coordinate Frames}
 
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.5\textwidth]{sensor_frames}
+	\caption{Robot model with frames for laser, Kinect, robot base and map. }
+	\label{fig:sensor_frames}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.5\textwidth]{sensors_in_frame}
+	\caption{Sensor input placed with correct transformations from \textit{base\_link}. }
+	\label{fig:sensors_in_frame}
+\end{figure}
+
 \section{Simulations}
 
 \section{ROS Nodes for Motion Control}
@@ -67,7 +85,7 @@ There are four ways to control the robot:
 
 \begin{figure}[p]
 	\centering
-	\includegraphics[width=1\textwidth]{move_base_nodes}
+	\includegraphics[width=1\textwidth]{velocity_command}
 	\caption{Nodes and topics for motion control. }
 	\label{fig:move_base_nodes}
 \end{figure}
@@ -75,7 +93,7 @@ There are four ways to control the robot:
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=1\textwidth]{velocity_ramp_cropped}
-	\caption{Velocity command ramping. The blue line represents commands entering \texttt{''velocity\_ramp''}, while the red line shows the acceleration constrained output command.}
+	\caption{Velocity command ramping. The blue line represents commands entering \textit{velocity\_ramp}, while the red line shows the acceleration constrained output command.}
 	\label{fig:velocity_ramp}
 \end{figure}
 
@@ -87,9 +105,9 @@ The \ac{OCS} allows an operator to control and monitor the robot through a graph
 
 A Qt-based \ac{GUI}...
 
-\section{The Handheld Remote Control - "Robot Leash"}
+\section{The Hand Held Remote Control - \textit{Robot Leash}}
 
-Because the \ac{OCS} is only partially implemented, an operator will not have access to all the features on the robot. In addition, as a safety precaution a person should be close to the robot at all times, and be ready to pull the plug. Furthermore, it is hard to control a moving robot through the on-board keyboard. These problems were countered by the Android-based remote control, ''Robot Leash''. 
+Because the \ac{OCS} is only partially implemented, an operator will not have access to all the features on the robot. In addition, as a safety precaution a person should be close to the robot at all times, and be ready to pull the plug. Furthermore, it is hard to control a moving robot through the on-board keyboard. These problems were countered by the Android-based remote control, \textit{Robot Leash}. 
 
 
 \begin{figure}
@@ -112,7 +130,7 @@ Because the \ac{OCS} is only partially implemented, an operator will not have ac
 	\caption{\label{fig:app_screens}A typical use case for ''Robot Leash''.}
 \end{figure}
 
-\subsection{Connecting to a the Robot}
+\subsection{Connecting to the Robot}
 
 \begin{enumerate}
 	\item The first screen after scanning for devices. There is no device filtering, and the user can select any device, but only connect through a specific service.
