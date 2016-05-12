@@ -1,5 +1,19 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{SWB{\etalchar{+}}14}
+\begin{thebibliography}{BMNK13}
+
+\bibitem[AS12]{StepwiseApproachToRobotics}
+David~A. Anisi and Charlotte Skourup.
+\newblock A step-wise approach to oil and gas robotics.
+\newblock In {\em Proceedings of the 2012 IFAC Workshop on Automatic Control in
+  Offshore Oil and Gas Production}, June 2012.
+
+\bibitem[BMNK13]{Berger2013}
+Kai Berger, Stephan Meister, Rahul Nair, and Daniel Kondermann.
+\newblock {\em Time-of-Flight and Depth Imaging. Sensors, Algorithms, and
+  Applications: Dagstuhl 2012 Seminar on Time-of-Flight Imaging and GCPR 2013
+  Workshop on Imaging New Modalities}, chapter A State of the Art Report on
+  Kinect Sensor Setups in Computer Vision, pages 257--272.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2013.
 
 \bibitem[Bog16]{cobotsEurope}
 Robert Bogue.
@@ -61,6 +75,12 @@ M.~Labbé and F.~Michaud.
 {MIMRO}ex, mobile maintenance and inspection robot for process plants.
 \newblock
   \url{http://www.ipa.fraunhofer.de/fileadmin/user_upload/Kompetenzen/Roboter-_und_Assistenzsysteme/Industrielle_und_gewerbliche_Servicerobotik/English_Documents/Product_sheet_MIMROex_Mobile_maintenance_and_inspection_robot_for_process_plants.pdf}.
+
+\bibitem[PBB11]{6094661}
+K.~Pfeiffer, M.~Bengel, and A.~Bubeck.
+\newblock Offshore robotics - survey, implementation, outlook.
+\newblock In {\em 2011 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 241--246, Sept 2011.
 
 \bibitem[pre]{pressAIV}
 Press release: Subsea 7 completes design and build of first commercial

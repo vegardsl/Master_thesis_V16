@@ -7,22 +7,22 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces System Concept. \relax }}{3}{figure.caption.11}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{9}{figure.caption.18}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{9}{figure.caption.23}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Awesome Image\relax }}{17}{figure.caption.53}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Awesome Image\relax }}{17}{figure.caption.54}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{10}{figure.caption.20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{11}{figure.caption.25}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Awesome Image\relax }}{18}{figure.caption.54}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Awesome Image\relax }}{18}{figure.caption.55}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{21}{figure.caption.61}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Sensor input placed with correct transformations from \textit {base\_link}. \relax }}{21}{figure.caption.62}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Nodes and topics for motion control. \relax }}{21}{figure.caption.64}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{23}{figure.caption.65}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{23}{figure.caption.66}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{21}{figure.caption.62}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sensor input placed with correct transformations from \textit {base\_link}. \relax }}{21}{figure.caption.63}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Nodes and topics for motion control. \relax }}{21}{figure.caption.65}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{23}{figure.caption.66}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{23}{figure.caption.68}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{26}{figure.caption.67}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{26}{figure.caption.68}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{27}{figure.caption.69}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{26}{figure.caption.69}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{26}{figure.caption.70}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{27}{figure.caption.71}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{32}{figure.caption.84}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{32}{figure.caption.86}
 \addvspace {10pt}
 \addvspace {10pt}

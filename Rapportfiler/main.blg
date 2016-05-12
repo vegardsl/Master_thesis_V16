@@ -4,14 +4,15 @@ A level-1 auxiliary file: abstract_norwegian.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: introduction_chapter.aux
+A level-1 auxiliary file: TaskOutlineAndPlanning.aux
 A level-1 auxiliary file: theory_chapter.aux
 A level-1 auxiliary file: implementation_chapter.aux
 A level-1 auxiliary file: testing_chapter.aux
 A level-1 auxiliary file: discussion_chapter.aux
 A level-1 auxiliary file: conclusion_chapter.aux
+The style file: alpha.bst
 A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: troubleshooting.aux
-The style file: alpha.bst
 Database file #1: main.bib
 Warning--I didn't find a database entry for "BCD_license"
 Warning--I didn't find a database entry for "keylist"
@@ -24,4 +25,5 @@ Warning--to sort, need author or key in ROS_history
 Warning--to sort, need author or key in ROS_space
 Warning--to sort, need author or key in Kintinous
 Warning--to sort, need author or key in Reboot_Ubuntu
-(There were 11 warnings)
+Warning--can't use both author and editor fields in Berger2013
+(There were 12 warnings)
