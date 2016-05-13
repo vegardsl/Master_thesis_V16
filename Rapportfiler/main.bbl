@@ -7,6 +7,9 @@ David~A. Anisi and Charlotte Skourup.
 \newblock In {\em Proceedings of the 2012 IFAC Workshop on Automatic Control in
   Offshore Oil and Gas Production}, June 2012.
 
+\bibitem[ATE]{ATEX_guidelines}
+Atex directive: first edition of the atex 2014/34/eu guidelines.
+
 \bibitem[BMNK13]{Berger2013}
 Kai Berger, Stephan Meister, Rahul Nair, and Daniel Kondermann.
 \newblock {\em Time-of-Flight and Depth Imaging. Sensors, Algorithms, and
@@ -25,11 +28,17 @@ Darpa robotics challenge.
 \newblock \url{http://www.theroboticschallenge.org/overview}.
 \newblock Accessed: 2016-04-05.
 
-\bibitem[ER12]{ElReedy2012383}
+\bibitem[ER12a]{ElReedy2012383}
 Mohamed~A. El-Reedy.
 \newblock Chapter 6 - corrosion protection.
 \newblock In Mohamed~A. El-Reedy, editor, {\em Offshore Structures}, pages 383
   -- 443. Gulf Professional Publishing, Boston, 2012.
+
+\bibitem[ER12b]{ElReedy2012563}
+Mohamed~A. El-Reedy.
+\newblock Chapter 8 - risk-based inspection technique.
+\newblock In Mohamed~A. El-Reedy, editor, {\em Offshore Structures}, pages 563
+  -- 634. Gulf Professional Publishing, Boston, 2012.
 
 \bibitem[GC11]{metraMartechGorle}
 Peter Gorle and Andrew Clive.
@@ -126,6 +135,12 @@ Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, and Dirk Schulz.
   localization in industrial environments.
 \newblock In {\em Field and Service Robotics}, pages 233--247. Springer Berlin
   Heidelberg, 2014.
+
+\bibitem[Vin14]{Vinnem2014}
+Jan-Erik Vinnem.
+\newblock {\em Offshore Risk Assessment vol 1.: Principles, Modelling and
+  Applications of QRA Studies}.
+\newblock Springer London, London, 2014.
 
 \bibitem[WA12]{kinect_book}
 Jarrett Webb and James Ashley.

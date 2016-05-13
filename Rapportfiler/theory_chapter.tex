@@ -94,11 +94,71 @@ Offshore installations are regularly, if not continuously, exposed to harsh weat
 	\item Protective coating.
 \end{itemize} 
 
-In terms of maintenance, the sacrificial anodes can be subjected to periodic inspections and replacements, which could be done a robot. \ac{CP} can more easily be implemented with automated self tests, and should normally not require any inspections and maintenance\cite{ElReedy2012383}. Application of protective coating should ideally be applied in the controlled environment of a workshop. If protective coating is to be applied at sea, one should strive to make the conditions as favorable as possible. 
+In terms of maintenance, the sacrificial anodes can be subjected to periodic inspections and replacements, which could be done a robot. \ac{CP} can more easily be implemented with automated self tests, and should normally not require any inspections and maintenance\cite{ElReedy2012383}. Application of protective coating should ideally be applied in the controlled environment of a workshop. If protective coating is to be applied at sea, one should strive to make the conditions as favourable as possible. 
 
-\subsubsection{Fatigue}
+\subsubsection{Structural Fatigue}
 
-Waves, wind, water currents and other forces subject offshore installations to structural stress.
+Waves, wind, water currents and other forces subject offshore installations to structural stress. To keep the offshore installations from failing in these conditions, they may be subjected to a \ac{RBI} regime. In brief, \ac{RBI} is a strategy where inspection and maintenance programs are developed based on which risk factors an installation is exposed to. In an automated maintenance program, an autonomous robot could perform inspections of the structure and generate reports based on risk factors such as\cite{ElReedy2012563}:
+
+\begin{description}
+\item[Marine growth at sea level] Marine growth will increase the diameter of supporting legs at sea level, thus increasing structural loads caused by waves, wind and water currents. 
+\item[Corrosion] Assess the seriousness of a corrosion attack through \ac{NDT}.
+\item[Scour] Scour around the platform legs could reduce a platforms ability to withstand loads. This is only applicable to non-floating installations.
+\end{description}
+
+A maintenance planner can then plan a maintenance campaign based on data from the robot in combination with knowledge on the platforms design, age and exposure to the environment.
+
+\subsection{Production-specific Hazards}
+
+Oil \& gas production has several inherent hazards, and an unwanted incident may have serious implications for \ac{HSE} and production uptime. The Piper Alpha incident serves as a worst case example of the consequences of an explosive ignition of a hydrocarbon leak followed by an escalating fire. This section will briefly discuss some of the most significant hazards on an offshore oil and gas production plant.
+
+%\begin{description}
+%\item[Hydrocarbon leaks - ] 
+
+%\item[Fire - ]  
+
+%\item[Explosions -]
+%\end{description}
+
+\subsubsection{Hydrocarbon leaks}
+
+Hydrocarbon leaks do occur on a regular basis. Over a four year period from 2006 to 2010, seven leaks larger than $1 kg/s$ of either oil or gas/two-phase occurred in the Norwegian sector. No such leaks have ignited on the \ac{NCS} since 1992. Of all the leaks which occurred in the same area, \ac{NCS}, the majority was caused by human intervention\cite{Vinnem2014}. This could imply that a reliable robotic system may reduce the number of leaks.
+
+\subsubsection{Fire}
+
+Critical fire loads\footnote{Fire load can be defined as the amount of combustible material in a given area (Ref. \url{https://en.wiktionary.org/wiki/fire_load}).} on offshore facilities are usually caused by uncontrolled flow of hydrocarbons. The most serious of such releases is a blow-out. Risk reducing measures focus on four areas\cite{Vinnem2014}: 
+
+\begin{description}
+\item[Leak prevention - ] Use equipment and assembly methods which minimize risk.
+
+\item[Leak detection - ]  Fire \& gas detection, emergency shut-down systems and blowdown systems.
+
+\item[Ignition prevention -] Inspection and maintenance and Ex-approved equipment.
+
+\item[Escalation protection  -] Installation layout and sectioning. Fire and gas protection systems.
+\end{description}
+
+
+\subsubsection{Explosions}
+
+Explosion protection is usually built into the equipment and structure. In \cite{Vinnem2014}, there are no obvious ways a robot could provide additional explosion beyond e.g. leak detection, inspection and maintenance. 
+
+\subsection{Implications for Robot Design}
+
+A mobile robot operating on a normally unmanned platform in a harsh environment, implies that is is subjected to many of the same design philosophies that apply to subsea equipment. 
+
+Because of the risk of explosive atmospheres in an offshore production environment, an offshore robot operating under EU or EEA legislation will also be subject to the ATEX (ATmosphères EXplosibles) directive. Such a robot will most likely carry ignition sources such as batteries packed with energy and perhaps even welding equipment. A central ATEX requirement is to perform a risk assessment. As outlined by ATEX 2014-34-EU Guidelines\cite{ATEX_guidelines}, such a risk assessment is usually performed in four steps:
+
+\begin{description}
+\item[1. Hazard identification \-] What can go wrong? Identify possible ignition sources, and the probability of explosive atmospheres.
+\item[2. Risk estimation \-] Estimate the probability of an unwanted occurrence (e.g. an explosion), and the associated consequences.
+\item[3. Risk evaluation \-] Evaluate the identified risk in context of acceptable risk, and decide if the design should be altered or if additional barriers should be installed. Barriers could either mitigate the consequences of an explosion, or reduce the possibility of ever having an explosion.
+\item[4. Risk reduction option analysis \-] Identify possible risk reduction measures, e.g. barriers and design changes. A cost-benefit analysis can be performed in accordance with the ALARP-principle. 
+\end{description}
+
+The on-board embedded computer hardware and software should be designed for robustness, fault tolerance and endurance. If a failure occurs, corrective actions will most likely be both difficult and expensive. 
+
+Resistance to corrosion and toxic environments should also be taken into account.
 
 \section{Robotic Maintenance Today}
 
@@ -144,18 +204,31 @@ Subsea maintenance is perhaps the field that have seen the greatest advancements
 	%\vspace{-20pt}
 \end{wrapfigure}
 
-Robots in disaster response, relief and recovery solve many of the same problems faced by maintenance robots. Disasters, such as the tsunami which struck Japan in 2011, proved that much work needs to be done, both in terms of technical capabilities and logistical issues related to deployment and response times. 
+Robots in disaster response, relief and recovery solve many of the same problems faced by maintenance robots. Disasters, such as the tsunami which struck Japan in 2011, proved that much work needs to be done, both in terms of technical capabilities and logistical issues related to deployment and response times. The tsunami resulted in three core meltdowns at the Fukushima Daiichi Nuclear Power plant.
 
-Many of the robots which were deployed at Fukushima were already aging, and the operators had to receive training before deployment, thus increasing the response time\cite{doi:10.1108/01439911211249715}. A paper from Japan Atomic Energy Agency\cite{doi:10.1108/01439911211249715} highlights how the lack of stakeholder involvement could have been the cause of long response times. The same paper points out that the robots were developed for the sake of development, and not with emergency response as the main purpose\cite{doi:10.1108/01439911211249715}. 
+Many of the robots which were deployed at the Fukushima Power Plant were already ageing, and the operators had to receive training before deployment, thus increasing the response time\cite{doi:10.1108/01439911211249715}. A paper from Japan Atomic Energy Agency\cite{doi:10.1108/01439911211249715} highlights how the lack of stakeholder involvement could have been the cause of long response times. The same paper points out that the robots were developed for the sake of development, and not with emergency response as the main purpose\cite{doi:10.1108/01439911211249715}. 
 
 \ac{DRC}\cite{DRC} was launched in response to the Fukushima disaster of 2011. The purpose of the competition is to accelerate innovation, research and development in robotics for disaster response in cases where humans cannot operate. Some of the tasks the competitors faces in 2015 include valve turning, traversing rubble and driving a vehicle through a course before egressing out of the vehicle.
 
-\subsubsection{Robotic Maintencance of Process Plants}
+\subsubsection{Topside Offshore Robotic Maintenance}
+
+Today, autonomous and teleoperated inspection and maintenance is usually only found at subsea installations. Topside installations on the other hand are still maintained and inspected manually, with some notable exceptions. Small \acp{UAV} or \acp{RPAS} have become commonplace over the last decade. On topside installations, they are being used for visual inspection of inaccessible structural parts such as flare stacks or the exterior of oil rigs. 
+
+Among the research groups working on robotic maintenance for O\&G, ABB, \ac{Fraunhofer IPA} and NREC  at  Carnegie
+Melllon University stand out as major contributors to the field. 
+
+\begin{wrapfigure}{l}{0.5\textwidth}
+	%\vspace{-20pt}
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{sensabot}
+	\end{center}
+	
+	\caption{The maintenance robot ''Sensabot'', developed by National Robotic Engineering Center (NREC) (Image credits: NREC)}
+	%\vspace{-20pt}
+\end{wrapfigure}
 
 
-Autonomous and teleoperated inspection and maintenance today is usually only found at subsea installations. Topside installations on the other hand are still maintained and inspected manually, with some notable exceptions. Small \acp{UAV} or \acp{RPAS} have become commonplace over the last decade. On topside installations, they are being used for visual inspection of inaccessible structural parts such as flare stacks or the exterior of oil rigs. 
-
-\ac{IFA}\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, called \ac{MIMROex}, with capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. 
+\ac{Fraunhofer IPA}\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, called \ac{MIMROex}, with capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. 
 
 \section{Modelling and Simulation}
 
