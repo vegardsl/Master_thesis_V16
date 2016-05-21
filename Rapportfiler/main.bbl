@@ -1,6 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{BMNK13}
 
+\bibitem[ARG]{ARGOS}
+{ARGOS} challenge.
+\newblock \url{http://www.argos-challenge.com/en}.
+\newblock Accessed: 19-05-2016.
+
 \bibitem[AS12]{StepwiseApproachToRobotics}
 David~A. Anisi and Charlotte Skourup.
 \newblock A step-wise approach to oil and gas robotics.
@@ -8,7 +13,10 @@ David~A. Anisi and Charlotte Skourup.
   Offshore Oil and Gas Production}, June 2012.
 
 \bibitem[ATE]{ATEX_guidelines}
-Atex directive: first edition of the atex 2014/34/eu guidelines.
+{ATEX} directive: first edition of the atex 2014/34/eu guidelines.
+\newblock
+  \url{http://ec.europa.eu/growth/sectors/mechanical-engineering/atex/}.
+\newblock Accessed: 13-05-2016.
 
 \bibitem[BMNK13]{Berger2013}
 Kai Berger, Stephan Meister, Rahul Nair, and Daniel Kondermann.
@@ -23,8 +31,12 @@ Robert Bogue.
 \newblock Europe continues to lead the way in the collaborative robot business.
 \newblock {\em Industrial Robot: An International Journal}, 43(1):6--11, 2016.
 
+\bibitem[dep12]{deploymentsensabot}
+Sensabot: A safe and cost-effective inspection solution.
+\newblock {\em Journal of Petroleum Technology}, 64:32--34, 10 2012.
+
 \bibitem[DRC]{DRC}
-Darpa robotics challenge.
+{DARPA} robotics challenge.
 \newblock \url{http://www.theroboticschallenge.org/overview}.
 \newblock Accessed: 2016-04-05.
 
@@ -97,6 +109,13 @@ Press release: Subsea 7 completes design and build of first commercial
 \newblock
   \url{http://www.subsea7.com/content/dam/subsea7/Company%20News/2011/Subsea7completesdesignandbuildoffirstcommericalAIV.pdf}.
 \newblock Accessed: 2016-04-13.
+
+\bibitem[PSM{\etalchar{+}}16]{peerless2016robot}
+Ian Peerless, Adam Serblowski, Berry Mulder, et~al.
+\newblock A robot that removes operators from extreme environments.
+\newblock In {\em SPE International Conference and Exhibition on Health,
+  Safety, Security, Environment, and Social Responsibility}. Society of
+  Petroleum Engineers, 2016.
 
 \bibitem[QGS15]{rosbook15}
 Morgan Quigley, Brian Gerkey, and William~D. Smart.

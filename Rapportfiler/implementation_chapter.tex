@@ -1,6 +1,10 @@
 \chapter{Implementation}
 \label{chp:implementation} 
 
+\section{Introduction}
+
+\section{ROS Integration}
+
 Implementation procedure for mobile robot:
 
 \begin{itemize}
@@ -67,7 +71,10 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 	\label{fig:sensors_in_frame}
 \end{figure}
 
+
 \section{Simulations}
+
+\section{Motor Control Driver}
 
 \section{ROS Nodes for Motion Control}
 
@@ -139,3 +146,28 @@ Because the \ac{OCS} is only partially implemented, an operator will not have ac
 \end{enumerate}
 
 http://developer.samsung.com/technical-doc/view.do?v=T000000117
+
+\section{Mapping}
+
+\section{Navigation}
+
+\subsection{Global Path Planning}
+
+\subsection{Local Path Planning}
+
+\subsubsection{Obstruction Detection}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.53\textwidth}
+		\includegraphics[width=\textwidth]{3d_obstruction1_left}
+		\caption{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.}
+		\label{fig:device_select}
+	\end{subfigure}
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{3d_obstruction1_right}
+			\caption{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.}
+			\label{fig:bt_request}
+		\end{subfigure}
+	\caption{\label{fig:3d_obstruction1}Detecting obstructions in 3d.}
+\end{figure}

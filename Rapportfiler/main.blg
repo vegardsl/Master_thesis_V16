@@ -14,21 +14,20 @@ The style file: alpha.bst
 A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: troubleshooting.aux
 Database file #1: main.bib
-"{" immediately follows a field name---line 408 of file main.bib
- :   howpublished
- :               {\url{http://ec.europa.eu/growth/sectors/mechanical-engineering/atex/}},
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "BCD_license"
 Warning--I didn't find a database entry for "keylist"
 Warning--to sort, need author or key in pressAIV
 Warning--to sort, need author or key in ATEX_guidelines
 Warning--to sort, need author or key in ifr_statistics
 Warning--to sort, need author or key in DRC
+Warning--to sort, need author or key in deploymentsensabot
 Warning--to sort, need author or key in MIMROex
+Warning--to sort, need author or key in ARGOS
 Warning--to sort, need author or key in ROS_install
 Warning--to sort, need author or key in ROS_history
 Warning--to sort, need author or key in ROS_space
 Warning--to sort, need author or key in Kintinous
 Warning--to sort, need author or key in Reboot_Ubuntu
 Warning--can't use both author and editor fields in Berger2013
-(There was 1 error message)
+Warning--empty author in deploymentsensabot
+(There were 16 warnings)

@@ -7,23 +7,25 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces System Concept. \relax }}{3}{figure.caption.11}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{12}{figure.caption.27}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{13}{figure.caption.32}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The maintenance robot ''Sensabot'', developed by National Robotic Engineering Center (NREC) (Image credits: NREC)\relax }}{14}{figure.caption.38}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.63}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.64}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{12}{figure.caption.28}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{13}{figure.caption.33}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An early version of the maintenance robot ''Sensabot'', developed by National Robotic Engineering Center (NREC) (Image credits: NREC)\relax }}{14}{figure.caption.38}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Awesome Image\relax }}{22}{figure.caption.63}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Awesome Image\relax }}{22}{figure.caption.64}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{25}{figure.caption.71}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Sensor input placed with correct transformations from \textit {base\_link}. \relax }}{25}{figure.caption.72}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Nodes and topics for motion control. \relax }}{25}{figure.caption.74}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{27}{figure.caption.75}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{27}{figure.caption.77}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Detecting obstructions in 3d.\relax }}{28}{figure.caption.79}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{30}{figure.caption.78}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{30}{figure.caption.79}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{31}{figure.caption.80}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{30}{figure.caption.80}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{30}{figure.caption.81}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{31}{figure.caption.82}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{32}{figure.caption.87}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{36}{figure.caption.94}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{36}{figure.caption.98}
 \addvspace {10pt}
 \addvspace {10pt}

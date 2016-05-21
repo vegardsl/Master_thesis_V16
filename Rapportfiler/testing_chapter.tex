@@ -7,7 +7,6 @@
 
 \subsection{Simulations}
 
-
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=1\textwidth]{gazebo2_cropped}
@@ -33,11 +32,30 @@
 
 \subsubsection{Safety Features}
 
+\subsubsection{Loop Closure Detection}
+
 \subsubsection{Multi Session Mapping}
 
 \subsubsection{Navigating an Obstacle Course}
 
-\subsubsection{Dynamic Replanning}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.46\textwidth}
+		\includegraphics[width=\textwidth]{obstructed_plan}
+		\caption{A person has moved into the path of the robot.}
+		\label{fig:obstructed_plan}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.472\textwidth}
+		\includegraphics[width=\textwidth]{corrected_plan}
+		\caption{A new path is planned, avoiding the new obstacle.}
+		\label{fig:corrected_plan}
+	\end{subfigure}
+    \caption{Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. }
+\end{figure}
+
+\subsubsection{Avoiding Moving Obstacles}
+
+
 
 
 
