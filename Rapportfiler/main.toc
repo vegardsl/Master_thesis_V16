@@ -118,6 +118,10 @@
 \contentsline {subsubsection}{Avoiding Moving Obstacles}{29}{section*.88}
 \contentsline {section}{\numberline {5.3}Discussion}{29}{section.5.3}
 \contentsline {chapter}{\chapternumberline {6}Discussion}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Mapping}{33}{section.6.1}
+\contentsline {section}{\numberline {6.2}Navigation}{33}{section.6.2}
+\contentsline {section}{\numberline {6.3}Suitability for Offshore Maintenance}{33}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Open Source Software and Security}{33}{subsection.6.3.1}
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{35}{chapter.7}
 \contentsline {section}{\numberline {7.1}Future Work}{35}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Autonomous Non-Destructive Testing}{35}{subsection.7.1.1}
