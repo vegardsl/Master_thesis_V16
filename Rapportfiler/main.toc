@@ -84,6 +84,7 @@
 \contentsline {subsection}{\numberline {3.9.1}Introdunction to SLAM}{20}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Hector SLAM}{20}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}RTAB-Map}{20}{subsection.3.9.3}
+\contentsline {subsubsection}{On-line Mapping of Large Environments}{21}{section*.70}
 \contentsline {subsection}{\numberline {3.9.4}Octomap}{21}{subsection.3.9.4}
 \contentsline {section}{\numberline {3.10}Navigation}{21}{section.3.10}
 \contentsline {chapter}{\chapternumberline {4}Implementation}{23}{chapter.4}
@@ -98,24 +99,24 @@
 \contentsline {section}{\numberline {4.6}ROS Nodes for Motion Control}{24}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Velocity Command Sources}{24}{subsection.4.6.1}
 \contentsline {section}{\numberline {4.7}Operator Control Station (OCS)}{24}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Graphical User Interface}{24}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.1}Graphical User Interface}{26}{subsection.4.7.1}
 \contentsline {section}{\numberline {4.8}The Hand Held Remote Control - \textit {Robot Leash}}{26}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}Connecting to the Robot}{26}{subsection.4.8.1}
 \contentsline {section}{\numberline {4.9}Mapping}{26}{section.4.9}
 \contentsline {section}{\numberline {4.10}Navigation}{26}{section.4.10}
 \contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{26}{subsection.4.10.1}
 \contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{26}{subsection.4.10.2}
-\contentsline {subsubsection}{Obstruction Detection}{26}{section*.78}
+\contentsline {subsubsection}{Obstruction Detection}{26}{section*.79}
 \contentsline {chapter}{\chapternumberline {5}Testing}{29}{chapter.5}
 \contentsline {section}{\numberline {5.1}Testplan}{29}{section.5.1}
 \contentsline {section}{\numberline {5.2}Results}{29}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Simulations}{29}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Live Testing}{29}{subsection.5.2.2}
-\contentsline {subsubsection}{Safety Features}{29}{section*.83}
-\contentsline {subsubsection}{Loop Closure Detection}{29}{section*.84}
-\contentsline {subsubsection}{Multi Session Mapping}{29}{section*.85}
-\contentsline {subsubsection}{Navigating an Obstacle Course}{29}{section*.86}
-\contentsline {subsubsection}{Avoiding Moving Obstacles}{29}{section*.88}
+\contentsline {subsubsection}{Safety Features}{29}{section*.84}
+\contentsline {subsubsection}{Loop Closure Detection}{29}{section*.85}
+\contentsline {subsubsection}{Multi Session Mapping}{29}{section*.86}
+\contentsline {subsubsection}{Navigating an Obstacle Course}{29}{section*.87}
+\contentsline {subsubsection}{Avoiding Moving Obstacles}{29}{section*.89}
 \contentsline {section}{\numberline {5.3}Discussion}{29}{section.5.3}
 \contentsline {chapter}{\chapternumberline {6}Discussion}{33}{chapter.6}
 \contentsline {section}{\numberline {6.1}Mapping}{33}{section.6.1}
@@ -126,30 +127,30 @@
 \contentsline {section}{\numberline {7.1}Future Work}{35}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Autonomous Non-Destructive Testing}{35}{subsection.7.1.1}
 \contentsline {subsection}{\numberline {7.1.2}Large Scale Kinect Fusion - Kintinous}{35}{subsection.7.1.2}
-\contentsline {subsubsection}{Improve the Communication Protocols}{35}{section*.91}
-\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{36}{section*.92}
+\contentsline {subsubsection}{Improve the Communication Protocols}{35}{section*.92}
+\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{36}{section*.93}
 \contentsline {subsection}{\numberline {7.1.3}Hardware}{36}{subsection.7.1.3}
-\contentsline {subsubsection}{Kinect Sensor Location}{36}{section*.93}
-\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{36}{section*.95}
-\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{36}{section*.96}
-\contentsline {subsubsection}{Wheels}{36}{section*.98}
+\contentsline {subsubsection}{Kinect Sensor Location}{36}{section*.94}
+\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{36}{section*.96}
+\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{36}{section*.97}
+\contentsline {subsubsection}{Wheels}{36}{section*.99}
 \contentsline {section}{\numberline {7.2}Task Fulfilment}{37}{section.7.2}
 \contentsline {section}{\numberline {7.3}Final Conclusion}{37}{section.7.3}
-\contentsline {chapter}{References}{39}{section*.101}
+\contentsline {chapter}{References}{39}{section*.102}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{43}{appendix.A}
 \contentsline {section}{\numberline {A.1}Installation}{43}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Equipment List}{43}{subsection.A.1.1}
-\contentsline {subsubsection}{Item List}{43}{section*.102}
-\contentsline {subsubsection}{Software list}{43}{section*.103}
-\contentsline {subsubsection}{Compatibility Issues}{43}{section*.104}
+\contentsline {subsubsection}{Item List}{43}{section*.103}
+\contentsline {subsubsection}{Software list}{43}{section*.104}
+\contentsline {subsubsection}{Compatibility Issues}{43}{section*.105}
 \contentsline {subsection}{\numberline {A.1.2}Install Ubuntu}{43}{subsection.A.1.2}
 \contentsline {subsection}{\numberline {A.1.3}Download ROS}{43}{subsection.A.1.3}
 \contentsline {section}{\numberline {A.2}Configuring the Project}{43}{section.A.2}
 \contentsline {subsection}{\numberline {A.2.1}Configuring the ROS Workspace}{43}{subsection.A.2.1}
 \contentsline {subsection}{\numberline {A.2.2}Configuring the Bluetooth Connection}{43}{subsection.A.2.2}
-\contentsline {subsubsection}{1 - Install Qt5}{44}{section*.105}
-\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{44}{section*.106}
+\contentsline {subsubsection}{1 - Install Qt5}{44}{section*.106}
+\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{44}{section*.107}
 \contentsline {appendix}{\chapternumberline {B}Troubleshooting}{45}{appendix.B}
 \contentsline {section}{\numberline {B.1}Introduction}{45}{section.B.1}
 \contentsline {section}{\numberline {B.2}ROS}{45}{section.B.2}

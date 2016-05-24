@@ -388,7 +388,9 @@ A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, c
 
 \subsection{RTAB-Map}
 
-\ac{RTAB-Map} is a graph-based \ac{SLAM} system intended to handle the ''kidnapped robot-problem'' as well as multi-session mapping\cite{RTAB_map}. Both these problems become relevant whenever a robot is shut down and moved to a new unknown location in the same area. \ac{RTAB-Map} is the core feature in the implementation that is described in this thesis. Some factors which motivated the use of \ac{RTAB-Map} are:
+
+
+\ac{RTAB-Map} is a \ac{SLAM} system developed for long term operations in large environments. The system is also intended to handle the ''kidnapped robot-problem'', i.e. multi-session mapping. This is useful whenever the robot is shut down and moved to an unmapped part of the same area, where it will start a new mapping session.\ac{RTAB-Map} is the core feature that has been integrated into the robot described in this thesis. Some factors which motivated the use of \ac{RTAB-Map} are:
 
 \begin{itemize}
 	\item It is a \ac{SLAM} method which requires an RGB-D sensor, for example a Kinect. The problem description for this project requires a vision based solution.
@@ -399,6 +401,8 @@ A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, c
 \end{itemize}
 
 \ac{RTAB-Map} is developed by IntRoLab at Université de Sherbrooke in Canada. The source code and \ac{ROS} wrapper is currently maintained, and new features and bug-fixes are added regularly. \ac{RTAB-Map} has two distinctive solutions to the \ac{SLAM} problem: Visual loop closure detection and a memory management system for large data sets.
+
+\subsubsection{On-line Mapping of Large Environments}
 
 \subsection{Octomap}
 
