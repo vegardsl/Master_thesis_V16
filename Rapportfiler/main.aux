@@ -17,10 +17,11 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode`"\active
+\catcode `"\active 
+\reset@newl@bel
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
-\reset@newl@bel
 \newacroplural{ROV}[ROVs]{Remotely Operated Vehicles}
 \newacroplural{AUV}[AUVs]{Autonomous Underwater Vehicles}
 \newacroplural{AIV}[AIVs]{Autonomous Inspection Vehicles}
@@ -28,6 +29,8 @@
 \newacroplural{LIDAR}[LIDARs]{LIght Detection And Ranging devices}
 \newacroplural{RPAS}[RPAS]{Remotely Piloted Aerial Systems}
 \newacroplural{UAV}[UAVs]{Unmanned Aerial Vehicles}
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -53,13 +56,14 @@
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
+\@input{acknowledgements.aux}
 \citation{pressAIV}
-\@writefile{toc}{\contentsline {chapter}{List of Acronyms}{xi}{Doc-Start}}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{xi}{section*.1}}
+\@writefile{toc}{\contentsline {chapter}{List of Acronyms}{xiii}{Doc-Start}}
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{xiii}{section*.1}}
 \citation{6094661}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{xiii}{section*.2}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{xv}{section*.2}}
 \@input{acronyms.aux}
-\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xvii}{chapter*.4}}
+\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xix}{chapter*.4}}
 \@input{introduction_chapter.aux}
 \@input{TaskOutlineAndPlanning.aux}
 \@input{theory_chapter.aux}
@@ -103,5 +107,5 @@
 \@input{setup.aux}
 \@input{troubleshooting.aux}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{69}
+\memsetcounter{lastsheet}{71}
 \memsetcounter{lastpage}{47}

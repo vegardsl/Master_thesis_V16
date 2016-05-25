@@ -3,11 +3,11 @@
 \select@language {english}
 \select@language {norsk}
 \select@language {english}
-\contentsline {chapter}{List of Acronyms}{xi}{Doc-Start}
-\contentsline {chapter}{List of Figures}{xi}{section*.1}
-\contentsline {chapter}{List of Tables}{xiii}{section*.2}
-\contentsline {chapter}{List of Acronyms}{xv}{chapter*.3}
-\contentsline {chapter}{List of Algorithms}{xvii}{chapter*.4}
+\contentsline {chapter}{List of Acronyms}{xiii}{Doc-Start}
+\contentsline {chapter}{List of Figures}{xiii}{section*.1}
+\contentsline {chapter}{List of Tables}{xv}{section*.2}
+\contentsline {chapter}{List of Acronyms}{xvii}{chapter*.3}
+\contentsline {chapter}{List of Algorithms}{xix}{chapter*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}About the Thesis}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Long Term Goal and Previous Work}{1}{subsection.1.1.1}
