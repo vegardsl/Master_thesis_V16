@@ -76,7 +76,7 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 
 Robot simulation was done in Gazebo, a simulation tool with good interfaces to \ac{ROS}. The same \ac{ROS} graph was used for both the simulated and real version of the robot, except from the sensors and actuators, and some minor parameter changes. 
 
-\section{Motor Control Driver}
+\section{Motion Control}
 
 \section{ROS Nodes for Motion Control}
 
@@ -105,6 +105,20 @@ There are four ways to control the robot:
 	\caption{Velocity command ramping. The blue line represents commands entering \textit{velocity\_ramp}, while the red line shows the acceleration constrained output command.}
 	\label{fig:velocity_ramp}
 \end{figure}
+
+\subsection{Motor Control Card Firmware on XMEGA A3BU}
+
+XMEGA A3BU is an evaluation board developed by Atmel. The board has been used in earlier projects on this robot. The implementation presented here, is based on Petter Aspunviks implementation \cite{aspunvik}. The firmware will now receive velocity commands based on the \texttt{geometry\_msgs/Twist} message format in \ac{ROS}, and translate these into the command format used by each motor. Speed settings for each motor is based on \ac{PWM}. 
+
+There were two requirements for this implementation: 
+\begin{enumerate}
+\item When velocity commands from the operating system are either absent or incomplete, the robot shall stop.
+\item The program shall translate linear and angular velocity commands into wheel commands.
+\end{enumerate}
+
+%Sett inn koblingsskjema her!
+
+The connections are the same as in \cite{aspunvik}, except for the installation of more secure connections under the robot. The old connections were insecure, and the risk of short circuits was substantial.
 
 \section{Operator Control Station (OCS)}
 

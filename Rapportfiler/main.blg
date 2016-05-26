@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 A level-1 auxiliary file: abstract_english.aux
 A level-1 auxiliary file: abstract_norwegian.aux
 A level-1 auxiliary file: preface.aux
+A level-1 auxiliary file: acknowledgements.aux
 A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: introduction_chapter.aux
 A level-1 auxiliary file: TaskOutlineAndPlanning.aux
@@ -25,9 +26,10 @@ Warning--to sort, need author or key in MIMROex
 Warning--to sort, need author or key in ARGOS
 Warning--to sort, need author or key in ROS_install
 Warning--to sort, need author or key in ROS_history
+Warning--to sort, need author or key in ROS_tut_pkg
 Warning--to sort, need author or key in ROS_space
 Warning--to sort, need author or key in Kintinous
 Warning--to sort, need author or key in Reboot_Ubuntu
 Warning--can't use both author and editor fields in Berger2013
 Warning--empty author in deploymentsensabot
-(There were 16 warnings)
+(There were 17 warnings)

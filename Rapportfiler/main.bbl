@@ -12,6 +12,11 @@ David~A. Anisi and Charlotte Skourup.
 \newblock In {\em Proceedings of the 2012 IFAC Workshop on Automatic Control in
   Offshore Oil and Gas Production}, June 2012.
 
+\bibitem[Asp13]{aspunvik}
+Petter Aspunvik.
+\newblock Robotisert vedlikehold.
+\newblock Master's thesis, NTNU, 2013.
+
 \bibitem[ATE]{ATEX_guidelines}
 {ATEX} directive: first edition of the atex 2014/34/eu guidelines.
 \newblock
@@ -85,12 +90,18 @@ K.~Kydd, S.~Macrez, and P.~Pourcel.
 \newblock {\em Autonomous Robot for Gas and Oil Sites}.
 \newblock Society of Petroleum Engineers, September 2015.
 
-\bibitem[LM14]{RTAB_map}
-M.~Labbé and F.~Michaud.
-\newblock Online global loop closure detection for large-scale multi-session
-  graph-based slam.
-\newblock In {\em Intelligent Robots and Systems (IROS 2014), 2014 IEEE/RSJ
-  International Conference on}, pages 2661--2666, Sept 2014.
+\bibitem[LM13]{labbe13appearance}
+M.~Labbe and F.~Michaud.
+\newblock {Appearance-Based Loop Closure Detection for Online Large-Scale and
+  Long-Term Operation}.
+\newblock {\em IEEE Transactions on Robotics}, 29(3):734--745, 2013.
+
+\bibitem[LM14]{labbe14online}
+M.~Labbe and F.~Michaud.
+\newblock {Online Global Loop Closure Detection for Large-Scale Multi-Session
+  Graph-Based SLAM}.
+\newblock In {\em Proceedings of the IEEE/RSJ International Conference on
+  Intelligent Robots and Systems}, pages 2661--2666, Sept 2014.
 
 \bibitem[MIM]{MIMROex}
 {MIMRO}ex, mobile maintenance and inspection robot for process plants.
@@ -133,17 +144,22 @@ Reboot ubuntu.
   \url{http://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes/36717#36717}.
 \newblock Accessed: 2016-03-14.
 
-\bibitem[ROSa]{ROS_history}
+\bibitem[ROSa]{ROS_tut_pkg}
+{ROS} create package tutorial.
+\newblock \url{http://wiki.ros.org/ROS/Tutorials/CreatingPackage}.
+\newblock Accessed: 2016-02-05.
+
+\bibitem[ROSb]{ROS_history}
 {ROS} history.
 \newblock \url{http://www.ros.org/history/}.
 \newblock Accessed: 2016-02-28.
 
-\bibitem[ROSb]{ROS_install}
+\bibitem[ROSc]{ROS_install}
 {ROS} installation.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
 
-\bibitem[ROSc]{ROS_space}
+\bibitem[ROSd]{ROS_space}
 {ROS} on the iss.
 \newblock \url{http://www.ros.org/news/2014/09/ros-running-on-iss.html}.
 \newblock Accessed: 2016-04-10.

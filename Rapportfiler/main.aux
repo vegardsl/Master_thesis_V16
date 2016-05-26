@@ -17,11 +17,10 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode `"\active 
-\reset@newl@bel
-\providecommand\@newglossary[4]{}
+\catcode`"\active
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
+\reset@newl@bel
 \newacroplural{ROV}[ROVs]{Remotely Operated Vehicles}
 \newacroplural{AUV}[AUVs]{Autonomous Underwater Vehicles}
 \newacroplural{AIV}[AIVs]{Autonomous Inspection Vehicles}
@@ -29,8 +28,6 @@
 \newacroplural{LIDAR}[LIDARs]{LIght Detection And Ranging devices}
 \newacroplural{RPAS}[RPAS]{Remotely Piloted Aerial Systems}
 \newacroplural{UAV}[UAVs]{Unmanned Aerial Vehicles}
-\providecommand\@glsorder[1]{}
-\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -60,10 +57,16 @@
 \citation{pressAIV}
 \@writefile{toc}{\contentsline {chapter}{List of Acronyms}{xiii}{Doc-Start}}
 \@writefile{toc}{\contentsline {chapter}{List of Figures}{xiii}{section*.1}}
+\undonewlabel{acro:ROS}
+\newlabel{acro:ROS}{{\M@TitleReference {}{}}{xiii}{}{section*.2}{}}
+\acronymused{ROS}
+\undonewlabel{acro:RTAB-Map}
+\newlabel{acro:RTAB-Map}{{\M@TitleReference {}{}}{xiii}{}{section*.3}{}}
+\acronymused{RTAB-Map}
 \citation{6094661}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{xv}{section*.2}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{xv}{section*.4}}
 \@input{acronyms.aux}
-\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xix}{chapter*.4}}
+\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{xix}{chapter*.6}}
 \@input{introduction_chapter.aux}
 \@input{TaskOutlineAndPlanning.aux}
 \@input{theory_chapter.aux}
@@ -75,6 +78,7 @@
 \bibdata{main}
 \bibcite{ARGOS}{{ARG}{}{{}}{{}}}
 \bibcite{StepwiseApproachToRobotics}{{AS12}{}{{}}{{}}}
+\bibcite{aspunvik}{{Asp13}{}{{}}{{}}}
 \bibcite{ATEX_guidelines}{{ATE}{}{{}}{{}}}
 \bibcite{Berger2013}{{BMNK13}{}{{}}{{}}}
 \bibcite{cobotsEurope}{{Bog16}{}{{}}{{}}}
@@ -84,12 +88,13 @@
 \bibcite{ElReedy2012563}{{ER12b}{}{{}}{{}}}
 \bibcite{metraMartechGorle}{{GC11}{}{{}}{{}}}
 \bibcite{ifr_statistics}{{ifr}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{References}{41}{section*.106}}
 \bibcite{subseaAIV}{{JWA{$^{+}$}12}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{References}{39}{section*.102}}
 \bibcite{doi:10.1108/01439911211249715}{{KFO12}{}{{}}{{}}}
 \bibcite{Kintinous}{{Kin}{}{{}}{{}}}
 \bibcite{AutonomousOG}{{KMP15}{}{{}}{{}}}
-\bibcite{RTAB_map}{{LM14}{}{{}}{{}}}
+\bibcite{labbe13appearance}{{LM13}{}{{}}{{}}}
+\bibcite{labbe14online}{{LM14}{}{{}}{{}}}
 \bibcite{MIMROex}{{MIM}{}{{}}{{}}}
 \bibcite{6094661}{{PBB11}{}{{}}{{}}}
 \bibcite{pressAIV}{{pre}{}{{}}{{}}}
@@ -97,9 +102,10 @@
 \bibcite{rosbook15}{{QGS15}{}{{}}{{}}}
 \bibcite{Ridao2015227}{{RCR{$^{+}$}15}{}{{}}{{}}}
 \bibcite{Reboot_Ubuntu}{{Reb}{}{{}}{{}}}
-\bibcite{ROS_history}{{ROSa}{}{{}}{{}}}
-\bibcite{ROS_install}{{ROSb}{}{{}}{{}}}
-\bibcite{ROS_space}{{ROSc}{}{{}}{{}}}
+\bibcite{ROS_tut_pkg}{{ROSa}{}{{}}{{}}}
+\bibcite{ROS_history}{{ROSb}{}{{}}{{}}}
+\bibcite{ROS_install}{{ROSc}{}{{}}{{}}}
+\bibcite{ROS_space}{{ROSd}{}{{}}{{}}}
 \bibcite{FSR2014_gas_leak}{{SWB{$^{+}$}14}{}{{}}{{}}}
 \bibcite{Vinnem2014}{{Vin14}{}{{}}{{}}}
 \bibcite{kinect_book}{{WA12}{}{{}}{{}}}
@@ -107,5 +113,5 @@
 \@input{setup.aux}
 \@input{troubleshooting.aux}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{71}
-\memsetcounter{lastpage}{47}
+\memsetcounter{lastsheet}{73}
+\memsetcounter{lastpage}{49}

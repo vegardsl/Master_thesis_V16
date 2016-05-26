@@ -1,8 +1,8 @@
 \BOOKMARK [0][-]{Doc-Start}{List of Acronyms}{}% 1
 \BOOKMARK [0][-]{section*.1}{List of Figures}{}% 2
-\BOOKMARK [0][-]{section*.2}{List of Tables}{}% 3
-\BOOKMARK [0][-]{chapter*.3}{List of Acronyms}{}% 4
-\BOOKMARK [0][-]{chapter*.4}{List of Algorithms}{}% 5
+\BOOKMARK [0][-]{section*.4}{List of Tables}{}% 3
+\BOOKMARK [0][-]{chapter*.5}{List of Acronyms}{}% 4
+\BOOKMARK [0][-]{chapter*.6}{List of Algorithms}{}% 5
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
 \BOOKMARK [1][-]{section.1.1}{About the Thesis}{chapter.1}% 7
 \BOOKMARK [2][-]{subsection.1.1.1}{Long Term Goal and Previous Work}{section.1.1}% 8
@@ -30,40 +30,40 @@
 \BOOKMARK [1][-]{section.3.4}{ROS}{chapter.3}% 30
 \BOOKMARK [2][-]{subsection.3.4.1}{Introduction}{section.3.4}% 31
 \BOOKMARK [2][-]{subsection.3.4.2}{Important ROS Concepts}{section.3.4}% 32
-\BOOKMARK [2][-]{subsection.3.4.3}{ROS-Related Tools}{section.3.4}% 33
-\BOOKMARK [2][-]{subsection.3.4.4}{Structure of a ROS Application}{section.3.4}% 34
-\BOOKMARK [2][-]{subsection.3.4.5}{Notable Robots Running ROS}{section.3.4}% 35
-\BOOKMARK [1][-]{section.3.5}{Software}{chapter.3}% 36
-\BOOKMARK [2][-]{subsection.3.5.1}{Qt}{section.3.5}% 37
-\BOOKMARK [2][-]{subsection.3.5.2}{PCL}{section.3.5}% 38
-\BOOKMARK [1][-]{section.3.6}{The Kinect Sensor}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.7}{Software Tools}{chapter.3}% 40
-\BOOKMARK [2][-]{subsection.3.7.1}{Point Cloud Library}{section.3.7}% 41
-\BOOKMARK [2][-]{subsection.3.7.2}{ROS}{section.3.7}% 42
-\BOOKMARK [2][-]{subsection.3.7.3}{Qt}{section.3.7}% 43
-\BOOKMARK [2][-]{subsection.3.7.4}{Current Research and Applications}{section.3.7}% 44
-\BOOKMARK [1][-]{section.3.8}{Introduction to Sensors in Autonomous Robots}{chapter.3}% 45
-\BOOKMARK [2][-]{subsection.3.8.1}{Depth Cameras}{section.3.8}% 46
-\BOOKMARK [2][-]{subsection.3.8.2}{Plannar Laser Sensors \(LIDAR\)}{section.3.8}% 47
-\BOOKMARK [2][-]{subsection.3.8.3}{Odometers}{section.3.8}% 48
-\BOOKMARK [2][-]{subsection.3.8.4}{Sensor Fusion}{section.3.8}% 49
-\BOOKMARK [1][-]{section.3.9}{Simultanious Localization and Mapping \(SLAM\)}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.9.1}{Introdunction to SLAM}{section.3.9}% 51
-\BOOKMARK [2][-]{subsection.3.9.2}{Hector SLAM}{section.3.9}% 52
-\BOOKMARK [2][-]{subsection.3.9.3}{RTAB-Map}{section.3.9}% 53
-\BOOKMARK [2][-]{subsection.3.9.4}{Octomap}{section.3.9}% 54
-\BOOKMARK [1][-]{section.3.10}{Navigation}{chapter.3}% 55
-\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 56
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 57
-\BOOKMARK [1][-]{section.4.2}{ROS Integration}{chapter.4}% 58
-\BOOKMARK [1][-]{section.4.3}{Modeling}{chapter.4}% 59
-\BOOKMARK [2][-]{subsection.4.3.1}{Introduction}{section.4.3}% 60
-\BOOKMARK [2][-]{subsection.4.3.2}{Physical Dimensions}{section.4.3}% 61
-\BOOKMARK [2][-]{subsection.4.3.3}{Coordinate Frames}{section.4.3}% 62
-\BOOKMARK [1][-]{section.4.4}{Simulations}{chapter.4}% 63
-\BOOKMARK [1][-]{section.4.5}{Motor Control Driver}{chapter.4}% 64
-\BOOKMARK [1][-]{section.4.6}{ROS Nodes for Motion Control}{chapter.4}% 65
-\BOOKMARK [2][-]{subsection.4.6.1}{Velocity Command Sources}{section.4.6}% 66
+\BOOKMARK [2][-]{subsection.3.4.3}{An Overview of ROS-Related Tools}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.4}{Notable Robots Running ROS}{section.3.4}% 34
+\BOOKMARK [1][-]{section.3.5}{Software}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.5.1}{Qt}{section.3.5}% 36
+\BOOKMARK [2][-]{subsection.3.5.2}{PCL}{section.3.5}% 37
+\BOOKMARK [1][-]{section.3.6}{The Kinect Sensor}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.7}{Software Tools}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.7.1}{Point Cloud Library}{section.3.7}% 40
+\BOOKMARK [2][-]{subsection.3.7.2}{ROS}{section.3.7}% 41
+\BOOKMARK [2][-]{subsection.3.7.3}{Qt}{section.3.7}% 42
+\BOOKMARK [2][-]{subsection.3.7.4}{Current Research and Applications}{section.3.7}% 43
+\BOOKMARK [1][-]{section.3.8}{Introduction to Sensors in Autonomous Robots}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.8.1}{Depth Cameras}{section.3.8}% 45
+\BOOKMARK [2][-]{subsection.3.8.2}{Plannar Laser Sensors \(LIDAR\)}{section.3.8}% 46
+\BOOKMARK [2][-]{subsection.3.8.3}{Odometers}{section.3.8}% 47
+\BOOKMARK [2][-]{subsection.3.8.4}{Sensor Fusion}{section.3.8}% 48
+\BOOKMARK [1][-]{section.3.9}{Simultanious Localization and Mapping \(SLAM\)}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.9.1}{Introdunction to SLAM}{section.3.9}% 50
+\BOOKMARK [2][-]{subsection.3.9.2}{Hector SLAM}{section.3.9}% 51
+\BOOKMARK [2][-]{subsection.3.9.3}{RTAB-Map}{section.3.9}% 52
+\BOOKMARK [2][-]{subsection.3.9.4}{Octomap}{section.3.9}% 53
+\BOOKMARK [1][-]{section.3.10}{Navigation}{chapter.3}% 54
+\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 55
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.2}{ROS Integration}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.3}{Modeling}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.3.1}{Introduction}{section.4.3}% 59
+\BOOKMARK [2][-]{subsection.4.3.2}{Physical Dimensions}{section.4.3}% 60
+\BOOKMARK [2][-]{subsection.4.3.3}{Coordinate Frames}{section.4.3}% 61
+\BOOKMARK [1][-]{section.4.4}{Simulations}{chapter.4}% 62
+\BOOKMARK [1][-]{section.4.5}{Motion Control}{chapter.4}% 63
+\BOOKMARK [1][-]{section.4.6}{ROS Nodes for Motion Control}{chapter.4}% 64
+\BOOKMARK [2][-]{subsection.4.6.1}{Velocity Command Sources}{section.4.6}% 65
+\BOOKMARK [2][-]{subsection.4.6.2}{Motor Control Card Firmware on XMEGA A3BU}{section.4.6}% 66
 \BOOKMARK [1][-]{section.4.7}{Operator Control Station \(OCS\)}{chapter.4}% 67
 \BOOKMARK [2][-]{subsection.4.7.1}{Graphical User Interface}{section.4.7}% 68
 \BOOKMARK [1][-]{section.4.8}{The Hand Held Remote Control - Robot Leash}{chapter.4}% 69
@@ -90,7 +90,7 @@
 \BOOKMARK [2][-]{subsection.7.1.3}{Hardware}{section.7.1}% 90
 \BOOKMARK [1][-]{section.7.2}{Task Fulfilment}{chapter.7}% 91
 \BOOKMARK [1][-]{section.7.3}{Final Conclusion}{chapter.7}% 92
-\BOOKMARK [0][-]{section*.102}{References}{}% 93
+\BOOKMARK [0][-]{section*.106}{References}{}% 93
 \BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 94
 \BOOKMARK [1][-]{section.A.1}{Installation}{appendix.A}% 95
 \BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 96

@@ -105,7 +105,7 @@ Waves, wind, water currents and other forces subject offshore installations to s
 \begin{description}
 \item[Marine growth at sea level] Marine growth will increase the diameter of supporting legs at sea level, thus increasing structural loads caused by waves, wind and water currents. 
 \item[Corrosion] Assess the seriousness of a corrosion attack through \ac{NDT}.
-\item[Scour] Scour around the platform legs could reduce a platforms ability to withstand loads. This is only applicable to non-floating installations.
+\item[Scour] Scour around the platform legs could reduce a platforms ability to withstand structural loads. This is only applicable to non-floating installations.
 \end{description}
 
 A maintenance planner can then plan a maintenance campaign based on data from the robot in combination with knowledge on the platforms design, age and exposure to the environment.
@@ -265,27 +265,52 @@ The following descriptions are included in order to provide a complete, self-con
 
 \subsubsection{The ROS Graph}
 
-A \ac{ROS} system comprise a set of small programs that communicate with each other through messages. These programs become nodes in the \ac{ROS} graph. The nodes communicate with each other by publishing and subscribing to topics that form the edges of the graph. A topic must have the format of one of the specific data types provided by \ac{ROS}. For example, a node which receives temperature data from a thermometer, may publish the data as a topic on the \ac{ROS} system with the type \texttt{sensor\_msgs/Temperature}. There are many other data formats, e.g. velocity messages, \texttt{geometry\_msgs/Twist}; images, \texttt{sensor\_msgs/Image}; odometry messages, \texttt{nav\_msgs/Odometry} and so on. Each node in the graph are typically POSIX processes, and the edges are TCP connections\cite{rosbook15}.
+A \ac{ROS} system comprise a set of small programs that communicate with each other through messages. These programs become nodes in the \ac{ROS} graph. The nodes communicate with each other by publishing and subscribing to topics that form the edges of the graph. A topic must have the format of one of the specific data types provided by \ac{ROS}. For example, a node which receives temperature data from a thermometer, may publish the data as a topic on the \ac{ROS} system with the type \texttt{sensor\_msgs/Temperature}. There are many other data formats, e.g. velocity messages, \texttt{geometry\_msgs/Twist}; images, \texttt{sensor\_msgs/Image}; odometry messages, \texttt{nav\_msgs/Odometry} and so on. Each node in the graph are typically POSIX processes, and the edges are TCP connections\cite{rosbook15}. A minimal example of a graph is shown in figure \ref{fig:minimum_graph}.
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.8\textwidth]{minimum_graph}
+    \caption{A minimal \ac{ROS} graph. There are two nodes, none 1 and node 2. Node 1 publishes data, i.e. a topic, by the name \texttt{topic\_1}. Node 2 can receive the data by subscribing to \texttt{topic\_1}.}
+    \label{fig:minimum_graph}
+\end{figure}
 
 \subsubsection{roscore}
 
-\texttt{roscore} is an essensial part of any \ac{ROS} system as it enables nodes to communicate with each other. When a node is started, it will inform \texttt{roscore} of which topics it publishes and which topics it wish to subscribe to. Then, \texttt{roscore} will provide the information which allows the node to form a peer-to-peer connection to other nodes.
+\texttt{roscore} is an essensial part of any \ac{ROS} system as it enables nodes to communicate with each other. An instance of \texttt{roscore} must be started before launching any nodes. When a node is started, it will inform \texttt{roscore} of which topics it publishes and which topics it wish to subscribe to. Then, \texttt{roscore} will provide the information which allows the node to form a peer-to-peer connection to other nodes.
 
-\subsubsection{Project Structure and catkin}
+\subsubsection{Project Structure and the \textit{catkin} Build System}
+
+The source code in a \ac{ROS} system is organized into packages. Each package provides a specific functionality to the system. Some packages can be downloaded and installed from a remote repository, while other packages will be created by the in-house developers for their specific robotic system. In this project, locally created ROS-packages were placed into a \textit{catkin workspace}. This workspace contains the  original source code and build specifications. Details are provided in chapter \ref{chp:implementation}. As presented in\cite{ROS_tut_pkg}, a general workspace structure is as follows:
+
+\begin{verbatim}
+workspace_folder/        -- CATKIN WORKSPACE
+  src/                   -- SOURCE SPACE
+    CMakeLists.txt       -- 'Toplevel' CMake file, provided by catkin
+    package_1/
+      CMakeLists.txt     -- CMakeLists.txt file for package_1
+      package.xml        -- Package manifest for package_1
+    ...
+    package_n/
+      CMakeLists.txt     -- CMakeLists.txt file for package_n
+      package.xml        -- Package manifest for package_n
+\end{verbatim}
 
 A \ac{ROS} project will usually utilize the catkin build system.
 
 
 
-\subsection{ROS-Related Tools}
+\subsection{An Overview of ROS-Related Tools}
 
 \subsubsection{Robot Modelling In URDF}
 
-\subsubsection{Visialization in RVIZ}
+\ac{URDF} is an XML-like format for describing robots. The robot description is made up of links and joints. Each link description contains information of its shape, inertial tensor, collision boundaries. The links are connected to each other by joints.
+
+\subsubsection{Visialization in \texttt{rviz}}
+
+\texttt{rviz} is an invaluable tool for visualizing on-line robot behaviour. Simply put, \texttt{rviz} is created to visualize what the robot sees, and how it plans ahead. Many of the images in the following chapters are from \texttt{rviz}. 
 
 \subsubsection{Simulation in Gazebo}
 
-\subsection{Structure of a ROS Application}
 
 \subsection{Notable Robots Running ROS}
 
@@ -332,7 +357,7 @@ TODO!!!!!!!!!!
 
 \subsubsection{Different Methods for Depth Perception}
 
-A depth camera can be described as a regular color video camera with the ability to create spatial images. In the context of this thesis, a depth camera can  more precisely be described as a RGB-D camera, where the letters RGB-D are short for red, green, blue and depth. In a regular RGB camera, a spatial scene will be projected onto a rectangular pixel grid where each pixel contains intensity values for red, green and blue colors. These pixel values represents the detected scene. A major problem with RGB cameras is the significant loss of information. The information loss is mostly a consequence of 3d to 2d projection and digital quantization. RGB-D cameras have the means to reduce this information loss by mapping the pixel values to spatial coordinates, turning each pixel into voxels and the image into a point cloud of voxels. 
+A depth camera can be described as a regular color video camera with the ability to create spatial images. In the context of this thesis, a depth camera can  more precisely be described as a RGB-D camera, where the letters RGB-D are short for red, green, blue and depth. In a regular RGB camera, a spatial scene will be projected onto a rectangular pixel grid where each pixel contains intensity values for red, green and blue colors. These pixel values represents the detected scene. A major problem with RGB cameras is the significant loss of information. The information loss is mostly a consequence of 3d to 2d projection and digital quantization. RGB-D cameras have the means to reduce this information loss by mapping the pixel values to spatial coordinates. The atomic parts in 3d images are usually represented as point clouds or cubic volumes, also known as voxels.
 
 Different variations of depth cameras will usually fall into one of two categories: active or passive. Passive sensors perceive the surroundings as it is, without actively interfering with the environment as a part of the sensing process. A typical passive RGB-D sensor is the stereo camera. Stereo cameras use a stream of synchronized image pairs to perceive depth. The image pairs are displaced along the horizontal axis, and the depth information is extracted by searching for mutual information in the image pairs. How far the information is displaced from the left to the right image is directly related to how far away from the camera the information source is located. 
 
@@ -388,9 +413,7 @@ A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, c
 
 \subsection{RTAB-Map}
 
-
-
-\ac{RTAB-Map} is a \ac{SLAM} system developed for long term operations in large environments. The system is also intended to handle the ''kidnapped robot-problem'', i.e. multi-session mapping. This is useful whenever the robot is shut down and moved to an unmapped part of the same area, where it will start a new mapping session.\ac{RTAB-Map} is the core feature that has been integrated into the robot described in this thesis. Some factors which motivated the use of \ac{RTAB-Map} are:
+\ac{RTAB-Map} is developed by IntRoLab at Université de Sherbrooke in Canada. It is a \ac{SLAM} system developed for long term operations in large environments. The system is also intended to handle the ''kidnapped robot-problem'', i.e. multi-session mapping. This is useful whenever the robot is shut down and moved to an unmapped part of the same area, where it will start a new mapping session. \ac{RTAB-Map} is the core feature that has been integrated into the robot described in this thesis. Some factors which motivated the use of \ac{RTAB-Map} are:
 
 \begin{itemize}
 	\item It is a \ac{SLAM} method which requires an RGB-D sensor, for example a Kinect. The problem description for this project requires a vision based solution.
@@ -400,9 +423,22 @@ A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, c
 	\item \ac{RTAB-Map} can be used for object detection. This can be done by linking \ac{RTAB-Map} to OpenCV and the non-free feature detectors \ac{SIFT} and \ac{SURF}.
 \end{itemize}
 
-\ac{RTAB-Map} is developed by IntRoLab at Université de Sherbrooke in Canada. The source code and \ac{ROS} wrapper is currently maintained, and new features and bug-fixes are added regularly. \ac{RTAB-Map} has two distinctive solutions to the \ac{SLAM} problem: Visual loop closure detection and a memory management system for large data sets.
+The source code and \ac{ROS} wrapper is currently maintained, and new features and bug-fixes are added regularly. \ac{RTAB-Map} has two distinctive solutions to the \ac{SLAM} problem: Visual loop closure detection and a memory management system for large data sets. The following paragraphs provides an overview of how \ac{RTAB-Map} works. Detailed descriptions of the loop closure detection and memory management approach is provided in  \cite{labbe13appearance}, while the \ac{SLAM} method is presented in \cite{labbe14online}. Further details can be found on the project's Github page\footnote{\url{http://introlab.github.io/rtabmap/}}.
+
+\subsubsection{Graph Based Mapping}
+
+\ac{RTAB-Map} uses a graph structure with nodes and edges to represent the map. New nodes are continuously added to the systems working memory as time passes. In this method, the graph edges are referred to as \textit{links}. There are two types of links: neighbour links and loop closure links. Each node is a location in the map, and the links contain geometrical transformations between the node locations. Figure \ref{fig:rtabmap_graph} illustrated the graph concept.
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.5\textwidth]{rtabmap_graph}
+    \caption{Conceptual illustration of a graph created by \ac{RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Similarities between $L_2$ and $L_7$ is sufficient to accept this as a loop closure.}
+    \label{fig:rtabmap_graph}
+\end{figure}
 
 \subsubsection{On-line Mapping of Large Environments}
+
+
 
 \subsection{Octomap}
 
