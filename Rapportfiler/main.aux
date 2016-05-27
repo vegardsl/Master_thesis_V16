@@ -17,10 +17,11 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode`"\active
+\catcode `"\active 
+\reset@newl@bel
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
-\reset@newl@bel
 \newacroplural{ROV}[ROVs]{Remotely Operated Vehicles}
 \newacroplural{AUV}[AUVs]{Autonomous Underwater Vehicles}
 \newacroplural{AIV}[AIVs]{Autonomous Inspection Vehicles}
@@ -28,6 +29,8 @@
 \newacroplural{LIDAR}[LIDARs]{LIght Detection And Ranging devices}
 \newacroplural{RPAS}[RPAS]{Remotely Piloted Aerial Systems}
 \newacroplural{UAV}[UAVs]{Unmanned Aerial Vehicles}
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -55,6 +58,7 @@
 \@writefile{lot}{\select@language{english}}
 \@input{acknowledgements.aux}
 \citation{pressAIV}
+\citation{aspunvik}
 \@writefile{toc}{\contentsline {chapter}{List of Acronyms}{xiii}{Doc-Start}}
 \@writefile{toc}{\contentsline {chapter}{List of Figures}{xiii}{section*.1}}
 \undonewlabel{acro:ROS}
@@ -80,6 +84,7 @@
 \bibcite{StepwiseApproachToRobotics}{{AS12}{}{{}}{{}}}
 \bibcite{aspunvik}{{Asp13}{}{{}}{{}}}
 \bibcite{ATEX_guidelines}{{ATE}{}{{}}{{}}}
+\bibcite{berg}{{Ber13}{}{{}}{{}}}
 \bibcite{Berger2013}{{BMNK13}{}{{}}{{}}}
 \bibcite{cobotsEurope}{{Bog16}{}{{}}{{}}}
 \bibcite{deploymentsensabot}{{dep12}{}{{}}{{}}}
@@ -87,12 +92,13 @@
 \bibcite{ElReedy2012383}{{ER12a}{}{{}}{{}}}
 \bibcite{ElReedy2012563}{{ER12b}{}{{}}{{}}}
 \bibcite{metraMartechGorle}{{GC11}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{References}{43}{section*.110}}
 \bibcite{ifr_statistics}{{ifr}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{References}{41}{section*.106}}
 \bibcite{subseaAIV}{{JWA{$^{+}$}12}{}{{}}{{}}}
 \bibcite{doi:10.1108/01439911211249715}{{KFO12}{}{{}}{{}}}
 \bibcite{Kintinous}{{Kin}{}{{}}{{}}}
 \bibcite{AutonomousOG}{{KMP15}{}{{}}{{}}}
+\bibcite{lindrup}{{Lin15}{}{{}}{{}}}
 \bibcite{labbe13appearance}{{LM13}{}{{}}{{}}}
 \bibcite{labbe14online}{{LM14}{}{{}}{{}}}
 \bibcite{MIMROex}{{MIM}{}{{}}{{}}}
@@ -113,5 +119,5 @@
 \@input{setup.aux}
 \@input{troubleshooting.aux}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{73}
-\memsetcounter{lastpage}{49}
+\memsetcounter{lastsheet}{75}
+\memsetcounter{lastpage}{51}

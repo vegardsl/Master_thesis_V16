@@ -15,13 +15,18 @@ David~A. Anisi and Charlotte Skourup.
 \bibitem[Asp13]{aspunvik}
 Petter Aspunvik.
 \newblock Robotisert vedlikehold.
-\newblock Master's thesis, NTNU, 2013.
+\newblock Master's thesis, Dept. of Engineering Cybernetics, NTNU, 2013.
 
 \bibitem[ATE]{ATEX_guidelines}
 {ATEX} directive: first edition of the atex 2014/34/eu guidelines.
 \newblock
   \url{http://ec.europa.eu/growth/sectors/mechanical-engineering/atex/}.
 \newblock Accessed: 13-05-2016.
+
+\bibitem[Ber13]{berg}
+Mikael Berg.
+\newblock Navigation with simultaneous localization and mapping.
+\newblock Master's thesis, Dept. of Engineering Cybernetics, NTNU, 2013.
 
 \bibitem[BMNK13]{Berger2013}
 Kai Berger, Stephan Meister, Rahul Nair, and Daniel Kondermann.
@@ -89,6 +94,12 @@ Kintinous.
 K.~Kydd, S.~Macrez, and P.~Pourcel.
 \newblock {\em Autonomous Robot for Gas and Oil Sites}.
 \newblock Society of Petroleum Engineers, September 2015.
+
+\bibitem[Lin15]{lindrup}
+Vegard~Stjerna Lindrup.
+\newblock Visual sensing in mobile robots.
+\newblock Proj. rep., Dept. of Engineering Cybernetics, NTNU, 2015.
+\newblock 9th semester specialization project report.
 
 \bibitem[LM13]{labbe13appearance}
 M.~Labbe and F.~Michaud.

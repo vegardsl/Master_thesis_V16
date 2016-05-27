@@ -116,7 +116,13 @@ There were two requirements for this implementation:
 \item The program shall translate linear and angular velocity commands into wheel commands.
 \end{enumerate}
 
-%Sett inn koblingsskjema her!
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.9\textwidth]{conn_diag_motors}
+	\caption{Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite{aspunvik}, except for some improved connection for better short circuit prevention.}
+	\label{fig:conn_diag_motors}
+\end{figure}
+
 
 The connections are the same as in \cite{aspunvik}, except for the installation of more secure connections under the robot. The old connections were insecure, and the risk of short circuits was substantial.
 

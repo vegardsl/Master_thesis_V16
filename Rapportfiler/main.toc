@@ -12,8 +12,10 @@
 \contentsline {section}{\numberline {1.1}About the Thesis}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Long Term Goal and Previous Work}{1}{subsection.1.1.1}
 \contentsline {subsubsection}{The Topic - Mobile Autonomous Robot}{1}{section*.7}
-\contentsline {subsubsection}{Building the Mobile Platform}{2}{section*.11}
-\contentsline {subsubsection}{Simultanious Localization and Mapping}{2}{section*.12}
+\contentsline {subsubsection}{Telepresence and the Robotic Arm}{1}{section*.11}
+\contentsline {subsubsection}{Building the Mobile Platform}{2}{section*.12}
+\contentsline {subsubsection}{Simultaneous Localization and Mapping}{2}{section*.13}
+\contentsline {subsubsection}{Last Year's Specialization Project}{2}{section*.15}
 \contentsline {section}{\numberline {1.2}Implementation Overview}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Thesis Structure}{2}{section.1.3}
 \contentsline {chapter}{\chapternumberline {2}Task Outline and Planning}{5}{chapter.2}
@@ -28,39 +30,39 @@
 \contentsline {subsection}{\numberline {3.1.2}Potential Maintenance Tasks}{7}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Which Tasks Can Be Robotised?}{7}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Structural Maintenance and Environmental Considerations}{9}{subsection.3.1.4}
-\contentsline {subsubsection}{Corrosion}{9}{section*.17}
-\contentsline {subsubsection}{Structural Fatigue}{9}{section*.19}
+\contentsline {subsubsection}{Corrosion}{9}{section*.21}
+\contentsline {subsubsection}{Structural Fatigue}{9}{section*.23}
 \contentsline {subsection}{\numberline {3.1.5}Production-specific Hazards}{10}{subsection.3.1.5}
-\contentsline {subsubsection}{Hydrocarbon leaks}{10}{section*.23}
-\contentsline {subsubsection}{Fire}{10}{section*.25}
-\contentsline {subsubsection}{Explosions}{11}{section*.26}
+\contentsline {subsubsection}{Hydrocarbon leaks}{10}{section*.27}
+\contentsline {subsubsection}{Fire}{10}{section*.29}
+\contentsline {subsubsection}{Explosions}{11}{section*.30}
 \contentsline {subsection}{\numberline {3.1.6}Implications for Robot Design}{11}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Robotic Maintenance Today}{12}{section.3.2}
-\contentsline {subsubsection}{Trends and Potential}{12}{section*.27}
-\contentsline {subsubsection}{Subsea Maintenance and Inspection}{12}{section*.29}
-\contentsline {subsubsection}{Disaster Responce}{13}{section*.34}
-\contentsline {subsubsection}{Topside Offshore and Onshore Robotic Maintenance}{14}{section*.37}
+\contentsline {subsubsection}{Trends and Potential}{12}{section*.31}
+\contentsline {subsubsection}{Subsea Maintenance and Inspection}{12}{section*.33}
+\contentsline {subsubsection}{Disaster Responce}{13}{section*.38}
+\contentsline {subsubsection}{Topside Offshore and Onshore Robotic Maintenance}{14}{section*.41}
 \contentsline {section}{\numberline {3.3}Modelling and Simulation}{15}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Some Terminology}{15}{subsection.3.3.1}
-\contentsline {subsubsection}{Coordinate Systems and Poses}{15}{section*.42}
-\contentsline {subsubsection}{Robot Joints}{15}{section*.43}
+\contentsline {subsubsection}{Coordinate Systems and Poses}{15}{section*.46}
+\contentsline {subsubsection}{Robot Joints}{15}{section*.47}
 \contentsline {subsection}{\numberline {3.3.2}Robot Modelling}{15}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Simulating in Gazebo}{15}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}ROS}{15}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Introduction}{15}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Important ROS Concepts}{16}{subsection.3.4.2}
-\contentsline {subsubsection}{The ROS Graph}{16}{section*.46}
-\contentsline {subsubsection}{roscore}{16}{section*.48}
-\contentsline {subsubsection}{Project Structure and the \textit {catkin} Build System}{16}{section*.49}
+\contentsline {subsubsection}{The ROS Graph}{16}{section*.50}
+\contentsline {subsubsection}{roscore}{16}{section*.52}
+\contentsline {subsubsection}{Project Structure and the \textit {catkin} Build System}{16}{section*.53}
 \contentsline {subsection}{\numberline {3.4.3}An Overview of ROS-Related Tools}{17}{subsection.3.4.3}
-\contentsline {subsubsection}{Robot Modelling In URDF}{17}{section*.50}
-\contentsline {subsubsection}{Visialization in \texttt {rviz}}{17}{section*.52}
-\contentsline {subsubsection}{Simulation in Gazebo}{17}{section*.53}
+\contentsline {subsubsection}{Robot Modelling In URDF}{17}{section*.54}
+\contentsline {subsubsection}{Visialization in \texttt {rviz}}{17}{section*.56}
+\contentsline {subsubsection}{Simulation in Gazebo}{17}{section*.57}
 \contentsline {subsection}{\numberline {3.4.4}Notable Robots Running ROS}{17}{subsection.3.4.4}
-\contentsline {paragraph}{PR2 - Personal Robot 2}{17}{section*.54}
-\contentsline {paragraph}{TurtleBot}{17}{section*.55}
-\contentsline {paragraph}{Robonaut 2}{17}{section*.56}
-\contentsline {paragraph}{Example of an industrial robot with ROS goes here!}{18}{section*.58}
+\contentsline {paragraph}{PR2 - Personal Robot 2}{17}{section*.58}
+\contentsline {paragraph}{TurtleBot}{17}{section*.59}
+\contentsline {paragraph}{Robonaut 2}{17}{section*.60}
+\contentsline {paragraph}{Example of an industrial robot with ROS goes here!}{18}{section*.62}
 \contentsline {section}{\numberline {3.5}Software}{18}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Qt}{18}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}PCL}{18}{subsection.3.5.2}
@@ -72,19 +74,19 @@
 \contentsline {subsection}{\numberline {3.7.4}Current Research and Applications}{18}{subsection.3.7.4}
 \contentsline {section}{\numberline {3.8}Introduction to Sensors in Autonomous Robots}{18}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Depth Cameras}{18}{subsection.3.8.1}
-\contentsline {subsubsection}{Different Methods for Depth Perception}{18}{section*.59}
-\contentsline {subsubsection}{Natural User Interfaces - Origin of the Kinect}{19}{section*.60}
-\contentsline {subsubsection}{Kinect for Xbox 360}{19}{section*.63}
+\contentsline {subsubsection}{Different Methods for Depth Perception}{18}{section*.63}
+\contentsline {subsubsection}{Natural User Interfaces - Origin of the Kinect}{19}{section*.64}
+\contentsline {subsubsection}{Kinect for Xbox 360}{19}{section*.67}
 \contentsline {subsection}{\numberline {3.8.2}Plannar Laser Sensors (LIDAR)}{20}{subsection.3.8.2}
-\contentsline {subsubsection}{Scanning Laser Range Finder, URG-04LX-UG01}{20}{section*.68}
+\contentsline {subsubsection}{Scanning Laser Range Finder, URG-04LX-UG01}{20}{section*.71}
 \contentsline {subsection}{\numberline {3.8.3}Odometers}{20}{subsection.3.8.3}
 \contentsline {subsection}{\numberline {3.8.4}Sensor Fusion}{20}{subsection.3.8.4}
 \contentsline {section}{\numberline {3.9}Simultanious Localization and Mapping (SLAM)}{20}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Introdunction to SLAM}{20}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Hector SLAM}{20}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}RTAB-Map}{20}{subsection.3.9.3}
-\contentsline {subsubsection}{Graph Based Mapping}{22}{section*.72}
-\contentsline {subsubsection}{On-line Mapping of Large Environments}{22}{section*.74}
+\contentsline {subsubsection}{Graph Based Mapping}{22}{section*.75}
+\contentsline {subsubsection}{On-line Mapping of Large Environments}{22}{section*.77}
 \contentsline {subsection}{\numberline {3.9.4}Octomap}{22}{subsection.3.9.4}
 \contentsline {section}{\numberline {3.10}Navigation}{22}{section.3.10}
 \contentsline {chapter}{\chapternumberline {4}Implementation}{25}{chapter.4}
@@ -107,57 +109,59 @@
 \contentsline {section}{\numberline {4.10}Navigation}{30}{section.4.10}
 \contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{30}{subsection.4.10.1}
 \contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{30}{subsection.4.10.2}
-\contentsline {subsubsection}{Obstruction Detection}{30}{section*.83}
-\contentsline {chapter}{\chapternumberline {5}Testing}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Testplan}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Results}{31}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Simulations}{31}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Live Testing}{31}{subsection.5.2.2}
-\contentsline {subsubsection}{Safety Features}{31}{section*.88}
-\contentsline {subsubsection}{Loop Closure Detection}{31}{section*.89}
-\contentsline {subsubsection}{Multi Session Mapping}{31}{section*.90}
-\contentsline {subsubsection}{Navigating an Obstacle Course}{31}{section*.91}
-\contentsline {subsubsection}{Avoiding Moving Obstacles}{31}{section*.93}
-\contentsline {section}{\numberline {5.3}Discussion}{31}{section.5.3}
-\contentsline {chapter}{\chapternumberline {6}Discussion}{35}{chapter.6}
-\contentsline {section}{\numberline {6.1}Mapping}{35}{section.6.1}
-\contentsline {section}{\numberline {6.2}Navigation}{35}{section.6.2}
-\contentsline {section}{\numberline {6.3}Suitability for Offshore Maintenance}{35}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Open Source Software and Security}{35}{subsection.6.3.1}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{37}{chapter.7}
-\contentsline {section}{\numberline {7.1}Future Work}{37}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Autonomous Non-Destructive Testing}{37}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Large Scale Kinect Fusion - Kintinous}{37}{subsection.7.1.2}
-\contentsline {subsubsection}{Improve the Communication Protocols}{37}{section*.96}
-\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{38}{section*.97}
-\contentsline {subsection}{\numberline {7.1.3}Hardware}{38}{subsection.7.1.3}
-\contentsline {subsubsection}{Kinect Sensor Location}{38}{section*.98}
-\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{38}{section*.100}
-\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{38}{section*.101}
-\contentsline {subsubsection}{Wheels}{38}{section*.103}
-\contentsline {section}{\numberline {7.2}Task Fulfilment}{39}{section.7.2}
-\contentsline {section}{\numberline {7.3}Final Conclusion}{39}{section.7.3}
-\contentsline {chapter}{References}{41}{section*.106}
+\contentsline {subsubsection}{Obstruction Detection}{30}{section*.87}
+\contentsline {chapter}{\chapternumberline {5}Testing}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Testplan}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Results}{33}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Simulations}{33}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Live Testing}{33}{subsection.5.2.2}
+\contentsline {subsubsection}{Safety Features}{33}{section*.92}
+\contentsline {subsubsection}{Loop Closure Detection}{33}{section*.93}
+\contentsline {subsubsection}{Multi Session Mapping}{33}{section*.94}
+\contentsline {subsubsection}{Navigating an Obstacle Course}{33}{section*.95}
+\contentsline {subsubsection}{Avoiding Moving Obstacles}{33}{section*.97}
+\contentsline {section}{\numberline {5.3}Discussion}{33}{section.5.3}
+\contentsline {chapter}{\chapternumberline {6}Discussion}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Mapping}{37}{section.6.1}
+\contentsline {section}{\numberline {6.2}Navigation}{37}{section.6.2}
+\contentsline {section}{\numberline {6.3}Suitability for Offshore Maintenance}{37}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Open Source Software and Security}{37}{subsection.6.3.1}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}Future Work}{39}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Autonomous Non-Destructive Testing}{39}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Large Scale Kinect Fusion - Kintinous}{39}{subsection.7.1.2}
+\contentsline {subsubsection}{Improve the Communication Protocols}{39}{section*.100}
+\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{40}{section*.101}
+\contentsline {subsection}{\numberline {7.1.3}Hardware}{40}{subsection.7.1.3}
+\contentsline {subsubsection}{Kinect Sensor Location}{40}{section*.102}
+\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{40}{section*.104}
+\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{40}{section*.105}
+\contentsline {subsubsection}{Wheels}{40}{section*.107}
+\contentsline {section}{\numberline {7.2}Task Fulfilment}{41}{section.7.2}
+\contentsline {section}{\numberline {7.3}Final Conclusion}{41}{section.7.3}
+\contentsline {chapter}{References}{43}{section*.110}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{45}{appendix.A}
-\contentsline {section}{\numberline {A.1}Installation}{45}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Equipment List}{45}{subsection.A.1.1}
-\contentsline {subsubsection}{Item List}{45}{section*.107}
-\contentsline {subsubsection}{Software list}{45}{section*.108}
-\contentsline {subsubsection}{Compatibility Issues}{45}{section*.109}
-\contentsline {subsection}{\numberline {A.1.2}Install Ubuntu}{45}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Download ROS}{45}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Configuring the Project}{45}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Configuring the ROS Workspace}{45}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Configuring the Bluetooth Connection}{45}{subsection.A.2.2}
-\contentsline {subsubsection}{1 - Install Qt5}{46}{section*.110}
-\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{46}{section*.111}
-\contentsline {appendix}{\chapternumberline {B}Troubleshooting}{47}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{47}{section.B.1}
-\contentsline {section}{\numberline {B.2}ROS}{47}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}\leavevmode {\color {red}ERROR:} tf2:ExtrapolationException}{47}{subsection.B.2.1}
-\contentsline {section}{\numberline {B.3}Gazebo}{48}{section.B.3}
-\contentsline {subsection}{\numberline {B.3.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{48}{subsection.B.3.1}
-\contentsline {subsection}{\numberline {B.3.2}Dependency Issues When Installing \textit {gazebo2}}{48}{subsection.B.3.2}
-\contentsline {section}{\numberline {B.4}Ubuntu}{48}{section.B.4}
-\contentsline {subsection}{\numberline {B.4.1}Ubuntu Freezes}{48}{subsection.B.4.1}
+\contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{47}{appendix.A}
+\contentsline {section}{\numberline {A.1}Installation}{47}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Equipment List}{47}{subsection.A.1.1}
+\contentsline {subsubsection}{Item List}{47}{section*.111}
+\contentsline {subsubsection}{Software list}{47}{section*.112}
+\contentsline {subsubsection}{Compatibility Issues}{47}{section*.113}
+\contentsline {subsection}{\numberline {A.1.2}Install Ubuntu}{47}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Download ROS}{47}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Configuring the Project}{47}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Configuring the ROS Workspace}{47}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Configuring the Bluetooth Connection}{47}{subsection.A.2.2}
+\contentsline {subsubsection}{1 - Install Qt5}{48}{section*.114}
+\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{48}{section*.115}
+\contentsline {appendix}{\chapternumberline {B}Troubleshooting}{49}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{49}{section.B.1}
+\contentsline {section}{\numberline {B.2}Hardware}{49}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}The Wheel Fell Off!}{49}{subsection.B.2.1}
+\contentsline {section}{\numberline {B.3}ROS}{50}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}\leavevmode {\color {red}ERROR:} tf2:ExtrapolationException}{50}{subsection.B.3.1}
+\contentsline {section}{\numberline {B.4}Gazebo}{50}{section.B.4}
+\contentsline {subsection}{\numberline {B.4.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{50}{subsection.B.4.1}
+\contentsline {subsection}{\numberline {B.4.2}Dependency Issues When Installing \textit {gazebo2}}{50}{subsection.B.4.2}
+\contentsline {section}{\numberline {B.5}Ubuntu}{51}{section.B.5}
+\contentsline {subsection}{\numberline {B.5.1}Ubuntu Freezes}{51}{subsection.B.5.1}
