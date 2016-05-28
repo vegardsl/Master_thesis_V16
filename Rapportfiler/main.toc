@@ -106,11 +106,11 @@
 \contentsline {subsection}{\numberline {4.7.1}Graphical User Interface}{28}{subsection.4.7.1}
 \contentsline {section}{\numberline {4.8}The Hand Held Remote Control - \textit {Robot Leash}}{28}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}Connecting to the Robot}{30}{subsection.4.8.1}
-\contentsline {section}{\numberline {4.9}Mapping}{31}{section.4.9}
-\contentsline {section}{\numberline {4.10}Navigation}{31}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{31}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{31}{subsection.4.10.2}
-\contentsline {subsubsection}{Obstruction Detection}{31}{section*.88}
+\contentsline {section}{\numberline {4.9}Mapping}{30}{section.4.9}
+\contentsline {section}{\numberline {4.10}Navigation}{30}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{30}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{30}{subsection.4.10.2}
+\contentsline {subsubsection}{Obstruction Detection}{30}{section*.88}
 \contentsline {chapter}{\chapternumberline {5}Testing}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}Testplan}{33}{section.5.1}
 \contentsline {section}{\numberline {5.2}Results}{33}{section.5.2}
