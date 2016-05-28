@@ -23,6 +23,11 @@ Petter Aspunvik.
   \url{http://ec.europa.eu/growth/sectors/mechanical-engineering/atex/}.
 \newblock Accessed: 13-05-2016.
 
+\bibitem[Bek10]{bekken}
+Kristian~Saxrud Bekken.
+\newblock Bevegelsesstyring av robotarm og kamera med kollisjonsunngåelse.
+\newblock Master's thesis, Dept. of Engineering Cybernetics, NTNU, 2010.
+
 \bibitem[Ber13]{berg}
 Mikael Berg.
 \newblock Navigation with simultaneous localization and mapping.
@@ -49,6 +54,12 @@ Sensabot: A safe and cost-effective inspection solution.
 {DARPA} robotics challenge.
 \newblock \url{http://www.theroboticschallenge.org/overview}.
 \newblock Accessed: 2016-04-05.
+
+\bibitem[E24]{E24}
+E24.no: Denne plattformen skal fjernstyres fra land.
+\newblock
+  \url{http://e24.no/energi/statoil/produksjonen-paa-valemon-er-i-gang/23366972}.
+\newblock Accessed: 28-05-2016.
 
 \bibitem[ER12a]{ElReedy2012383}
 Mohamed~A. El-Reedy.
@@ -89,6 +100,13 @@ Shinji Kawatsuma, Mineo Fukushima, and Takashi Okada.
 Kintinous.
 \newblock \url{https://github.com/mp3guy/Kintinuous}.
 \newblock Accessed: 2016-03-21.
+
+\bibitem[KLT09]{sintef_robot_consept}
+Erik Kyrkjeb{\o}, P{\aa}l Liljeb{\"a}ck, and Aksel~A. Transeth.
+\newblock A robotic concept for remote inspection and maintenance on oil
+  platforms.
+\newblock In {\em Ocean, Offshore and Arctic Engineering, ASME 2009 28th
+  International Conference on}, 2009.
 
 \bibitem[KMP15]{AutonomousOG}
 K.~Kydd, S.~Macrez, and P.~Pourcel.
@@ -174,6 +192,18 @@ Reboot ubuntu.
 {ROS} on the iss.
 \newblock \url{http://www.ros.org/news/2014/09/ros-running-on-iss.html}.
 \newblock Accessed: 2016-04-10.
+
+\bibitem[sta]{statoil_ubemannet}
+Offshore.no: Statoil vil bygge flere folkefrie plattformer.
+\newblock
+  \url{http://offshore.no/sak/63114_statoil_vil_bygge_flere_folkefrie_plattformer}.
+\newblock Accessed: 28-05-2016.
+
+\bibitem[sub]{subsea_konkurranse}
+Teknisk ukeblad: Ubemannede plattformer skal konkurrere med subsea.
+\newblock
+  \url{http://www.tu.no/artikler/ubemannede-plattformer-skal-konkurrere-med-subsea/226868}.
+\newblock Accessed: 28-05-2016.
 
 \bibitem[SWB{\etalchar{+}}14]{FSR2014_gas_leak}
 Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, and Dirk Schulz.
