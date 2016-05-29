@@ -17,10 +17,11 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode`"\active
+\catcode `"\active 
+\reset@newl@bel
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
-\reset@newl@bel
 \newacroplural{ROV}[ROVs]{Remotely Operated Vehicles}
 \newacroplural{AUV}[AUVs]{Autonomous Underwater Vehicles}
 \newacroplural{AIV}[AIVs]{Autonomous Inspection Vehicles}
@@ -28,6 +29,8 @@
 \newacroplural{LIDAR}[LIDARs]{LIght Detection And Ranging devices}
 \newacroplural{RPAS}[RPAS]{Remotely Piloted Aerial Systems}
 \newacroplural{UAV}[UAVs]{Unmanned Aerial Vehicles}
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -85,11 +88,12 @@
 \bibcite{berg}{{Ber13}{}{{}}{{}}}
 \bibcite{Berger2013}{{BMNK13}{}{{}}{{}}}
 \bibcite{cobotsEurope}{{Bog16}{}{{}}{{}}}
+\bibcite{cook2011mobile}{{Coo11}{}{{}}{{}}}
 \bibcite{deploymentsensabot}{{dep12}{}{{}}{{}}}
 \bibcite{DRC}{{DRC}{}{{}}{{}}}
 \bibcite{E24}{{E24}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{References}{45}{section*.114}}
 \bibcite{ElReedy2012383}{{ER12a}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{References}{43}{section*.111}}
 \bibcite{ElReedy2012563}{{ER12b}{}{{}}{{}}}
 \bibcite{metraMartechGorle}{{GC11}{}{{}}{{}}}
 \bibcite{ifr_statistics}{{ifr}{}{{}}{{}}}
@@ -121,5 +125,5 @@
 \@input{setup.aux}
 \@input{troubleshooting.aux}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{75}
-\memsetcounter{lastpage}{51}
+\memsetcounter{lastsheet}{77}
+\memsetcounter{lastpage}{53}

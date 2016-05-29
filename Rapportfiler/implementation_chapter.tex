@@ -123,10 +123,56 @@ There were two requirements for this implementation:
 	\label{fig:conn_diag_motors}
 \end{figure}
 
-
 The connections are the same as in \cite{aspunvik}, except for the installation of more secure connections under the robot. The old connections were insecure, and the risk of short circuits was substantial.
 
+\subsubsection{ROS-Motor Driver Communication}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=1\textwidth]{motor_cmd_sequence}
+	\caption{Velocity command transmission sequence from the \texttt{motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).}
+	\label{fig:motor_cmd_sequence}
+\end{figure}
+
+
 \subsubsection{From Velocity Commands to Wheel Commands}
+
+Within \ac{ROS}, velocity commands are passed around between nodes in the form of the message \texttt{geometry\_msgs/Twist}. This message type can be viewed as a \textit{struct} with the following contents:
+
+\begin{verbatim}
+	Vector3  linear
+	Vector3  angular
+\end{verbatim}
+
+where each vector contains float values for the directions $x$, $y$ and $z$ with respect to the robot's base frame. Because of the motion constraints of this robot, only \texttt{linear.x} and \texttt{angular.z} are of relevance, and the data which is passed to the motor control card (XMEGA A3BU) is therefore limited to these two values. The motor control card must now translate the linear and angular velocities into wheel speeds. Next, these speeds must be related to a duty cycle for the \ac{PWM} signal which controls each of the four motors.
+
+To perform the translation, it is assumed that the mobile base can be described as a vehicle with differential drive steering. Wheel commands will only distinguish between left or right - not front or aft. Equations of motion which relates angular and linear velocity to wheel velocities can be found in\cite{cook2011mobile}. 
+
+\begin{subequations}\label{eq:subeqns}
+  	\begin{align}
+	  	\omega &= \dot{\psi} \\
+	   	v_{left} &= \omega (R - W/2)\\
+	   	v_{right} &= \omega (R + W/2) \label{eq:subeq2}
+   	\end{align}
+\end{subequations}
+
+In \cite{cook2011mobile}, the parameter $R$ represents the instantaneous radius of curvature of the robot trajectory. This mouthful will be substituted by the linear velocity $v$ in the following equations, because $v = R\omega$ (similar to the linear speed of a wheel). 
+
+ \begin{figure}
+ 	\centering
+ 	\begin{subfigure}[c]{0.58\textwidth}
+ 		\includegraphics[width=\textwidth]{robot_kinematics}
+ 		%\caption{Parameters for.}
+ 		%\label{fig:robot_kinematics}
+ 	\end{subfigure}
+ 	\begin{subfigure}[c]{0.38\textwidth}
+ 		
+ 		\includegraphics[width=\textwidth]{wheel_diameter}
+ 		%\caption{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.}
+ 		\label{fig:wheel_diameter}
+ 	\end{subfigure}
+ 	\caption{\label{fig:robot_kinematics}Parameters for differential drive kinematics. Note that the frame vectors $\vec{z}$ and $\vec{x}$ refer to the base frame in this case, and not the world frame.}
+ \end{figure}
 
 \section{Operator Control Station (OCS)}
 
