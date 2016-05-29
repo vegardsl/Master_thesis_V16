@@ -4,19 +4,19 @@
 \select@language {norsk}
 \select@language {english}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces System Concept. \relax }}{3}{figure.caption.18}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces System Concept. An on-board computer using \ac {ROS} to handle actuators and sensors. Remote operation is available through an \ac {OCS} or a hand-held device with Bluetooth.\relax }}{3}{figure.caption.19}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{13}{figure.caption.35}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{13}{figure.caption.40}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces An early version of the maintenance robot ''Sensabot'', developed by National Robotic Engineering Center (NREC) (Image credits: NREC)\relax }}{14}{figure.caption.43}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A minimal \ac {ROS} graph. There are two nodes, none 1 and node 2. Node 1 publishes data, i.e. a topic, by the name \texttt {topic\_1}. Node 2 can receive the data by subscribing to \texttt {topic\_1}.\relax }}{21}{figure.caption.52}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.69}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.70}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Conceptual illustration of a graph created by \ac {RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Feature descriptors in $L_2$ and $L_7$ are sufficiently similar to accept this as a loop closure.\relax }}{23}{figure.caption.76}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{13}{figure.caption.36}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{13}{figure.caption.41}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An early version of the maintenance robot ''Sensabot'', developed by National Robotic Engineering Center (NREC) (Image credits: NREC)\relax }}{14}{figure.caption.44}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A minimal \ac {ROS} graph. There are two nodes, none 1 and node 2. Node 1 publishes data, i.e. a topic, by the name \texttt {topic\_1}. Node 2 can receive the data by subscribing to \texttt {topic\_1}.\relax }}{21}{figure.caption.53}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.70}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.71}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Conceptual illustration of a graph created by \ac {RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Feature descriptors in $L_2$ and $L_7$ are sufficiently similar to accept this as a loop closure.\relax }}{23}{figure.caption.77}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{27}{figure.caption.78}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Sensor input placed with correct transformations from \textit {base\_link}. \relax }}{27}{figure.caption.79}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{27}{figure.caption.79}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sensor input placed with correct transformations from \textit {base\_link}. \relax }}{27}{figure.caption.80}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Nodes and topics for motion control. \relax }}{27}{figure.caption.81}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{29}{figure.caption.82}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{29}{figure.caption.84}
