@@ -3,14 +3,16 @@
 
 \section{Introduction}
 
-This chapter presents four implementations that were developed during this project. The implementations are as follows:
+This chapter presents four implementations that were developed during this project:
 
-\begin{description}[align=right, labelwidth=5cm]
-	\item[Robot software in \ac{ROS}] The robot's operating system. 
-	\item[Motor Control Firmware] Translate velocity commands to wheel 
-	\item[Android Application] gsdg
-	\item[Operator Control Station] sgsd
-\end{description}
+\begin{center}
+	\begin{tabular}{ l p{7cm} }
+	\textbf{Robot software in \ac{ROS}} & The robot's operating system runs on a laptop computer which is placed on the robot. This system is responsible for the core functionality of the robot, which includes sensor and actuator management, mapping, navigation and manual control.\\
+	\textbf{Motor Control Firmware} & Provides an interface between the \ac{ROS} computer and each wheel motor. Translates velocity commands to wheel speeds.\\
+	\textbf{Android Application} & A supporting tool intended to function as a remote control for the robot. The implementation presented here enables the user to control the robot from an Android device via a Bluetooth connection.\\
+	\textbf{Operator Control Station} & A simple Operator Control Station (OCS) based on Qt enables an operator to control the robot via a wireless TCP/IP connection. The \ac{OCS} can display a live video stream from the Kinect sensor. \\
+	\end{tabular}
+\end{center}
 
 \section{ROS Integration}
 
@@ -28,20 +30,24 @@ Implementation procedure for mobile robot:
 
 \end{itemize}
 
-\section{Modeling}
+\section{Modelling}
 
-\subsection{Introduction}
+A robot model will serve two purposes in this implementation. Firstly, the system needs a definition of how the sensor input is placed with respect to the \texttt{base\_link}. The origin of \texttt{base\_link} is associated  with a coordinate frame. This frame, and any other frame in \ac{ROS}, is right handed, i.e. the positive $x$ direction is \textit{forwards}, positive $y$ points \textit{left}, and positive $z$ is \textit{up}. The robot pose will be based on the transformation between the world and the \texttt{base\_link} frame. 
 
+The second purpose of the model is simulation. Being able to simulate the robot system has been invaluable throughout this project. The robot model is represented in an XML-based modelling language called \ac{URDF} (Unified Robot Description Format). The following sections presents how the model was defined.
 
+\subsection{Obtaining Physical Dimensions}
 
-\subsection{Physical Dimensions}
+Step one in building the model was to define its geometrical shape. The current model shape consists of several links. Each link is defined as a shape and an origin. The links are connected together by joints that define the coordinate transformation between the links. All links are modelled as either cuboids or cylinders. All joints are static except for the wheels which are continuous joints. For simplicity, the robot arm is modelled by a dummy link with the shape of a cylinder.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85\textwidth]{robotFootprint2}
-	\caption{The robot footprint. Dimensions are used for the navigation planners and for modeling. }
+	\caption{The robot footprint. Dimensions are used for the navigation planners and for modelling. }
 	\label{fig:robotFootprint}
 \end{figure}
+
+After defining the model shape, it is time to add some additional physical attributes to each link. In order to simulate the model, each link requires an inertia tensor. It is also useful to define a collision volume for each link. In this model, the collision volume is equal to the geometric shape of the link without exceptions. Inertia tensors for each shape is based on equations \ref{eq:cylinder} and \ref{eq:cuboid}.
 
 The inertia tensor:
 
@@ -58,8 +64,9 @@ Inertia tensor for a solid, uniform cylinder where the radius $r$ is measured in
 I_{cylinder} = \frac{1}{12}m \begin{bmatrix}
 	(3 r^2 + h^2) & 0 & 0 \\[0.3em]
 	0 & (3 r^2 + h^2) & 0 \\[0.3em]
-	0 & 0 & r^2
+	0 & 0 & 6r^2
 	\end{bmatrix}
+	\label{eq:cylinder}
 \end{equation}
 
 Inertia tensor for a solid, uniform cuboid. The subscript of $l$ indicates which axis $l$ is measured along:
@@ -69,7 +76,10 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 	0 & (l_x^2 + l_z^2) & 0 \\[0.3em]
 	0 & 0 & (l_x^2 + l_y^2)
 \end{bmatrix}
+\label{eq:cuboid}
 \end{equation}
+
+The mass of each link is guesstimated. Consider the \texttt{base\_link} as an example. The base link was measured to be $5 \; mm$ thick, $37 \; cm$ wide and $80 \; cm$ long. Assuming that the density of aluminium\footnote{https://en.wikipedia.org/wiki/Aluminium} is $2.7 g/cm^3$, the mass of this link was calculated to be $\approx 4 kg$. 
 
 \subsection{Coordinate Frames}
 
@@ -174,7 +184,7 @@ To perform the translation, it is assumed that the mobile base can be described 
    	\end{align}
 \end{subequations}
 
-In \cite{cook2011mobile}, the parameter $R$ represents the instantaneous radius of curvature of the robot trajectory. This mouthful will be substituted by the linear velocity $v$ in the following equations, because $v = R\omega$ (similar to the linear speed of a wheel). This yields two equations for the wheel speeds, $v_{left}$ and $v_{right}$, based on angular and linear velocity, $w$ and $v$.
+$W$ is the spacing between the wheels as shown in figure \ref{fig:robot_kinematics}. In \cite{cook2011mobile}, the parameter $R$ represents the instantaneous radius of curvature of the robot trajectory. This mouthful will be substituted by the linear velocity $v$ in the following equations, because $v = R\omega$ (similar to the linear speed of a wheel). This yields two equations for the wheel speeds, $v_{left}$ and $v_{right}$, based on angular and linear velocity, $w$ and $v$.
 
  \begin{subequations}%\label{eq:subeqns}
  	\begin{align}
@@ -253,7 +263,15 @@ http://developer.samsung.com/technical-doc/view.do?v=T000000117
 \end{sidewaysfigure}
 
 
-\section{Mapping}
+\section{Mapping - Setting Up RTAB-Map}
+
+For mapping, this robot has utilized Real-Time Appearence Based Mapping (\ac{RTAB-Map}), which was introduced in section \ref{sec:RTAB-Map}. As mentioned, \ac{RTAB-Map} itself has been developed over the last decade by IntRoLab at Université de Sherbrooke in Canada. This section presents how \ac{RTAB-Map} was configured for this robot.
+
+\subsection{Configuration}
+
+As all \ac{ROS} programs which are a part of the robot system, \ac{RTAB-Map} will run as a node that subscribes and publishes topics. The initial task in configuring \ac{RTAB-Map} is to connect the robots sensor data to the \ac{RTAB-Map} node. The node, called \texttt{rtabmap}, can build 2d occupancy grids and/or 3d point cloud representations of the environment. The configuration in this project can do both. There are three possible sensor configurations:
+
+
 
 \section{Navigation}
 
