@@ -3,6 +3,15 @@
 
 \section{Introduction}
 
+This chapter presents four implementations that were developed during this project. The implementations are as follows:
+
+\begin{description}[align=right, labelwidth=5cm]
+	\item[Robot software in \ac{ROS}] The robot's operating system. 
+	\item[Motor Control Firmware] Translate velocity commands to wheel 
+	\item[Android Application] gsdg
+	\item[Operator Control Station] sgsd
+\end{description}
+
 \section{ROS Integration}
 
 Implementation procedure for mobile robot:
@@ -26,6 +35,13 @@ Implementation procedure for mobile robot:
 
 
 \subsection{Physical Dimensions}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.85\textwidth]{robotFootprint2}
+	\caption{The robot footprint. Dimensions are used for the navigation planners and for modeling. }
+	\label{fig:robotFootprint}
+\end{figure}
 
 The inertia tensor:
 
@@ -57,14 +73,14 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 
 \subsection{Coordinate Frames}
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{sensor_frames}
 	\caption{Robot model with frames for laser, Kinect, robot base and map. }
 	\label{fig:sensor_frames}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{sensors_in_frame}
 	\caption{Sensor input placed with correct transformations from \textit{base\_link}. }
@@ -92,14 +108,14 @@ There are four ways to control the robot:
 	\item Commands from the navigation stack in \ac{ROS}.
 \end{itemize}
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{velocity_command}
 	\caption{Nodes and topics for motion control. }
 	\label{fig:move_base_nodes}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{velocity_ramp_cropped}
 	\caption{Velocity command ramping. The blue line represents commands entering \textit{velocity\_ramp}, while the red line shows the acceleration constrained output command.}
@@ -108,7 +124,9 @@ There are four ways to control the robot:
 
 \subsection{Motor Control Card Firmware on XMEGA A3BU}
 
-XMEGA A3BU is an evaluation board developed by Atmel. The board has been used in earlier projects on this robot. The implementation presented here, is based on Petter Aspunviks implementation \cite{aspunvik}. The firmware will now receive velocity commands based on the \texttt{geometry\_msgs/Twist} message format in \ac{ROS}, and translate these into the command format used by each motor. Speed settings for each motor is based on \ac{PWM}. 
+XMEGA A3BU is an evaluation board developed by Atmel. The board has been used in earlier projects on this robot, and the implementation presented here, is based on Petter Aspunviks implementation \cite{aspunvik}. The following paragraphs presents the most significant firmware changes that were made.
+
+The firmware will now receive velocity commands based on the \texttt{geometry\_msgs/Twist} message format in \ac{ROS}, and translate these into the command format used by each motor. Speed settings for each motor is based on \ac{PWM}. 
 
 There were two requirements for this implementation: 
 \begin{enumerate}
@@ -116,18 +134,18 @@ There were two requirements for this implementation:
 \item The program shall translate linear and angular velocity commands into wheel commands.
 \end{enumerate}
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{conn_diag_motors}
 	\caption{Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite{aspunvik}, except for some improved connection for better short circuit prevention.}
 	\label{fig:conn_diag_motors}
 \end{figure}
 
-The connections are the same as in \cite{aspunvik}, except for the installation of more secure connections under the robot. The old connections were insecure, and the risk of short circuits was substantial.
+The connections in figure \ref{fig:conn_diag_motors} are the same as in \cite{aspunvik}, except for the installation of more secure connections under the robot. The old connections were insecure, and the risk of short circuits was substantial.
 
 \subsubsection{ROS-Motor Driver Communication}
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{motor_cmd_sequence}
 	\caption{Velocity command transmission sequence from the \texttt{motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).}
@@ -156,22 +174,32 @@ To perform the translation, it is assumed that the mobile base can be described 
    	\end{align}
 \end{subequations}
 
-In \cite{cook2011mobile}, the parameter $R$ represents the instantaneous radius of curvature of the robot trajectory. This mouthful will be substituted by the linear velocity $v$ in the following equations, because $v = R\omega$ (similar to the linear speed of a wheel). 
+In \cite{cook2011mobile}, the parameter $R$ represents the instantaneous radius of curvature of the robot trajectory. This mouthful will be substituted by the linear velocity $v$ in the following equations, because $v = R\omega$ (similar to the linear speed of a wheel). This yields two equations for the wheel speeds, $v_{left}$ and $v_{right}$, based on angular and linear velocity, $w$ and $v$.
+
+ \begin{subequations}%\label{eq:subeqns}
+ 	\begin{align}
+ 	v &= R\omega \\
+ 	v_{left} &=  \frac{2v - \omega W}{2}\\
+ 	v_{right} &= \frac{2v - \omega W}{2} %\label{eq:subeq2}
+ 	\end{align}
+ \end{subequations}
+
+
 
  \begin{figure}
  	\centering
- 	\begin{subfigure}[c]{0.58\textwidth}
+ 	\begin{subfigure}[b]{0.58\textwidth}
  		\includegraphics[width=\textwidth]{robot_kinematics}
- 		%\caption{Parameters for.}
- 		%\label{fig:robot_kinematics}
+ 		\caption{Differential drive parameters.}
+ 		\label{fig:robot_kinematics}
  	\end{subfigure}
- 	\begin{subfigure}[c]{0.38\textwidth}
+ 	\begin{subfigure}[b]{0.38\textwidth}
  		
  		\includegraphics[width=\textwidth]{wheel_diameter}
- 		%\caption{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.}
+ 		\caption{Wheel diameter.}
  		\label{fig:wheel_diameter}
  	\end{subfigure}
- 	\caption{\label{fig:robot_kinematics}Parameters for differential drive kinematics. Note that the frame vectors $\vec{z}$ and $\vec{x}$ refer to the base frame in this case, and not the world frame.}
+ 	\caption{\label{fig:robot_kinematics}Parameters for differential drive kinematics. Note that the frame vectors $\vec{z}$ and $\vec{x}$ refer to the base frame of the robot in this case, and not the world frame.}
  \end{figure}
 
 \section{Operator Control Station (OCS)}
@@ -216,6 +244,14 @@ Because the \ac{OCS} is only partially implemented, an operator will not have ac
 \end{enumerate}
 
 http://developer.samsung.com/technical-doc/view.do?v=T000000117
+
+\begin{sidewaysfigure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{android_sequence}
+	\caption[This is the caption \newline This is the second line]{\begin{minipage}[t]{.8\linewidth}Sequence diagram illustrating how user touch gestures are detected and propagated \\through the application, before being transmitted as commands to the robot. \end{minipage}}
+	\label{fig:android_sequence}
+\end{sidewaysfigure}
+
 
 \section{Mapping}
 

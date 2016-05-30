@@ -92,78 +92,78 @@
 \contentsline {chapter}{\chapternumberline {4}Implementation}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{25}{section.4.1}
 \contentsline {section}{\numberline {4.2}ROS Integration}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Modeling}{25}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Introduction}{25}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Physical Dimensions}{25}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Coordinate Frames}{26}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Simulations}{26}{section.4.4}
-\contentsline {section}{\numberline {4.5}Motion Control}{26}{section.4.5}
-\contentsline {section}{\numberline {4.6}ROS Nodes for Motion Control}{26}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Velocity Command Sources}{26}{subsection.4.6.1}
+\contentsline {section}{\numberline {4.3}Modeling}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Introduction}{26}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Physical Dimensions}{26}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Coordinate Frames}{27}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Simulations}{27}{section.4.4}
+\contentsline {section}{\numberline {4.5}Motion Control}{28}{section.4.5}
+\contentsline {section}{\numberline {4.6}ROS Nodes for Motion Control}{28}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Velocity Command Sources}{28}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Motor Control Card Firmware on XMEGA A3BU}{28}{subsection.4.6.2}
-\contentsline {subsubsection}{ROS-Motor Driver Communication}{28}{section*.85}
-\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{28}{section*.87}
+\contentsline {subsubsection}{ROS-Motor Driver Communication}{30}{section*.86}
+\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{30}{section*.88}
 \contentsline {section}{\numberline {4.7}Operator Control Station (OCS)}{31}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Graphical User Interface}{31}{subsection.4.7.1}
 \contentsline {section}{\numberline {4.8}The Hand Held Remote Control - \textit {Robot Leash}}{31}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Connecting to the Robot}{32}{subsection.4.8.1}
-\contentsline {section}{\numberline {4.9}Mapping}{33}{section.4.9}
-\contentsline {section}{\numberline {4.10}Navigation}{33}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{33}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{33}{subsection.4.10.2}
-\contentsline {subsubsection}{Obstruction Detection}{33}{section*.91}
-\contentsline {chapter}{\chapternumberline {5}Testing}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Testplan}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Results}{35}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Simulations}{35}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Live Testing}{35}{subsection.5.2.2}
-\contentsline {subsubsection}{Safety Features}{35}{section*.96}
-\contentsline {subsubsection}{Loop Closure Detection}{35}{section*.97}
-\contentsline {subsubsection}{Multi Session Mapping}{35}{section*.98}
-\contentsline {subsubsection}{Navigating an Obstacle Course}{35}{section*.99}
-\contentsline {subsubsection}{Avoiding Moving Obstacles}{35}{section*.101}
-\contentsline {section}{\numberline {5.3}Discussion}{35}{section.5.3}
-\contentsline {chapter}{\chapternumberline {6}Discussion}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}Mapping}{39}{section.6.1}
-\contentsline {section}{\numberline {6.2}Navigation}{39}{section.6.2}
-\contentsline {section}{\numberline {6.3}Suitability for Offshore Maintenance}{39}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Open Source Software and Security}{39}{subsection.6.3.1}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{41}{chapter.7}
-\contentsline {section}{\numberline {7.1}Future Work}{41}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Autonomous Non-Destructive Testing}{41}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Large Scale Kinect Fusion - Kintinous}{41}{subsection.7.1.2}
-\contentsline {subsubsection}{Improve the Communication Protocols}{41}{section*.104}
-\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{42}{section*.105}
-\contentsline {subsection}{\numberline {7.1.3}Hardware}{42}{subsection.7.1.3}
-\contentsline {subsubsection}{Kinect Sensor Location}{42}{section*.106}
-\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{42}{section*.108}
-\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{42}{section*.109}
-\contentsline {subsubsection}{Wheels}{42}{section*.111}
-\contentsline {section}{\numberline {7.2}Task Fulfilment}{43}{section.7.2}
-\contentsline {section}{\numberline {7.3}Final Conclusion}{43}{section.7.3}
-\contentsline {chapter}{References}{45}{section*.114}
+\contentsline {subsection}{\numberline {4.8.1}Connecting to the Robot}{31}{subsection.4.8.1}
+\contentsline {section}{\numberline {4.9}Mapping}{32}{section.4.9}
+\contentsline {section}{\numberline {4.10}Navigation}{32}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{32}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{32}{subsection.4.10.2}
+\contentsline {subsubsection}{Obstruction Detection}{32}{section*.93}
+\contentsline {chapter}{\chapternumberline {5}Testing}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Testplan}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Results}{37}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Simulations}{37}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Live Testing}{37}{subsection.5.2.2}
+\contentsline {subsubsection}{Safety Features}{37}{section*.98}
+\contentsline {subsubsection}{Loop Closure Detection}{37}{section*.99}
+\contentsline {subsubsection}{Multi Session Mapping}{37}{section*.100}
+\contentsline {subsubsection}{Navigating an Obstacle Course}{37}{section*.101}
+\contentsline {subsubsection}{Avoiding Moving Obstacles}{37}{section*.103}
+\contentsline {section}{\numberline {5.3}Discussion}{37}{section.5.3}
+\contentsline {chapter}{\chapternumberline {6}Discussion}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Mapping}{41}{section.6.1}
+\contentsline {section}{\numberline {6.2}Navigation}{41}{section.6.2}
+\contentsline {section}{\numberline {6.3}Suitability for Offshore Maintenance}{41}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Open Source Software and Security}{41}{subsection.6.3.1}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{43}{chapter.7}
+\contentsline {section}{\numberline {7.1}Future Work}{43}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Autonomous Non-Destructive Testing}{43}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Large Scale Kinect Fusion - Kintinous}{43}{subsection.7.1.2}
+\contentsline {subsubsection}{Improve the Communication Protocols}{43}{section*.106}
+\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{44}{section*.107}
+\contentsline {subsection}{\numberline {7.1.3}Hardware}{44}{subsection.7.1.3}
+\contentsline {subsubsection}{Kinect Sensor Location}{44}{section*.108}
+\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{44}{section*.110}
+\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{44}{section*.111}
+\contentsline {subsubsection}{Wheels}{44}{section*.113}
+\contentsline {section}{\numberline {7.2}Task Fulfilment}{45}{section.7.2}
+\contentsline {section}{\numberline {7.3}Final Conclusion}{45}{section.7.3}
+\contentsline {chapter}{References}{47}{section*.116}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{49}{appendix.A}
-\contentsline {section}{\numberline {A.1}Installation}{49}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Equipment List}{49}{subsection.A.1.1}
-\contentsline {subsubsection}{Item List}{49}{section*.115}
-\contentsline {subsubsection}{Software list}{49}{section*.116}
-\contentsline {subsubsection}{Compatibility Issues}{49}{section*.117}
-\contentsline {subsection}{\numberline {A.1.2}Install Ubuntu}{49}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Download ROS}{49}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Configuring the Project}{49}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Configuring the ROS Workspace}{49}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Configuring the Bluetooth Connection}{49}{subsection.A.2.2}
-\contentsline {subsubsection}{1 - Install Qt5}{50}{section*.118}
-\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{50}{section*.119}
-\contentsline {appendix}{\chapternumberline {B}Troubleshooting}{51}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{51}{section.B.1}
-\contentsline {section}{\numberline {B.2}Hardware}{51}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}The Wheel Fell Off!}{51}{subsection.B.2.1}
-\contentsline {section}{\numberline {B.3}ROS}{52}{section.B.3}
-\contentsline {subsection}{\numberline {B.3.1}\leavevmode {\color {red}ERROR:} tf2:ExtrapolationException}{52}{subsection.B.3.1}
-\contentsline {section}{\numberline {B.4}Gazebo}{52}{section.B.4}
-\contentsline {subsection}{\numberline {B.4.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{52}{subsection.B.4.1}
-\contentsline {subsection}{\numberline {B.4.2}Dependency Issues When Installing \textit {gazebo2}}{52}{subsection.B.4.2}
-\contentsline {section}{\numberline {B.5}Ubuntu}{53}{section.B.5}
-\contentsline {subsection}{\numberline {B.5.1}Ubuntu Freezes}{53}{subsection.B.5.1}
+\contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Installation}{51}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Equipment List}{51}{subsection.A.1.1}
+\contentsline {subsubsection}{Item List}{51}{section*.117}
+\contentsline {subsubsection}{Software list}{51}{section*.118}
+\contentsline {subsubsection}{Compatibility Issues}{51}{section*.119}
+\contentsline {subsection}{\numberline {A.1.2}Install Ubuntu}{51}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Download ROS}{51}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Configuring the Project}{51}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Configuring the ROS Workspace}{51}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Configuring the Bluetooth Connection}{51}{subsection.A.2.2}
+\contentsline {subsubsection}{1 - Install Qt5}{52}{section*.120}
+\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{52}{section*.121}
+\contentsline {appendix}{\chapternumberline {B}Troubleshooting}{53}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{53}{section.B.1}
+\contentsline {section}{\numberline {B.2}Hardware}{53}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}The Wheel Fell Off!}{53}{subsection.B.2.1}
+\contentsline {section}{\numberline {B.3}ROS}{54}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}\leavevmode {\color {red}ERROR:} tf2:ExtrapolationException}{54}{subsection.B.3.1}
+\contentsline {section}{\numberline {B.4}Gazebo}{54}{section.B.4}
+\contentsline {subsection}{\numberline {B.4.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{54}{subsection.B.4.1}
+\contentsline {subsection}{\numberline {B.4.2}Dependency Issues When Installing \textit {gazebo2}}{54}{subsection.B.4.2}
+\contentsline {section}{\numberline {B.5}Ubuntu}{55}{section.B.5}
+\contentsline {subsection}{\numberline {B.5.1}Ubuntu Freezes}{55}{subsection.B.5.1}

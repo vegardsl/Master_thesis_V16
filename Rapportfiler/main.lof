@@ -10,28 +10,30 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{13}{figure.caption.36}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{13}{figure.caption.41}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces An early version of the maintenance robot ''Sensabot'', developed by National Robotic Engineering Center (NREC) (Image credits: NREC)\relax }}{14}{figure.caption.44}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A minimal \ac {ROS} graph. There are two nodes, none 1 and node 2. Node 1 publishes data, i.e. a topic, by the name \texttt {topic\_1}. Node 2 can receive the data by subscribing to \texttt {topic\_1}.\relax }}{21}{figure.caption.53}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A minimal \ac {ROS} graph. There are two nodes, \texttt {node\_1} and \texttt {node\_2}. \texttt {node\_1} publishes data, i.e. a topic, by the name \texttt {topic\_1}. \texttt {node\_2} can receive the data by subscribing to \texttt {topic\_1}.\relax }}{21}{figure.caption.53}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.70}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Awesome Image\relax }}{21}{figure.caption.71}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Conceptual illustration of a graph created by \ac {RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Feature descriptors in $L_2$ and $L_7$ are sufficiently similar to accept this as a loop closure.\relax }}{23}{figure.caption.77}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{27}{figure.caption.79}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Sensor input placed with correct transformations from \textit {base\_link}. \relax }}{27}{figure.caption.80}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Nodes and topics for motion control. \relax }}{27}{figure.caption.81}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{29}{figure.caption.82}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{29}{figure.caption.84}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Velocity command transmission sequence from the \texttt {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{30}{figure.caption.86}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame in this case, and not the world frame.\relax }}{31}{figure.caption.88}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{32}{figure.caption.90}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Detecting obstructions in 3d.\relax }}{33}{figure.caption.92}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The robot footprint. Dimensions are used for the navigation planners and for modeling. \relax }}{26}{figure.caption.79}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{27}{figure.caption.80}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sensor input placed with correct transformations from \textit {base\_link}. \relax }}{27}{figure.caption.81}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Nodes and topics for motion control. \relax }}{28}{figure.caption.82}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{29}{figure.caption.83}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{29}{figure.caption.85}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Velocity command transmission sequence from the \texttt {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{33}{figure.caption.87}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{34}{figure.caption.89}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{34}{figure.caption.91}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces This is the caption \newline This is the second line}}{35}{figure.caption.92}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detecting obstructions in 3d.\relax }}{36}{figure.caption.94}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{36}{figure.caption.93}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{36}{figure.caption.94}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{37}{figure.caption.95}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{38}{figure.caption.100}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{38}{figure.caption.95}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{38}{figure.caption.96}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{39}{figure.caption.97}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{40}{figure.caption.102}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{42}{figure.caption.112}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{44}{figure.caption.114}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{51}{figure.caption.120}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{53}{figure.caption.122}
