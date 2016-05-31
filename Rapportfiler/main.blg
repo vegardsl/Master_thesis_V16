@@ -15,7 +15,7 @@ The style file: alpha.bst
 A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: troubleshooting.aux
 Database file #1: main.bib
-I was expecting a `,' or a `}'---line 425 of file main.bib
+I was expecting a `,' or a `}'---line 438 of file main.bib
  : keywords=Inspection; 
  :                      Maintenance; Robotics; Offshore platforms},
 I'm skipping whatever remains of this entry
@@ -34,7 +34,10 @@ Warning--to sort, need author or key in ARGOS
 Warning--to sort, need author or key in ROS_install
 Warning--to sort, need author or key in ROS_history
 Warning--to sort, need author or key in ROS_tut_pkg
+Warning--to sort, need author or key in ROS_launch
 Warning--to sort, need author or key in ROS_space
+Warning--to sort, need author or key in ROS_industrial
+Warning--to sort, need author or key in ROS_industria_hardware
 Warning--to sort, need author or key in Kintinous
 Warning--to sort, need author or key in Reboot_Ubuntu
 Warning--can't use both author and editor fields in Berger2013

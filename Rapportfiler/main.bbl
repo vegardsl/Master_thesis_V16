@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{BMNK13}
+\begin{thebibliography}{MEBF{\etalchar{+}}10}
 
 \bibitem[ARG]{ARGOS}
 {ARGOS} challenge.
@@ -66,6 +66,11 @@ E24.no: Denne plattformen skal fjernstyres fra land.
   \url{http://e24.no/energi/statoil/produksjonen-paa-valemon-er-i-gang/23366972}.
 \newblock Accessed: 28-05-2016.
 
+\bibitem[EHS{\etalchar{+}}14]{endres20143}
+Felix Endres, Jurgen Hess, Jurgen Sturm, Daniel Cremers, and Wolfram Burgard.
+\newblock 3-d mapping with an rgb-d camera.
+\newblock {\em Robotics, IEEE Transactions on}, 30(1):177--187, 2014.
+
 \bibitem[ER12a]{ElReedy2012383}
 Mohamed~A. El-Reedy.
 \newblock Chapter 6 - corrosion protection.
@@ -82,6 +87,14 @@ Mohamed~A. El-Reedy.
 Peter Gorle and Andrew Clive.
 \newblock Positive impact of industrial robots on employment.
 \newblock Report, METRA MARTECH Limited, 2011.
+
+\bibitem[HWB{\etalchar{+}}13]{hornung13auro}
+Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
+  Burgard.
+\newblock {OctoMap}: An efficient probabilistic {3D} mapping framework based on
+  octrees.
+\newblock {\em Autonomous Robots}, 2013.
+\newblock Software available at \url{http://octomap.github.com}.
 
 \bibitem[ifr]{ifr_statistics}
 International federation of robotics - statistics.
@@ -137,6 +150,13 @@ M.~Labbe and F.~Michaud.
 \newblock In {\em Proceedings of the IEEE/RSJ International Conference on
   Intelligent Robots and Systems}, pages 2661--2666, Sept 2014.
 
+\bibitem[MEBF{\etalchar{+}}10]{tbd}
+Eitan Marder-Eppstein, Eric Berger, Tully Foote, Brian Gerkey, and Kurt
+  Konolige.
+\newblock The office marathon: Robust navigation in an indoor office
+  environment.
+\newblock In {\em International Conference on Robotics and Automation}, 2010.
+
 \bibitem[MIM]{MIMROex}
 {MIMRO}ex, mobile maintenance and inspection robot for process plants.
 \newblock
@@ -188,15 +208,30 @@ Reboot ubuntu.
 \newblock \url{http://www.ros.org/history/}.
 \newblock Accessed: 2016-02-28.
 
-\bibitem[ROSc]{ROS_install}
+\bibitem[ROSc]{ROS_industrial}
+{ROS}-industrial.
+\newblock \url{http://rosindustrial.org/the-challenge/}.
+\newblock Accessed: 2016-04-05.
+
+\bibitem[ROSd]{ROS_industria_hardware}
+{ROS}-industrial, supported hardware.
+\newblock \url{http://wiki.ros.org/Industrial/supported_hardware}.
+\newblock Accessed: 2016-04-05.
+
+\bibitem[ROSe]{ROS_install}
 {ROS} installation.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
 
-\bibitem[ROSd]{ROS_space}
+\bibitem[ROSf]{ROS_space}
 {ROS} on the iss.
 \newblock \url{http://www.ros.org/news/2014/09/ros-running-on-iss.html}.
 \newblock Accessed: 2016-04-10.
+
+\bibitem[ROSg]{ROS_launch}
+roslaunch.
+\newblock \url{http://wiki.ros.org/roslaunch}.
+\newblock Accessed: 2016-03-15.
 
 \bibitem[sta]{statoil_ubemannet}
 Offshore.no: Statoil vil bygge flere folkefrie plattformer.

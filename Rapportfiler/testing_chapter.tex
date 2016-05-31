@@ -1,7 +1,37 @@
-\chapter{Testing}
-\label{chp:testing} 
+\chapter{Results}
+\label{chp:results} 
+
+\section{Introduction}
+
+This chapter presents how the robot and the supporting implementations were tested. Tests were performed on a simulated version of the robot and the real hardware. The software is inherently indifferent to weather the robot is simulated or real. However, it was still necessary to have some separate launch and configuration files for the simulated and hardware version. 
 
 \section{Testplan}
+
+The following tests will be carried out in the simulator, as well as in the real world. They will mainly focus on the navigation stack and \ac{RTAB-Map}. 
+
+\begin{center}
+	\begin{tabular}{ p{2.5cm} | p{7cm} }
+		\multicolumn{2}{c}{Supporting Functionality}\\
+		\hline
+		\textbf{Evaluate} & Description\\
+		\hline
+	
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ p{2.5cm} | p{7cm} }
+	\multicolumn{2}{c}{Core Functionality}\\
+\hline
+	\textbf{Evaluate} & Description\\
+	\hline
+	\textbf{Multi Session Mapping} & Verify that the robot can rediscover areas which have been mapped in a previous mapping session.\\
+	\textbf{Evaluate Loop Closure Detection} & As a core functionality in \ac{RTAB-Map}, it is critical to evaluate the loop closure mechanism.\\
+	\textbf{Autonomous Navigation} & Perform a set of tests on the navigation stack. The tests should evaluate path planning with moving obstacles. Different parameters should be tested and evaluated. Observe how the robot handles narrow passages. Evaluate robustness of the navigation stack for this robot.\\
+	\end{tabular}
+\end{center}
+
+\subsection{Supporting Functionality}
 
 \section{Results}
 
@@ -29,6 +59,8 @@
 \end{figure}
 
 \subsection{Live Testing}
+
+Due to time constraints, it was no time to tune the parameters of \ac{RTAB-Map}.
 
 \subsubsection{Safety Features}
 

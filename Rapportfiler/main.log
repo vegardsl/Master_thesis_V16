@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  31 MAY 2016 00:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  31 MAY 2016 18:04
 entering extended mode
 **main.tex
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.tex
@@ -2036,7 +2036,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-<./figs/ntnu-logo.pdf, id=470, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=478, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -2174,41 +2174,41 @@ m the \T1/lmtt/m/n/10 motor_driver_interface
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\introduction_ch
 apter.tex
 Package acronym Info: Label `acro:ITK' newly defined as it shall be overridden
-although it is yet undefined on input line 10.
+although it is yet undefined on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 10.
+(Font)              <6> on input line 12.
 Package acronym Info: Label `acro:IO' newly defined as it shall be overridden
-although it is yet undefined on input line 13.
+although it is yet undefined on input line 15.
 Package acronym Info: Label `acro:VR' newly defined as it shall be overridden
-although it is yet undefined on input line 16.
-Package acronym Info: Label `acro:HMI' newly defined as it shall be overridden
-although it is yet undefined on input line 21.
+although it is yet undefined on input line 18.
  [1
 
 
 ]
+Package acronym Info: Label `acro:HMI' newly defined as it shall be overridden
+although it is yet undefined on input line 23.
 Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
 
-although it is yet undefined on input line 28.
+although it is yet undefined on input line 30.
 Package acronym Info: Label `acro:OpenCV' newly defined as it shall be overridd
 en
-although it is yet undefined on input line 32.
- <./figs/conseptDrawing.png, id=852, 1053.9375pt x 685.05937pt>
+although it is yet undefined on input line 34.
+ <./figs/conseptDrawing.png, id=860, 1053.9375pt x 685.05937pt>
 File: ./figs/conseptDrawing.png Graphic file (type png)
 
 <use ./figs/conseptDrawing.png>
-Package pdftex.def Info: ./figs/conseptDrawing.png used on input line 38.
+Package pdftex.def Info: ./figs/conseptDrawing.png used on input line 40.
 (pdftex.def)             Requested size: 291.20111pt x 189.28564pt.
-) [2] [3 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/c
-onseptDrawing.png>]
+ [2]) [3] [4 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/fi
+gs/conseptDrawing.png>]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\TaskOutlineAndP
-lanning.tex [4
+lanning.tex) [5
 
 
 
-]) [5]
+]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\theory_chapter.
 tex [6
 
@@ -2284,7 +2284,7 @@ Underfull \vbox (badness 1502) has occurred while \output is active []
 [11]
 Package acronym Info: Label `acro:IFR' newly defined as it shall be overridden
 although it is yet undefined on input line 172.
- [12] <./figs/subsea7AIV.png, id=982, 688.82344pt x 495.35063pt>
+ [12] <./figs/subsea7AIV.png, id=992, 688.82344pt x 495.35063pt>
 File: ./figs/subsea7AIV.png Graphic file (type png)
 
 <use ./figs/subsea7AIV.png>
@@ -2297,7 +2297,7 @@ although it is yet undefined on input line 194.
 Package acronym Info: Label `acro:AUV' newly defined as it shall be overridden
 although it is yet undefined on input line 194.
 
-<./figs/HRP2_valve.jpg, id=988, 1606.0pt x 1068.99374pt>
+<./figs/HRP2_valve.jpg, id=998, 1606.0pt x 1068.99374pt>
 File: ./figs/HRP2_valve.jpg Graphic file (type jpg)
 
 <use ./figs/HRP2_valve.jpg>
@@ -2309,7 +2309,7 @@ a7AIV.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs
 Package acronym Info: Label `acro:DRC' newly defined as it shall be overridden
 although it is yet undefined on input line 212.
 
-<./figs/sensabot.jpg, id=1008, 351.3125pt x 344.28625pt>
+<./figs/sensabot.jpg, id=1018, 351.3125pt x 344.28625pt>
 File: ./figs/sensabot.jpg Graphic file (type jpg)
 
 <use ./figs/sensabot.jpg>
@@ -2340,68 +2340,77 @@ although it is yet undefined on input line 261.
 Package natbib Warning: Citation `BCD_license' on page 15 undefined on input li
 ne 261.
 
-[15] <./figs/minimum_graph_bl.png, id=1071, 619.56468pt x 183.68625pt>
+[15] <./figs/minimum_graph_bl.png, id=1081, 619.56468pt x 183.68625pt>
 File: ./figs/minimum_graph_bl.png Graphic file (type png)
 
 <use ./figs/minimum_graph_bl.png>
 Package pdftex.def Info: ./figs/minimum_graph_bl.png used on input line 273.
 (pdftex.def)             Requested size: 291.20111pt x 86.33253pt.
  [16]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 301.
+
+Overfull \hbox (3.49893pt too wide) in paragraph at lines 306--306
+[]\T1/lmtt/m/n/10 $ roslaunch <package name> <launch file name>.launch <argumen
+t1>:=true[] 
+ []
+
 Package acronym Info: Label `acro:URDF' newly defined as it shall be overridden
 
-although it is yet undefined on input line 307.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 309.
- [17]
+although it is yet undefined on input line 313.
+[17]
 Package acronym Info: Label `acro:ISS' newly defined as it shall be overridden
-although it is yet undefined on input line 328.
+although it is yet undefined on input line 334.
+
+Underfull \vbox (badness 2359) has occurred while \output is active []
+
  [18]
+[19]
 Package acronym Info: Label `acro:NUI' newly defined as it shall be overridden
-although it is yet undefined on input line 369.
-Package acronym Info: Label `acro:MIT' newly defined as it shall be overridden
 although it is yet undefined on input line 375.
- [19]
-<./figs/kinect360.png, id=1153, 963.6pt x 451.6875pt>
+Package acronym Info: Label `acro:MIT' newly defined as it shall be overridden
+although it is yet undefined on input line 381.
+ <./figs/kinect360.png, id=1171, 963.6pt x 451.6875pt>
 File: ./figs/kinect360.png Graphic file (type png)
 
 <use ./figs/kinect360.png>
-Package pdftex.def Info: ./figs/kinect360.png used on input line 382.
+Package pdftex.def Info: ./figs/kinect360.png used on input line 388.
 (pdftex.def)             Requested size: 291.20111pt x 136.49976pt.
 
-<./figs/kinect360_exp.png, id=1154, 432.86719pt x 222.07968pt>
+<./figs/kinect360_exp.png, id=1172, 432.86719pt x 222.07968pt>
 File: ./figs/kinect360_exp.png Graphic file (type png)
 
 <use ./figs/kinect360_exp.png>
-Package pdftex.def Info: ./figs/kinect360_exp.png used on input line 389.
+Package pdftex.def Info: ./figs/kinect360_exp.png used on input line 395.
 (pdftex.def)             Requested size: 291.20111pt x 149.40594pt.
-Package acronym Info: Label `acro:CLM' newly defined as it shall be overridden
-although it is yet undefined on input line 411.
  [20] [21 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/
 minimum_graph_bl.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rappor
 tfiler/figs/kinect360.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/R
 apportfiler/figs/kinect360_exp.png>]
+Package acronym Info: Label `acro:CLM' newly defined as it shall be overridden
+although it is yet undefined on input line 417.
 Package acronym Info: Label `acro:SIFT' newly defined as it shall be overridden
 
-although it is yet undefined on input line 425.
+although it is yet undefined on input line 431.
 Package acronym Info: Label `acro:SURF' newly defined as it shall be overridden
 
-although it is yet undefined on input line 425.
-
-<./figs/rtabmap_graph_bl.png, id=1192, 513.41812pt x 434.37282pt>
+although it is yet undefined on input line 431.
+ [22]
+<./figs/rtabmap_graph_bl.png, id=1220, 513.41812pt x 434.37282pt>
 File: ./figs/rtabmap_graph_bl.png Graphic file (type png)
 
 <use ./figs/rtabmap_graph_bl.png>
-Package pdftex.def Info: ./figs/rtabmap_graph_bl.png used on input line 436.
+Package pdftex.def Info: ./figs/rtabmap_graph_bl.png used on input line 442.
 (pdftex.def)             Requested size: 182.0pt x 153.98138pt.
-) [22] [23 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs
+) [23] [24 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs
 /rtabmap_graph_bl.png>]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\implementation_
-chapter.tex [24
+chapter.tex [25
 
 
 
-] [25]
-<./figs/robotFootprint2.png, id=1225, 655.69969pt x 420.82219pt>
+]
+<./figs/robotFootprint2.png, id=1259, 655.69969pt x 420.82219pt>
 File: ./figs/robotFootprint2.png Graphic file (type png)
 
 <use ./figs/robotFootprint2.png>
@@ -2413,14 +2422,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26] [27 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/r
 obotFootprint2.png>]
-<./figs/sensor_frames.png, id=1243, 718.18312pt x 508.90125pt>
+<./figs/sensor_frames.png, id=1277, 718.18312pt x 508.90125pt>
 File: ./figs/sensor_frames.png Graphic file (type png)
 
 <use ./figs/sensor_frames.png>
 Package pdftex.def Info: ./figs/sensor_frames.png used on input line 88.
 (pdftex.def)             Requested size: 182.0pt x 128.9644pt.
 
-<./figs/sensors_in_frame.png, id=1244, 767.86874pt x 598.48593pt>
+<./figs/sensors_in_frame.png, id=1278, 767.86874pt x 598.48593pt>
 File: ./figs/sensors_in_frame.png Graphic file (type png)
 
 <use ./figs/sensors_in_frame.png>
@@ -2429,14 +2438,14 @@ Package pdftex.def Info: ./figs/sensors_in_frame.png used on input line 95.
  [28 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/senso
 r_frames.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/f
 igs/sensors_in_frame.png>]
-<./figs/velocity_command.png, id=1256, 1141.26375pt x 391.4625pt>
+<./figs/velocity_command.png, id=1290, 1141.26375pt x 391.4625pt>
 File: ./figs/velocity_command.png Graphic file (type png)
 
 <use ./figs/velocity_command.png>
 Package pdftex.def Info: ./figs/velocity_command.png used on input line 123.
 (pdftex.def)             Requested size: 364.0pt x 124.85242pt.
 
-<./figs/velocity_ramp_cropped.png, id=1257, 1363.34344pt x 667.74469pt>
+<./figs/velocity_ramp_cropped.png, id=1291, 1363.34344pt x 667.74469pt>
 File: ./figs/velocity_ramp_cropped.png Graphic file (type png)
 
 <use ./figs/velocity_ramp_cropped.png>
@@ -2451,7 +2460,7 @@ Package acronym Info: Label `acro:PWM' newly defined as it shall be overridden
 although it is yet undefined on input line 139.
 [29 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/veloci
 ty_command.png>]
-<./figs/conn_diag_motors.png, id=1268, 899.61093pt x 525.46312pt>
+<./figs/conn_diag_motors.png, id=1302, 899.61093pt x 525.46312pt>
 File: ./figs/conn_diag_motors.png Graphic file (type png)
 
 <use ./figs/conn_diag_motors.png>
@@ -2460,7 +2469,7 @@ Package pdftex.def Info: ./figs/conn_diag_motors.png used on input line 149.
  [30 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/veloc
 ity_ramp_cropped.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rappor
 tfiler/figs/conn_diag_motors.png>]
-<./figs/motor_cmd_sequence.png, id=1279, 560.0925pt x 752.8125pt>
+<./figs/motor_cmd_sequence.png, id=1313, 560.0925pt x 752.8125pt>
 File: ./figs/motor_cmd_sequence.png Graphic file (type png)
 
 <use ./figs/motor_cmd_sequence.png>
@@ -2515,14 +2524,14 @@ l.194  	\end{align}
 Underfull \vbox (badness 7522) has occurred while \output is active []
 
  [31]
-<./figs/robot_kinematics.png, id=1294, 903.375pt x 587.94656pt>
+<./figs/robot_kinematics.png, id=1328, 903.375pt x 587.94656pt>
 File: ./figs/robot_kinematics.png Graphic file (type png)
 
 <use ./figs/robot_kinematics.png>
 Package pdftex.def Info: ./figs/robot_kinematics.png used on input line 202.
 (pdftex.def)             Requested size: 211.12067pt x 137.40489pt.
 
-<./figs/wheel_diameter.png, id=1295, 372.64218pt x 368.87813pt>
+<./figs/wheel_diameter.png, id=1329, 372.64218pt x 368.87813pt>
 File: ./figs/wheel_diameter.png Graphic file (type png)
 
 <use ./figs/wheel_diameter.png>
@@ -2531,28 +2540,28 @@ Package pdftex.def Info: ./figs/wheel_diameter.png used on input line 208.
 Package acronym Info: Label `acro:GUI' newly defined as it shall be overridden
 although it is yet undefined on input line 221.
 
-<./figs/device_select.png, id=1299, 406.51875pt x 722.7pt>
+<./figs/device_select.png, id=1333, 406.51875pt x 722.7pt>
 File: ./figs/device_select.png Graphic file (type png)
 
 <use ./figs/device_select.png>
 Package pdftex.def Info: ./figs/device_select.png used on input line 231.
 (pdftex.def)             Requested size: 109.20111pt x 194.1281pt.
 
-<./figs/bt_request.png, id=1300, 1084.05pt x 1927.2pt>
+<./figs/bt_request.png, id=1334, 1084.05pt x 1927.2pt>
 File: ./figs/bt_request.png Graphic file (type png)
 
 <use ./figs/bt_request.png>
 Package pdftex.def Info: ./figs/bt_request.png used on input line 236.
 (pdftex.def)             Requested size: 109.20111pt x 194.1134pt.
 
-<./figs/using_app.png, id=1301, 406.51875pt x 722.7pt>
+<./figs/using_app.png, id=1335, 406.51875pt x 722.7pt>
 File: ./figs/using_app.png Graphic file (type png)
 
 <use ./figs/using_app.png>
 Package pdftex.def Info: ./figs/using_app.png used on input line 241.
 (pdftex.def)             Requested size: 109.20111pt x 194.1281pt.
 
-<./figs/android_sequence.png, id=1302, 1318.9275pt x 684.30656pt>
+<./figs/android_sequence.png, id=1336, 1318.9275pt x 684.30656pt>
 File: ./figs/android_sequence.png Graphic file (type png)
 
 <use ./figs/android_sequence.png>
@@ -2564,7 +2573,7 @@ Overfull \hbox (15.05101pt too wide) in paragraph at lines 268--269
 ce Based Map-ping ([][]),
  []
 
-[32] <./figs/3d_obstruction1_left.png, id=1320, 572.1375pt x 472.76625pt>
+[32] <./figs/3d_obstruction1_left.png, id=1355, 572.1375pt x 472.76625pt>
 File: ./figs/3d_obstruction1_left.png Graphic file (type png)
 
 <use ./figs/3d_obstruction1_left.png>
@@ -2572,7 +2581,7 @@ Package pdftex.def Info: ./figs/3d_obstruction1_left.png used on input line 287
 .
 (pdftex.def)             Requested size: 192.91956pt x 159.41104pt.
 
-<./figs/3d_obstruction1_right.png, id=1321, 541.27219pt x 521.69907pt>
+<./figs/3d_obstruction1_right.png, id=1356, 541.27219pt x 521.69907pt>
 File: ./figs/3d_obstruction1_right.png Graphic file (type png)
 
 <use ./figs/3d_obstruction1_right.png>
@@ -2595,65 +2604,79 @@ figs/3d_obstruction1_left.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V
 
 
 
-] <./figs/gazebo2_cropped.png, id=1350, 1059.20718pt x 264.99pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\T1/lmr/bx/n/10 Evaluate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\T1/lmr/bx/n/10 Autonomous
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+<./figs/gazebo2_cropped.png, id=1391, 1059.20718pt x 264.99pt>
 File: ./figs/gazebo2_cropped.png Graphic file (type png)
 
 <use ./figs/gazebo2_cropped.png>
-Package pdftex.def Info: ./figs/gazebo2_cropped.png used on input line 12.
+Package pdftex.def Info: ./figs/gazebo2_cropped.png used on input line 42.
 (pdftex.def)             Requested size: 364.0pt x 91.06583pt.
 
-<./figs/Incorrect_lc_detection_cropped.png, id=1351, 426.09187pt x 325.215pt>
+<./figs/Incorrect_lc_detection_cropped.png, id=1392, 426.09187pt x 325.215pt>
 File: ./figs/Incorrect_lc_detection_cropped.png Graphic file (type png)
 
 <use ./figs/Incorrect_lc_detection_cropped.png>
 Package pdftex.def Info: ./figs/Incorrect_lc_detection_cropped.png used on inpu
-t line 19.
+t line 49.
 (pdftex.def)             Requested size: 364.0pt x 277.83841pt.
 
-<./figs/planning_big_footprint_cropped.png, id=1352, 427.5975pt x 531.48563pt>
+<./figs/planning_big_footprint_cropped.png, id=1393, 427.5975pt x 531.48563pt>
 File: ./figs/planning_big_footprint_cropped.png Graphic file (type png)
 
 <use ./figs/planning_big_footprint_cropped.png>
 Package pdftex.def Info: ./figs/planning_big_footprint_cropped.png used on inpu
-t line 26.
+t line 56.
 (pdftex.def)             Requested size: 364.0pt x 452.43803pt.
 
-<./figs/obstructed_plan.png, id=1353, 447.17062pt x 368.1253pt>
+<./figs/obstructed_plan.png, id=1395, 447.17062pt x 368.1253pt>
 File: ./figs/obstructed_plan.png Graphic file (type png)
 
 <use ./figs/obstructed_plan.png>
-Package pdftex.def Info: ./figs/obstructed_plan.png used on input line 44.
+Package pdftex.def Info: ./figs/obstructed_plan.png used on input line 76.
 (pdftex.def)             Requested size: 167.44244pt x 137.84442pt.
 
-<./figs/corrected_plan.png, id=1354, 559.33969pt x 448.67625pt>
+<./figs/corrected_plan.png, id=1396, 559.33969pt x 448.67625pt>
 File: ./figs/corrected_plan.png Graphic file (type png)
 
 <use ./figs/corrected_plan.png>
-Package pdftex.def Info: ./figs/corrected_plan.png used on input line 49.
+Package pdftex.def Info: ./figs/corrected_plan.png used on input line 81.
 (pdftex.def)             Requested size: 171.80804pt x 137.81479pt.
-) [39] [40 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs
+) [40] [41 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs
 /gazebo2_cropped.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rappor
-tfiler/figs/Incorrect_lc_detection_cropped.png>] [41 <C:/Users/Vegard/Documents
+tfiler/figs/Incorrect_lc_detection_cropped.png>] [42 <C:/Users/Vegard/Documents
 /Skole/Master_thesis_V16/Rapportfiler/figs/planning_big_footprint_cropped.png>]
- [42 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/obstr
+ [43 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/obstr
 ucted_plan.png> <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler
 /figs/corrected_plan.png>]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\discussion_chap
-ter.tex
+ter.tex [44
+
+
+
+]
 Package acronym Info: Label `acro:PCL' newly defined as it shall be overridden
 although it is yet undefined on input line 27.
- [43
-
-
-
-]) [44]
+ [45]) [46]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\conclusion_chap
 ter.tex
 Package acronym Info: Label `acro:AI' newly defined as it shall be overridden
 although it is yet undefined on input line 8.
 
 
-Package natbib Warning: Citation `keylist' on page 45 undefined on input line 1
+Package natbib Warning: Citation `keylist' on page 47 undefined on input line 1
 2.
 
 
@@ -2662,7 +2685,7 @@ Overfull \hbox (21.40213pt too wide) in paragraph at lines 16--17
 ttps://github.com/mp3guy/Kintinuous[][].
  []
 
-[45
+[47
 
 
 
@@ -2672,105 +2695,105 @@ n
 although it is yet undefined on input line 32.
 Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
 although it is yet undefined on input line 40.
- <./figs/worn_wheel2.png, id=1413, 403.5075pt x 487.8225pt>
+ <./figs/worn_wheel2.png, id=1459, 403.5075pt x 487.8225pt>
 File: ./figs/worn_wheel2.png Graphic file (type png)
 
 <use ./figs/worn_wheel2.png>
 Package pdftex.def Info: ./figs/worn_wheel2.png used on input line 47.
 (pdftex.def)             Requested size: 174.71844pt x 211.22597pt.
- [46 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/worn_
-wheel2.png>]) [47]
+ [48 <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/worn_
+wheel2.png>]) [49]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\main.bbl
-[48
+[50
 
 
 ]
 bibitemlist
-[49]
-Underfull \hbox (badness 4927) in paragraph at lines 87--90
+[51]
+Underfull \hbox (badness 4927) in paragraph at lines 100--103
 []\T1/lmr/m/n/10 (+20) International fed-er-a-tion of robotics - statis-tics.  
 [][]$http : / / www . ifr . org /$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--144
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 $\T1/lmr/m/n/10 (+20) / / www . ipa . fraunhofer . de / leadmin / user _ uploa
 d / Kompetenzen / Roboter-[] _$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--144
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 $\T1/lmr/m/n/10 (+20) und _ Assistenzsysteme / Industrielle _ und _ gewerbliche
  _ Servicerobotik /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--144
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 $\T1/lmr/m/n/10 (+20) English _ Documents / Product _ sheet _ MIMROex _ Mobile 
 _ maintenance _$
  []
 
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 152--157
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
 []\T1/lmr/m/n/10 (+20) Press re-lease: Sub-sea 7 com-pletes de-sign and build o
 f first
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--157
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
 \T1/lmr/m/n/10 (+20) com-mer-cial au-tonomous in-spec-tion ve-hi-cle (aiv).  []
 []$http : / /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--157
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
 $\T1/lmr/m/n/10 (+20) www . subsea7 . com / content / dam / subsea7 / Company %
  20News / 2011 /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--180
+Underfull \hbox (badness 10000) in paragraph at lines 196--200
 []\T1/lmr/m/n/10 (+20) Reboot ubuntu.  [][]$http : / / askubuntu . com / questi
 ons / 4408 /$
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 176--180
+Underfull \hbox (badness 2035) in paragraph at lines 196--200
 $\T1/lmr/m/n/10 (+20) what-[]should-[]i-[]do-[]when-[]ubuntu-[]freezes / 36717 
 # 36717$[][].  Ac-cessed: 2016-03-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--185
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
 []\T1/lmr/m/n/10 (+20) ROS cre-ate pack-age tu-to-rial.  [][]$http : / / wiki .
  ros . org / ROS / Tutorials /$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
 $\T1/lmr/m/n/10 (+20) / / www . tu . no / artikler / ubemannede-[]plattformer-[
 ]skal-[]konkurrere-[]med-[]subsea /$
  []
 
-) [51] [52]
+) [54]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\setup.tex
-[53
+[55
 
 
-]) [54]
+]) [56]
 (C:\Users\Vegard\Documents\Skole\Master_thesis_V16\Rapportfiler\troubleshooting
-.tex <./figs/set_screw.png, id=1500, 932.48375pt x 524.96124pt>
+.tex <./figs/set_screw.png, id=1553, 932.48375pt x 524.96124pt>
 File: ./figs/set_screw.png Graphic file (type png)
 
 <use ./figs/set_screw.png>
 Package pdftex.def Info: ./figs/set_screw.png used on input line 15.
 (pdftex.def)             Requested size: 291.20111pt x 163.93784pt.
- [55
+ [57
 
 
 
  <C:/Users/Vegard/Documents/Skole/Master_thesis_V16/Rapportfiler/figs/set_screw
-.png>] [56]) [57]
+.png>] [58]) [59]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2813,7 +2836,7 @@ ter.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 07B23EE2D052A7E8777306FA86D0E3F8;7716.
+(rerunfilecheck)             Checksum: D74CB96C7F96DDDB6D348597AE82B269;7872.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2821,13 +2844,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
  ) 
 Here is how much of TeX's memory you used:
- 31767 strings out of 493921
- 522228 string characters out of 3147278
- 765178 words of memory out of 3000000
- 33723 multiletter control sequences out of 15000+200000
- 117058 words of font info for 151 fonts, out of 3000000 for 9000
+ 31805 strings out of 493921
+ 522872 string characters out of 3147278
+ 765401 words of memory out of 3000000
+ 33745 multiletter control sequences out of 15000+200000
+ 117318 words of font info for 153 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,13n,94p,1504b,650s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,94p,1504b,663s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
@@ -2847,9 +2870,9 @@ eX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (81 pages, 7173657 bytes).
+Output written on main.pdf (83 pages, 7190674 bytes).
 PDF statistics:
- 1680 PDF objects out of 1728 (max. 8388607)
- 406 named destinations out of 1000 (max. 500000)
- 28808 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1734 PDF objects out of 2073 (max. 8388607)
+ 418 named destinations out of 1000 (max. 500000)
+ 28824 words of extra memory for PDF output out of 29859 (max. 10000000)
 

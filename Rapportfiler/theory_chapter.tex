@@ -261,7 +261,7 @@ The \ac{ROS} is a collection of software libraries, tools and drivers intended f
 Roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework. This framework eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. The framework can be used under the BSD open-source license\cite{BCD_license}. Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation, research and everything in between. 
 
 \subsection{Important ROS Concepts}
-
+\label{sec:ros_concepts}
 The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website\footnote{\url{http://www.ros.org/}}, as well as in any book on \ac{ROS} (for example \cite{rosbook15}). 
 
 \subsubsection{The ROS Graph}
@@ -298,7 +298,13 @@ workspace_folder/        -- CATKIN WORKSPACE
 
 A \ac{ROS} project will usually utilize the catkin build system.
 
+\subsubsection{\texttt{roslaunch}}
 
+\texttt{roslaunch}\cite{ROS_launch} is a \ac{ROS} package tool used to launch multiple nodes from a single command line. This is useful for larger projects with many nodes, interactions and parameters. Exactly which nodes to launch is defined in XML-files with the \textit{.launch} extension. In a launch file, the developer can group nodes together, pass arguments to the nodes and launch other launch files. Launch files can be launched from the command line as follows:
+
+\begin{verbatim}
+$ roslaunch <package name> <launch file name>.launch <argument1>:=true
+\end{verbatim}
 
 \subsection{An Overview of ROS-Related Tools}
 
@@ -317,21 +323,21 @@ A \ac{ROS} project will usually utilize the catkin build system.
 
 \paragraph{PR2 - Personal Robot 2}
 
-PR2 is one of the first robots designed to run \ac{ROS} \cite{rosbook15}, and also one of the most advanced and capable robots with \ac{ROS} today. 
+PR2, developed by Willow Garage is one of the first robots designed to run \ac{ROS} \cite{rosbook15}, and also one of the most advanced and capable robots with \ac{ROS} today. PR2 is build for research and development of service robot applications. The navigation stack used in this thesis has been tested on the PR2. \cite{tbd} describes how the PR2 used the navigation stack to autonomously navigate 42 km (26.2 miles). The PR2 is available for sale at the price of \$280,000.00\footnote{https://www.willowgarage.com/pages/pr2/order}(2016).
 
 \paragraph{TurtleBot} 
 
-TurtleBot is a cheaper ROS-ready alternative to PR2. 
+TurtleBot is a cheaper ROS-ready alternative to PR2. It is consists of a mobile base with differential drive, and a shelf system for mounting laptop computers and sensors.
 
 \paragraph{Robonaut 2}
 
-Robonaut 2, a dexterous humanoid robot, currently resides within the \ac{ISS} 400 km above the earth's surface. In 2014, a SpaceX Dracon capsule brought \ac{ROS} as well as a pair of legs for Robonaut up to the \ac{ISS}\cite{ROS_space}. Robonaut is designed for research on how robots can support the crew in maintaining and operating the space station. A potential application of Robonaut is to perform extra vehicular activities and other maintenance tasks, thus freeing up valuable time for the crew. For more information, follow \href{https://vimeo.com/106993914}{\textbf{this link}}\footnote{\url{https://vimeo.com/106993914}} to a talk on \ac{ROS} in space from ROSCon 2014.
+Robonaut 2\footnote{\ac{ROS} in space from ROSCon 2014: \url{https://vimeo.com/106993914}}, a dexterous humanoid robot, currently resides within the \ac{ISS} 400 km above the earth's surface. In 2014, a SpaceX Dracon capsule brought \ac{ROS} as well as a pair of legs for Robonaut up to the \ac{ISS}\cite{ROS_space}. Robonaut is designed for research on how robots can support the crew in maintaining and operating the space station. A potential application of Robonaut is to perform extra vehicular activities and other maintenance tasks, thus freeing up valuable time for the crew.
 
 Being the first robot with \ac{ROS} to be launched into space, 
 
-\paragraph{Example of an industrial robot with ROS goes here!}
+\paragraph{Industrial Hardware}
 
-TODO!!!!!!!!!!
+The ROS-industrial program\cite{ROS_industrial} provides hardware interfaces to various industrial equipment. An example is ABB's IRB-2400, where \ac{ROS}-industrial provides package for motion planning software (MoveIt!) and trajectory downloading\cite{ROS_industria_hardware}. 
 
 \section{Software}
 
@@ -442,6 +448,16 @@ The source code and \ac{ROS} wrapper is currently maintained, and new features a
 
 
 
-\subsection{Octomap}
+\subsection{RGBD SLAM and Octomap}
+
+Octomap\cite{hornung13auro} is another 3d mapping framework available for \ac{ROS}. Similar to \ac{RTAB-Map}, Octomap can also be used as a standalone version. 
+
+Maps are represented by memory efficient Octrees where each leaf node represents a cube, or voxel, in the volumetric map. The voxel can be either occupied, free or unexplored. The volume of the cube is determined by how deep in the tree the leaf node is located. In a \ac{ROS} graph, the Octomapping is performed by the node \textit{octomap\_server}. This node  will subscribe to point cloud messages \texttt{sensor\_msgs/PointCloud2}, and return volumetric occupancy maps, i.e. Octomaps.
+
+There are several approaches to \ac{SLAM}  which uses Octomaps. An example that stands out in the context of \ac{ROS} is\cite{endres20143}; a \ac{SLAM} approach which depends on a RGB-D sensor, and relies on Octomap for efficient map storage.
+
+This mapping framework was not used in this project in order to limit the project scope, and because the alternative \ac{RTAB-Map} was associated with less uncertainty.
 
 \section{Navigation}
+
+\ac{ROS} has a built in navigation stack for 2d navigation. 

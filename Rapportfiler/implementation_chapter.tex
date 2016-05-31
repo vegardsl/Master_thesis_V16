@@ -134,9 +134,9 @@ There are four ways to control the robot:
 
 \subsection{Motor Control Card Firmware on XMEGA A3BU}
 
-XMEGA A3BU is an evaluation board developed by Atmel. The board has been used in earlier projects on this robot, and the implementation presented here, is based on Petter Aspunviks implementation \cite{aspunvik}. The following paragraphs presents the most significant firmware changes that were made.
+XMEGA A3BU is an evaluation board developed by Atmel. The The implementation presented here is an adaptation of Petter Aspunviks implementation \cite{aspunvik}. The following paragraphs presents the most significant firmware changes that were made.
 
-The firmware will now receive velocity commands based on the \texttt{geometry\_msgs/Twist} message format in \ac{ROS}, and translate these into the command format used by each motor. Speed settings for each motor is based on \ac{PWM}. 
+The firmware will now receive angular and linear velocity commands based on the \texttt{geometry\_msgs/Twist} message format in \ac{ROS}, and translate these into the command format used by each motor. Speed settings for each motor is based on \ac{PWM}. 
 
 There were two requirements for this implementation: 
 \begin{enumerate}
@@ -269,7 +269,7 @@ For mapping, this robot has utilized Real-Time Appearence Based Mapping (\ac{RTA
 
 \subsection{Configuration}
 
-As all \ac{ROS} programs which are a part of the robot system, \ac{RTAB-Map} will run as a node that subscribes and publishes topics. The initial task in configuring \ac{RTAB-Map} is to connect the robots sensor data to the \ac{RTAB-Map} node. The node, called \texttt{rtabmap}, can build 2d occupancy grids and/or 3d point cloud representations of the environment. The configuration in this project can do both. There are three possible sensor configurations:
+As all \ac{ROS} programs which are a part of the robot system, \ac{RTAB-Map} will run as a node that subscribes and publishes topics. The first task in configuring \ac{RTAB-Map} is to connect the robots sensor data to the \ac{RTAB-Map} node. The node, called \texttt{rtabmap}, can build 2d occupancy grids and/or 3d point cloud representations of the environment. The configuration in this project can do both. To perform \ac{SLAM}, the mapping node subscribes to odometry, 2d scans and  There are three possible sensor configurations:
 
 
 
