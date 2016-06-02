@@ -54,61 +54,65 @@
 \BOOKMARK [1][-]{section.3.10}{Navigation}{chapter.3}% 54
 \BOOKMARK [0][-]{chapter.4}{Implementation}{}% 55
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 56
-\BOOKMARK [1][-]{section.4.2}{ROS Integration}{chapter.4}% 57
-\BOOKMARK [1][-]{section.4.3}{Modelling}{chapter.4}% 58
-\BOOKMARK [2][-]{subsection.4.3.1}{Obtaining Physical Dimensions}{section.4.3}% 59
-\BOOKMARK [2][-]{subsection.4.3.2}{Coordinate Frames}{section.4.3}% 60
-\BOOKMARK [1][-]{section.4.4}{Simulations}{chapter.4}% 61
-\BOOKMARK [1][-]{section.4.5}{Motion Control}{chapter.4}% 62
-\BOOKMARK [1][-]{section.4.6}{ROS Nodes for Motion Control}{chapter.4}% 63
-\BOOKMARK [2][-]{subsection.4.6.1}{Velocity Command Sources}{section.4.6}% 64
-\BOOKMARK [2][-]{subsection.4.6.2}{Motor Control Card Firmware on XMEGA A3BU}{section.4.6}% 65
-\BOOKMARK [1][-]{section.4.7}{Operator Control Station \(OCS\)}{chapter.4}% 66
-\BOOKMARK [2][-]{subsection.4.7.1}{Graphical User Interface}{section.4.7}% 67
-\BOOKMARK [1][-]{section.4.8}{The Hand Held Remote Control - Robot Leash}{chapter.4}% 68
-\BOOKMARK [2][-]{subsection.4.8.1}{Connecting to the Robot}{section.4.8}% 69
-\BOOKMARK [1][-]{section.4.9}{Mapping - Setting Up RTAB-Map}{chapter.4}% 70
-\BOOKMARK [2][-]{subsection.4.9.1}{Configuration}{section.4.9}% 71
-\BOOKMARK [1][-]{section.4.10}{Navigation}{chapter.4}% 72
-\BOOKMARK [2][-]{subsection.4.10.1}{Global Path Planning}{section.4.10}% 73
-\BOOKMARK [2][-]{subsection.4.10.2}{Local Path Planning}{section.4.10}% 74
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 75
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 76
-\BOOKMARK [1][-]{section.5.2}{Testplan}{chapter.5}% 77
-\BOOKMARK [2][-]{subsection.5.2.1}{Supporting Functionality}{section.5.2}% 78
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 79
-\BOOKMARK [2][-]{subsection.5.3.1}{Simulations}{section.5.3}% 80
-\BOOKMARK [2][-]{subsection.5.3.2}{Live Testing}{section.5.3}% 81
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 82
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 83
-\BOOKMARK [1][-]{section.6.1}{Mapping}{chapter.6}% 84
-\BOOKMARK [1][-]{section.6.2}{Navigation}{chapter.6}% 85
-\BOOKMARK [1][-]{section.6.3}{Suitability for Offshore Maintenance}{chapter.6}% 86
-\BOOKMARK [2][-]{subsection.6.3.1}{Open Source Software and Security}{section.6.3}% 87
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 88
-\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 89
-\BOOKMARK [2][-]{subsection.7.1.1}{Autonomous Non-Destructive Testing}{section.7.1}% 90
-\BOOKMARK [2][-]{subsection.7.1.2}{Large Scale Kinect Fusion - Kintinous}{section.7.1}% 91
-\BOOKMARK [2][-]{subsection.7.1.3}{Hardware}{section.7.1}% 92
-\BOOKMARK [1][-]{section.7.2}{Task Fulfilment}{chapter.7}% 93
-\BOOKMARK [1][-]{section.7.3}{Final Conclusion}{chapter.7}% 94
-\BOOKMARK [0][-]{section*.117}{References}{}% 95
-\BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 96
-\BOOKMARK [1][-]{section.A.1}{Installation}{appendix.A}% 97
-\BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 98
-\BOOKMARK [2][-]{subsection.A.1.2}{Install Ubuntu}{section.A.1}% 99
-\BOOKMARK [2][-]{subsection.A.1.3}{Download ROS}{section.A.1}% 100
-\BOOKMARK [1][-]{section.A.2}{Configuring the Project}{appendix.A}% 101
-\BOOKMARK [2][-]{subsection.A.2.1}{Configuring the ROS Workspace}{section.A.2}% 102
-\BOOKMARK [2][-]{subsection.A.2.2}{Configuring the Bluetooth Connection}{section.A.2}% 103
-\BOOKMARK [0][-]{appendix.B}{Troubleshooting}{}% 104
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 105
-\BOOKMARK [1][-]{section.B.2}{Hardware}{appendix.B}% 106
-\BOOKMARK [2][-]{subsection.B.2.1}{The Wheel Fell Off!}{section.B.2}% 107
-\BOOKMARK [1][-]{section.B.3}{ROS}{appendix.B}% 108
-\BOOKMARK [2][-]{subsection.B.3.1}{ERROR: tf2:ExtrapolationException}{section.B.3}% 109
-\BOOKMARK [1][-]{section.B.4}{Gazebo}{appendix.B}% 110
-\BOOKMARK [2][-]{subsection.B.4.1}{Error [Node.cc.90] No namespace found}{section.B.4}% 111
-\BOOKMARK [2][-]{subsection.B.4.2}{Dependency Issues When Installing gazebo2}{section.B.4}% 112
-\BOOKMARK [1][-]{section.B.5}{Ubuntu}{appendix.B}% 113
-\BOOKMARK [2][-]{subsection.B.5.1}{Ubuntu Freezes}{section.B.5}% 114
+\BOOKMARK [1][-]{section.4.2}{Hardware Setup}{chapter.4}% 57
+\BOOKMARK [2][-]{subsection.4.2.1}{Sensor Calibration and Setup}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.2}{Battery Safety}{section.4.2}% 59
+\BOOKMARK [1][-]{section.4.3}{ROS Integration Overview}{chapter.4}% 60
+\BOOKMARK [1][-]{section.4.4}{Modelling}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.4.1}{Obtaining Physical Dimensions}{section.4.4}% 62
+\BOOKMARK [2][-]{subsection.4.4.2}{Coordinate Frames}{section.4.4}% 63
+\BOOKMARK [1][-]{section.4.5}{Simulations}{chapter.4}% 64
+\BOOKMARK [1][-]{section.4.6}{Motion Control}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.7}{ROS Nodes for Motion Control}{chapter.4}% 66
+\BOOKMARK [2][-]{subsection.4.7.1}{Velocity Command Sources}{section.4.7}% 67
+\BOOKMARK [2][-]{subsection.4.7.2}{Motor Control Card Firmware on XMEGA A3BU}{section.4.7}% 68
+\BOOKMARK [1][-]{section.4.8}{Operator Control Station \(OCS\)}{chapter.4}% 69
+\BOOKMARK [2][-]{subsection.4.8.1}{Graphical User Interface}{section.4.8}% 70
+\BOOKMARK [1][-]{section.4.9}{The Hand Held Remote Control - Robot Leash}{chapter.4}% 71
+\BOOKMARK [2][-]{subsection.4.9.1}{Connecting to the Robot}{section.4.9}% 72
+\BOOKMARK [1][-]{section.4.10}{Mapping - Setting Up RTAB-Map}{chapter.4}% 73
+\BOOKMARK [2][-]{subsection.4.10.1}{Configuration}{section.4.10}% 74
+\BOOKMARK [1][-]{section.4.11}{Navigation}{chapter.4}% 75
+\BOOKMARK [2][-]{subsection.4.11.1}{Global Path Planning}{section.4.11}% 76
+\BOOKMARK [2][-]{subsection.4.11.2}{Local Path Planning}{section.4.11}% 77
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 78
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 79
+\BOOKMARK [1][-]{section.5.2}{Testplan}{chapter.5}% 80
+\BOOKMARK [2][-]{subsection.5.2.1}{Supporting Functionality}{section.5.2}% 81
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 82
+\BOOKMARK [1][-]{section.5.4}{Simulation Results}{chapter.5}% 83
+\BOOKMARK [2][-]{subsection.5.4.1}{Live Testing}{section.5.4}% 84
+\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 85
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 86
+\BOOKMARK [1][-]{section.6.1}{Mapping}{chapter.6}% 87
+\BOOKMARK [1][-]{section.6.2}{Navigation}{chapter.6}% 88
+\BOOKMARK [1][-]{section.6.3}{Suitability for Offshore Maintenance}{chapter.6}% 89
+\BOOKMARK [2][-]{subsection.6.3.1}{Open Source Software and Security}{section.6.3}% 90
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 91
+\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 92
+\BOOKMARK [2][-]{subsection.7.1.1}{Autonomous Non-Destructive Testing}{section.7.1}% 93
+\BOOKMARK [2][-]{subsection.7.1.2}{Large Scale Kinect Fusion - Kintinous}{section.7.1}% 94
+\BOOKMARK [2][-]{subsection.7.1.3}{Hardware}{section.7.1}% 95
+\BOOKMARK [1][-]{section.7.2}{Task Fulfilment}{chapter.7}% 96
+\BOOKMARK [1][-]{section.7.3}{Final Conclusion}{chapter.7}% 97
+\BOOKMARK [0][-]{section*.126}{References}{}% 98
+\BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 99
+\BOOKMARK [1][-]{section.A.1}{Installation}{appendix.A}% 100
+\BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 101
+\BOOKMARK [2][-]{subsection.A.1.2}{Install Ubuntu}{section.A.1}% 102
+\BOOKMARK [2][-]{subsection.A.1.3}{Download ROS}{section.A.1}% 103
+\BOOKMARK [1][-]{section.A.2}{Configuring the Project}{appendix.A}% 104
+\BOOKMARK [2][-]{subsection.A.2.1}{Configuring the ROS Workspace}{section.A.2}% 105
+\BOOKMARK [2][-]{subsection.A.2.2}{Configuring the Bluetooth Connection}{section.A.2}% 106
+\BOOKMARK [0][-]{appendix.B}{Troubleshooting}{}% 107
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 108
+\BOOKMARK [1][-]{section.B.2}{Hardware}{appendix.B}% 109
+\BOOKMARK [2][-]{subsection.B.2.1}{The Wheel Fell Off!}{section.B.2}% 110
+\BOOKMARK [1][-]{section.B.3}{ROS}{appendix.B}% 111
+\BOOKMARK [2][-]{subsection.B.3.1}{ERROR: tf2:ExtrapolationException}{section.B.3}% 112
+\BOOKMARK [1][-]{section.B.4}{Gazebo}{appendix.B}% 113
+\BOOKMARK [2][-]{subsection.B.4.1}{Error [Node.cc.90] No namespace found}{section.B.4}% 114
+\BOOKMARK [2][-]{subsection.B.4.2}{Dependency Issues When Installing gazebo2}{section.B.4}% 115
+\BOOKMARK [1][-]{section.B.5}{Ubuntu}{appendix.B}% 116
+\BOOKMARK [2][-]{subsection.B.5.1}{Ubuntu Freezes}{section.B.5}% 117
+\BOOKMARK [0][-]{appendix.C}{DVD Contents}{}% 118

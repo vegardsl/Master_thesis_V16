@@ -14,7 +14,30 @@ This chapter presents four implementations that were developed during this proje
 	\end{tabular}
 \end{center}
 
-\section{ROS Integration}
+The implementations above created a need for additional hardware. Extensive modifications had to be made to accommodate these additions. Some improvements with respect to safety were made as well.
+
+\section{Hardware Setup}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.85\textwidth]{lidar_and_kinect}
+	\caption{Location of the \textcolor{blue}{LIDAR} sensor and \textcolor{green}{Kinect}. }
+	\label{fig:kinect_and_lidar}
+\end{figure}
+
+\subsection{Sensor Calibration and Setup}
+
+Calibrating both the Kinect and the \ac{LIDAR} is a straight forward procedure with \ac{ROS}. The Hokuyo \ac{LIDAR} will in fact be calibrated automatically when the node is launched. Calibrating the Kinect is actually not strictly necessary because the lens distortion is very low. That being said, because there already is a calibration tool available in \ac{ROS}\footnote{ROS calibration guide: \url{http://wiki.ros.org/openni_launch/Tutorials/IntrinsicCalibration}} that is easy to use, there is no good reason to not calibrate. The calibration procedure is as follows:
+
+\begin{enumerate}
+	\item Print out a chessboard pattern. It is beneficial to use A3 paper size, to make the pattern easier to detect over a larger set of distances.
+	\item Calibrate the RGB camera.
+	\item Calibrate the IR camera. It is recommended to cover the IR projector, because the IR speckle pattern makes it difficult to detect the chessboard.
+\end{enumerate}
+
+\subsection{Battery Safety}
+
+\section{ROS Integration Overview}
 
 Implementation procedure for mobile robot:
 
@@ -82,6 +105,22 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 The mass of each link is guesstimated. Consider the \texttt{base\_link} as an example. The base link was measured to be $5 \; mm$ thick, $37 \; cm$ wide and $80 \; cm$ long. Assuming that the density of aluminium\footnote{https://en.wikipedia.org/wiki/Aluminium} is $2.7 g/cm^3$, the mass of this link was calculated to be $\approx 4 kg$. 
 
 \subsection{Coordinate Frames}
+
+ \begin{figure}
+ 	\centering
+ 	\begin{subfigure}[b]{0.402\textwidth}
+ 		\includegraphics[width=\textwidth]{urdf_model}
+ 		\caption{Complete \ac{URDF} model when viewed in \texttt{rviz}.}
+ 		\label{fig:urdf_model}
+ 	\end{subfigure}
+ 	\begin{subfigure}[b]{0.51\textwidth}
+ 		
+ 		\includegraphics[width=\textwidth]{urdf_tf2}
+ 		\caption{\ac{URDF} model in \texttt{rviz} with all link frames and transformations.}
+ 		\label{fig:urdf_tf}
+ 	\end{subfigure}
+ 	\caption{}
+ \end{figure}
 
 \begin{figure}[h]
 	\centering

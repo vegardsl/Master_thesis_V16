@@ -8,115 +8,133 @@
 \acronymused{ROS}
 \acronymused{ROS}
 \acronymused{OCS}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}ROS Integration}{25}{section.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Hardware Setup}{26}{section.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Location of the \leavevmode {\color  {blue}LIDAR} sensor and \leavevmode {\color  {green}Kinect}. \relax }}{26}{figure.caption.80}}
+\newlabel{fig:kinect_and_lidar}{{\M@TitleReference {4.1}{Location of the \leavevmode {\color  {blue}LIDAR} sensor and \leavevmode {\color  {green}Kinect}. \relax }}{26}{Location of the \textcolor {blue}{LIDAR} sensor and \textcolor {green}{Kinect}. \relax }{figure.caption.80}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Sensor Calibration and Setup}{26}{subsection.4.2.1}}
+\undonewlabel{acro:LIDAR}
+\newlabel{acro:LIDAR}{{\M@TitleReference {4.2.1}{Sensor Calibration and Setup}}{26}{Sensor Calibration and Setup}{section*.81}{}}
+\acronymused{LIDAR}
+\acronymused{ROS}
+\acronymused{LIDAR}
+\acronymused{ROS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Battery Safety}{26}{subsection.4.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}ROS Integration Overview}{26}{section.4.3}}
 \acronymused{URDF}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Modelling}{26}{section.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Modelling}{27}{section.4.4}}
 \acronymused{ROS}
 \acronymused{URDF}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Obtaining Physical Dimensions}{26}{subsection.4.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The robot footprint. Dimensions are used for the navigation planners and for modelling. \relax }}{27}{figure.caption.80}}
-\newlabel{fig:robotFootprint}{{\M@TitleReference {4.1}{The robot footprint. Dimensions are used for the navigation planners and for modelling. \relax }}{27}{The robot footprint. Dimensions are used for the navigation planners and for modelling. \relax }{figure.caption.80}{}}
-\newlabel{eq:cylinder}{{4.2}{27}{Obtaining Physical Dimensions}{equation.4.2}{}}
-\newlabel{eq:cuboid}{{4.3}{27}{Obtaining Physical Dimensions}{equation.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Coordinate Frames}{28}{subsection.4.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{28}{figure.caption.81}}
-\newlabel{fig:sensor_frames}{{\M@TitleReference {4.2}{Robot model with frames for laser, Kinect, robot base and map. \relax }}{28}{Robot model with frames for laser, Kinect, robot base and map. \relax }{figure.caption.81}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Sensor input placed with correct transformations from \textit  {base\_link}. \relax }}{28}{figure.caption.82}}
-\newlabel{fig:sensors_in_frame}{{\M@TitleReference {4.3}{Sensor input placed with correct transformations from \textit  {base\_link}. \relax }}{28}{Sensor input placed with correct transformations from \textit {base\_link}. \relax }{figure.caption.82}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Simulations}{28}{section.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Obtaining Physical Dimensions}{27}{subsection.4.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The robot footprint. Dimensions are used for the navigation planners and for modelling. \relax }}{28}{figure.caption.82}}
+\newlabel{fig:robotFootprint}{{\M@TitleReference {4.2}{The robot footprint. Dimensions are used for the navigation planners and for modelling. \relax }}{28}{The robot footprint. Dimensions are used for the navigation planners and for modelling. \relax }{figure.caption.82}{}}
+\newlabel{eq:cylinder}{{4.2}{28}{Obtaining Physical Dimensions}{equation.4.2}{}}
+\newlabel{eq:cuboid}{{4.3}{28}{Obtaining Physical Dimensions}{equation.4.3}{}}
+\acronymused{URDF}
+\newlabel{fig:urdf_model}{{\M@TitleReference {4.3a}{Complete \ac {URDF} model when viewed in \texttt  {rviz}.\relax }}{29}{Complete \ac {URDF} model when viewed in \texttt {rviz}.\relax }{figure.caption.83}{}}
+\newlabel{sub@fig:urdf_model}{{\M@TitleReference {a}{Complete \ac {URDF} model when viewed in \texttt  {rviz}.\relax }}{29}{Complete \ac {URDF} model when viewed in \texttt {rviz}.\relax }{figure.caption.83}{}}
+\acronymused{URDF}
+\newlabel{fig:urdf_tf}{{\M@TitleReference {4.3b}{\ac {URDF} model in \texttt  {rviz} with all link frames and transformations.\relax }}{29}{\ac {URDF} model in \texttt {rviz} with all link frames and transformations.\relax }{figure.caption.83}{}}
+\newlabel{sub@fig:urdf_tf}{{\M@TitleReference {b}{\ac {URDF} model in \texttt  {rviz} with all link frames and transformations.\relax }}{29}{\ac {URDF} model in \texttt {rviz} with all link frames and transformations.\relax }{figure.caption.83}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax }}{29}{figure.caption.83}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Coordinate Frames}{29}{subsection.4.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{29}{figure.caption.84}}
+\newlabel{fig:sensor_frames}{{\M@TitleReference {4.4}{Robot model with frames for laser, Kinect, robot base and map. \relax }}{29}{Robot model with frames for laser, Kinect, robot base and map. \relax }{figure.caption.84}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Simulations}{29}{section.4.5}}
 \acronymused{ROS}
 \acronymused{ROS}
 \citation{aspunvik}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Motion Control}{29}{section.4.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}ROS Nodes for Motion Control}{29}{section.4.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}Velocity Command Sources}{29}{subsection.4.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor input placed with correct transformations from \textit  {base\_link}. \relax }}{30}{figure.caption.85}}
+\newlabel{fig:sensors_in_frame}{{\M@TitleReference {4.5}{Sensor input placed with correct transformations from \textit  {base\_link}. \relax }}{30}{Sensor input placed with correct transformations from \textit {base\_link}. \relax }{figure.caption.85}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Motion Control}{30}{section.4.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}ROS Nodes for Motion Control}{30}{section.4.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.1}Velocity Command Sources}{30}{subsection.4.7.1}}
 \acronymused{OCS}
 \acronymused{ROS}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Nodes and topics for motion control. \relax }}{29}{figure.caption.83}}
-\newlabel{fig:move_base_nodes}{{\M@TitleReference {4.4}{Nodes and topics for motion control. \relax }}{29}{Nodes and topics for motion control. \relax }{figure.caption.83}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Motor Control Card Firmware on XMEGA A3BU}{29}{subsection.4.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Nodes and topics for motion control. \relax }}{30}{figure.caption.86}}
+\newlabel{fig:move_base_nodes}{{\M@TitleReference {4.6}{Nodes and topics for motion control. \relax }}{30}{Nodes and topics for motion control. \relax }{figure.caption.86}{}}
+\citation{aspunvik}
+\citation{aspunvik}
+\citation{aspunvik}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit  {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{31}{figure.caption.87}}
+\newlabel{fig:velocity_ramp}{{\M@TitleReference {4.7}{Velocity command ramping. The blue line represents commands entering \textit  {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{31}{Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }{figure.caption.87}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.2}Motor Control Card Firmware on XMEGA A3BU}{31}{subsection.4.7.2}}
 \acronymused{ROS}
 \undonewlabel{acro:PWM}
-\newlabel{acro:PWM}{{\M@TitleReference {4.6.2}{Motor Control Card Firmware on XMEGA A3BU}}{29}{Motor Control Card Firmware on XMEGA A3BU}{section*.85}{}}
+\newlabel{acro:PWM}{{\M@TitleReference {4.7.2}{Motor Control Card Firmware on XMEGA A3BU}}{31}{Motor Control Card Firmware on XMEGA A3BU}{section*.88}{}}
 \acronymused{PWM}
-\citation{aspunvik}
-\citation{aspunvik}
-\citation{aspunvik}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Velocity command ramping. The blue line represents commands entering \textit  {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{30}{figure.caption.84}}
-\newlabel{fig:velocity_ramp}{{\M@TitleReference {4.5}{Velocity command ramping. The blue line represents commands entering \textit  {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{30}{Velocity command ramping. The blue line represents commands entering \textit {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }{figure.caption.84}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite  {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{30}{figure.caption.86}}
-\newlabel{fig:conn_diag_motors}{{\M@TitleReference {4.6}{Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite  {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{30}{Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite {aspunvik}, except for some improved connection for better short circuit prevention.\relax }{figure.caption.86}{}}
 \citation{cook2011mobile}
-\citation{cook2011mobile}
-\@writefile{toc}{\contentsline {subsubsection}{ROS-Motor Driver Communication}{31}{section*.87}}
-\@writefile{toc}{\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{31}{section*.89}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite  {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{32}{figure.caption.89}}
+\newlabel{fig:conn_diag_motors}{{\M@TitleReference {4.8}{Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite  {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{32}{Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite {aspunvik}, except for some improved connection for better short circuit prevention.\relax }{figure.caption.89}{}}
+\@writefile{toc}{\contentsline {subsubsection}{ROS-Motor Driver Communication}{32}{section*.90}}
+\@writefile{toc}{\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{32}{section*.92}}
 \acronymused{ROS}
 \acronymused{PWM}
-\newlabel{eq:subeqns}{{\M@TitleReference {4.4}{From Velocity Commands to Wheel Commands}}{31}{From Velocity Commands to Wheel Commands}{equation.4.4}{}}
-\newlabel{eq:subeq2}{{4.4c}{31}{From Velocity Commands to Wheel Commands}{equation.4.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Operator Control Station (OCS)}{32}{section.4.7}}
+\newlabel{eq:subeqns}{{\M@TitleReference {4.4}{From Velocity Commands to Wheel Commands}}{32}{From Velocity Commands to Wheel Commands}{equation.4.4}{}}
+\citation{cook2011mobile}
+\newlabel{eq:subeq2}{{4.4c}{33}{From Velocity Commands to Wheel Commands}{equation.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.8}Operator Control Station (OCS)}{33}{section.4.8}}
 \acronymused{OCS}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.1}Graphical User Interface}{32}{subsection.4.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8.1}Graphical User Interface}{33}{subsection.4.8.1}}
 \undonewlabel{acro:GUI}
-\newlabel{acro:GUI}{{\M@TitleReference {4.7.1}{Graphical User Interface}}{32}{Graphical User Interface}{section*.91}{}}
+\newlabel{acro:GUI}{{\M@TitleReference {4.8.1}{Graphical User Interface}}{33}{Graphical User Interface}{section*.94}{}}
 \acronymused{GUI}
-\@writefile{toc}{\contentsline {section}{\numberline {4.8}The Hand Held Remote Control - \textit  {Robot Leash}}{32}{section.4.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.9}The Hand Held Remote Control - \textit  {Robot Leash}}{33}{section.4.9}}
 \acronymused{OCS}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.8.1}Connecting to the Robot}{32}{subsection.4.8.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.9}Mapping - Setting Up RTAB-Map}{33}{section.4.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9.1}Connecting to the Robot}{33}{subsection.4.9.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.10}Mapping - Setting Up RTAB-Map}{34}{section.4.10}}
 \acronymused{RTAB-Map}
 \acronymused{RTAB-Map}
 \acronymused{RTAB-Map}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.9.1}Configuration}{33}{subsection.4.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.10.1}Configuration}{34}{subsection.4.10.1}}
 \acronymused{ROS}
 \acronymused{RTAB-Map}
 \acronymused{RTAB-Map}
 \acronymused{RTAB-Map}
 \acronymused{SLAM}
-\@writefile{toc}{\contentsline {section}{\numberline {4.10}Navigation}{33}{section.4.10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{33}{subsection.4.10.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{33}{subsection.4.10.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Obstruction Detection}{33}{section*.94}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Velocity command transmission sequence from the \texttt  {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{34}{figure.caption.88}}
-\newlabel{fig:motor_cmd_sequence}{{\M@TitleReference {4.7}{Velocity command transmission sequence from the \texttt  {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{34}{Velocity command transmission sequence from the \texttt {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }{figure.caption.88}{}}
-\newlabel{fig:robot_kinematics}{{\M@TitleReference {4.8a}{Differential drive parameters.\relax }}{35}{Differential drive parameters.\relax }{figure.caption.90}{}}
-\newlabel{sub@fig:robot_kinematics}{{\M@TitleReference {a}{Differential drive parameters.\relax }}{35}{Differential drive parameters.\relax }{figure.caption.90}{}}
-\newlabel{fig:wheel_diameter}{{\M@TitleReference {4.8b}{Wheel diameter.\relax }}{35}{Wheel diameter.\relax }{figure.caption.90}{}}
-\newlabel{sub@fig:wheel_diameter}{{\M@TitleReference {b}{Wheel diameter.\relax }}{35}{Wheel diameter.\relax }{figure.caption.90}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{35}{figure.caption.90}}
-\newlabel{fig:robot_kinematics}{{\M@TitleReference {4.8}{Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{35}{Parameters for differential drive kinematics. Note that the frame vectors $\vec {z}$ and $\vec {x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }{figure.caption.90}{}}
-\newlabel{fig:device_select}{{\M@TitleReference {4.9a}{First activity with device list.\relax }}{35}{First activity with device list.\relax }{figure.caption.92}{}}
-\newlabel{sub@fig:device_select}{{\M@TitleReference {a}{First activity with device list.\relax }}{35}{First activity with device list.\relax }{figure.caption.92}{}}
-\newlabel{fig:bt_request}{{\M@TitleReference {4.9b}{The user is prompted to pair with the robot.\relax }}{35}{The user is prompted to pair with the robot.\relax }{figure.caption.92}{}}
-\newlabel{sub@fig:bt_request}{{\M@TitleReference {b}{The user is prompted to pair with the robot.\relax }}{35}{The user is prompted to pair with the robot.\relax }{figure.caption.92}{}}
-\newlabel{fig:using_app}{{\M@TitleReference {4.9c}{Controlling the robot with the stick.\relax }}{35}{Controlling the robot with the stick.\relax }{figure.caption.92}{}}
-\newlabel{sub@fig:using_app}{{\M@TitleReference {c}{Controlling the robot with the stick.\relax }}{35}{Controlling the robot with the stick.\relax }{figure.caption.92}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{35}{figure.caption.92}}
-\newlabel{fig:app_screens}{{\M@TitleReference {4.9}{A typical use case for ''Robot Leash''.\relax }}{35}{A typical use case for ''Robot Leash''.\relax }{figure.caption.92}{}}
-\newlabel{RF1}{36}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces This is the caption \newline  This is the second line}}{36}{figure.caption.93}}
-\newlabel{fig:android_sequence}{{\M@TitleReference {4.10}{This is the caption \newline  This is the second line}}{36}{This is the caption \newline This is the second line}{figure.caption.93}{}}
-\newlabel{fig:device_select}{{\M@TitleReference {4.11a}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }}{37}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }{figure.caption.95}{}}
-\newlabel{sub@fig:device_select}{{\M@TitleReference {a}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }}{37}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }{figure.caption.95}{}}
-\newlabel{fig:bt_request}{{\M@TitleReference {4.11b}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }}{37}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }{figure.caption.95}{}}
-\newlabel{sub@fig:bt_request}{{\M@TitleReference {b}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }}{37}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }{figure.caption.95}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Detecting obstructions in 3d.\relax }}{37}{figure.caption.95}}
-\newlabel{fig:3d_obstruction1}{{\M@TitleReference {4.11}{Detecting obstructions in 3d.\relax }}{37}{Detecting obstructions in 3d.\relax }{figure.caption.95}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.11}Navigation}{34}{section.4.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.11.1}Global Path Planning}{34}{subsection.4.11.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.11.2}Local Path Planning}{34}{subsection.4.11.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Obstruction Detection}{34}{section*.97}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Velocity command transmission sequence from the \texttt  {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{35}{figure.caption.91}}
+\newlabel{fig:motor_cmd_sequence}{{\M@TitleReference {4.9}{Velocity command transmission sequence from the \texttt  {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{35}{Velocity command transmission sequence from the \texttt {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }{figure.caption.91}{}}
+\newlabel{fig:robot_kinematics}{{\M@TitleReference {4.10a}{Differential drive parameters.\relax }}{36}{Differential drive parameters.\relax }{figure.caption.93}{}}
+\newlabel{sub@fig:robot_kinematics}{{\M@TitleReference {a}{Differential drive parameters.\relax }}{36}{Differential drive parameters.\relax }{figure.caption.93}{}}
+\newlabel{fig:wheel_diameter}{{\M@TitleReference {4.10b}{Wheel diameter.\relax }}{36}{Wheel diameter.\relax }{figure.caption.93}{}}
+\newlabel{sub@fig:wheel_diameter}{{\M@TitleReference {b}{Wheel diameter.\relax }}{36}{Wheel diameter.\relax }{figure.caption.93}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{36}{figure.caption.93}}
+\newlabel{fig:robot_kinematics}{{\M@TitleReference {4.10}{Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{36}{Parameters for differential drive kinematics. Note that the frame vectors $\vec {z}$ and $\vec {x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }{figure.caption.93}{}}
+\newlabel{fig:device_select}{{\M@TitleReference {4.11a}{First activity with device list.\relax }}{36}{First activity with device list.\relax }{figure.caption.95}{}}
+\newlabel{sub@fig:device_select}{{\M@TitleReference {a}{First activity with device list.\relax }}{36}{First activity with device list.\relax }{figure.caption.95}{}}
+\newlabel{fig:bt_request}{{\M@TitleReference {4.11b}{The user is prompted to pair with the robot.\relax }}{36}{The user is prompted to pair with the robot.\relax }{figure.caption.95}{}}
+\newlabel{sub@fig:bt_request}{{\M@TitleReference {b}{The user is prompted to pair with the robot.\relax }}{36}{The user is prompted to pair with the robot.\relax }{figure.caption.95}{}}
+\newlabel{fig:using_app}{{\M@TitleReference {4.11c}{Controlling the robot with the stick.\relax }}{36}{Controlling the robot with the stick.\relax }{figure.caption.95}{}}
+\newlabel{sub@fig:using_app}{{\M@TitleReference {c}{Controlling the robot with the stick.\relax }}{36}{Controlling the robot with the stick.\relax }{figure.caption.95}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{36}{figure.caption.95}}
+\newlabel{fig:app_screens}{{\M@TitleReference {4.11}{A typical use case for ''Robot Leash''.\relax }}{36}{A typical use case for ''Robot Leash''.\relax }{figure.caption.95}{}}
+\newlabel{RF1}{37}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces This is the caption \newline  This is the second line}}{37}{figure.caption.96}}
+\newlabel{fig:android_sequence}{{\M@TitleReference {4.12}{This is the caption \newline  This is the second line}}{37}{This is the caption \newline This is the second line}{figure.caption.96}{}}
+\newlabel{fig:device_select}{{\M@TitleReference {4.13a}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }}{38}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }{figure.caption.98}{}}
+\newlabel{sub@fig:device_select}{{\M@TitleReference {a}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }}{38}{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.\relax }{figure.caption.98}{}}
+\newlabel{fig:bt_request}{{\M@TitleReference {4.13b}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }}{38}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }{figure.caption.98}{}}
+\newlabel{sub@fig:bt_request}{{\M@TitleReference {b}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }}{38}{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.\relax }{figure.caption.98}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Detecting obstructions in 3d.\relax }}{38}{figure.caption.98}}
+\newlabel{fig:3d_obstruction1}{{\M@TitleReference {4.13}{Detecting obstructions in 3d.\relax }}{38}{Detecting obstructions in 3d.\relax }{figure.caption.98}{}}
 \@setckpt{implementation_chapter}{
-\setcounter{page}{38}
+\setcounter{page}{39}
 \setcounter{equation}{5}
 \setcounter{enumi}{3}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{1}
+\setcounter{footnote}{2}
 \setcounter{mpfootnote}{0}
 \setcounter{@memmarkcntra}{0}
 \setcounter{storedpagenumber}{1}
 \setcounter{book}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{4}
-\setcounter{section}{10}
+\setcounter{section}{11}
 \setcounter{subsection}{2}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
@@ -150,18 +168,18 @@
 \setcounter{cmsm@mctr}{0}
 \setcounter{bsm@mctr}{0}
 \setcounter{workm@mctr}{0}
-\setcounter{sheetsequence}{62}
-\setcounter{lastsheet}{83}
-\setcounter{lastpage}{59}
-\setcounter{figure}{11}
+\setcounter{sheetsequence}{63}
+\setcounter{lastsheet}{89}
+\setcounter{lastpage}{65}
+\setcounter{figure}{13}
 \setcounter{lofdepth}{1}
 \setcounter{table}{0}
 \setcounter{lotdepth}{1}
-\setcounter{Item}{5}
-\setcounter{Hfootnote}{9}
+\setcounter{Item}{8}
+\setcounter{Hfootnote}{10}
 \setcounter{memhycontfloat}{0}
 \setcounter{Hpagenote}{0}
-\setcounter{bookmark@seq@number}{74}
+\setcounter{bookmark@seq@number}{77}
 \setcounter{AM@survey}{0}
 \setcounter{parentequation}{5}
 \setcounter{theorem}{0}
