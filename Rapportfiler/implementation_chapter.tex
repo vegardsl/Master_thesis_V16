@@ -18,27 +18,63 @@ The implementations above created a need for additional hardware. Extensive modi
 
 \section{Hardware Setup}
 
+
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85\textwidth]{lidar_and_kinect}
-	\caption{Location of the \textcolor{blue}{LIDAR} sensor and \textcolor{green}{Kinect}. }
+	\caption{Sensor locations for \textcolor{blue}{LIDAR} and \textcolor{green}{Kinect}. }
 	\label{fig:kinect_and_lidar}
 \end{figure}
 
 \subsection{Sensor Calibration and Setup}
 
+Only support for the Kinect and the \ac{LIDAR} sensor was integrated into this system. Odometry from the two wheel encoders was not included because of time constraints on the project. Figure \ref{fig:sensor_connections} illustrates how the sensors and the wireless router is connected to the \ac{ROS} computer and how they are supplied with power.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{sensor_connections}
+	\caption{Sensor and power supply connections. }
+	\label{fig:sensor_connections}
+\end{figure}
+
 Calibrating both the Kinect and the \ac{LIDAR} is a straight forward procedure with \ac{ROS}. The Hokuyo \ac{LIDAR} will in fact be calibrated automatically when the node is launched. Calibrating the Kinect is actually not strictly necessary because the lens distortion is very low. That being said, because there already is a calibration tool available in \ac{ROS}\footnote{ROS calibration guide: \url{http://wiki.ros.org/openni_launch/Tutorials/IntrinsicCalibration}} that is easy to use, there is no good reason to not calibrate. The calibration procedure is as follows:
 
 \begin{enumerate}
-	\item Print out a chessboard pattern. It is beneficial to use A3 paper size, to make the pattern easier to detect over a larger set of distances.
+	\item Print out a chessboard pattern and tape it to a flat surface. It is beneficial to use A3 paper size to make the pattern easier to detect over a larger set of distances.
 	\item Calibrate the RGB camera.
-	\item Calibrate the IR camera. It is recommended to cover the IR projector, because the IR speckle pattern makes it difficult to detect the chessboard.
+	\item Calibrate the IR camera. It is recommended to cover the IR projector, because the IR speckle pattern makes it difficult to detect the chessboard (figure \ref{fig:ir_calibration}).
 \end{enumerate}
 
-\subsection{Battery Safety}
+The calibration program needs to know the number of inner corners of the chessboard pattern, and the size of the squares. The chessboard used in this project has $6$ by $9$ inner corners and the size of the squares is $0.0275 m$.
+
+ \begin{figure}
+ 	\centering
+ 	\begin{subfigure}[b]{0.47\textwidth}
+ 		\includegraphics[width=\textwidth]{rgb_calibration}
+ 		\caption{RGB camera calibration. The camera can be calibrated when a sufficient number of samples have been obtained.}
+ 		\label{fig:rgb_calibration}
+ 	\end{subfigure}
+ 	\begin{subfigure}[b]{0.47\textwidth}
+ 		
+ 		\includegraphics[width=\textwidth]{ir_calibration}
+ 		\caption{IR camera calibration. The chessboard pattern will be difficult to detect, because the IR projector is not blocked.}
+ 		\label{fig:ir_calibration}
+ 	\end{subfigure}
+ 	\caption{Depth camera calibration.}
+ \end{figure}
+
+\subsection{Power Supply and Battery Safety}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{power}
+	\caption{Example of a feasible power supply setup.}
+	\label{fig:power}
+\end{figure}
 
 \section{ROS Integration Overview}
-
+\label{sec:integration}
 Implementation procedure for mobile robot:
 
 \begin{itemize}
@@ -47,30 +83,61 @@ Implementation procedure for mobile robot:
 	\item Write interfaces for the motor drivers.
 	\item Create a description of the physical structure and properties of the robot in \ac{URDF}. 
 	\item Extend the model to enable simulation in Gazebo.
-	\item Publish coordinate transform data via \textit{tf} and visualize it in rviz.
+	\item Publish coordinate transform data via \textit{tf} and visualize it in \texttt{rviz}.
 	\item Add sensors, with driver and simulation support.
 	\item Apply algorithms for navigation and other functionality. 
 
 \end{itemize}
 
-\section{Modelling}
+The robot implementation is placed within a \texttt{catkin} workspace (see section \ref{sec:catkin}) that contains all the project specific files that are necessary to build and run the robot system. The overarching file system is shown in figure \ref{fig:file_system}. Note that there are several references to the \ac{TLA} ''mar'', which is short for \ac{MAR}.
 
-A robot model will serve two purposes in this implementation. Firstly, the system needs a definition of how the sensor input is placed with respect to the \texttt{base\_link}. The origin of \texttt{base\_link} is associated  with a coordinate frame. This frame, and any other frame in \ac{ROS}, is right handed, i.e. the positive $x$ direction is \textit{forwards}, positive $y$ points \textit{left}, and positive $z$ is \textit{up}. The robot pose will be based on the transformation between the world and the \texttt{base\_link} frame. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{file_system}
+	\caption{Overarching file system. The \ac{ROS} packages are located within \texttt{src}.}
+	\label{fig:file_system}
+\end{figure}
 
-The second purpose of the model is simulation. Being able to simulate the robot system has been invaluable throughout this project. The robot model is represented in an XML-based modelling language called \ac{URDF} (Unified Robot Description Format). The following sections presents how the model was defined.
+Each package will be introduced in the following sections. A short description of each package is given in table \ref{tab:list_packages}.
 
-\subsection{Obtaining Physical Dimensions}
+\begin{table}
+	\centering
+	\begin{tabular}{ r p{8.5cm} }
+		\hline
+		\multicolumn{2}{c}{Packages within \texttt{mar\_catkin\_workspace}}\\
+		\hline
+		\texttt{mar} & Launch files for the real robot hardware and for \ac{RTAB-Map}.\\
+		\texttt{mar\_gazebo} & Launch files for the simulated robot and for \ac{RTAB-Map}.\\
+		\texttt{mar\_description} & \ac{URDF} files for both the simulated and the real robot.\\
+		\texttt{mobile\_platform} & Programs for handling and processing velocity commands. One such node serves as an interface to the motor control card.\\
+		\texttt{mar\_2dnav} & Configuration and launch files for both the real and simulated robot.\\
+		\texttt{bluetooth\_server} & A node that serves as a Bluetooth server based on the Qt5 API.\\
+		\texttt{server\_wifi} & Contains the node responsible for communicating with the \ac{OCS}.\\
+		\hline
+	\end{tabular}
+	\caption{List of custom made packages.}\label{tab:list_packages}
+\end{table}
 
-Step one in building the model was to define its geometrical shape. The current model shape consists of several links. Each link is defined as a shape and an origin. The links are connected together by joints that define the coordinate transformation between the links. All links are modelled as either cuboids or cylinders. All joints are static except for the wheels which are continuous joints. For simplicity, the robot arm is modelled by a dummy link with the shape of a cylinder.
+
+\section{Modeling}
+
+A robot model will serve two purposes in this implementation. First of all, the system needs a definition of how the sensor input is placed with respect to the \texttt{base\_link}. The origin of \texttt{base\_link} is associated  with a coordinate frame. This frame, and any other frame in \ac{ROS}, is right handed, i.e. the positive $x$ direction is \textit{forwards}, positive $y$ points \textit{left}, and positive $z$ is \textit{up}. The robot pose will be based on the transformation between the world and the \texttt{base\_link} frame. 
+
+The second purpose of the model is simulation. Being able to simulate the robot system has been invaluable throughout this project. The robot model is represented in an XML-based modeling language called \ac{URDF} (Unified Robot Description Format). There are two \textit{.urdf} files within the package \texttt{mar\_description}; one for the simulator and one for the real robot hardware. The following sections presents how these models were defined.
+
+
+\subsection{Physical Dimensions}
+
+Step one in building the model was to define its geometrical shape. The current model shape consists of several links. Each link is defined as a shape and a size. The links are connected together by joints that define the coordinate transformation between the links. All links were modeled as either cuboids or cylinders, in order to simplify and speed up the modeling process. All joints are static except for the wheels which are continuous joints. For simplicity, the robot arm is modeled by a dummy link with the shape of a cylinder.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85\textwidth]{robotFootprint2}
-	\caption{The robot footprint. Dimensions are used for the navigation planners and for modelling. }
+	\caption{The robot footprint. Dimensions are used for the navigation planners and for modeling. }
 	\label{fig:robotFootprint}
 \end{figure}
 
-After defining the model shape, it is time to add some additional physical attributes to each link. In order to simulate the model, each link requires an inertia tensor. It is also useful to define a collision volume for each link. In this model, the collision volume is equal to the geometric shape of the link without exceptions. Inertia tensors for each shape is based on equations \ref{eq:cylinder} and \ref{eq:cuboid}.
+After defining the model shape, it is time to add some additional physical attributes to each link. Each link requires an inertia tensor in order to simulate the model. It is also useful to define a collision volume for each link. In this model, the collision volume is equal to the geometric shape of the link without exceptions. Inertia tensors for each shape is based on equations \ref{eq:cylinder} or \ref{eq:cuboid}.
 
 The inertia tensor:
 
@@ -102,9 +169,37 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 \label{eq:cuboid}
 \end{equation}
 
-The mass of each link is guesstimated. Consider the \texttt{base\_link} as an example. The base link was measured to be $5 \; mm$ thick, $37 \; cm$ wide and $80 \; cm$ long. Assuming that the density of aluminium\footnote{https://en.wikipedia.org/wiki/Aluminium} is $2.7 g/cm^3$, the mass of this link was calculated to be $\approx 4 kg$. 
+The mass of each link is guesstimated. Consider the \texttt{base\_link} as an example. The base link was measured to be $5 \; mm$ thick, $37 \; cm$ wide and $80 \; cm$ long. Assuming that the density of aluminium\footnote{https://en.wikipedia.org/wiki/Aluminium} is $2.7 g/cm^3$, the mass of this link was calculated to be $\approx 4 kg$. The base link was defined as follows:
 
-\subsection{Coordinate Frames}
+\lstset{language=XML}
+\begin{lstlisting}
+<link name="base_link">
+  <visual>
+    <geometry>
+      <box size="0.8 0.37 0.005"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+	  
+  <collision>
+    <geometry>
+      <box size="0.8 0.37 0.005"/>
+    </geometry>
+  </collision>
+	  
+  <inertial>
+    <mass value="4" />
+    <origin xyz="0 0 0" />
+    <inertia ixx="0.04564" ixy="0.0" ixz="0.0"
+      iyy="0.21334" iyz="0.0" 
+      izz="0.25879" />
+  </inertial>
+</link>
+\end{lstlisting}
+
+\subsection{Connecting the Links}
+
+Robot links are connected by joints. A joint defines a translation and rotation from the coordinate frame of a parent link to that of a child link. Each joint has two attributes: \textit{name}, for example ''base\_link\_to\_left\_wheel'' and type, for example ''prismatic'' or ''continuous''. All joints in the mobile robot are static, except for the wheel joints which are continuous. Correct joint transformations is very important when placing the sensors (figure \ref{fig:sensor_frames}). A discrepancy between the real sensor-to-base transform and the modeled transform will cause misaligned sensor input.
 
  \begin{figure}
  	\centering
@@ -132,14 +227,14 @@ The mass of each link is guesstimated. Consider the \texttt{base\_link} as an ex
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{sensors_in_frame}
-	\caption{Sensor input placed with correct transformations from \textit{base\_link}. }
+	\caption{Sensor input placed with correct transformations from \texttt{base\_link}. }
 	\label{fig:sensors_in_frame}
 \end{figure}
 
 
 \section{Simulations}
 
-Robot simulation was done in Gazebo, a simulation tool with good interfaces to \ac{ROS}. The same \ac{ROS} graph was used for both the simulated and real version of the robot, except from the sensors and actuators, and some minor parameter changes. 
+Robot simulation was done in Gazebo; a simulation tool with good interfaces to \ac{ROS}. The same \ac{ROS} graph was used for both the simulated and real version of the robot, except from the sensors and actuators, and some minor parameter changes. 
 
 \section{Motion Control}
 
@@ -160,7 +255,7 @@ There are four ways to control the robot:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{velocity_command}
-	\caption{Nodes and topics for motion control. }
+	\caption{Nodes and topics for motion control. (see figure \ref{fig:minimum_graph} for an explanation of this figure)}
 	\label{fig:move_base_nodes}
 \end{figure}
 
@@ -313,6 +408,13 @@ As all \ac{ROS} programs which are a part of the robot system, \ac{RTAB-Map} wil
 
 
 \section{Navigation}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{mar_2dnav}
+	\caption{Files for configuring and launching the navigation stack.}
+	\label{fig:mar_2dnav}
+\end{figure}
 
 \subsection{Global Path Planning}
 

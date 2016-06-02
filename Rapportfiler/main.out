@@ -43,11 +43,11 @@
 \BOOKMARK [2][-]{subsection.3.7.4}{Current Research and Applications}{section.3.7}% 43
 \BOOKMARK [1][-]{section.3.8}{Introduction to Sensors in Autonomous Robots}{chapter.3}% 44
 \BOOKMARK [2][-]{subsection.3.8.1}{Depth Cameras}{section.3.8}% 45
-\BOOKMARK [2][-]{subsection.3.8.2}{Plannar Laser Sensors \(LIDAR\)}{section.3.8}% 46
+\BOOKMARK [2][-]{subsection.3.8.2}{Planar Laser Sensors \(LIDAR\)}{section.3.8}% 46
 \BOOKMARK [2][-]{subsection.3.8.3}{Odometers}{section.3.8}% 47
 \BOOKMARK [2][-]{subsection.3.8.4}{Sensor Fusion}{section.3.8}% 48
-\BOOKMARK [1][-]{section.3.9}{Simultanious Localization and Mapping \(SLAM\)}{chapter.3}% 49
-\BOOKMARK [2][-]{subsection.3.9.1}{Introdunction to SLAM}{section.3.9}% 50
+\BOOKMARK [1][-]{section.3.9}{Simultaneous Localization and Mapping \(SLAM\)}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.9.1}{Introduction to SLAM}{section.3.9}% 50
 \BOOKMARK [2][-]{subsection.3.9.2}{Hector SLAM}{section.3.9}% 51
 \BOOKMARK [2][-]{subsection.3.9.3}{RTAB-Map}{section.3.9}% 52
 \BOOKMARK [2][-]{subsection.3.9.4}{RGBD SLAM and Octomap}{section.3.9}% 53
@@ -56,11 +56,11 @@
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 56
 \BOOKMARK [1][-]{section.4.2}{Hardware Setup}{chapter.4}% 57
 \BOOKMARK [2][-]{subsection.4.2.1}{Sensor Calibration and Setup}{section.4.2}% 58
-\BOOKMARK [2][-]{subsection.4.2.2}{Battery Safety}{section.4.2}% 59
+\BOOKMARK [2][-]{subsection.4.2.2}{Power Supply and Battery Safety}{section.4.2}% 59
 \BOOKMARK [1][-]{section.4.3}{ROS Integration Overview}{chapter.4}% 60
-\BOOKMARK [1][-]{section.4.4}{Modelling}{chapter.4}% 61
-\BOOKMARK [2][-]{subsection.4.4.1}{Obtaining Physical Dimensions}{section.4.4}% 62
-\BOOKMARK [2][-]{subsection.4.4.2}{Coordinate Frames}{section.4.4}% 63
+\BOOKMARK [1][-]{section.4.4}{Modeling}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.4.1}{Physical Dimensions}{section.4.4}% 62
+\BOOKMARK [2][-]{subsection.4.4.2}{Connecting the Links}{section.4.4}% 63
 \BOOKMARK [1][-]{section.4.5}{Simulations}{chapter.4}% 64
 \BOOKMARK [1][-]{section.4.6}{Motion Control}{chapter.4}% 65
 \BOOKMARK [1][-]{section.4.7}{ROS Nodes for Motion Control}{chapter.4}% 66
@@ -95,7 +95,7 @@
 \BOOKMARK [2][-]{subsection.7.1.3}{Hardware}{section.7.1}% 95
 \BOOKMARK [1][-]{section.7.2}{Task Fulfilment}{chapter.7}% 96
 \BOOKMARK [1][-]{section.7.3}{Final Conclusion}{chapter.7}% 97
-\BOOKMARK [0][-]{section*.126}{References}{}% 98
+\BOOKMARK [0][-]{section*.135}{References}{}% 98
 \BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 99
 \BOOKMARK [1][-]{section.A.1}{Installation}{appendix.A}% 100
 \BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 101

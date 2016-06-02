@@ -83,6 +83,13 @@ Mohamed~A. El-Reedy.
 \newblock In Mohamed~A. El-Reedy, editor, {\em Offshore Structures}, pages 563
   -- 634. Gulf Professional Publishing, Boston, 2012.
 
+\bibitem[Foo13]{tf_paper}
+Tully Foote.
+\newblock tf: The transform library.
+\newblock In {\em Technologies for Practical Robot Applications (TePRA), 2013
+  IEEE International Conference on}, Open-Source Software workshop, pages 1--6,
+  April 2013.
+
 \bibitem[GC11]{metraMartechGorle}
 Peter Gorle and Andrew Clive.
 \newblock Positive impact of industrial robots on employment.
@@ -191,12 +198,6 @@ Morgan Quigley, Brian Gerkey, and William~D. Smart.
 Pere Ridao, Marc Carreras, David Ribas, Pedro~J. Sanz, and Gabriel Oliver.
 \newblock Intervention auvs: The next challenge.
 \newblock {\em Annual Reviews in Control}, 40:227 -- 241, 2015.
-
-\bibitem[Reb]{Reboot_Ubuntu}
-Reboot ubuntu.
-\newblock
-  \url{http://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes/36717#36717}.
-\newblock Accessed: 2016-03-14.
 
 \bibitem[ROSa]{ROS_tut_pkg}
 {ROS} create package tutorial.

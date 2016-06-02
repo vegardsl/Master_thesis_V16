@@ -279,8 +279,12 @@ A \ac{ROS} system comprise a set of small programs that communicate with each ot
 
 \texttt{roscore} is an essensial part of any \ac{ROS} system as it enables nodes to communicate with each other. An instance of \texttt{roscore} must be started before launching any nodes. When a node is started, it will inform \texttt{roscore} of which topics it publishes and which topics it wish to subscribe to. Then, \texttt{roscore} will provide the information which allows the node to form a peer-to-peer connection to other nodes.
 
-\subsubsection{Project Structure and the \textit{catkin} Build System}
+\subsubsection{tf}
 
+\texttt{tf}\cite{tf_paper} is a coordinate system transformation library used in \ac{ROS}. Parts of a \ac{ROS} system can listen to broadcasted transforms
+
+\subsubsection{Project Structure and the \textit{catkin} Build System}
+\label{sec:catkin}
 The source code in a \ac{ROS} system is organized into packages. Each package provides a specific functionality to the system. Some packages can be downloaded and installed from a remote repository, while other packages will be created by the in-house developers for their specific robotic system. In this project, locally created ROS-packages were placed into a \textit{catkin workspace}. This workspace contains the  original source code and build specifications. Details are provided in chapter \ref{chp:implementation}. As presented in\cite{ROS_tut_pkg}, a general workspace structure is as follows:
 
 \begin{verbatim}
@@ -310,11 +314,11 @@ $ roslaunch <package name> <launch file name>.launch <argument1>:=true
 
 \subsubsection{Robot Modelling In URDF}
 
-\ac{URDF} is an XML-like format for describing robots. The robot description is made up of links and joints. Each link description contains information of its shape, inertial tensor, collision boundaries. The links are connected to each other by joints.
+\ac{URDF} is an XML-like format for describing robots. The robot description is made up of links and joints. Each link description contains information of, e.g., its shape, inertial tensor, collision boundaries. The links are connected to each other by joints.
 
 \subsubsection{Visialization in \texttt{rviz}}
 
-\texttt{rviz} is an invaluable tool for visualizing on-line robot behaviour. Simply put, \texttt{rviz} is created to visualize what the robot sees, and how it plans ahead. Many of the images in the following chapters are from \texttt{rviz}. 
+\texttt{rviz} is an invaluable tool for visualizing on-line robot behavior. Simply put, \texttt{rviz} is created to visualize what the robot sees, and how it plans ahead. Many of the images in the following chapters were obtained in \texttt{rviz}. 
 
 \subsubsection{Simulation in Gazebo}
 
@@ -323,7 +327,7 @@ $ roslaunch <package name> <launch file name>.launch <argument1>:=true
 
 \paragraph{PR2 - Personal Robot 2}
 
-PR2, developed by Willow Garage is one of the first robots designed to run \ac{ROS} \cite{rosbook15}, and also one of the most advanced and capable robots with \ac{ROS} today. PR2 is build for research and development of service robot applications. The navigation stack used in this thesis has been tested on the PR2. \cite{tbd} describes how the PR2 used the navigation stack to autonomously navigate 42 km (26.2 miles). The PR2 is available for sale at the price of \$280,000.00\footnote{https://www.willowgarage.com/pages/pr2/order}(2016).
+PR2, developed by Willow Garage is one of the first robots designed to run \ac{ROS} \cite{rosbook15}, and also one of the most advanced and capable robots with \ac{ROS} today. PR2 is build for research and development of service robot applications. The navigation stack used in this thesis has been tested on the PR2. \cite{tbd} describes how the PR2 used the navigation stack to autonomously navigate 42 km (26.2 miles). PR2 is available for sale at the price of \$280,000.00\footnote{https://www.willowgarage.com/pages/pr2/order}(2016).
 
 \paragraph{TurtleBot} 
 
@@ -378,17 +382,17 @@ The Microsoft Kinect sensor was initially designed as a \ac{NUI} for the Xbox 36
 
 \subsubsection{Kinect for Xbox 360}
 
-Kinect for Xbox 360 is the RGB-D sensor used in this project. The device  was initially intended as a \ac{NUI} for gaming and office applications, and was the first consumer grade sensor to utilize structured light. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is equipped with a depth sensor, a regular color camera, a microphone array and a tilt motor(figure \ref{fig:kinect360_exp}). The color camera in combination with the depth sensor forms what is usually referred to as a RGB-D sensor, i.e. a combined color and depth camera (figure \ref{fig:kinect360_exp}). This feature, combined with the relaticely low cost and accessability of the sensor has contributed to make the Kinect very popular in research projects related to \ac{SLAM} and robotics. In the three first years since it's release in 2010, over 3000 papers in well-known journals and proceedings were devoted to research on the Kinect sensor. Roughly 500 of these papers focused on \ac{SLAM} or 3d reconstruction\cite{Berger2013}. Some of the other papers focused on some of the weaknesses with the sensor, such as detection of glass surfaces and having several sensors in the same area. 
+Kinect for Xbox 360 is the RGB-D sensor used in this project. The device  was initially intended as a \ac{NUI} for gaming and office applications, and was the first consumer grade sensor to utilize structured light. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is equipped with a depth sensor, a regular color camera, a microphone array and a tilt motor(figure \ref{fig:kinect360_exp}). The color camera in combination with the depth sensor forms what is usually referred to as a RGB-D sensor, i.e. a combined color and depth camera (figure \ref{fig:kinect360_exp}). This feature, combined with its relatively low cost and high accessibility has contributed to make the Kinect very popular in research projects related to \ac{SLAM} and robotics. In the three first years since it's release in 2010, over 3000 papers in well-known journals and proceedings were devoted to research on the Kinect sensor. Roughly 500 of these papers focused on \ac{SLAM} or 3d reconstruction\cite{Berger2013}. Some of the other papers focused on some of the weaknesses with the sensor, such as detection of glass surfaces and having several sensors in the same area. 
 
 
-Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware of that it is becoming increasingly difficult, if not already impossible, to get hold of a new Kinect for Xbox 360. 
+Today, the the Kinect for Xbox 360 has been succeeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware of that it is becoming increasingly difficult, if not already impossible, to get hold of a new Kinect for Xbox 360. 
 
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=0.8\textwidth]{kinect360}
-    \caption{Awesome Image}
-    \label{fig:kinect360}
-\end{figure}
+%\begin{figure}[p]
+%    \centering
+%    \includegraphics[width=0.8\textwidth]{kinect360}
+%    \caption{Awesome Image}
+%    \label{fig:kinect360}
+%\end{figure}
 
 \begin{figure}[p]
     \centering
@@ -398,9 +402,9 @@ Today, the the Kinect for Xbox 360 has been succeded by the Kinect for Xbox One,
 \end{figure}
 
 
-\subsection{Plannar Laser Sensors (LIDAR)}
+\subsection{Planar Laser Sensors (LIDAR)}
 
-A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, can all be referred to as LIDARs. 
+A planar laser sensor, known as e.g. laser proximity sensors or laser radars, can all be referred to as LIDARs. 
 
 \subsubsection{Scanning Laser Range Finder, URG-04LX-UG01}
 
@@ -410,9 +414,9 @@ A plannar laser sensor, known as e.g. laser proximity sensors or laser radars, c
 \subsection{Sensor Fusion}
 
 
-\section{Simultanious Localization and Mapping (SLAM)}
+\section{Simultaneous Localization and Mapping (SLAM)}
 
-\subsection{Introdunction to SLAM}
+\subsection{Introduction to SLAM}
 
 \ac{SLAM}, also known as \ac{CLM}, is a class of solutions to the problem of determining an agents location and pose in an unknown environment, while simultaneously mapping the same environment.
 
@@ -443,6 +447,8 @@ The source code and \ac{ROS} wrapper is currently maintained, and new features a
     \caption{Conceptual illustration of a graph created by \ac{RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Feature descriptors in $L_2$ and $L_7$ are sufficiently similar to accept this as a loop closure.}
     \label{fig:rtabmap_graph}
 \end{figure}
+
+\subsubsection{Loop Closure Detection}
 
 \subsubsection{On-line Mapping of Large Environments}
 

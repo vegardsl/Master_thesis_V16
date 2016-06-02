@@ -14,6 +14,7 @@ A level-1 auxiliary file: conclusion_chapter.aux
 The style file: alpha.bst
 A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: troubleshooting.aux
+A level-1 auxiliary file: dvd_contents.aux
 Database file #1: main.bib
 I was expecting a `,' or a `}'---line 438 of file main.bib
  : keywords=Inspection; 
@@ -39,7 +40,6 @@ Warning--to sort, need author or key in ROS_space
 Warning--to sort, need author or key in ROS_industrial
 Warning--to sort, need author or key in ROS_industria_hardware
 Warning--to sort, need author or key in Kintinous
-Warning--to sort, need author or key in Reboot_Ubuntu
 Warning--can't use both author and editor fields in Berger2013
 Warning--empty author in deploymentsensabot
 (There was 1 error message)
