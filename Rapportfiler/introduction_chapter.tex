@@ -3,7 +3,7 @@
 
 \section{About this Thesis}
 
-This thesis presents and documents the work that was done during the master's project, \textbf{TTK4900}, in Engineering Cybernetics. This thesis thesis is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks. The student shall gain in depth knowledge of a specific topic, and be able to choose the correct tools to solve a problem. Furthermore, the st
+This thesis presents and documents the work that was done during the master's project, \textbf{TTK4900}, in Engineering Cybernetics. The project is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks. The student shall gain in depth knowledge of a specific topic, and be able to choose the correct tools to solve a problem. Furthermore, the st
 
 \subsection{Long Term Goal and Previous Work}
 
@@ -18,7 +18,7 @@ The robot system that was used in this project has been developed over the cours
 	\item  In combination with \ac{VR}, the robot could be used for training purposes. 
 \end{itemize}
 
-\subsubsection{Telepresence and the Robotic Arm}
+\subsubsection{Telepresence and Robotic Arm}
 
 The system in its current form is built around a robot manipulator arm, SCORBOT-ER4u. Kristian Saxrud Bekken focused on improving previous work on the system, which was done as early as 2005\cite{bekken}. Bekken's work comprise telepresence through a stereo video transmission, a collision avoidance system for the robot arm and an improved \ac{HMI} implementation.
 
@@ -34,6 +34,14 @@ In parallel to Aspunvik's project, Mikael Berg developed a solution for \ac{SLAM
 This authors specialization project\cite{lindrup} presented an obstruction detector based on two unsynchronized IP-cameras and a stereo matching algorithm in \ac{OpenCV}. Because the cameras were unsynchronized, the system would become useless whenever there is relative motion between the robot and the surroundings. The obstruction detector lacked a critical feature: a floor filter to separate the ground from potential obstructions. The implementation presented in this master's project is unrelated to the preceding specialization project, except for some useful functions in c++.
 
 \section{Implementation Overview}
+
+\subsection{Selecting Tools and Hardware}
+
+To meet objective 4 in the problem description it was decided to focus in vision based navigation. A robot with the ability to build a map of the surroundings and relocate autonomously was considered to be a good starting point for further vision based solutions. The mobile robot from \cite{aspunvik} and \cite{berg} was refitted to accommodate the Kinect for XBOX 360, a 3d camera widely used in robot vision research projects. 
+
+To use Kinect, the initial plan was to utilize the \ac{PCL} in combination with a \ac{SLAM} method (e.g. Kintinous\cite{Kintinous}). This approach came with a high degree of uncertainty that would reduce the project scope significantly, and an increased likelihood of an unsatisfactory result. The Robot Operating System (ROS), an open source robot software framework, came up as an alternative tool late in January. 
+
+The work and solutions presented in this thesis revolves around the process of integrating the Robot Operating System (ROS), a robot software framework, with the mobile robot from \cite{aspunvik} and \cite{berg}. Installing ROS on Ubuntu Linux is by far the easiest way to begin using the framework. For this reason, and to avoid interfering with another project on the same robot, it was decided that an additional computer running Ubuntu Linux should be fitted to the robot.
 
 \begin{figure}[p]
 	\centering

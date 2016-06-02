@@ -12,11 +12,12 @@
 \contentsline {section}{\numberline {1.1}About this Thesis}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Long Term Goal and Previous Work}{1}{subsection.1.1.1}
 \contentsline {subsubsection}{The Topic - Mobile Autonomous Robot}{1}{section*.8}
-\contentsline {subsubsection}{Telepresence and the Robotic Arm}{2}{section*.12}
+\contentsline {subsubsection}{Telepresence and Robotic Arm}{2}{section*.12}
 \contentsline {subsubsection}{Building the Mobile Platform}{2}{section*.14}
 \contentsline {subsubsection}{Simultaneous Localization and Mapping}{2}{section*.15}
 \contentsline {subsubsection}{Last Year's Specialization Project}{2}{section*.17}
 \contentsline {section}{\numberline {1.2}Implementation Overview}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Selecting Tools and Hardware}{3}{subsection.1.2.1}
 \contentsline {section}{\numberline {1.3}Thesis Structure}{3}{section.1.3}
 \contentsline {chapter}{\chapternumberline {2}Task Outline and Planning}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
@@ -30,41 +31,41 @@
 \contentsline {subsection}{\numberline {3.1.2}Potential Maintenance Tasks}{7}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Which Tasks Can Be Robotized?}{7}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Structural Maintenance and Environmental Considerations}{9}{subsection.3.1.4}
-\contentsline {subsubsection}{Corrosion}{9}{section*.23}
-\contentsline {subsubsection}{Structural Fatigue}{9}{section*.25}
+\contentsline {subsubsection}{Corrosion}{9}{section*.24}
+\contentsline {subsubsection}{Structural Fatigue}{9}{section*.26}
 \contentsline {subsection}{\numberline {3.1.5}Production-specific Hazards}{10}{subsection.3.1.5}
-\contentsline {subsubsection}{Hydrocarbon leaks}{10}{section*.29}
-\contentsline {subsubsection}{Fire}{11}{section*.31}
-\contentsline {subsubsection}{Explosions}{11}{section*.32}
+\contentsline {subsubsection}{Hydrocarbon leaks}{10}{section*.30}
+\contentsline {subsubsection}{Fire}{11}{section*.32}
+\contentsline {subsubsection}{Explosions}{11}{section*.33}
 \contentsline {subsection}{\numberline {3.1.6}Implications for Robot Design}{11}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Robotic Maintenance Today}{12}{section.3.2}
-\contentsline {subsubsection}{Trends and Potential}{12}{section*.33}
-\contentsline {subsubsection}{Subsea Maintenance and Inspection}{13}{section*.35}
-\contentsline {subsubsection}{Disaster Response}{13}{section*.40}
-\contentsline {subsubsection}{Topside Offshore and Onshore Robotic Maintenance}{14}{section*.43}
+\contentsline {subsubsection}{Trends and Potential}{12}{section*.34}
+\contentsline {subsubsection}{Subsea Maintenance and Inspection}{13}{section*.36}
+\contentsline {subsubsection}{Disaster Response}{13}{section*.41}
+\contentsline {subsubsection}{Topside Offshore and Onshore Robotic Maintenance}{14}{section*.44}
 \contentsline {section}{\numberline {3.3}Modelling and Simulation}{15}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Some Terminology}{15}{subsection.3.3.1}
-\contentsline {subsubsection}{Coordinate Systems and Poses}{15}{section*.48}
-\contentsline {subsubsection}{Robot Joints}{15}{section*.49}
+\contentsline {subsubsection}{Coordinate Systems and Poses}{15}{section*.49}
+\contentsline {subsubsection}{Robot Joints}{15}{section*.50}
 \contentsline {subsection}{\numberline {3.3.2}Robot Modelling}{15}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Simulating in Gazebo}{15}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}ROS}{15}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Introduction}{15}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Important ROS Concepts}{16}{subsection.3.4.2}
-\contentsline {subsubsection}{The ROS Graph}{16}{section*.52}
-\contentsline {subsubsection}{roscore}{16}{section*.54}
-\contentsline {subsubsection}{tf}{17}{section*.55}
-\contentsline {subsubsection}{Project Structure and the \textit {catkin} Build System}{17}{section*.56}
-\contentsline {subsubsection}{\texttt {roslaunch}}{17}{section*.57}
+\contentsline {subsubsection}{The ROS Graph}{16}{section*.53}
+\contentsline {subsubsection}{roscore}{16}{section*.55}
+\contentsline {subsubsection}{tf}{17}{section*.56}
+\contentsline {subsubsection}{Project Structure and the \textit {catkin} Build System}{17}{section*.57}
+\contentsline {subsubsection}{\texttt {roslaunch}}{17}{section*.58}
 \contentsline {subsection}{\numberline {3.4.3}An Overview of ROS-Related Tools}{18}{subsection.3.4.3}
-\contentsline {subsubsection}{Robot Modelling In URDF}{18}{section*.58}
-\contentsline {subsubsection}{Visialization in \texttt {rviz}}{18}{section*.60}
-\contentsline {subsubsection}{Simulation in Gazebo}{18}{section*.61}
+\contentsline {subsubsection}{Robot Modelling In URDF}{18}{section*.59}
+\contentsline {subsubsection}{Visialization in \texttt {rviz}}{18}{section*.61}
+\contentsline {subsubsection}{Simulation in Gazebo}{18}{section*.62}
 \contentsline {subsection}{\numberline {3.4.4}Notable Robots Running ROS}{18}{subsection.3.4.4}
-\contentsline {paragraph}{PR2 - Personal Robot 2}{18}{section*.62}
-\contentsline {paragraph}{TurtleBot}{18}{section*.63}
-\contentsline {paragraph}{Robonaut 2}{18}{section*.64}
-\contentsline {paragraph}{Industrial Hardware}{19}{section*.66}
+\contentsline {paragraph}{PR2 - Personal Robot 2}{18}{section*.63}
+\contentsline {paragraph}{TurtleBot}{18}{section*.64}
+\contentsline {paragraph}{Robonaut 2}{18}{section*.65}
+\contentsline {paragraph}{Industrial Hardware}{19}{section*.67}
 \contentsline {section}{\numberline {3.5}Software}{19}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Qt}{19}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}PCL}{19}{subsection.3.5.2}
@@ -76,20 +77,20 @@
 \contentsline {subsection}{\numberline {3.7.4}Current Research and Applications}{19}{subsection.3.7.4}
 \contentsline {section}{\numberline {3.8}Introduction to Sensors in Autonomous Robots}{19}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Depth Cameras}{19}{subsection.3.8.1}
-\contentsline {subsubsection}{Different Methods for Depth Perception}{19}{section*.67}
-\contentsline {subsubsection}{Natural User Interfaces - Origin of the Kinect}{20}{section*.68}
-\contentsline {subsubsection}{Kinect for Xbox 360}{20}{section*.70}
+\contentsline {subsubsection}{Different Methods for Depth Perception}{19}{section*.68}
+\contentsline {subsubsection}{Natural User Interfaces - Origin of the Kinect}{20}{section*.69}
+\contentsline {subsubsection}{Kinect for Xbox 360}{20}{section*.71}
 \contentsline {subsection}{\numberline {3.8.2}Planar Laser Sensors (LIDAR)}{21}{subsection.3.8.2}
-\contentsline {subsubsection}{Scanning Laser Range Finder, URG-04LX-UG01}{21}{section*.73}
+\contentsline {subsubsection}{Scanning Laser Range Finder, URG-04LX-UG01}{21}{section*.74}
 \contentsline {subsection}{\numberline {3.8.3}Odometers}{21}{subsection.3.8.3}
 \contentsline {subsection}{\numberline {3.8.4}Sensor Fusion}{21}{subsection.3.8.4}
 \contentsline {section}{\numberline {3.9}Simultaneous Localization and Mapping (SLAM)}{21}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Introduction to SLAM}{21}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Hector SLAM}{21}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}RTAB-Map}{21}{subsection.3.9.3}
-\contentsline {subsubsection}{Graph Based Mapping}{22}{section*.77}
-\contentsline {subsubsection}{Loop Closure Detection}{22}{section*.79}
-\contentsline {subsubsection}{On-line Mapping of Large Environments}{22}{section*.80}
+\contentsline {subsubsection}{Graph Based Mapping}{22}{section*.78}
+\contentsline {subsubsection}{Loop Closure Detection}{22}{section*.80}
+\contentsline {subsubsection}{On-line Mapping of Large Environments}{22}{section*.81}
 \contentsline {subsection}{\numberline {3.9.4}RGBD SLAM and Octomap}{22}{subsection.3.9.4}
 \contentsline {section}{\numberline {3.10}Navigation}{24}{section.3.10}
 \contentsline {chapter}{\chapternumberline {4}Implementation}{25}{chapter.4}
@@ -106,8 +107,8 @@
 \contentsline {section}{\numberline {4.7}ROS Nodes for Motion Control}{33}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Velocity Command Sources}{33}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}Motor Control Card Firmware on XMEGA A3BU}{34}{subsection.4.7.2}
-\contentsline {subsubsection}{ROS-Motor Driver Communication}{35}{section*.98}
-\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{35}{section*.100}
+\contentsline {subsubsection}{ROS-Motor Driver Communication}{35}{section*.99}
+\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{35}{section*.101}
 \contentsline {section}{\numberline {4.8}Operator Control Station (OCS)}{36}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}Graphical User Interface}{36}{subsection.4.8.1}
 \contentsline {section}{\numberline {4.9}The Hand Held Remote Control - \textit {Robot Leash}}{37}{section.4.9}
@@ -117,7 +118,7 @@
 \contentsline {section}{\numberline {4.11}Navigation}{38}{section.4.11}
 \contentsline {subsection}{\numberline {4.11.1}Global Path Planning}{38}{subsection.4.11.1}
 \contentsline {subsection}{\numberline {4.11.2}Local Path Planning}{38}{subsection.4.11.2}
-\contentsline {subsubsection}{Obstruction Detection}{38}{section*.106}
+\contentsline {subsubsection}{Obstruction Detection}{38}{section*.107}
 \contentsline {chapter}{\chapternumberline {5}Results}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{43}{section.5.1}
 \contentsline {section}{\numberline {5.2}Testplan}{43}{section.5.2}
@@ -125,11 +126,11 @@
 \contentsline {section}{\numberline {5.3}Results}{44}{section.5.3}
 \contentsline {section}{\numberline {5.4}Simulation Results}{44}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Live Testing}{44}{subsection.5.4.1}
-\contentsline {subsubsection}{Safety Features}{44}{section*.113}
-\contentsline {subsubsection}{Loop Closure Detection}{44}{section*.114}
-\contentsline {subsubsection}{Multi Session Mapping}{44}{section*.119}
-\contentsline {subsubsection}{Navigating an Obstacle Course}{44}{section*.120}
-\contentsline {subsubsection}{Avoiding Moving Obstacles}{44}{section*.121}
+\contentsline {subsubsection}{Safety Features}{44}{section*.114}
+\contentsline {subsubsection}{Loop Closure Detection}{44}{section*.115}
+\contentsline {subsubsection}{Multi Session Mapping}{44}{section*.120}
+\contentsline {subsubsection}{Navigating an Obstacle Course}{44}{section*.121}
+\contentsline {subsubsection}{Avoiding Moving Obstacles}{44}{section*.122}
 \contentsline {section}{\numberline {5.5}Discussion}{44}{section.5.5}
 \contentsline {chapter}{\chapternumberline {6}Discussion}{53}{chapter.6}
 \contentsline {section}{\numberline {6.1}Mapping}{53}{section.6.1}
