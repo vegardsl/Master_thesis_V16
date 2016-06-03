@@ -234,6 +234,10 @@ roslaunch.
 \newblock \url{http://wiki.ros.org/roslaunch}.
 \newblock Accessed: 2016-03-15.
 
+\bibitem[rta]{rtabmap_setup}
+Setup rtab-map on your robot!
+\newblock \url{http://wiki.ros.org/rtabmap_ros/Tutorials/SetupOnYourRobot}.
+
 \bibitem[sta]{statoil_ubemannet}
 Offshore.no: Statoil vil bygge flere folkefrie plattformer.
 \newblock

@@ -30,22 +30,23 @@
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{40}{figure.caption.102}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{40}{figure.caption.104}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces This is the caption \newline This is the second line}}{41}{figure.caption.105}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Files for configuring and launching the navigation stack.\relax }}{42}{figure.caption.106}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Detecting obstructions in 3d.\relax }}{42}{figure.caption.108}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Files for configuring and launching the navigation stack.\relax }}{42}{figure.caption.111}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Detecting obstructions in 3d.\relax }}{42}{figure.caption.113}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{45}{figure.caption.111}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{45}{figure.caption.112}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{46}{figure.caption.113}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparison between mapped occupancy grid and floor plan.\relax }}{47}{figure.caption.116}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces An example of an accepted loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{48}{figure.caption.117}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces An example of an accepted loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{49}{figure.caption.118}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces An example of an accepted loop closure hypothesis with the live robot system.\relax }}{50}{figure.caption.119}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{51}{figure.caption.123}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{51}{figure.caption.124}
-\addvspace {10pt}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{56}{figure.caption.133}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{45}{figure.caption.116}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{45}{figure.caption.117}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Nodes and topics for motion control. \relax }}{46}{figure.caption.118}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparison between mapped occupancy grid and floor plan.\relax }}{47}{figure.caption.121}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces An example of an accepted loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{48}{figure.caption.122}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces An example of an accepted loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{49}{figure.caption.123}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces An example of an accepted loop closure hypothesis with the live robot system.\relax }}{50}{figure.caption.124}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{51}{figure.caption.128}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{51}{figure.caption.129}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{65}{figure.caption.141}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{56}{figure.caption.138}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{64}{figure.caption.141}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{67}{figure.caption.146}
 \addvspace {10pt}

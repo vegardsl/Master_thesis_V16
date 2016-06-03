@@ -23,6 +23,7 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "BCD_license"
 Warning--I didn't find a database entry for "keylist"
 Warning--to sort, need author or key in pressAIV
+Warning--to sort, need author or key in Kintinous
 Warning--to sort, need author or key in statoil_ubemannet
 Warning--to sort, need author or key in subsea_konkurranse
 Warning--to sort, need author or key in E24
@@ -39,7 +40,7 @@ Warning--to sort, need author or key in ROS_launch
 Warning--to sort, need author or key in ROS_space
 Warning--to sort, need author or key in ROS_industrial
 Warning--to sort, need author or key in ROS_industria_hardware
-Warning--to sort, need author or key in Kintinous
+Warning--to sort, need author or key in rtabmap_setup
 Warning--can't use both author and editor fields in Berger2013
 Warning--empty author in deploymentsensabot
 (There was 1 error message)
