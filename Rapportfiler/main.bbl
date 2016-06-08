@@ -95,6 +95,11 @@ Peter Gorle and Andrew Clive.
 \newblock Positive impact of industrial robots on employment.
 \newblock Report, METRA MARTECH Limited, 2011.
 
+\bibitem[hok]{hokuyo_spec}
+{URG-04LX-UG01 LIDAR} specifications.
+\newblock
+  \url{http://www.hokuyo-aut.jp/02sensor/07scanner/download/pdf/URG-04LX_UG01_spec_en.pdf}.
+
 \bibitem[HWB{\etalchar{+}}13]{hornung13auro}
 Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
   Burgard.
@@ -121,7 +126,22 @@ Shinji Kawatsuma, Mineo Fukushima, and Takashi Okada.
 \newblock {\em Industrial Robot: An International Journal}, 39(5):428--435,
   2012.
 
-\bibitem[Kin]{Kintinous}
+\bibitem[kina]{kinect_discussion}
+Kinect for windows, does in work with ros?
+\newblock \url{http://answers.ros.org/question/12876/kinect-for-windows/}.
+\newblock Accessed: 10-02-2016.
+
+\bibitem[kinb]{kinect_hack}
+Kinect for windows, hack.
+\newblock
+  \url{http://projects.csail.mit.edu/pr2/wiki/index.php?title=Kinect_for_Windows}.
+\newblock Accessed: 10-02-2016.
+
+\bibitem[kinc]{kinect_guide}
+Kinect for windows programming guide.
+\newblock \url{https://msdn.microsoft.com/en-us/library/hh855348.aspx}.
+
+\bibitem[Kind]{Kintinous}
 Kintinous.
 \newblock \url{https://github.com/mp3guy/Kintinuous}.
 \newblock Accessed: 2016-03-21.
@@ -137,6 +157,12 @@ Erik Kyrkjeb{\o}, P{\aa}l Liljeb{\"a}ck, and Aksel~A. Transeth.
 K.~Kydd, S.~Macrez, and P.~Pourcel.
 \newblock {\em Autonomous Robot for Gas and Oil Sites}.
 \newblock Society of Petroleum Engineers, September 2015.
+
+\bibitem[KMvSK11]{KohlbrecherMeyerStrykKlingaufFlexibleSlamSystem2011}
+S.~Kohlbrecher, J.~Meyer, O.~von Stryk, and U.~Klingauf.
+\newblock A flexible and scalable slam system with full 3d motion estimation.
+\newblock In {\em Proc. IEEE International Symposium on Safety, Security and
+  Rescue Robotics (SSRR)}. IEEE, November 2011.
 
 \bibitem[Lin15]{lindrup}
 Vegard~Stjerna Lindrup.
@@ -224,12 +250,17 @@ Pere Ridao, Marc Carreras, David Ribas, Pedro~J. Sanz, and Gabriel Oliver.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
 
-\bibitem[ROSf]{ROS_space}
+\bibitem[ROSf]{ROS_navigation_tuning}
+{ROS} navigation tuning guide.
+\newblock
+  \url{http://wiki.ros.org/navigation/Tutorials/Navigation%20Tuning%20Guide}.
+
+\bibitem[ROSg]{ROS_space}
 {ROS} on the iss.
 \newblock \url{http://www.ros.org/news/2014/09/ros-running-on-iss.html}.
 \newblock Accessed: 2016-04-10.
 
-\bibitem[ROSg]{ROS_launch}
+\bibitem[ROSh]{ROS_launch}
 roslaunch.
 \newblock \url{http://wiki.ros.org/roslaunch}.
 \newblock Accessed: 2016-03-15.

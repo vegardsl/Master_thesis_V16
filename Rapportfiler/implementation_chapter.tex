@@ -14,9 +14,23 @@ This chapter presents four implementations that were developed during this proje
 	\end{tabular}
 \end{center}
 
+\section{Hardware Setup}
+
 The implementations above created a need for additional hardware. Extensive modifications had to be made to accommodate these additions. Some improvements with respect to safety were made as well.
 
-\section{Hardware Setup}
+\subsection{Second On-Board Computer and New Rear Compartment}
+
+The robot was already fitted with an on-board computer running Windows 7. Using the on-board computer was not an option, due to the following reasons:
+\begin{itemize}
+\item It lacked the computational power required for this implementation. Both the Gazebo simulator and \ac{RTAB-Map} is computationally intensive.
+\item The hard-drive was full. No disk space for the Linux partition required by \ac{ROS} was available.
+\item Two parallel master's projects were using the robot hardware, and both project implementations required an on-board computer. Sharing the hardware would have been very time consuming.
+\end{itemize} 
+
+For these reasons, this author decided to develop the robot software on a second on-board computer. 
+
+The previous chassis did not facilitate any good wiring solutions. The cables belonging to the various equipment on the robot would often result in a huge tangle of cables and wires. To accommodate the second on-board computer and to facilitate a tidier cable management, it was decided to build a new rear compartment where the equipment could be placed.
+
 
 
 
@@ -42,11 +56,11 @@ Calibrating both the Kinect and the \ac{LIDAR} is a straight forward procedure w
 
 \begin{enumerate}
 	\item Print out a chessboard pattern and tape it to a flat surface. It is beneficial to use A3 paper size to make the pattern easier to detect over a larger set of distances.
-	\item Calibrate the RGB camera.
-	\item Calibrate the IR camera. It is recommended to cover the IR projector, because the IR speckle pattern makes it difficult to detect the chessboard (figure \ref{fig:ir_calibration}).
+	\item Calibrate the RGB camera by using the calibration tool. Use the RGB video stream.
+	\item Calibrate the IR camera by using the calibration tool. Stream from the IR camera this time. For this procedure, it is recommended to cover the IR projector, because the IR speckle pattern makes it difficult to detect the chessboard (figure \ref{fig:ir_calibration}).
 \end{enumerate}
 
-The calibration program needs to know the number of inner corners of the chessboard pattern, and the size of the squares. The chessboard used in this project has $6$ by $9$ inner corners and the size of the squares is $0.0275 m$.
+The calibration program needs to know the number of inner corners of the chessboard pattern, and the size of the squares. The chessboard used in this project has $6$ by $9$ inner corners and the size of the squares is $0.0275 m$. Larger pattern squares will make it easier to detect the chessboard pattern over a larger range of distances.
 
  \begin{figure}
  	\centering
@@ -66,12 +80,16 @@ The calibration program needs to know the number of inner corners of the chessbo
 
 \subsection{Power Supply and Battery Safety}
 
+A possible power supply setup is shown in figure \ref{fig:power}.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{power}
 	\caption{Example of a feasible power supply setup.}
 	\label{fig:power}
 \end{figure}
+
+The car battery is now placed in the lower shelf in the rear compartment where it is surrounded by aluminium. This presents an unacceptable risk, because a short circuit is much more likely if the battery poles are uncovered. To reduce the possibility of having a short circuit, a rubber pad was glued to the inner wall and roof next to the battery in the rear compartment. New isolated battery connections provide additional protection. 
 
 \section{ROS Integration Overview}
 \label{sec:integration}
@@ -89,7 +107,7 @@ Implementation procedure for mobile robot:
 
 \end{itemize}
 
-The robot implementation is placed within a \texttt{catkin} workspace (see section \ref{sec:catkin}) that contains all the project specific files that are necessary to build and run the robot system. The overarching file system is shown in figure \ref{fig:file_system}. Note that there are several references to the \ac{TLA} ''mar'', which is short for \ac{MAR}.
+The robot software implementation is placed within a \texttt{catkin} workspace (see section \ref{sec:catkin}) that contains all the project specific files that are necessary to build and run the robot system. The overarching file system is shown in figure \ref{fig:file_system}. Note that there are several references to the \ac{TLA} ''mar'', which is short for \ac{MAR}.
 
 \begin{figure}[h]
 	\centering
@@ -98,7 +116,7 @@ The robot implementation is placed within a \texttt{catkin} workspace (see secti
 	\label{fig:file_system}
 \end{figure}
 
-Each package will be introduced in the following sections. A short description of each package is given in table \ref{tab:list_packages}.
+Each package will be introduced in the following sections. The purpose of presenting the file systems is to clarify which parts of the system that was implemented by this author. A short description of each package is given in table \ref{tab:list_packages}.
 
 \begin{table}
 	\centering
@@ -121,7 +139,7 @@ Each package will be introduced in the following sections. A short description o
 
 \section{Modeling}
 
-A robot model will serve two purposes in this implementation. First of all, the system needs a definition of how the sensor input is placed with respect to the \texttt{base\_link}. The origin of \texttt{base\_link} is associated  with a coordinate frame. This frame, and any other frame in \ac{ROS}, is right handed, i.e. the positive $x$ direction is \textit{forwards}, positive $y$ points \textit{left}, and positive $z$ is \textit{up}. The robot pose will be based on the transformation between the world and the \texttt{base\_link} frame. 
+A robot model will serve two purposes in this implementation. First of all, the system needs a definition of how the sensor inputs are placed with respect to the \texttt{base\_link}. The origin of \texttt{base\_link} is associated  with a coordinate frame. This frame, and any other frame in \ac{ROS}, is right handed, i.e. the positive $x$ direction is \textit{forwards}, positive $y$ points \textit{left}, and positive $z$ is \textit{up}. The robot pose will be based on the transformation between the world and the \texttt{base\_link} frame. 
 
 The second purpose of the model is simulation. Being able to simulate the robot system has been invaluable throughout this project. The robot model is represented in an XML-based modeling language called \ac{URDF} (Unified Robot Description Format). There are two \textit{.urdf} files within the package \texttt{mar\_description}; one for the simulator and one for the real robot hardware. The following sections presents how these models were defined.
 
@@ -236,7 +254,25 @@ Robot links are connected by joints. A joint defines a translation and rotation 
 
 Robot simulation was done in Gazebo; a simulation tool with good interfaces to \ac{ROS}. The same \ac{ROS} graph was used for both the simulated and real version of the robot, except from the sensors and actuators, and some minor parameter changes. 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{mar_gazebo_folders}
+	\caption{Folders and files specific for the simulator.}
+	\label{fig:mar_2dnav}
+\end{figure}
+
+To properly simulate the robot, Gazebo needs a way to simulate the differential drive and the sensors in addition to the physical description of the robot. An expanded \ac{URDF} description of the robot, \texttt{mar\_model\_sim.urdf}, intended for Gazebo was placed within the \texttt{mar\_description} package (figure \ref{fig:file_system}). 
+
+\subsection{Robot Description Plugins}
+
+The \ac{URDF} model was expanded with plugins that simulate the motor control card, the \ac{LIDAR} and the Kinect. The plugins are provided by Gazebo and are intended for use in \ac{ROS}. 
+
+The motor controller is simulated by the \texttt{skid\_steer\_drive\_controller} plugin. This plugin was preferred over the \texttt{differential\_drive\_controller} because it supports four wheel joints instead of two, and because the skid steering controller was considered to be good enough. 
+
+Attributes for gazebo's sensor plugins are based on the technical specifications\cite{hokuyo_spec} for the real sensors. 
+
 \section{Motion Control}
+
 
 \section{ROS Nodes for Motion Control}
 
@@ -245,12 +281,12 @@ Robot simulation was done in Gazebo; a simulation tool with good interfaces to \
 
 There are four ways to control the robot:
 
-\begin{itemize}
-	\item Local keyboard input.
-	\item Wireless teleoperation from the \ac{OCS}.
-	\item Wireless teleoperation from a hand-held Bluetooth device.
-	\item Commands from the navigation stack in \ac{ROS}.
-\end{itemize}
+\begin{description}
+	\item[/cmd\_vel\_loc] Local keyboard input.
+	\item[/cmd\_vel\_wifi] Wireless teleoperation from the \ac{OCS}.
+	\item[/cmd\_vel\_bt] Wireless teleoperation from a hand-held Bluetooth device.
+	\item[/cmd\_vel] Commands from the navigation stack in \ac{ROS}. \texttt{/cmd\_vel} is the default \: \: velocity command topic for the navigation stack.
+\end{description}
 
 \begin{figure}[h]
 	\centering
@@ -262,7 +298,7 @@ There are four ways to control the robot:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{velocity_ramp_cropped}
-	\caption{Velocity command ramping. The blue line represents commands entering \textit{velocity\_ramp}, while the red line shows the acceleration constrained output command.}
+	\caption{The node \texttt{velocity\_ramp} limits the rate of change of the velocity command sent to the motor control card. The blue line represents commands entering \texttt{velocity\_ramp}, while the red line shows the acceleration constrained output command.}
 	\label{fig:velocity_ramp}
 \end{figure}
 
@@ -399,11 +435,11 @@ http://developer.samsung.com/technical-doc/view.do?v=T000000117
 
 \section{Mapping - Setting Up RTAB-Map}
 
-For mapping, this robot has utilized Real-Time Appearence Based Mapping (\ac{RTAB-Map}), which was introduced in section \ref{sec:RTAB-Map}. As mentioned, \ac{RTAB-Map} itself has been developed over the last decade by IntRoLab at Université de Sherbrooke in Canada. This section presents how \ac{RTAB-Map} was configured for this robot.
+This robot is using Real-Time Appearence Based Mapping (\ac{RTAB-Map}) for \ac{SLAM}. As mentioned in section \ref{sec:RTAB-Map}, \ac{RTAB-Map} itself has been developed over the last decade by IntRoLab at Université de Sherbrooke in Canada. This section presents how \ac{RTAB-Map} was configured for this robot.
 
 \subsection{Configuration}
 \label{sec:configuration}
-As all \ac{ROS} programs which are a part of the robot system, \ac{RTAB-Map} will run as a node that subscribes and publishes topics. The first task in configuring \ac{RTAB-Map} is to connect the robots sensor data to the \ac{RTAB-Map} node. The node, called \texttt{rtabmap}, can build 2d occupancy grids and/or 3d point cloud representations of the environment. In this project, \ac{RTAB-Map} is configured to do both. The configuration is based on a guide provided by the developers\cite{rtabmap_setup}. To perform \ac{SLAM}, the mapping node subscribes to odometry, 2D laser scans and camera information. There are five possible sensor configurations with the Kinect\cite{rtabmap_setup}:
+As all \ac{ROS} programs which are a part of the robot system, \ac{RTAB-Map} will run as a node that subscribes and publishes topics. The first task in configuring \ac{RTAB-Map} is to connect the robots sensor data to the \ac{RTAB-Map} node. The node, called \texttt{rtabmap}, can build 2D occupancy grids and/or 3D point cloud representations of the environment. In this project, \ac{RTAB-Map} is configured to do both. The configuration is based on a guide\cite{rtabmap_setup} provided by the developers. To perform \ac{SLAM}, the mapping node subscribes to odometry, 2D laser scans and camera information. There are five possible sensor configurations with the Kinect\cite{rtabmap_setup}:
 
 \subsubsection{1 - Kinect + LIDAR + Odometry} 
 Sensor data can be sent directly to \texttt{rtabmap}.
@@ -414,7 +450,7 @@ Sensor data can be sent directly to \texttt{rtabmap}.
 
 \subsubsection{3 - Kinect + LIDAR}
 
-This is the configuration that was used in this project. Odometry data is generated by a scanmatcher 
+This is the configuration that was used in this project. Odometry data is generated by a the scanmatcher within Hector SLAM (section \ref{sec:hector}). \texttt{rtabmap} receives point clouds
 
 \subsubsection{4 - Kinect + Odometry}
 
@@ -422,16 +458,20 @@ This configuration is suitable for uneven surfaces, i.e. when the vehicle is not
 
 \subsubsection{5 - Kinect}
 
-2D laser scans are generated by passing depth images from the Kinect to the node \texttt{depthimage\_to\_laserscan}.
+In this mode, odometry will be generated by the \texttt{rgbd\_odometry} node bundled with the \texttt{rtabmap\_ros} package. This node publish odometry messages based on feature correspondences in consecutive RGBD images received from the camera.
 
-\begin{center}
-	\begin{tabular}{ l p{7cm} }
-		\textbf{Kinect + LIDAR + Odometry} & Sensor data can be sent directly to \texttt{rtabmap}.\\
-		\textbf{Kinect + Odometry + Fake 2D laser from Kinect} & 2D laser scans are generated by passing depth images from the Kinect to the node \texttt{depthimage\_to\_laserscan}.\\
-		\textbf{Android Application} & A supporting tool intended to function as a remote control for the robot. The implementation presented here enables the user to control the robot from an Android device via a Bluetooth connection.\\
-		\textbf{Operator Control Station} & A simple Operator Control Station (OCS) based on Qt enables an operator to control the robot via a wireless TCP/IP connection. The \ac{OCS} can display a live video stream from the Kinect sensor. \\
-	\end{tabular}
-\end{center}
+%\begin{center}
+%	\begin{tabular}{ l p{7cm} }
+%		\textbf{Kinect + LIDAR + Odometry} & Sensor data can be sent directly to \texttt{rtabmap}.\\
+%		\textbf{Kinect + Odometry + Fake 2D laser from Kinect} & 2D laser scans are generated by passing depth images from the Kinect to the node \texttt{depthimage\_to\_laserscan}.\\
+%		\textbf{Android Application} & A supporting tool intended to function as a remote control for the robot. The implementation presented here enables the user to control the robot from an Android device via a Bluetooth connection.\\
+%		\textbf{Operator Control Station} & A simple Operator Control Station (OCS) based on Qt enables an operator to control the robot via a wireless TCP/IP connection. The \ac{OCS} can display a live video stream from the Kinect sensor. \\
+%	\end{tabular}
+%\end{center}
+
+\subsection{Adding 3D Obstruction Detection}
+
+\texttt{rtabmap\_ros} contains a 3D obstacle detector in addition to the mapping node \texttt{rtabmap}. 
 
 \section{Navigation}
 
@@ -461,4 +501,11 @@ This configuration is suitable for uneven surfaces, i.e. when the vehicle is not
 			\label{fig:bt_request}
 		\end{subfigure}
 	\caption{\label{fig:3d_obstruction1}Detecting obstructions in 3d.}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{live_3d_obstacle2}
+	\caption{3D Obstacle detection with the live robot. The nodelet \texttt{obstacles\_detection} filters out the floor and publishes a point cloud which can be sent to the \texttt{move\_base} node. The yellow arrow points to the local cost map, which is based on real-time sensor data and used by the local planner.}
+	\label{fig:live_3d_obstacle2}
 \end{figure}

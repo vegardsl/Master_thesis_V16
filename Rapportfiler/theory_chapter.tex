@@ -25,7 +25,7 @@ Over the last decade, the \ac{OG} industry has shown an increased interest in th
 	\item \textbf{Efficiency} - Accomplish more with less effort, resources and time. This means cost reduction by keeping downtime to a minimum with the least amount of effort.
 \end{itemize} 
 
-An additional overarching driving factor is that \ac{OG} fields are becoming more difficult to reach. As \ac{OG} fields in shallow waters are depleted, production is moved to deeper waters. This complicates the extraction process and reduces the profit margin. A solution to this challenge is to increase efficiency through further automation. To what extent automation will be in the form of robots, or other innovative solutions is difficult to say. 
+An additional overarching driving factor is that \ac{OG} fields are becoming more difficult to reach. As \ac{OG} fields in shallow waters are depleted, production is moved to deeper waters. This complicates the extraction process and reduces the profit margin. A solution to this challenge is to increase efficiency through further automation. To what extent automation will be in the form of robots, or other innovative solutions is difficult to say at this time. 
 
 \begin{table}
 \centering
@@ -95,7 +95,7 @@ Offshore installations are regularly, if not continuously, exposed to harsh weat
 	\item Protective coating.
 \end{itemize} 
 
-In terms of maintenance, the sacrificial anodes can be subjected to periodic inspections and replacements, which could be done by a robot. \ac{CP} can more easily be implemented with automated self tests, and should normally not require any inspections and maintenance\cite{ElReedy2012383}. Application of protective coating should ideally be applied in the controlled environment of a workshop. If protective coating is to be applied at sea, one should strive to make the conditions as favorable as possible. 
+In terms of maintenance, the sacrificial anodes can be subjected to periodic inspections and replacements, which could be done by a robot. \ac{CP} can more easily be implemented with automated self tests, and should normally not require any inspections and maintenance\cite{ElReedy2012383}. Application of protective coating should ideally be applied in the controlled environment of a workshop. If protective coating is to be applied at sea, one should strive to make the conditions as favourable as possible. 
 
 \subsubsection{Structural Fatigue}
 
@@ -223,7 +223,7 @@ Many of the robots which were deployed at the Fukushima Power Plant were already
 	\vspace{-20pt}
 \end{wrapfigure} 
 
-Today, autonomous and teleoperated inspection and maintenance is usually only found at subsea installations. Topside installations on the other hand are still maintained and inspected manually, with some notable exceptions. Small \acp{UAV} or \acp{RPAS} have become commonplace over the last decade. On topside installations, they are being used for visual inspection of inaccessible structural parts such as flare stacks or the exterior of oil rigs.
+Today, autonomous and teleoperated inspection and maintenance is usually only found at subsea installations. Topside installations on the other hand are still maintained and inspected manually, with some notable exceptions. Small \acp{UAV} or \acp{RPAS} have become commonplace and accessible to all over the last decade. There are currently \ac{RPAS} systems which are being used for visual inspection of inaccessible structural parts such as flare stacks or the exterior of oil rigs.
 
 Some notable contributors to the field of robotic maintenance for \ac{OG} include ABB, \ac{Fraunhofer IPA}, Sintef ICT\cite{sintef_robot_consept} and NREC  at  Carnegie
 Mellon University. 
@@ -232,7 +232,7 @@ NRECs contribution, Sensabot, is a remotely operated inspection robot designed f
 
 \ac{Fraunhofer IPA}\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, called \ac{MIMROex}. \ac{MIMROex} has capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. 
 
-Both ABB and Sintef ICT has developed lab facilities to test various concepts for robotic maintenance. Both facilities use non-mobile robots which utilize a rich set of inspection and manipulation tools, as well as \ac{HMI} equipment for remote operation and control. The two research communities differ in that ABB has tested their solutions in real environments, which subjects their solution to ATEX requirements and an extensive risk management regime\cite{StepwiseApproachToRobotics}. 
+Both ABB and Sintef ICT has developed lab facilities to test various concepts for robotic maintenance. Both facilities use non-mobile robots which utilize a rich set of inspection and manipulation tools, as well as \ac{HMI} equipment for remote operation and control. SINTEF has d The two research communities differ in that ABB has tested their solutions in real environments, which subjects their solution to ATEX requirements and an extensive risk management regime\cite{StepwiseApproachToRobotics}. 
 
 Another effort towards robotic maintenance is the ARGOS challenge (Autonomous Robot for Gas and Oil Sites). The purpose of the challenge is to promote innovation, understanding and awareness towards robotic maintenance of \ac{OG} sites in harsh environments\cite{ARGOS}.
 
@@ -258,7 +258,7 @@ Coordinate systems are essential in the field of robotics.
 
 The \ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be tailored to meet the demands of a wide range of robots with varying complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can be perceived as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recommended \cite{ROS_install}.
 
-Roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework. This framework eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. The framework can be used under the BSD open-source license\cite{BCD_license}. Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation, research and everything in between. 
+Historic roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework. This framework eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. The framework can be used under the BSD open-source license\cite{BCD_license}. Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation, research and everything in between. 
 
 \subsection{Important ROS Concepts}
 \label{sec:ros_concepts}
@@ -268,7 +268,7 @@ The following descriptions are included in order to provide a complete, self-con
 
 A \ac{ROS} system comprise a set of small programs that communicate with each other through messages. These programs become nodes in the \ac{ROS} graph. The nodes communicate with each other by publishing and subscribing to topics that form the edges of the graph. A topic must have the format of one of the specific data types provided by \ac{ROS}. For example, a node which receives temperature data from a thermometer, may publish the data as a topic on the \ac{ROS} system with the type \texttt{sensor\_msgs/Temperature}. There are many other data formats, e.g. velocity messages, \texttt{geometry\_msgs/Twist}; images, \texttt{sensor\_msgs/Image}; odometry messages, \texttt{nav\_msgs/Odometry} and so on. Each node in the graph are typically POSIX processes, and the edges are TCP connections\cite{rosbook15}. A minimal example of a graph is shown in figure \ref{fig:minimum_graph}.
 
-\begin{figure}[p]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{minimum_graph_bl}
     \caption{A minimal \ac{ROS} graph. There are two nodes, \texttt{node\_1} and \texttt{node\_2}. \texttt{node\_1} publishes data, i.e. a topic, by the name \texttt{topic\_1}. \texttt{node\_2} can receive the data by subscribing to \texttt{topic\_1}.}
@@ -368,11 +368,18 @@ The ROS-industrial program\cite{ROS_industrial} provides hardware interfaces to 
 
 \subsubsection{Different Methods for Depth Perception}
 
-A depth camera can be described as a regular color video camera with the ability to create spatial images. In the context of this thesis, a depth camera can  more precisely be described as a RGB-D camera, where the letters RGB-D are short for red, green, blue and depth. In a regular RGB camera, a spatial scene will be projected onto a rectangular pixel grid where each pixel contains intensity values for red, green and blue colors. These pixel values represents the detected scene. A major problem with RGB cameras is the significant loss of information. The information loss is mostly a consequence of 3d to 2d projection and digital quantization. RGB-D cameras have the means to reduce this information loss by mapping the pixel values to spatial coordinates. The atomic parts in 3d images are usually represented as points in a point cloud or cubic volumes, also known as voxels.
+A depth camera can be described as a regular color video camera with the ability to create spatial images. In the context of this thesis, a depth camera can  more precisely be described as a RGB-D camera, where the letters RGB-D are short for red, green, blue and depth. In a regular RGB camera, a spatial scene will be projected onto a rectangular pixel grid where each pixel contains intensity values for red, green and blue colors. These pixel values represents the detected scene. A major problem with RGB cameras is the significant loss of information. The information loss is mostly a consequence of 3D to 2D projection and digital quantization. RGB-D cameras have the means to reduce this information loss by mapping the pixel values to spatial coordinates. The atomic parts in 3d images are usually represented as points in a point cloud or cubic volumes, also known as voxels.
 
 Different variations of depth cameras will usually fall into one of two categories: active or passive. Passive sensors perceive the surroundings as it is, without actively interfering with the environment as a part of the sensing process. A typical passive RGB-D sensor is the stereo camera. Stereo cameras use a stream of synchronized image pairs to perceive depth. The image pairs are displaced along the horizontal axis, and the depth information is extracted by searching for mutual information in the image pairs. How far the information is displaced from the left to the right image is directly related to how far away from the camera the information source is located. 
 
 Active sensors depend on some form of projection onto the surroundings. For depth cameras, the projection is usually in the form of laser or infra red light. In RGB-D cameras it is essential that the projected light is distinguishable from the visible spectrum. The Kinect sensor used in this project is an example of an active RGB-D sensor. A proper introduction to the Kinect will follow shortly.
+
+\subsection{Kinect for Xbox 360}
+
+Kinect for Xbox 360 is the RGB-D sensor used in this project. The device  was initially intended as a \ac{NUI} for gaming and office applications, and was the first consumer grade sensor to utilize structured light. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is equipped with a depth sensor, a regular color camera, a microphone array and a tilt motor(figure \ref{fig:kinect360_exp}). The color camera in combination with the depth sensor forms what is usually referred to as a RGB-D sensor, i.e. a combined color and depth camera (figure \ref{fig:kinect360_exp}). This feature, combined with its relatively low cost and high accessibility has contributed to make the Kinect very popular in research projects related to \ac{SLAM} and robotics. In the three first years since it's release in 2010, over 3000 papers in well-known journals and proceedings were devoted to research on the Kinect sensor. Roughly 500 of these papers focused on \ac{SLAM} or 3d reconstruction\cite{Berger2013}. Some of the other papers focused on some of the weaknesses with the sensor, such as detection of glass surfaces and having several sensors in the same area. 
+
+
+Today, the the Kinect for Xbox 360 has been succeeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware of that it is becoming increasingly difficult, if not already impossible, to get hold of a new Kinect for Xbox 360. 
 
 \subsubsection{Natural User Interfaces - Origin of the Kinect}
 
@@ -380,12 +387,42 @@ The idea behind a \ac{NUI} is to make the \ac{HMI} as seamless and natural as po
 
 The Microsoft Kinect sensor was initially designed as a \ac{NUI} for the Xbox 360 gaming console. The sensor allows users to use gestures and sounds to play console games. Later on, Microsoft has released SDKs, enabling developers to create \ac{NUI} applications for for Windows. 
 
-\subsubsection{Kinect for Xbox 360}
+\subsubsection{Kinect Hardware Specifications}
 
-Kinect for Xbox 360 is the RGB-D sensor used in this project. The device  was initially intended as a \ac{NUI} for gaming and office applications, and was the first consumer grade sensor to utilize structured light. Possible use cases were inspired by early \ac{NUI} research at \ac{MIT} and, later on, the science fiction movie Minority Report, where Tom Cruice interacts with a computer by using hand gestures \cite{kinect_book}. The Kinect sensor is equipped with a depth sensor, a regular color camera, a microphone array and a tilt motor(figure \ref{fig:kinect360_exp}). The color camera in combination with the depth sensor forms what is usually referred to as a RGB-D sensor, i.e. a combined color and depth camera (figure \ref{fig:kinect360_exp}). This feature, combined with its relatively low cost and high accessibility has contributed to make the Kinect very popular in research projects related to \ac{SLAM} and robotics. In the three first years since it's release in 2010, over 3000 papers in well-known journals and proceedings were devoted to research on the Kinect sensor. Roughly 500 of these papers focused on \ac{SLAM} or 3d reconstruction\cite{Berger2013}. Some of the other papers focused on some of the weaknesses with the sensor, such as detection of glass surfaces and having several sensors in the same area. 
+Sensor documentation provided online by Microsoft is incomplete and untidy. The reason for this may be that the first Kinect is considered to be obsolete. The following specifications are based on \cite{kinect_book} and the ''Kinect for Windows Programming Guide''\cite{kinect_guide}. There is in fact a distinction between the Kinect for Windows and Kinect for XBOX 360. Only Kinect for Windows can be used in commercial applications\cite{kinect_book}. Another important issue is that there are compatibility issues between \ac{ROS} and Kinect for Windows. It is unknown to this author if the compatibility issues have been fixed, but possible hacks have been suggested by the community\cite{kinect_discussion}\cite{kinect_hack}.
+%A third difference is related to functionality, and will be made clear in the following paragraphs.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{kinect360_exp}
+    \caption{Kinect sensor components. (Image credits: Microsoft\cite{kinect_guide})}
+    \label{fig:kinect360_exp}
+\end{figure}
+%\footnote{\url{https://msdn.microsoft.com/en-us/library/jj131033.aspx}}
+Sensor specifications are given in table \ref{tab:kinect}. Note that the range values may differ from what is available in Microsoft's own SDK, as the shortest distance was measured manually in \ac{ROS}. In \cite{kinect_guide}, the depth values for Kinect for Xbox 360 range from $0.8 m$ to $4 m$. Other distances are either unknown, too close or too far away. Kinect for Windows can operate in ''near mode'', i.e. it can measure distances from $0.4 m$ to $3 m$.
 
-Today, the the Kinect for Xbox 360 has been succeeded by the Kinect for Xbox One, and is now considered to be a legacy device. Those considering to use the legacy Kinect should be aware of that it is becoming increasingly difficult, if not already impossible, to get hold of a new Kinect for Xbox 360. 
+\begin{table}
+	\centering
+	\begin{tabular}{ r | p{6.8cm} }
+		\hline
+		\multicolumn{2}{c}{Kinect for Xbox 360 Specifications}\\
+		\hline
+		\textbf{Viewing Angle} & 43° vertical by 57° horizontal field of view. \\
+		\hline
+		\textbf{Image Resolution} & 640x480 \\
+		\hline
+		\textbf{FPS} & 30 Hz (given 640x480 depth and color video)\\
+		\hline
+		\textbf{Minimum Depth} (measured) & $\approx 0.5m$.\\
+		\hline
+		\textbf{Maximum Depth} & $8 m$.\\
+		\hline
+		\textbf{Normal (Reliable) Depth Range} & $0.8m < x < 4m$\\
+		\hline\hline
+	\end{tabular}
+	\caption{Kinect for Xbox 360 Specifications.}\label{tab:kinect}
+\end{table}
+
 
 %\begin{figure}[p]
 %    \centering
@@ -393,13 +430,6 @@ Today, the the Kinect for Xbox 360 has been succeeded by the Kinect for Xbox One
 %    \caption{Awesome Image}
 %    \label{fig:kinect360}
 %\end{figure}
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=0.8\textwidth]{kinect360_exp}
-    \caption{Awesome Image}
-    \label{fig:kinect360_exp}
-\end{figure}
 
 
 \subsection{Planar Laser Sensors (LIDAR)}
@@ -421,6 +451,10 @@ A planar laser sensor, known as e.g. laser proximity sensors or laser radars, ca
 \ac{SLAM}, also known as \ac{CLM}, is a class of solutions to the problem of determining an agents location and pose in an unknown environment, while simultaneously mapping the same environment.
 
 \subsection{Hector SLAM}
+\label{sec:hector}
+Hector SLAM \cite{KohlbrecherMeyerStrykKlingaufFlexibleSlamSystem2011} is a 2D \ac{SLAM} approach capable of 3D motion estimation. In its original form, the method is suitable for systems with low-end computational power and size, and for mapping of small environments. 2D \ac{SLAM} is based on \ac{LIDAR} scans aligned with the horizontal plane. The full Hector SLAM implementation consist of of a 2D \ac{SLAM} subsystem loosely coupled and synchronized with an \ac{EKF} used as a  6DOF pose estimator. 
+
+The 2D pose of the \ac{LIDAR} is estimated through a scan matcher, i.e. the process of aligning the current \ac{LIDAR} scan with the map generated over the past time steps. The scan matcher was used to provide odometry to \ac{RTAB-Map}, which is the chosen \ac{SLAM} system for this robot. Hector SLAM can be downloaded and used in \ac{ROS} in the form of a prebuild package, \texttt{hector\_slam}.  
 
 \subsection{RTAB-Map}
 \label{sec:RTAB-Map}
@@ -430,7 +464,7 @@ A planar laser sensor, known as e.g. laser proximity sensors or laser radars, ca
 \begin{itemize}
 	\item It is a \ac{SLAM} method which requires an RGB-D sensor, for example a Kinect. The problem description for this project requires a vision based solution.
 	\item \ac{RTAB-Map} has a \ac{ROS} wrapper, \texttt{rtabmap\_ros}, which eases the process of integrating it with the mobile robot.
-	\item It includes 3d obstacle detection.
+	\item It includes 3D obstacle detection.
 	\item It has a memory management system intended for large scale multi-session mapping.
 	\item \ac{RTAB-Map} can be used for object detection. This can be done by linking \ac{RTAB-Map} to OpenCV and the non-free feature detectors \ac{SIFT} and \ac{SURF}.
 \end{itemize}
@@ -439,9 +473,9 @@ The source code and \ac{ROS} wrapper is currently maintained, and new features a
 
 \subsubsection{Graph Based Mapping}
 
-\ac{RTAB-Map} uses a graph structure with nodes and edges to represent the map. New nodes are continuously added to the systems working memory as time passes. In this method, the graph edges are referred to as \textit{links}. There are two types of links: neighbour links and loop closure links. Each node is a location in the map, and the links contain geometrical transformations between the node locations. Figure \ref{fig:rtabmap_graph} illustrated the graph concept.
+\ac{RTAB-Map} uses a graph structure with nodes and edges to represent the map. New nodes are continuously added to the system's working memory as time passes. In this method, the graph edges are referred to as \textit{links}. There are two types of links: neighbour links and loop closure links. Each node is a location in the map, and the links contain geometrical transformations between the node locations. Figure \ref{fig:rtabmap_graph} illustrated the graph concept.
 
-\begin{figure}[p]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{rtabmap_graph_bl}
     \caption{Conceptual illustration of a graph created by \ac{RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Feature descriptors in $L_2$ and $L_7$ are sufficiently similar to accept this as a loop closure.}
@@ -456,14 +490,23 @@ The source code and \ac{ROS} wrapper is currently maintained, and new features a
 
 \subsection{RGBD SLAM and Octomap}
 
-Octomap\cite{hornung13auro} is another 3d mapping framework available for \ac{ROS}. Similar to \ac{RTAB-Map}, Octomap can also be used as a standalone version. 
+Octomap\cite{hornung13auro} is another 3D mapping framework available for \ac{ROS}. Similar to \ac{RTAB-Map}, Octomap can also be used as a standalone version. 
 
-Maps are represented by memory efficient Octrees where each leaf node represents a cube, or voxel, in the volumetric map. The voxel can be either occupied, free or unexplored. The volume of the cube is determined by how deep in the tree the leaf node is located. In a \ac{ROS} graph, the Octomapping is performed by the node \textit{octomap\_server}. This node  will subscribe to point cloud messages \texttt{sensor\_msgs/PointCloud2}, and return volumetric occupancy maps, i.e. Octomaps.
+Maps are represented by memory efficient Octrees where each leaf node represents a cube, or voxel, in the volumetric map. The voxel can be either occupied, free or unexplored. The volume of the cube is determined by how deep in the tree the leaf node is located. In a \ac{ROS} graph, the Octomapping is performed by the node \texttt{octomap\_server}. This node  will subscribe to point cloud messages \texttt{sensor\_msgs/PointCloud2}, and return volumetric occupancy maps, i.e. Octomaps.
 
 There are several approaches to \ac{SLAM}  which uses Octomaps. An example that stands out in the context of \ac{ROS} is\cite{endres20143}; a \ac{SLAM} approach which depends on a RGB-D sensor, and relies on Octomap for efficient map storage.
 
 This mapping framework was not used in this project in order to limit the project scope, and because the alternative \ac{RTAB-Map} was associated with less uncertainty.
 
-\section{Navigation}
+\section{Autonomous Navigation}
 
-\ac{ROS} has a built in navigation stack for 2d navigation. 
+\ac{ROS} has a built in navigation stack for 2D navigation. The navigation stack can plan a path and send velocity commands to the mobile base controller based on sensor input, a goal pose, a map and the frame of the \texttt{base\_link}.
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{move_base_official}
+    \caption{\texttt{move\_base} and the navigation stack. (Image credits:  ros.org)}
+    \label{fig:move_base_official}
+\end{figure}

@@ -1,13 +1,13 @@
 \chapter{Introduction}
 \label{chp:introduction} 
 
-\section{About this Thesis}
+\section{About the Project}
 
-This thesis presents and documents the work that was done during the master's project, \textbf{TTK4900}, in Engineering Cybernetics. The project is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks. The student shall gain in depth knowledge of a specific topic, and be able to choose the correct tools to solve a problem. Furthermore, the st
+This thesis presents and documents this authors master's project, \textbf{TTK4900}, on robotic maintenance which was carried out at the Department of Engineering Cyberentics (ITK) in the spring of 2016. \textbf{TTK4900} is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks with the possibility of extension in case of a valid reason. The work presented in this thesis is carried out as independent work which is supervised by Professor Tor Onshus through regular status meetings.
 
-\subsection{Long Term Goal and Previous Work}
+%\subsection{Long Term Goal and Previous Work}
 
-\subsubsection{The Topic - Mobile Autonomous Robot}
+\subsection{The Topic - Mobile Autonomous Robot}
 
 The robot system that was used in this project has been developed over the course of many preceding master and specialization projects. The long term goal of these projects is to develop mobile autonomous robot concepts for maintenance and inspection on topside offshore installations. The topic is given by Professor Tor Onshus at \ac{ITK}. A description of this topic\footnote{\url{http://folk.ntnu.no/onshus/Oppgaver.htm}}, suggests some possible applications for such a robot: 
 
@@ -17,6 +17,8 @@ The robot system that was used in this project has been developed over the cours
 	\item Allow personnel to perform remote inspection and maintenance through telepresence.
 	\item  In combination with \ac{VR}, the robot could be used for training purposes. 
 \end{itemize}
+
+\section{Preceding Projects}
 
 \subsubsection{Telepresence and Robotic Arm}
 
@@ -31,17 +33,19 @@ In parallel to Aspunvik's project, Mikael Berg developed a solution for \ac{SLAM
 
 \subsubsection{Last Year's Specialization Project}
 
-This authors specialization project\cite{lindrup} presented an obstruction detector based on two unsynchronized IP-cameras and a stereo matching algorithm in \ac{OpenCV}. Because the cameras were unsynchronized, the system would become useless whenever there is relative motion between the robot and the surroundings. The obstruction detector lacked a critical feature: a floor filter to separate the ground from potential obstructions. The implementation presented in this master's project is unrelated to the preceding specialization project, except for some useful functions in c++.
+This authors specialization project\cite{lindrup} presented an obstruction detector based on two unsynchronized IP-cameras and a stereo matching algorithm in \ac{OpenCV}. Because the cameras were unsynchronized, the system would become useless whenever there is relative motion between the robot and the surroundings. The obstruction detector lacked a critical feature: a floor filter to separate the ground from potential obstructions. The implementation presented in this master's project is unrelated to the preceding specialization project, except for some useful c++ functions.
 
 \section{Implementation Overview}
 
 \subsection{Selecting Tools and Hardware}
 
-To meet objective 4 in the problem description it was decided to focus in vision based navigation. A robot with the ability to build a map of the surroundings and relocate autonomously was considered to be a good starting point for further vision based solutions. The mobile robot from \cite{aspunvik} and \cite{berg} was refitted to accommodate the Kinect for XBOX 360, a 3d camera widely used in robot vision research projects. 
+To meet objective 4 in the problem description, it was decided to focus on vision based navigation. A robot with the ability to build a map of the surroundings and relocate autonomously was considered to be a good starting point for further vision based solutions. As a continuation of this author's specialization project, the robot was equipped with a 3D camera, a Kinect for XBOX 360 capable of perceiving depth images at a high frame rate ($30 Hz$). 
 
-To use Kinect, the initial plan was to utilize the \ac{PCL} in combination with a \ac{SLAM} method (e.g. Kintinous\cite{Kintinous}). This approach came with a high degree of uncertainty that would reduce the project scope significantly, and an increased likelihood of an unsatisfactory result. The Robot Operating System (ROS), an open source robot software framework, came up as an alternative tool late in January. 
+To use the Kinect, the initial plan was to utilize the \ac{PCL} in combination with a \ac{SLAM} method (e.g. Kintinous\cite{Kintinous}). This approach came with a high degree of uncertainty that would reduce the project scope significantly, and increase the likelihood of an unsatisfactory result. The Robot Operating System (ROS), an open source robot software framework, came up as an alternative tool late in January. 
 
-The work and solutions presented in this thesis revolves around the process of integrating the Robot Operating System (ROS), a robot software framework, with the mobile robot from \cite{aspunvik} and \cite{berg}. Installing ROS on Ubuntu Linux is by far the easiest way to begin using the framework. For this reason, and to avoid interfering with another project on the same robot, it was decided that an additional computer running Ubuntu Linux should be fitted to the robot.
+The work and solutions presented in this thesis revolves around the process of integrating ROS with the mobile robot from \cite{aspunvik} and \cite{berg}. Installing ROS on Ubuntu Linux is by far the easiest way to begin using the framework. For this reason, and to avoid interfering with another project on the same robot, it was decided that an additional computer running Linux should be fitted to the robot. The mobile robot from \cite{aspunvik} and \cite{berg} was refitted to accommodate the Kinect and the second computer.
+
+Two supporting tools were implemented in addition to the robot software: a simple concept of an \ac{OCS} and a hand held remote control implemented on a smartphone. An overview of the complete system is shown in figure \ref{fig:conseptDrawing}.
 
 \begin{figure}[p]
 	\centering
@@ -49,5 +53,9 @@ The work and solutions presented in this thesis revolves around the process of i
 	\caption{System Concept. An on-board computer using \ac{ROS} to handle actuators and sensors. Remote operation is available through an \ac{OCS} or a hand-held device with Bluetooth.}
 	\label{fig:conseptDrawing}
 \end{figure}
+
+\subsection{Functionality}
+
+The final
 
 \section{Thesis Structure}
