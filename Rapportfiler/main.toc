@@ -128,16 +128,17 @@
 \contentsline {chapter}{\chapternumberline {5}Results}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{51}{section.5.1}
 \contentsline {section}{\numberline {5.2}Testplan}{51}{section.5.2}
-\contentsline {section}{\numberline {5.3}Simulation Results}{51}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Mapping}{52}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Autonomous Navigation}{53}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Live Robot Results}{54}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.3}Brief Summary of All Results}{52}{section.5.3}
+\contentsline {section}{\numberline {5.4}Simulation Results}{52}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Mapping}{52}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Autonomous Navigation}{53}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Live Robot Results}{55}{subsection.5.4.3}
 \contentsline {subsubsection}{Safety Features}{55}{section*.124}
 \contentsline {subsubsection}{Loop Closure Detection}{55}{section*.125}
 \contentsline {subsubsection}{Multi Session Mapping}{56}{section*.129}
 \contentsline {subsubsection}{Navigating Among Static Obstacles}{56}{section*.130}
 \contentsline {subsubsection}{Avoiding Moving Obstacles}{57}{section*.131}
-\contentsline {section}{\numberline {5.4}Discussion}{59}{section.5.4}
+\contentsline {section}{\numberline {5.5}Discussion}{59}{section.5.5}
 \contentsline {chapter}{\chapternumberline {6}Discussion}{63}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{63}{section.6.1}
 \contentsline {section}{\numberline {6.2}Task Fulfilment}{63}{section.6.2}
