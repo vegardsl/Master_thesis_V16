@@ -5,7 +5,7 @@ A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: acknowledgements.aux
 A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: introduction_chapter.aux
-A level-1 auxiliary file: TaskOutlineAndPlanning.aux
+A level-1 auxiliary file: maintenance.aux
 A level-1 auxiliary file: theory_chapter.aux
 A level-1 auxiliary file: implementation_chapter.aux
 A level-1 auxiliary file: testing_chapter.aux
@@ -16,12 +16,12 @@ A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: troubleshooting.aux
 A level-1 auxiliary file: dvd_contents.aux
 Database file #1: main.bib
-I was expecting a `,' or a `}'---line 85 of file main.bib
+I was expecting a `,' or a `}'---line 93 of file main.bib
  :   
  :   note = {Last accessed: 2016-06-02}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 463 of file main.bib
+I was expecting a `,' or a `}'---line 471 of file main.bib
  : keywords=Inspection; 
  :                      Maintenance; Robotics; Offshore platforms},
 I'm skipping whatever remains of this entry

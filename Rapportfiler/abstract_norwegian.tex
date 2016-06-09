@@ -1,5 +1,10 @@
 \pagestyle{empty}
 \renewcommand{\abstractname}{Sammendrag}
 \begin{abstract}
-Mobile robotplatformer kan kjøre rundt og...
+Robotisert vedlikehold har vært et tema i flere masteroppgaver og fordypningsprosjekter ved Institutt for teknisk kybernetikk (ITK) - NTNU over mange år. Denne oppgaven viderefører temaet, og ser nærmere på kamerabasert kartlegging og navigasjon i forbindelse med robotisert vedlikehold, samt robotisert vedlikehold generelt. Målet med oppgaven er å implementere en eller flere funksjonaliteter basert på kamerabaserte sensorer i en mobil autonom robot.  Dette gjøres ved å skaffe kunnskap om eksisterende løsninger og fremtidige behov innen robotisert vedlikehold. 
+
+En mobil robot prototype er blitt konfigurert til å kjøre ROS (Robot Operating System), et mellomvare rammeverk som er velegnet til utvikling av robotsystemer. Systemet benytter RTAB-Map (Real-Time Appearence Based Mapping) til å kartlegge omgivelsene og en innebygget navigasjons-stack i ROS for å navigere autonomt mot enkle mål i kartet.
+
+Det er i tillegg utviklet fungerende konsepter for to støttefunksjoner, en Android applikasjon for fjernstyring over Bluetooth og en fjernstyringssentral (OCS) utviklet i Qt. Fjernstyringssentralen er en skjelett-implementasjon som er i stand til å fjernstyre roboten via Wifi, samt å vise video fra robotens kamera.
+
 \end{abstract}

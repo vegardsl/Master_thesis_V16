@@ -23,115 +23,117 @@
 \BOOKMARK [2][-]{subsection.2.3.3}{Disaster Response}{section.2.3}% 23
 \BOOKMARK [2][-]{subsection.2.3.4}{Topside Offshore and Onshore Robotic Maintenance}{section.2.3}% 24
 \BOOKMARK [0][-]{chapter.3}{Background Theory}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Modelling and Simulation}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.1.1}{Some Terminology}{section.3.1}% 27
-\BOOKMARK [2][-]{subsection.3.1.2}{Robot Modelling}{section.3.1}% 28
-\BOOKMARK [2][-]{subsection.3.1.3}{Simulating in Gazebo}{section.3.1}% 29
-\BOOKMARK [1][-]{section.3.2}{ROS}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.2.1}{Introduction}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.2}{Important ROS Concepts}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.3}{An Overview of ROS-Related Tools}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.4}{Notable Robots Running ROS}{section.3.2}% 34
-\BOOKMARK [1][-]{section.3.3}{Software}{chapter.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.1}{Qt}{section.3.3}% 36
-\BOOKMARK [2][-]{subsection.3.3.2}{PCL}{section.3.3}% 37
-\BOOKMARK [1][-]{section.3.4}{The Kinect Sensor}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.5}{Software Tools}{chapter.3}% 39
-\BOOKMARK [2][-]{subsection.3.5.1}{Point Cloud Library}{section.3.5}% 40
-\BOOKMARK [2][-]{subsection.3.5.2}{ROS}{section.3.5}% 41
-\BOOKMARK [2][-]{subsection.3.5.3}{Qt}{section.3.5}% 42
-\BOOKMARK [2][-]{subsection.3.5.4}{Current Research and Applications}{section.3.5}% 43
-\BOOKMARK [1][-]{section.3.6}{Introduction to Sensors in Autonomous Robots}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.6.1}{Depth Cameras}{section.3.6}% 45
-\BOOKMARK [2][-]{subsection.3.6.2}{Kinect for Xbox 360}{section.3.6}% 46
-\BOOKMARK [2][-]{subsection.3.6.3}{Planar Laser Sensors \(LIDAR\)}{section.3.6}% 47
-\BOOKMARK [2][-]{subsection.3.6.4}{Odometers}{section.3.6}% 48
-\BOOKMARK [2][-]{subsection.3.6.5}{Sensor Fusion}{section.3.6}% 49
-\BOOKMARK [1][-]{section.3.7}{Simultaneous Localization and Mapping \(SLAM\)}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.7.1}{Introduction to SLAM}{section.3.7}% 51
-\BOOKMARK [2][-]{subsection.3.7.2}{Hector SLAM}{section.3.7}% 52
-\BOOKMARK [2][-]{subsection.3.7.3}{RTAB-Map}{section.3.7}% 53
-\BOOKMARK [2][-]{subsection.3.7.4}{RGBD SLAM and Octomap}{section.3.7}% 54
-\BOOKMARK [1][-]{section.3.8}{Autonomous Navigation}{chapter.3}% 55
-\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 56
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 57
-\BOOKMARK [1][-]{section.4.2}{Hardware Setup}{chapter.4}% 58
-\BOOKMARK [2][-]{subsection.4.2.1}{Second On-Board Computer and New Rear Compartment}{section.4.2}% 59
-\BOOKMARK [2][-]{subsection.4.2.2}{Sensor Calibration and Setup}{section.4.2}% 60
-\BOOKMARK [2][-]{subsection.4.2.3}{Power Supply and Battery Safety}{section.4.2}% 61
-\BOOKMARK [1][-]{section.4.3}{ROS Integration Overview}{chapter.4}% 62
-\BOOKMARK [1][-]{section.4.4}{Modeling}{chapter.4}% 63
-\BOOKMARK [2][-]{subsection.4.4.1}{Physical Dimensions}{section.4.4}% 64
-\BOOKMARK [2][-]{subsection.4.4.2}{Connecting the Links}{section.4.4}% 65
-\BOOKMARK [1][-]{section.4.5}{Simulations}{chapter.4}% 66
-\BOOKMARK [2][-]{subsection.4.5.1}{Robot Description Plugins}{section.4.5}% 67
-\BOOKMARK [1][-]{section.4.6}{Motion Control}{chapter.4}% 68
-\BOOKMARK [1][-]{section.4.7}{ROS Nodes for Motion Control}{chapter.4}% 69
-\BOOKMARK [2][-]{subsection.4.7.1}{Velocity Command Sources}{section.4.7}% 70
-\BOOKMARK [2][-]{subsection.4.7.2}{Motor Control Card Firmware on XMEGA A3BU}{section.4.7}% 71
-\BOOKMARK [1][-]{section.4.8}{Operator Control Station \(OCS\)}{chapter.4}% 72
-\BOOKMARK [2][-]{subsection.4.8.1}{Graphical User Interface}{section.4.8}% 73
-\BOOKMARK [1][-]{section.4.9}{The Hand Held Remote Control - Robot Leash}{chapter.4}% 74
-\BOOKMARK [2][-]{subsection.4.9.1}{Connecting to the Robot}{section.4.9}% 75
-\BOOKMARK [1][-]{section.4.10}{Mapping - Setting Up RTAB-Map}{chapter.4}% 76
-\BOOKMARK [2][-]{subsection.4.10.1}{Configuration}{section.4.10}% 77
-\BOOKMARK [2][-]{subsection.4.10.2}{Adding 3D Obstruction Detection}{section.4.10}% 78
-\BOOKMARK [1][-]{section.4.11}{Navigation}{chapter.4}% 79
-\BOOKMARK [2][-]{subsection.4.11.1}{Global Path Planning}{section.4.11}% 80
-\BOOKMARK [2][-]{subsection.4.11.2}{Local Path Planning}{section.4.11}% 81
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 82
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 83
-\BOOKMARK [1][-]{section.5.2}{Testplan}{chapter.5}% 84
-\BOOKMARK [1][-]{section.5.3}{Simulation Results}{chapter.5}% 85
-\BOOKMARK [2][-]{subsection.5.3.1}{Mapping}{section.5.3}% 86
-\BOOKMARK [2][-]{subsection.5.3.2}{Autonomous Navigation}{section.5.3}% 87
-\BOOKMARK [2][-]{subsection.5.3.3}{Live Robot Results}{section.5.3}% 88
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 89
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 90
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 91
-\BOOKMARK [1][-]{section.6.2}{Task Fulfilment}{chapter.6}% 92
-\BOOKMARK [1][-]{section.6.3}{Overall Assessment}{chapter.6}% 93
-\BOOKMARK [2][-]{subsection.6.3.1}{Choice of Development Tools}{section.6.3}% 94
-\BOOKMARK [2][-]{subsection.6.3.2}{Assessment of Prototype Design}{section.6.3}% 95
-\BOOKMARK [1][-]{section.6.4}{Success and Quality of the ROS Integration}{chapter.6}% 96
-\BOOKMARK [1][-]{section.6.5}{Assessment of RTAB-Map}{chapter.6}% 97
-\BOOKMARK [2][-]{subsection.6.5.1}{Quality and Thoroughness of the Tests}{section.6.5}% 98
-\BOOKMARK [2][-]{subsection.6.5.2}{Weaknesses}{section.6.5}% 99
-\BOOKMARK [2][-]{subsection.6.5.3}{Strengths}{section.6.5}% 100
-\BOOKMARK [2][-]{subsection.6.5.4}{Suitability For Robotic Maintenance}{section.6.5}% 101
-\BOOKMARK [2][-]{subsection.6.5.5}{Mapping}{section.6.5}% 102
-\BOOKMARK [2][-]{subsection.6.5.6}{The Kinect Sensor}{section.6.5}% 103
-\BOOKMARK [1][-]{section.6.6}{Navigation}{chapter.6}% 104
-\BOOKMARK [2][-]{subsection.6.6.1}{The Tuning Process}{section.6.6}% 105
-\BOOKMARK [2][-]{subsection.6.6.2}{Performance}{section.6.6}% 106
-\BOOKMARK [1][-]{section.6.7}{Suitability for Offshore Maintenance}{chapter.6}% 107
-\BOOKMARK [2][-]{subsection.6.7.1}{The Kinect}{section.6.7}% 108
-\BOOKMARK [2][-]{subsection.6.7.2}{Open Source Software and Security}{section.6.7}% 109
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 110
-\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 111
-\BOOKMARK [2][-]{subsection.7.1.1}{Autonomous Non-Destructive Testing}{section.7.1}% 112
-\BOOKMARK [2][-]{subsection.7.1.2}{Large Scale Kinect Fusion - Kintinous}{section.7.1}% 113
-\BOOKMARK [2][-]{subsection.7.1.3}{Hardware}{section.7.1}% 114
-\BOOKMARK [1][-]{section.7.2}{Final Conclusion}{chapter.7}% 115
-\BOOKMARK [0][-]{section*.145}{References}{}% 116
-\BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 117
-\BOOKMARK [1][-]{section.A.1}{Hardware Setup}{appendix.A}% 118
-\BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 119
-\BOOKMARK [1][-]{section.A.2}{Installation}{appendix.A}% 120
-\BOOKMARK [2][-]{subsection.A.2.1}{Install Ubuntu}{section.A.2}% 121
-\BOOKMARK [2][-]{subsection.A.2.2}{Download ROS}{section.A.2}% 122
-\BOOKMARK [1][-]{section.A.3}{Configuring the Project}{appendix.A}% 123
-\BOOKMARK [2][-]{subsection.A.3.1}{Configuring the ROS Workspace}{section.A.3}% 124
-\BOOKMARK [2][-]{subsection.A.3.2}{Configuring the Bluetooth Connection}{section.A.3}% 125
-\BOOKMARK [0][-]{appendix.B}{Troubleshooting}{}% 126
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 127
-\BOOKMARK [1][-]{section.B.2}{Hardware}{appendix.B}% 128
-\BOOKMARK [2][-]{subsection.B.2.1}{The Wheel Fell Off!}{section.B.2}% 129
-\BOOKMARK [1][-]{section.B.3}{ROS}{appendix.B}% 130
-\BOOKMARK [2][-]{subsection.B.3.1}{ERROR: tf2:ExtrapolationException}{section.B.3}% 131
-\BOOKMARK [1][-]{section.B.4}{Gazebo}{appendix.B}% 132
-\BOOKMARK [2][-]{subsection.B.4.1}{Error [Node.cc.90] No namespace found}{section.B.4}% 133
-\BOOKMARK [2][-]{subsection.B.4.2}{Dependency Issues When Installing gazebo2}{section.B.4}% 134
-\BOOKMARK [1][-]{section.B.5}{Ubuntu}{appendix.B}% 135
-\BOOKMARK [2][-]{subsection.B.5.1}{Ubuntu Freezes}{section.B.5}% 136
-\BOOKMARK [0][-]{appendix.C}{DVD Contents}{}% 137
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.1.1}{Brief Introduction to Robot Terminology}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.2}{Simulating in Gazebo}{section.3.1}% 28
+\BOOKMARK [1][-]{section.3.2}{ROS}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Introduction}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.2}{Important ROS Concepts}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.3}{An Overview of ROS-Related Tools}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.4}{Notable Robots Running ROS}{section.3.2}% 33
+\BOOKMARK [1][-]{section.3.3}{Software}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.1}{Qt}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.2}{PCL}{section.3.3}% 36
+\BOOKMARK [1][-]{section.3.4}{The Kinect Sensor}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.5}{Software Tools}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.5.1}{Point Cloud Library}{section.3.5}% 39
+\BOOKMARK [2][-]{subsection.3.5.2}{ROS}{section.3.5}% 40
+\BOOKMARK [2][-]{subsection.3.5.3}{Qt}{section.3.5}% 41
+\BOOKMARK [2][-]{subsection.3.5.4}{Current Research and Applications}{section.3.5}% 42
+\BOOKMARK [1][-]{section.3.6}{Introduction to Sensors in Autonomous Robots}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.6.1}{Depth Cameras}{section.3.6}% 44
+\BOOKMARK [2][-]{subsection.3.6.2}{Kinect for Xbox 360}{section.3.6}% 45
+\BOOKMARK [2][-]{subsection.3.6.3}{Planar Laser Sensors \(LIDAR\)}{section.3.6}% 46
+\BOOKMARK [2][-]{subsection.3.6.4}{Odometers}{section.3.6}% 47
+\BOOKMARK [2][-]{subsection.3.6.5}{Sensor Fusion}{section.3.6}% 48
+\BOOKMARK [1][-]{section.3.7}{Simultaneous Localization and Mapping \(SLAM\)}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.7.1}{Introduction to SLAM}{section.3.7}% 50
+\BOOKMARK [2][-]{subsection.3.7.2}{Hector SLAM}{section.3.7}% 51
+\BOOKMARK [2][-]{subsection.3.7.3}{RTAB-Map}{section.3.7}% 52
+\BOOKMARK [2][-]{subsection.3.7.4}{RGBD SLAM and Octomap}{section.3.7}% 53
+\BOOKMARK [1][-]{section.3.8}{Autonomous Navigation}{chapter.3}% 54
+\BOOKMARK [2][-]{subsection.3.8.1}{Global Planner}{section.3.8}% 55
+\BOOKMARK [2][-]{subsection.3.8.2}{Local Planner}{section.3.8}% 56
+\BOOKMARK [2][-]{subsection.3.8.3}{Recovery Behaviours}{section.3.8}% 57
+\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 58
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 59
+\BOOKMARK [1][-]{section.4.2}{Hardware Setup}{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.2.1}{Second On-Board Computer and New Rear Compartment}{section.4.2}% 61
+\BOOKMARK [2][-]{subsection.4.2.2}{Sensor Calibration and Setup}{section.4.2}% 62
+\BOOKMARK [2][-]{subsection.4.2.3}{Power Supply and Battery Safety}{section.4.2}% 63
+\BOOKMARK [1][-]{section.4.3}{ROS Integration Overview}{chapter.4}% 64
+\BOOKMARK [1][-]{section.4.4}{Modeling}{chapter.4}% 65
+\BOOKMARK [2][-]{subsection.4.4.1}{Physical Dimensions}{section.4.4}% 66
+\BOOKMARK [2][-]{subsection.4.4.2}{Connecting the Links}{section.4.4}% 67
+\BOOKMARK [1][-]{section.4.5}{Simulations}{chapter.4}% 68
+\BOOKMARK [2][-]{subsection.4.5.1}{Robot Description Plugins}{section.4.5}% 69
+\BOOKMARK [1][-]{section.4.6}{Motion Control}{chapter.4}% 70
+\BOOKMARK [1][-]{section.4.7}{ROS Nodes for Motion Control}{chapter.4}% 71
+\BOOKMARK [2][-]{subsection.4.7.1}{Velocity Command Sources}{section.4.7}% 72
+\BOOKMARK [2][-]{subsection.4.7.2}{Motor Control Card Firmware on XMEGA A3BU}{section.4.7}% 73
+\BOOKMARK [1][-]{section.4.8}{Operator Control Station \(OCS\)}{chapter.4}% 74
+\BOOKMARK [2][-]{subsection.4.8.1}{Graphical User Interface}{section.4.8}% 75
+\BOOKMARK [1][-]{section.4.9}{The Hand Held Remote Control - Robot Leash}{chapter.4}% 76
+\BOOKMARK [2][-]{subsection.4.9.1}{Connecting to the Robot}{section.4.9}% 77
+\BOOKMARK [1][-]{section.4.10}{Mapping - Setting Up RTAB-Map}{chapter.4}% 78
+\BOOKMARK [2][-]{subsection.4.10.1}{Configuration}{section.4.10}% 79
+\BOOKMARK [2][-]{subsection.4.10.2}{Adding 3D Obstruction Detection}{section.4.10}% 80
+\BOOKMARK [1][-]{section.4.11}{Navigation}{chapter.4}% 81
+\BOOKMARK [2][-]{subsection.4.11.1}{Global Path Planning}{section.4.11}% 82
+\BOOKMARK [2][-]{subsection.4.11.2}{Local Path Planning}{section.4.11}% 83
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 84
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 85
+\BOOKMARK [1][-]{section.5.2}{Testplan}{chapter.5}% 86
+\BOOKMARK [1][-]{section.5.3}{Simulation Results}{chapter.5}% 87
+\BOOKMARK [2][-]{subsection.5.3.1}{Mapping}{section.5.3}% 88
+\BOOKMARK [2][-]{subsection.5.3.2}{Autonomous Navigation}{section.5.3}% 89
+\BOOKMARK [2][-]{subsection.5.3.3}{Live Robot Results}{section.5.3}% 90
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 91
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 92
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 93
+\BOOKMARK [1][-]{section.6.2}{Task Fulfilment}{chapter.6}% 94
+\BOOKMARK [1][-]{section.6.3}{Overall Assessment}{chapter.6}% 95
+\BOOKMARK [2][-]{subsection.6.3.1}{Choice of Development Tools}{section.6.3}% 96
+\BOOKMARK [2][-]{subsection.6.3.2}{Assessment of Prototype Design}{section.6.3}% 97
+\BOOKMARK [1][-]{section.6.4}{Success and Quality of the ROS Integration}{chapter.6}% 98
+\BOOKMARK [1][-]{section.6.5}{Assessment of RTAB-Map}{chapter.6}% 99
+\BOOKMARK [2][-]{subsection.6.5.1}{Quality and Thoroughness of the Tests}{section.6.5}% 100
+\BOOKMARK [2][-]{subsection.6.5.2}{Weaknesses}{section.6.5}% 101
+\BOOKMARK [2][-]{subsection.6.5.3}{Strengths}{section.6.5}% 102
+\BOOKMARK [2][-]{subsection.6.5.4}{Suitability For Robotic Maintenance}{section.6.5}% 103
+\BOOKMARK [2][-]{subsection.6.5.5}{Mapping}{section.6.5}% 104
+\BOOKMARK [2][-]{subsection.6.5.6}{The Kinect Sensor}{section.6.5}% 105
+\BOOKMARK [1][-]{section.6.6}{Navigation}{chapter.6}% 106
+\BOOKMARK [2][-]{subsection.6.6.1}{The Tuning Process}{section.6.6}% 107
+\BOOKMARK [2][-]{subsection.6.6.2}{Performance}{section.6.6}% 108
+\BOOKMARK [1][-]{section.6.7}{Suitability for Offshore Maintenance}{chapter.6}% 109
+\BOOKMARK [2][-]{subsection.6.7.1}{The Kinect}{section.6.7}% 110
+\BOOKMARK [2][-]{subsection.6.7.2}{Open Source Software and Security}{section.6.7}% 111
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 112
+\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 113
+\BOOKMARK [2][-]{subsection.7.1.1}{Autonomous Non-Destructive Testing}{section.7.1}% 114
+\BOOKMARK [2][-]{subsection.7.1.2}{Large Scale Kinect Fusion - Kintinous}{section.7.1}% 115
+\BOOKMARK [2][-]{subsection.7.1.3}{Hardware}{section.7.1}% 116
+\BOOKMARK [1][-]{section.7.2}{Final Conclusion}{chapter.7}% 117
+\BOOKMARK [0][-]{section*.147}{References}{}% 118
+\BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 119
+\BOOKMARK [1][-]{section.A.1}{Hardware Setup}{appendix.A}% 120
+\BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 121
+\BOOKMARK [1][-]{section.A.2}{Installation}{appendix.A}% 122
+\BOOKMARK [2][-]{subsection.A.2.1}{Install Ubuntu}{section.A.2}% 123
+\BOOKMARK [2][-]{subsection.A.2.2}{Download ROS}{section.A.2}% 124
+\BOOKMARK [1][-]{section.A.3}{Configuring the Project}{appendix.A}% 125
+\BOOKMARK [2][-]{subsection.A.3.1}{Configuring the ROS Workspace}{section.A.3}% 126
+\BOOKMARK [2][-]{subsection.A.3.2}{Configuring the Bluetooth Connection}{section.A.3}% 127
+\BOOKMARK [0][-]{appendix.B}{Troubleshooting}{}% 128
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 129
+\BOOKMARK [1][-]{section.B.2}{Hardware}{appendix.B}% 130
+\BOOKMARK [2][-]{subsection.B.2.1}{The Wheel Fell Off!}{section.B.2}% 131
+\BOOKMARK [1][-]{section.B.3}{ROS}{appendix.B}% 132
+\BOOKMARK [2][-]{subsection.B.3.1}{ERROR: tf2:ExtrapolationException}{section.B.3}% 133
+\BOOKMARK [1][-]{section.B.4}{Gazebo}{appendix.B}% 134
+\BOOKMARK [2][-]{subsection.B.4.1}{Error [Node.cc.90] No namespace found}{section.B.4}% 135
+\BOOKMARK [2][-]{subsection.B.4.2}{Dependency Issues When Installing gazebo2}{section.B.4}% 136
+\BOOKMARK [1][-]{section.B.5}{Ubuntu}{appendix.B}% 137
+\BOOKMARK [2][-]{subsection.B.5.1}{Ubuntu Freezes}{section.B.5}% 138
+\BOOKMARK [0][-]{appendix.C}{DVD Contents}{}% 139

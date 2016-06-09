@@ -1,26 +1,45 @@
 \chapter{Background Theory}
 \label{chp:theory} 
 
+\section{Introduction}
 
+This chapter will provide the background theory which is necessary to understand the implementation described in chapter \ref{chp:implementation}. Section \ref{sec:terminology} introduces some robot terminology and concepts. Section \ref{sec:ros} provides a thorough introduction to \ac{ROS}, which is the framework of choice in this implementation. Next, follows a section on sensors. More specifically the Kinect for Xbox 360 and a \ac{LIDAR}, URG-04LX-UG01. The two final sections provide basic insight into \ac{SLAM} and autonomous navigation in \ac{ROS} respectively. 
 
-\section{Modelling and Simulation}
+%\section{Modelling and Simulation}
+%\label{sec:modelling}
+\subsection{Brief Introduction to Robot Terminology}
+\label{sec:terminology}
 
-\subsection{Some Terminology}
+\subsubsection{Joints and Links}
+
+A robot can be described by a set of rigid \textit{links} connected to each other by \textit{joints}. A link is described by a set of kinematic attributes based on its shape and mass. A joint between two links describe the freedom of movement between the coordinate systems of each link. When a set of links and joints are put together, they will define the kinematic tree of the robot, i.e. how the robot and its components can move. Typical joint classes are:
+
+%\begin{description}[align=right]
+%	\item[Static] Transforms between links are constant.
+%	\item[Revolute]  A rotary motion between the links. Like a door hinge or a knee.
+%	\item[Prismatic] A linear motion between the links. 
+%	\item[Continous] Unbounded rotary motion. Typically used for rotating wheels.	
+%\end{description}
+
+\begin{center}
+	\begin{tabular}{ r p{10cm} }
+	\textbf{Static} & Transforms between links are constant.\\
+	\textbf{Revolute} &  A rotary motion between the links - like a door hinge or a knee.\\
+	\textbf{Prismatic} & A linear motion between the links. \\
+	\textbf{Continous} & Unbounded rotary motion. Typically used for rotating wheels. \\
+	\end{tabular}
+\end{center}
 
 \subsubsection{Coordinate Systems and Poses}
 
-\subsubsection{Robot Joints}
+\subsubsection{Mobile Bases}
 
-All links are connected to each other by joints. 
 
-Coordinate systems are essential in the field of robotics. 
-
-\subsection{Robot Modelling}
 
 \subsection{Simulating in Gazebo}
 
 \section{ROS}
-
+\label{sec:ros}
 \subsection{Introduction}
 
 The \ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be tailored to meet the demands of a wide range of robots with varying complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can be perceived as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recommended \cite{ROS_install}.
@@ -29,7 +48,7 @@ Historic roots of \ac{ROS} can be traced back to Stanford University at the begi
 
 \subsection{Important ROS Concepts}
 \label{sec:ros_concepts}
-The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website\footnote{\url{http://www.ros.org/}}, as well as in any book on \ac{ROS} (for example \cite{rosbook15}). 
+The following descriptions are included in order to provide a complete, self-contained description of the project implementation. Similar descriptions can be found on the official \ac{ROS} website\footnote{\url{http://www.ros.org/}}, as well as in any book on \ac{ROS} (for example \cite{rosbook15} or the more comprehensive \cite{koubaa2016robot}). 
 
 \subsubsection{The ROS Graph}
 
@@ -48,7 +67,7 @@ A \ac{ROS} system comprise a set of small programs that communicate with each ot
 
 \subsubsection{tf}
 
-\texttt{tf}\cite{tf_paper} is a coordinate system transformation library used in \ac{ROS}. Parts of a \ac{ROS} system can listen to broadcasted transforms
+\texttt{tf}\cite{tf_paper} is a coordinate system transformation library used in \ac{ROS}. Parts of a \ac{ROS} system can listen to broadcasted transforms in the form of messages, \texttt{tf/tfMessage}, which describe a coordinate system transform between one or more parent-child link pairs. \texttt{tf} also provides timing information it the messages. This is a very important feature because a node may depend on synchronized sensor streams with many different coordinate frames. Comparing a laser scan with a point clout that was received seconds ago may lead to errors. 
 
 \subsubsection{Project Structure and the \textit{catkin} Build System}
 \label{sec:catkin}
@@ -267,9 +286,7 @@ This mapping framework was not used in this project in order to limit the projec
 
 \section{Autonomous Navigation}
 
-\ac{ROS} has a built in navigation stack for 2D navigation. The navigation stack can plan a path and send velocity commands to the mobile base controller based on sensor input, a goal pose, a map and the frame of the \texttt{base\_link}.
-
-
+\ac{ROS} provides a pre-built navigation stack for 2D navigation. The navigation stack can plan a path and send velocity commands to the mobile base controller based on sensor input, a goal pose, a map and the frame of the \texttt{base\_link}. Figure \ref{fig:move_base_official} shows how the internal components of the node \texttt{move\_base}, and how it interacts with the rest of the \ac{ROS} system. 
 
 \begin{figure}[h]
     \centering
@@ -277,3 +294,19 @@ This mapping framework was not used in this project in order to limit the projec
     \caption{\texttt{move\_base} and the navigation stack. (Image credits:  ros.org)}
     \label{fig:move_base_official}
 \end{figure}
+
+The navigation stack publishes velocity commands for translation and rotation in the $xy-plane$ in the form of a \texttt{geometry\_msgs/Twist} message with the default topic name ''\texttt{cmd\_vel}''. Mobile bases must constructed as either holonomic or differential drives.
+
+\subsection{Global Planner}
+
+The \ac{ROS} navigation stack is equipped with a basic \textit{global planner}. This global planner is fitted with a set of basic path planning algorithms: e.g. Dijkstra and A*. Global path planning is performed on the global costmap which in turn is based on the 2D grid map published by a map server. A pre-mapped area is not strictly necessary for the global planner to plan a path. Instead it will just plan a naive path which can be corrected by the local planner as the robot moves along the planned trajectory.
+
+\subsection{Local Planner}
+
+Actual velocity commands from \texttt{move\_base} are published by the \textit{local planner}. The local planner will receive the global plan from the global planner, and calculate a new trajectory based on currently observed obstructions as well as the robot footprint and kinematics. Local obstructions are expressed in a dynamic grid map, i.e. the local costmap based, which is based a subset of the global map combined with real time sensor data. The dynamic local cost map enables the robot to avoid temporary and moving obstacles.
+
+The local planner can use either the Trajectory Rollout or \ac{DWA} algorithm for trajectory planning.
+
+\subsection{Recovery Behaviours}
+
+When the robot becomes stuck, it can be configured to perform a set of recovery behaviours. The default recovery behaviours available to \texttt{move\_base} are to clear the costmap, i.e. to remove obstacle information from the costmap, and to rotate in place, in the hope of discovering a new clear path. A typical sequence of behaviours is to clear the costmap, try to locate a path and then attempt an in place rotation before doing a second attempt to plan a path. If the entire series of recovery actions fails to reveal a clear path, the \texttt{move\_base} node will abort and consider the goal state to be infeasible\cite{koubaa2016robot}.

@@ -171,6 +171,11 @@ S.~Kohlbrecher, J.~Meyer, O.~von Stryk, and U.~Klingauf.
 \newblock In {\em Proc. IEEE International Symposium on Safety, Security and
   Rescue Robotics (SSRR)}. IEEE, November 2011.
 
+\bibitem[Kou16]{koubaa2016robot}
+Anis Koubaa.
+\newblock {\em Robot Operating System (ROS): The Complete Reference}, volume~1.
+\newblock Springer, 2016.
+
 \bibitem[Lin15]{lindrup}
 Vegard~Stjerna Lindrup.
 \newblock Visual sensing in mobile robots.
@@ -287,13 +292,6 @@ Teknisk ukeblad: Ubemannede plattformer skal konkurrere med subsea.
 \newblock
   \url{http://www.tu.no/artikler/ubemannede-plattformer-skal-konkurrere-med-subsea/226868}.
 \newblock Accessed: 28-05-2016.
-
-\bibitem[SWB{\etalchar{+}}14]{FSR2014_gas_leak}
-Samuel Soldan, Jochen Welle, Thomas Barz, Andreas Kroll, and Dirk Schulz.
-\newblock Towards autonomous robotic systems for remote gas leak detection and
-  localization in industrial environments.
-\newblock In {\em Field and Service Robotics}, pages 233--247. Springer Berlin
-  Heidelberg, 2014.
 
 \bibitem[Vin14]{Vinnem2014}
 Jan-Erik Vinnem.

@@ -27,6 +27,12 @@ This chapter provides a brief introduction to how topside maintenance is perform
 
 
 
+
+
+A feasibility study performed by researchers from \ac{Fraunhofer IPA}\cite{6094661} identified several topside production tasks and ranked them according to their resource demand. 
+%Table \ref{tab:tasks} shows the ranked tasks based on a preselected installation. While all tasks would benefit from ''robotizing'',  
+Based on the identified tasks, the study went on to describe a set of specific tasks, and then assess how easy or hard it would be to ''robotize'' these tasks. Table \ref{tab:tasks_capabilities} associates a set of tasks with different robot categories, as well as how easy or hard the process of ''robotizing'' the activity is expected to be. The difficulty levels are described with the letters ''A'' through ''D'', where  ''A'' is described as of the shelf robotics, which makes ''robotizing'' easy. Activities associated with the letter ''D'' on the other hand, cannot be be ''robotized'' with either current or near future technology even if doing so would be beneficial \cite{6094661}. Note that the paper in question is from 2011, and the difficulty of these tasks may have changed. This is particularly true in the domain of visual sensors, given the bloom of accessible 3D sensor technology and research over the last decade. Some further elaboration on inspection activities and environmental considerations is given in the next subsection. 
+
 \begin{table}
 \centering
 \begin{tabular}{ |p{2cm} p{3cm} p{5cm}| }
@@ -51,9 +57,16 @@ A & Domestic service robot & To autonomously perform floor cleaning, catering, l
 \label{tab:tasks_capabilities}
 \end{table}
 
-A feasibility study performed by researchers from \ac{Fraunhofer IPA}\cite{6094661} identified several topside production tasks and ranked them according to their resource demand. 
-%Table \ref{tab:tasks} shows the ranked tasks based on a preselected installation. While all tasks would benefit from ''robotizing'',  
-Based on the identified tasks, the study went on to describe a set of specific tasks, and then assess how easy or hard it would be to ''robotize'' these tasks. Table \ref{tab:tasks_capabilities} associates a set of tasks with different robot categories, as well as how easy or hard the process of ''robotizing'' the activity is expected to be. The difficulty levels are described with the letters ''A'' through ''D'', where  ''A'' is described as of the shelf robotics, which makes ''robotizing'' easy. Activities associated with the letter ''D'' on the other hand, cannot be be ''robotized'' with either current or near future technology even if doing so would be beneficial \cite{6094661}. Note that the paper in question is from 2011, and the difficulty of these tasks may have changed. This is particularly true in the domain of visual sensors, given the bloom of accessible 3D sensor technology and research over the last decade. Some further elaboration on inspection activities and environmental considerations is given in the next subsection. 
+\cite{6094661} suggests five tasks that will have a high impact on \ac{HSE} and efficiency:
+\begin{itemize}
+\item Monitoring of gauges and meters
+\item (Visual) inspection of remote operated valves
+\item Acoustic inspection
+\item Inspection of equipment for leakage
+\item Maintenance of gas and fire sensors
+\end{itemize}
+
+
 %\begin{table}[h!]
 %\centering
 %\begin{tabular}{ |p{5cm} p{2cm} p{2.5cm} | }
@@ -82,6 +95,8 @@ Based on the identified tasks, the study went on to describe a set of specific t
 %\label{tab:tasks_ranked}
 %\caption{Identified and ranked production operation activities \cite{6094661}. Question marks and parenthesis are intentional.} 
 %\end{table}
+
+
 
 \subsection{Structural Maintenance and Environmental Considerations}
 
@@ -230,6 +245,6 @@ NRECs contribution, Sensabot, is a remotely operated inspection robot designed f
 
 \ac{Fraunhofer IPA}\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, called \ac{MIMROex}. \ac{MIMROex} has capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. \ac{Fraunhofer IPA} put great emphasis on field testing on actual offshore installations.
 
-Both ABB and Sintef ICT has developed lab facilities to test various concepts for robotic maintenance. Both facilities use non-mobile robots which utilize a rich set of inspection and manipulation tools, as well as \ac{HMI} equipment for remote operation and control. SINTEF has d The two research communities differ in that ABB has tested their solutions in real environments, which subjects their solution to ATEX requirements and an extensive risk management regime\cite{StepwiseApproachToRobotics}. 
+Both ABB and SINTEF ICT has developed lab facilities to test various concepts for robotic maintenance. Both facilities use non-mobile robots which utilize a rich set of inspection and manipulation tools, as well as \ac{HMI} equipment for remote operation and control. The two research communities differ in that ABB has tested their solutions in real environments, which subjects their solution to ATEX requirements and an extensive risk management regime\cite{StepwiseApproachToRobotics}. SINTEF has a long list of contributui
 
 Another effort towards robotic maintenance is the ARGOS challenge (Autonomous Robot for Gas and Oil Sites). The purpose of the challenge is to promote innovation, understanding and awareness towards robotic maintenance of \ac{OG} sites in harsh environments\cite{ARGOS}.
