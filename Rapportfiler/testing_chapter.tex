@@ -9,7 +9,7 @@ This chapter presents how the robot and the supporting implementations were test
 
 \section{Testplan}
 
-The following tests will be carried out in the simulator, as well as in the real world. They will mainly focus on the navigation stack and \ac{RTAB-Map}. 
+The tests listed in tables \ref{tab:support_func} and \ref{tab:main_func} will be carried out in the simulator, as well as in the real world. They will mainly focus on the navigation stack and \ac{RTAB-Map}. 
 
 \begin{table}
 	\centering
@@ -25,7 +25,7 @@ The following tests will be carried out in the simulator, as well as in the real
 		\textbf{Motor controller on XMEGA A3BU} & Verify ability to command the wheels. Confirm that the vehicle stops when velocity commands from \ac{ROS} are absent.\\
 		\hline
 	\end{tabular}
-	\caption{}
+	\caption{Supporting Functionality}\label{tab:support_func}
 \end{table}
 
 \begin{table}
@@ -43,10 +43,29 @@ The following tests will be carried out in the simulator, as well as in the real
 	\hline
 	%\caption{}
 	\end{tabular}
-	\caption{}
+	\caption{Core Functionality}\label{tab:main_func}
 \end{table}
 
 \section{Brief Summary of All Results}
+
+\begin{table}
+	\centering
+	\begin{tabular}{ p{2.5cm} | p{7cm} }
+		\multicolumn{2}{c}{Result Summary}\\
+		\hline
+		\textbf{Test Item} & Evaluation\\
+		\hline
+		\textbf{Mobile application, ''Robot Leash''} & The mobile App works as expected. The user can connect to the robot and send velocity commands to the real and simulated mobile base via Bluetooth. This tool proved to be invaluable, and was used during all mapping sessions.\\
+		\textbf{Multi Session Mapping} & An example of multi session mapping was recorded to the video \texttt{live\_multi\_session\_mapping} enclosed in the DVD. The live robot can successfully merge multiple maps. In Gazebo, the method is more vulnerable to similar features.\\
+		\hline
+		\textbf{Loop Closure Detection} & Successful live loop closure detection is demonstrated in the video \texttt{live\_mapping\_succesful}. The simulated environment was a bit more challenging, as demonstrated in the enclosed video \texttt{sim\_wrong\_loop\_closure}.\\
+		\hline
+		\textbf{Autonomous Navigation} & Perform a set of tests on the navigation stack. The tests should evaluate path planning with moving obstacles. Different parameters should be tested and evaluated. Observe how the robot handles narrow passages. Evaluate robustness of the navigation stack for this robot.\\
+		\hline
+		%\caption{}
+	\end{tabular}
+	\caption{Core Functionality}\label{tab:main_func}
+\end{table}
 
 \section{Simulation Results}
 
