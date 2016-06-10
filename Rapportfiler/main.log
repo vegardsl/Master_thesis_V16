@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  10 JUN 2016 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.11)  10 JUN 2016 15:49
 entering extended mode
 **main.tex
 (main.tex
@@ -2663,64 +2663,64 @@ although it is yet undefined on input line 391.
 File: ./figs/device_select.png Graphic file (type png)
 
 <use ./figs/device_select.png>
-Package pdftex.def Info: ./figs/device_select.png used on input line 401.
+Package pdftex.def Info: ./figs/device_select.png used on input line 403.
 (pdftex.def)             Requested size: 109.20111pt x 194.1281pt.
 
 <./figs/bt_request.png, id=1762, 1084.05pt x 1927.2pt>
 File: ./figs/bt_request.png Graphic file (type png)
 
 <use ./figs/bt_request.png>
-Package pdftex.def Info: ./figs/bt_request.png used on input line 406.
+Package pdftex.def Info: ./figs/bt_request.png used on input line 408.
 (pdftex.def)             Requested size: 109.20111pt x 194.1134pt.
 
 <./figs/using_app.png, id=1763, 406.51875pt x 722.7pt>
 File: ./figs/using_app.png Graphic file (type png)
 
 <use ./figs/using_app.png>
-Package pdftex.def Info: ./figs/using_app.png used on input line 411.
+Package pdftex.def Info: ./figs/using_app.png used on input line 413.
 (pdftex.def)             Requested size: 109.20111pt x 194.1281pt.
  [42]
-<./figs/android_sequence.png, id=1771, 1318.9275pt x 684.30656pt>
+<./figs/android_sequence.png, id=1772, 1318.9275pt x 684.30656pt>
 File: ./figs/android_sequence.png Graphic file (type png)
 
 <use ./figs/android_sequence.png>
-Package pdftex.def Info: ./figs/android_sequence.png used on input line 430.
+Package pdftex.def Info: ./figs/android_sequence.png used on input line 432.
 (pdftex.def)             Requested size: 550.0pt x 285.36023pt.
  [43]
-<./figs/mar_2dnav.png, id=1799, 1005.00468pt x 592.46344pt>
+<./figs/mar_2dnav.png, id=1800, 1005.00468pt x 592.46344pt>
 File: ./figs/mar_2dnav.png Graphic file (type png)
 
 <use ./figs/mar_2dnav.png>
-Package pdftex.def Info: ./figs/mar_2dnav.png used on input line 483.
+Package pdftex.def Info: ./figs/mar_2dnav.png used on input line 485.
 (pdftex.def)             Requested size: 364.0pt x 214.57942pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/3d_obstruction1_left.png, id=1800, 572.1375pt x 472.76625pt>
+<./figs/3d_obstruction1_left.png, id=1801, 572.1375pt x 472.76625pt>
 File: ./figs/3d_obstruction1_left.png Graphic file (type png)
 
 <use ./figs/3d_obstruction1_left.png>
-Package pdftex.def Info: ./figs/3d_obstruction1_left.png used on input line 497
+Package pdftex.def Info: ./figs/3d_obstruction1_left.png used on input line 499
 .
 (pdftex.def)             Requested size: 192.91956pt x 159.41104pt.
 
-<./figs/3d_obstruction1_right.png, id=1801, 541.27219pt x 521.69907pt>
+<./figs/3d_obstruction1_right.png, id=1802, 541.27219pt x 521.69907pt>
 File: ./figs/3d_obstruction1_right.png Graphic file (type png)
 
 <use ./figs/3d_obstruction1_right.png>
 Package pdftex.def Info: ./figs/3d_obstruction1_right.png used on input line 50
-2.
+4.
 (pdftex.def)             Requested size: 163.79889pt x 157.87216pt.
 
-<./figs/live_3d_obstacle2.png, id=1802, 1218.80344pt x 453.94594pt>
+<./figs/live_3d_obstacle2.png, id=1803, 1218.80344pt x 453.94594pt>
 File: ./figs/live_3d_obstacle2.png Graphic file (type png)
 
 <use ./figs/live_3d_obstacle2.png>
-Package pdftex.def Info: ./figs/live_3d_obstacle2.png used on input line 511.
+Package pdftex.def Info: ./figs/live_3d_obstacle2.png used on input line 513.
 (pdftex.def)             Requested size: 364.0pt x 135.56836pt.
 
-Underfull \hbox (badness 2150) in paragraph at lines 512--512
+Underfull \hbox (badness 2150) in paragraph at lines 514--514
 []\T1/lmr/m/n/10 (+20) Figure 4.20: |3D Ob-sta-cle de-tec-tion with the live ro
 bot. The nodelet
  []
@@ -2763,14 +2763,14 @@ Overfull \hbox (36.13249pt too wide) in paragraph at lines 82--83
  in the video ''\T1/lmtt/m/n/10 live_mapping_succesful\T1/lmr/m/n/10 (-20) ''.
  []
 
-[52] <./figs/gazebo2_cropped.png, id=1861, 1059.20718pt x 264.99pt>
+[52] <./figs/gazebo2_cropped.png, id=1862, 1059.20718pt x 264.99pt>
 File: ./figs/gazebo2_cropped.png Graphic file (type png)
 
 <use ./figs/gazebo2_cropped.png>
 Package pdftex.def Info: ./figs/gazebo2_cropped.png used on input line 97.
 (pdftex.def)             Requested size: 364.0pt x 91.06583pt.
 
-<./figs/rviz_mapping_trial_cropped.png, id=1865, 381.8265pt x 249.3315pt>
+<./figs/rviz_mapping_trial_cropped.png, id=1866, 381.8265pt x 249.3315pt>
 File: ./figs/rviz_mapping_trial_cropped.png Graphic file (type png)
 
 <use ./figs/rviz_mapping_trial_cropped.png>
@@ -2781,7 +2781,7 @@ ne 108.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/gazebo_lc_features.png, id=1870, 567.3195pt x 428.19975pt>
+<./figs/gazebo_lc_features.png, id=1871, 567.3195pt x 428.19975pt>
 File: ./figs/gazebo_lc_features.png Graphic file (type png)
 
 <use ./figs/gazebo_lc_features.png>
@@ -2791,7 +2791,7 @@ Package pdftex.def Info: ./figs/gazebo_lc_features.png used on input line 117.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/loop_closure_detection.png, id=1871, 694.84593pt x 616.55344pt>
+<./figs/loop_closure_detection.png, id=1872, 694.84593pt x 616.55344pt>
 File: ./figs/loop_closure_detection.png Graphic file (type png)
 
 <use ./figs/loop_closure_detection.png>
@@ -2803,7 +2803,7 @@ Package pdftex.def Info: ./figs/loop_closure_detection.png used on input line 1
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [53 <./figs/gazebo2_cropped.png>]
-<./figs/Incorrect_lc_detection_cropped.png, id=1880, 426.09187pt x 325.215pt>
+<./figs/Incorrect_lc_detection_cropped.png, id=1881, 426.09187pt x 325.215pt>
 File: ./figs/Incorrect_lc_detection_cropped.png Graphic file (type png)
 
 <use ./figs/Incorrect_lc_detection_cropped.png>
@@ -2814,7 +2814,7 @@ t line 135.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/planning_big_footprint_cropped.png, id=1883, 426.84468pt x 373.395pt>
+<./figs/planning_big_footprint_cropped.png, id=1884, 426.84468pt x 373.395pt>
 File: ./figs/planning_big_footprint_cropped.png Graphic file (type png)
 
 <use ./figs/planning_big_footprint_cropped.png>
@@ -2827,7 +2827,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [54 <./figs/rviz_mapping_trial_cropped.png>] [55 <./figs/gazebo_lc_features.png
 >] [56 <./figs/loop_closure_detection.png>]
-<./figs/mapping_gamle_elektro.png, id=1906, 611.28375pt x 320.69812pt>
+<./figs/mapping_gamle_elektro.png, id=1907, 611.28375pt x 320.69812pt>
 File: ./figs/mapping_gamle_elektro.png Graphic file (type png)
 
 <use ./figs/mapping_gamle_elektro.png>
@@ -2835,14 +2835,14 @@ Package pdftex.def Info: ./figs/mapping_gamle_elektro.png used on input line 17
 9.
 (pdftex.def)             Requested size: 364.0pt x 190.9621pt.
 
-<./figs/floorPlan.png, id=1907, 666.23906pt x 300.3722pt>
+<./figs/floorPlan.png, id=1908, 666.23906pt x 300.3722pt>
 File: ./figs/floorPlan.png Graphic file (type png)
 
 <use ./figs/floorPlan.png>
 Package pdftex.def Info: ./figs/floorPlan.png used on input line 184.
 (pdftex.def)             Requested size: 364.0pt x 164.10979pt.
 
-<./figs/lc_match_live.png, id=1908, 693.34032pt x 566.115pt>
+<./figs/lc_match_live.png, id=1909, 693.34032pt x 566.115pt>
 File: ./figs/lc_match_live.png Graphic file (type png)
 
 <use ./figs/lc_match_live.png>
@@ -2852,7 +2852,7 @@ Package pdftex.def Info: ./figs/lc_match_live.png used on input line 195.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/lc_match_live_map.png, id=1909, 470.50781pt x 414.04688pt>
+<./figs/lc_match_live_map.png, id=1910, 470.50781pt x 414.04688pt>
 File: ./figs/lc_match_live_map.png Graphic file (type png)
 
 <use ./figs/lc_match_live_map.png>
@@ -2861,14 +2861,14 @@ Package pdftex.def Info: ./figs/lc_match_live_map.png used on input line 202.
  [57 <./figs/Incorrect_lc_detection_cropped.png>] [58 <./figs/planning_big_foot
 print_cropped.png>] [59 <./figs/mapping_gamle_elektro.png> <./figs/floorPlan.pn
 g>]
-<./figs/avoiding_moving_obstacles_arrow.png, id=1933, 415.5525pt x 210.03468pt>
+<./figs/avoiding_moving_obstacles_arrow.png, id=1934, 415.5525pt x 210.03468pt>
 File: ./figs/avoiding_moving_obstacles_arrow.png Graphic file (type png)
 <use ./figs/avoiding_moving_obstacles_arrow.png>
 Package pdftex.def Info: ./figs/avoiding_moving_obstacles_arrow.png used on inp
 ut line 227.
 (pdftex.def)             Requested size: 364.0pt x 183.985pt.
 
-<./figs/obstructed_plan_arrow.png, id=1934, 447.17062pt x 368.1253pt>
+<./figs/obstructed_plan_arrow.png, id=1935, 447.17062pt x 368.1253pt>
 File: ./figs/obstructed_plan_arrow.png Graphic file (type png)
 
 <use ./figs/obstructed_plan_arrow.png>
@@ -2876,7 +2876,7 @@ Package pdftex.def Info: ./figs/obstructed_plan_arrow.png used on input line 23
 5.
 (pdftex.def)             Requested size: 167.44244pt x 137.84442pt.
 
-<./figs/corrected_plan_arrow.png, id=1935, 559.33969pt x 448.67625pt>
+<./figs/corrected_plan_arrow.png, id=1936, 559.33969pt x 448.67625pt>
 File: ./figs/corrected_plan_arrow.png Graphic file (type png)
 
 <use ./figs/corrected_plan_arrow.png>
@@ -2926,7 +2926,7 @@ ttps://github.com/mp3guy/Kintinuous[][].
 ]
 Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
 although it is yet undefined on input line 40.
- <./figs/worn_wheel2.png, id=2036, 403.5075pt x 487.8225pt>
+ <./figs/worn_wheel2.png, id=2037, 403.5075pt x 487.8225pt>
 File: ./figs/worn_wheel2.png Graphic file (type png)
 
 <use ./figs/worn_wheel2.png>
@@ -2999,7 +2999,7 @@ $\T1/lmr/m/n/10 (+20) / / www . tu . no / artikler / ubemannede-[]plattformer-[
  []
 
 ) [76] (setup.tex
-<./figs/network_setup.png, id=2126, 709.14937pt x 258.21469pt>
+<./figs/network_setup.png, id=2127, 709.14937pt x 258.21469pt>
 File: ./figs/network_setup.png Graphic file (type png)
 
 <use ./figs/network_setup.png>
@@ -3017,7 +3017,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-<./figs/set_screw.png, id=2153, 932.48375pt x 524.96124pt>
+<./figs/set_screw.png, id=2154, 932.48375pt x 524.96124pt>
 File: ./figs/set_screw.png Graphic file (type png)
 
 <use ./figs/set_screw.png>
@@ -3055,9 +3055,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
 (setup.aux) (troubleshooting.aux) (dvd_contents.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5B9586FAE3105BFD1C670DDB2FB7C351;9952.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 5B9586FAE3105BFD1C670DDB2FB7C351;9952
+(rerunfilecheck)             After:  08F5E762467E5F0AE85F8C20DC5B1473;10029.
 
 LaTeX Warning: There were undefined references.
 
@@ -3067,8 +3073,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 34751 strings out of 493698
- 583546 string characters out of 3144406
+ 34752 strings out of 493698
+ 583562 string characters out of 3144406
  847340 words of memory out of 3000000
  36502 multiletter control sequences out of 15000+200000
  118601 words of font info for 162 fonts, out of 3000000 for 9000
@@ -3095,9 +3101,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtt9.pfb>
-Output written on main.pdf (113 pages, 15868503 bytes).
+Output written on main.pdf (113 pages, 15868657 bytes).
 PDF statistics:
- 2378 PDF objects out of 2487 (max. 8388607)
- 563 named destinations out of 1000 (max. 500000)
+ 2379 PDF objects out of 2487 (max. 8388607)
+ 564 named destinations out of 1000 (max. 500000)
  30156 words of extra memory for PDF output out of 35830 (max. 10000000)
 

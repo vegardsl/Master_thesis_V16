@@ -112,7 +112,8 @@
 \contentsline {section}{\numberline {4.8}Operator Control Station (OCS)}{42}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}Graphical User Interface}{42}{subsection.4.8.1}
 \contentsline {section}{\numberline {4.9}The Hand Held Remote Control - \textit {Robot Leash}}{42}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Connecting to the Robot}{42}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.1}Application Structure}{42}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Connecting to the Robot}{42}{subsection.4.9.2}
 \contentsline {section}{\numberline {4.10}Mapping - Setting Up RTAB-Map}{43}{section.4.10}
 \contentsline {subsection}{\numberline {4.10.1}Configuration}{43}{subsection.4.10.1}
 \contentsline {subsubsection}{1 - Kinect + LIDAR + Odometry}{43}{section*.110}
