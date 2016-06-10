@@ -287,7 +287,7 @@ There are several approaches to \ac{SLAM}  which uses Octomaps. An example that 
 This mapping framework was not used in this project in order to limit the project scope, and because the alternative \ac{RTAB-Map} was associated with less uncertainty.
 
 \section{Autonomous Navigation}
-
+\label{sec:navigation_theory}
 \ac{ROS} provides a pre-built navigation stack for 2D navigation. The navigation stack can plan a path and send velocity commands to the mobile base controller based on sensor input, a goal pose, a map and the frame of the \texttt{base\_link}. Figure \ref{fig:move_base_official} shows how the internal components of the node \texttt{move\_base}, and how it interacts with the rest of the \ac{ROS} system. 
 
 \begin{figure}[h]

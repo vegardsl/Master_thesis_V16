@@ -5,14 +5,29 @@
 
 This chapter presents four implementations that were developed during this project:
 
-\begin{center}
-	\begin{tabular}{ l p{7cm} }
-	\textbf{Robot software in \ac{ROS}} & The robot's operating system runs on a laptop computer which is placed on the robot. This system is responsible for the core functionality of the robot, which includes sensor and actuator management, mapping, navigation and manual control.\\
-	\textbf{Motor Control Firmware} & Provides an interface between the \ac{ROS} computer and each wheel motor. Translates velocity commands to wheel speeds.\\
-	\textbf{Android Application} & A supporting tool intended to function as a remote control for the robot. The implementation presented here enables the user to control the robot from an Android device via a Bluetooth connection.\\
-	\textbf{Operator Control Station} & A simple Operator Control Station (OCS) based on Qt enables an operator to control the robot via a wireless TCP/IP connection. The \ac{OCS} can display a live video stream from the Kinect sensor. \\
-	\end{tabular}
-\end{center}
+%\begin{center}
+%	\begin{tabular}{ l p{7cm} }
+%	\textbf{Robot software in \ac{ROS}} & The robot's operating system runs on a laptop computer which is placed on the robot. This system is responsible for the core functionality of the robot, which includes sensor and actuator management, mapping, navigation and manual control.\\
+%	\textbf{Motor Control Firmware} & Provides an interface between the \ac{ROS} computer and each wheel motor. Translates velocity commands to wheel speeds.\\
+%	\textbf{Android Application} & A supporting tool intended to function as a remote control for the robot. The implementation presented here enables the user to control the robot from an Android device via a Bluetooth connection.\\
+%	\textbf{Operator Control Station} & A simple Operator Control Station (OCS) based on Qt enables an operator to control the robot via a wireless TCP/IP connection. The \ac{OCS} can display a live video stream from the Kinect sensor. \\
+%	\end{tabular}
+%\end{center}
+
+\subsubsection{Robot software in \ac{ROS}}
+
+This is the core implementation that connects all the other pieces together. The robot's operating system runs on a laptop computer which is placed on the robot. This system is responsible for the core functionality of the robot, which includes sensor and actuator management, mapping, navigation and manual control.
+
+\subsubsection{Motor Control Firmware}
+
+Motor control firmware, running on an XMEGA A3BU board, provides an interface between the \ac{ROS} computer and each wheel motor. Velocity commands from \ac{ROS} are translated into wheel speed commands.
+
+\subsubsection{Android Application}
+A supporting tool intended to function as a remote control for the robot. The implementation presented here enables the user to control the robot from an Android device via a Bluetooth connection.
+
+\subsubsection{Operator Control Station}
+
+A simple Operator Control Station (OCS) based on Qt enables an operator to control the robot via a wireless TCP/IP connection. The \ac{OCS} can display a live video stream from the Kinect sensor. The purpose of this implementation is to learn how \ac{ROS} can be connected to the outside world.
 
 \section{Hardware Setup}
 
@@ -55,7 +70,7 @@ Only support for the Kinect and the \ac{LIDAR} sensor was integrated into this s
 Calibrating both the Kinect and the \ac{LIDAR} is a straight forward procedure with \ac{ROS}. The Hokuyo \ac{LIDAR} will in fact be calibrated automatically when the node is launched. Calibrating the Kinect is actually not strictly necessary because the lens distortion is very low. That being said, because there already is a calibration tool available in \ac{ROS}\footnote{ROS calibration guide: \url{http://wiki.ros.org/openni_launch/Tutorials/IntrinsicCalibration}} that is easy to use, there is no good reason to not calibrate. The calibration procedure is as follows:
 
 \begin{enumerate}
-	\item Print out a chessboard pattern and tape it to a flat surface. It is beneficial to use A3 paper size to make the pattern easier to detect over a larger set of distances.
+	\item Print out a chessboard pattern and tape it to a flat surface. It is beneficial to use a large paper size, for example A3, to make the pattern easier to detect over a larger set of distances.
 	\item Calibrate the RGB camera by using the calibration tool. Use the RGB video stream.
 	\item Calibrate the IR camera by using the calibration tool. Stream from the IR camera this time. For this procedure, it is recommended to cover the IR projector, because the IR speckle pattern makes it difficult to detect the chessboard (figure \ref{fig:ir_calibration}).
 \end{enumerate}
@@ -219,7 +234,7 @@ The mass of each link is guesstimated. Consider the \texttt{base\_link} as an ex
 
 Robot links are connected by joints. A joint defines a translation and rotation from the coordinate frame of a parent link to that of a child link. Each joint has two attributes: \textit{name}, for example ''base\_link\_to\_left\_wheel'' and type, for example ''prismatic'' or ''continuous''. All joints in the mobile robot are static, except for the wheel joints which are continuous. Correct joint transformations is very important when placing the sensors (figure \ref{fig:sensor_frames}). A discrepancy between the real sensor-to-base transform and the modeled transform will cause misaligned sensor input.
 
- \begin{figure}
+ \begin{figure}[h]
  	\centering
  	\begin{subfigure}[b]{0.402\textwidth}
  		\includegraphics[width=\textwidth]{urdf_model}
@@ -277,9 +292,9 @@ Attributes for gazebo's sensor plugins are based on the technical specifications
 \section{ROS Nodes for Motion Control}
 
 
-\subsection{Velocity Command Sources}
+\subsection{Velocity Command Flow}
 
-There are four ways to control the robot:
+There are four sources that can generate velocity commands for the robot. Common for all of these is that they use the message format \texttt{geometry\_msgs/Twist}. The names for each of the four velocity messages are as follows:
 
 \begin{description}
 	\item[/cmd\_vel\_loc] Local keyboard input.
@@ -288,6 +303,8 @@ There are four ways to control the robot:
 	\item[/cmd\_vel] Commands from the navigation stack in \ac{ROS}. \texttt{/cmd\_vel} is the default \: \: velocity command topic for the navigation stack.
 \end{description}
 
+The third topic \texttt{/switch\_setting} is a command used to select the velocity command to be passed all the way to the motor control card, or Gazebo in the case of a simulated session. The message flow from source to sink is illustrated as a \ac{ROS} graph in figure \ref{fig:move_base_nodes}.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{velocity_command}
@@ -295,12 +312,18 @@ There are four ways to control the robot:
 	\label{fig:move_base_nodes}
 \end{figure}
 
+Rapid changes in the velocity command may cause excessive wear and tear on the equipment. The node \texttt{velocity\_ramp} has been added to ensure that the velocity command values will change smoothly. Implementation of this node is heavily based on example code from \cite{rosbook15}. The example code was translated from Python to C++, and adapted to fit into this particular system. Figure \ref{fig:velocity_ramp} shows an example of how \texttt{velocity\_ramp} works.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{velocity_ramp_cropped}
 	\caption{The node \texttt{velocity\_ramp} limits the rate of change of the velocity command sent to the motor control card. The blue line represents commands entering \texttt{velocity\_ramp}, while the red line shows the acceleration constrained output command.}
 	\label{fig:velocity_ramp}
 \end{figure}
+
+\subsection{Velocity Command Sources}
+
+
 
 \subsection{Motor Control Card Firmware on XMEGA A3BU}
 
@@ -366,7 +389,7 @@ $W$ is the spacing between the wheels as shown in figure \ref{fig:robot_kinemati
 
 
 
- \begin{figure}
+ \begin{figure}[h]
  	\centering
  	\begin{subfigure}[b]{0.58\textwidth}
  		\includegraphics[width=\textwidth]{robot_kinematics}
@@ -384,20 +407,31 @@ $W$ is the spacing between the wheels as shown in figure \ref{fig:robot_kinemati
 
 \section{Operator Control Station (OCS)}
 
-The \ac{OCS} allows an operator to control and monitor the robot through a graphical user interface. \texttt{MainWindow}
+A \ac{HMI} is an integrated part of any remotely operated maintenance system. The \ac{OCS} allows an operator to control and monitor the robot through a graphical user interface. \texttt{MainWindow}
 
 \subsection{Graphical User Interface}
 
 A Qt-based \ac{GUI}...
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{basic_ocs_consept}
+	\caption{Operator Control Station (OCS) \ac{HMI}. The current skeleton implementation displays video from the robot. The operator can steer the robot by moving the yellow ball in the center screen. }
+	\label{fig:ocs}
+\end{figure}
+
 \section{The Hand Held Remote Control - \textit{Robot Leash}}
 
-Because the \ac{OCS} is only partially implemented, an operator will not have access to all the features on the robot. In addition, as a safety precaution a person should be close to the robot at all times, and be ready to pull the plug. Furthermore, it is hard to control a moving robot through the on-board keyboard. These problems were countered by the Android-based remote control, \textit{Robot Leash}. 
+Because the \ac{OCS} is only partially implemented, an operator will not have access to all the features on the robot. In addition, as a safety precaution a person should be close to the robot at all times, and be ready to pull the plug. Furthermore, it is hard to control a moving robot through the on-board keyboard. These problems were countered by the Android-based remote control, \textit{Robot Leash}. This application allows an operator to steer the robot from a mobile device via a Bluetooth connection. A typical use case is as follows (figure \ref{fig:app_screens}):
 
-\subsection{Application Structure}
+\begin{enumerate}
+	\item The robot is online, and a discoverable Bluetooth server is running on the robot computer.
+	\item An operator wishes to control the robot, and starts ''Robot Leash'' on his/her Android device. The operator can now scan for devices within range.
+	\item After clicking the \textit{scan} button, the robot is discovered. When the operator selects the discovered device, he/she will be prompted to pair with the robot.
+	\item The smartphone and the robot is now paired, and velocity commands from the blue control stick are passed to the robot via Bluetooth. The velocity command switch, \texttt{velocity\_cmd\_switch} must be set to \texttt{/cmd\_vel\_bt}.
+\end{enumerate}
 
-
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\begin{subfigure}[b]{0.30\textwidth}
 		\includegraphics[width=\textwidth]{device_select}
@@ -417,13 +451,10 @@ Because the \ac{OCS} is only partially implemented, an operator will not have ac
 	\caption{\label{fig:app_screens}A typical use case for ''Robot Leash''.}
 \end{figure}
 
-\subsection{Connecting to the Robot}
+\subsection{Application Structure}
 
-\begin{enumerate}
-	\item The first screen after scanning for devices. There is no device filtering, and the user can select any device, but only connect through a specific service.
-	\item After selecting a device which provides the correct service, the user will be prompted to pair the devices.
-	\item The smartphone and the robot is now paired, and velocity commands from the blue control stick are passed to the robot via Bluetooth.
-\end{enumerate}
+
+The \ac{GUI} used to control the robot (figure \ref{fig:using_app}) is implemented in OpenGL ES2. To save time, the code structure behind the graphics is an adaptation from a coding sample in the book \textit{OpenGL ES 2 for Android}\cite{brothaler2013openg}. The same approach is applied to the portion of the app which manages the Bluetooth connection, i.e. the file \texttt{BluetoothConnectionService.java}. The code within this file is taken from a Bluetooth chat sample\footnote{https://github.com/googlesamples/android-BluetoothChat/blob/master/Application/src/main/java/com/example/android/bluetoothchat/BluetoothChatService.java}, and is provided by Google
 
 http://developer.samsung.com/technical-doc/view.do?v=T000000117
 
@@ -478,7 +509,7 @@ The package \texttt{rtabmap\_ros} contains a 3D obstacle detector in addition to
 
 \section{Navigation}
 
-
+Autonomous navigation in this project is limited to use of the navigation stack in \ac{ROS}, which was introduced in section \ref{sec:navigation_theory}. The stack will be used in its most basic form. The configuration was initially based on a tutorial at \texttt{ros.org}\footnote{http://wiki.ros.org/navigation/Tutorials/RobotSetup}. The implementation consists of one launch file for the node \texttt{move\_base}, and a set of configuration files for each component within \texttt{move\_base}. Figure \ref{fig:mar_2dnav} shows how these files were structured. As with \ac{RTAB-Map}, the configuration process consist of connecting \texttt{move\_base} to the rest of the network, by deciding which topics it shall subscribe to. 
 
 \begin{figure}[h]
 	\centering
@@ -492,6 +523,7 @@ The package \texttt{rtabmap\_ros} contains a 3D obstacle detector in addition to
 \subsection{Local Path Planning}
 
 \subsubsection{Obstruction Detection}
+
 
 \begin{figure}
 	\centering
