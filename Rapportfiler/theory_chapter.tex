@@ -245,7 +245,7 @@ The 2D pose of the \ac{LIDAR} is estimated through a scan matcher, i.e. the proc
 \subsection{RTAB-Map}
 \label{sec:RTAB-Map}
 
-\ac{RTAB-Map} is developed by IntRoLab at Université de Sherbrooke in Canada. It is a \ac{SLAM} system developed for long term operations in large environments. The system is also intended to handle the ''kidnapped robot-problem'', i.e. multi-session mapping. This is useful whenever the robot is shut down and moved to an unmapped part of the same area, where it will start a new mapping session. \ac{RTAB-Map} is the core feature that has been integrated into the robot described in this thesis. Some factors which motivated the use of \ac{RTAB-Map} are:
+\ac{RTAB-Map} is developed by IntRoLab at Université de Sherbrooke in Canada. It is a \ac{SLAM} system developed for long term operations in large environments. The system is also intended to handle the ''kidnapped robot-problem'', i.e. multi-session mapping. This is useful whenever the robot is shut down and moved to an unmapped part of the same area, where it will start a new mapping session. \ac{RTAB-Map} is the core feature, besides navigation, that has been integrated into the robot described in this thesis. Some factors which motivated the use of \ac{RTAB-Map} are:
 
 \begin{itemize}
 	\item It is a \ac{SLAM} method which requires an RGB-D sensor, for example a Kinect. The problem description for this project requires a vision based solution.
@@ -259,7 +259,7 @@ The source code and \ac{ROS} wrapper is currently maintained, and new features a
 
 \subsubsection{Graph Based Mapping}
 
-\ac{RTAB-Map} uses a graph structure with nodes and edges to represent the map. New nodes are continuously added to the system's working memory as time passes. In this method, the graph edges are referred to as \textit{links}. There are two types of links: neighbour links and loop closure links. Each node is a location in the map, and the links contain geometrical transformations between the node locations. Figure \ref{fig:rtabmap_graph} illustrated the graph concept.
+\ac{RTAB-Map} uses a graph structure with nodes and edges to represent the map. New locations $L_t$, represented by nodes, are continuously added to the system's working memory as time passes. In this method, the graph edges are referred to as \textit{links}. There are two types of links: neighbour links and loop closure links. Each node is a location in the map, and the links contain geometrical transformations between the node locations. Figure \ref{fig:rtabmap_graph} illustrated the graph concept.
 
 \begin{figure}[h]
     \centering
@@ -270,9 +270,11 @@ The source code and \ac{ROS} wrapper is currently maintained, and new features a
 
 \subsubsection{Loop Closure Detection}
 
+At regular predefined intervals, \ac{RTAB-Map} will take a snapshot image $I$ and run this image through a feature detector (e.g. \ac{SURF} or \ac{SIFT}). The obtained image descriptors will be quantized to a descriptor vocabulary, i.e. a bag-of-words. The bag of words associated with an image constitutes the signature of location $L$, i.e. the location at which the image was taken. When the new location, $L$, is added to the graph, \ac{RTAB-Map} will update an a posteriori probability density function for each loop closure hypothesis $S$. 
+
 \subsubsection{On-line Mapping of Large Environments}
 
-
+As the graph of locations grow, the time it takes to check for loop closures will also grow. In \ac{RTAB-Map}, this problem is handled by a memory management scheme, where memory is split into \ac{STM}, \ac{WM} and \ac{LTM}.
 
 \subsection{RGBD SLAM and Octomap}
 

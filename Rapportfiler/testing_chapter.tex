@@ -3,12 +3,11 @@
 
 \section{Introduction}
 
-This chapter presents how the robot and the supporting implementations were tested and the results that where obtained. The same software system was used for both the simulated and live robot. It was still necessary to have some separate launch and configuration files for the simulated and hardware version (section \ref{sec:integration}). 
-
+This chapter presents how the robot and the supporting implementations were tested and the results that where obtained. The same software system was used for both the simulated and live robot. It was still necessary to have some separate launch and configuration files for the simulated and hardware version (section \ref{sec:integration}). Section \ref{sec:testplan} provides an overview of the various features and components which were tested, and how these items are assessed. Next, in section \ref{sec:results_summary}, a brief overview of the results are presented. The two last sections will go through the more nuanced results and events from the simulations and live trials respectively. It was difficult to come up with a rigorous test plan because of time constraints. Much of the testing was done together with parameter tuning. 
 
 
 \section{Testplan}
-
+\label{sec:testplan}
 The tests listed in tables \ref{tab:support_func} and \ref{tab:main_func} will be carried out in the simulator, as well as in the real world. They will mainly focus on the navigation stack and \ac{RTAB-Map}. 
 
 \begin{table}
@@ -47,25 +46,46 @@ The tests listed in tables \ref{tab:support_func} and \ref{tab:main_func} will b
 \end{table}
 
 \section{Brief Summary of All Results}
-
-\begin{table}
-	\centering
-	\begin{tabular}{ p{2.5cm} | p{7cm} }
-		\multicolumn{2}{c}{Result Summary}\\
-		\hline
-		\textbf{Test Item} & Evaluation\\
-		\hline
-		\textbf{Mobile application, ''Robot Leash''} & The mobile App works as expected. The user can connect to the robot and send velocity commands to the real and simulated mobile base via Bluetooth. This tool proved to be invaluable, and was used during all mapping sessions.\\
-		\textbf{Multi Session Mapping} & An example of multi session mapping was recorded to the video \texttt{live\_multi\_session\_mapping} enclosed in the DVD. The live robot can successfully merge multiple maps. In Gazebo, the method is more vulnerable to similar features.\\
-		\hline
-		\textbf{Loop Closure Detection} & Successful live loop closure detection is demonstrated in the video \texttt{live\_mapping\_succesful}. The simulated environment was a bit more challenging, as demonstrated in the enclosed video \texttt{sim\_wrong\_loop\_closure}.\\
-		\hline
-		\textbf{Autonomous Navigation} & Perform a set of tests on the navigation stack. The tests should evaluate path planning with moving obstacles. Different parameters should be tested and evaluated. Observe how the robot handles narrow passages. Evaluate robustness of the navigation stack for this robot.\\
-		\hline
+\label{sec:results_summary}
+%\begin{table}
+%	\centering
+%	\begin{tabular}{ p{3.5cm} | p{7cm} }
+%		\multicolumn{2}{c}{Result Summary}\\
+%		\hline
+%		\textbf{Test Item} & Evaluation\\
+%		\hline
+%		\textbf{Mobile application, ''Robot Leash''} & The mobile App works as expected. The user can connect to the robot and send velocity commands to the real and simulated mobile base via Bluetooth. This tool proved to be invaluable, and was used during all mapping sessions.\\
+%		\hline
+%		\textbf{Multi Session Mapping} & An example of multi session mapping was recorded to the video \texttt{live\_multi\_session\_mapping} enclosed in the DVD. The live robot can successfully merge multiple maps. In Gazebo, the method is more vulnerable to similar features in different parts of the world.\\
+%		\hline
+%		\textbf{Loop Closure Detection} & Successful live loop closure detection is demonstrated in the video \texttt{live\_mapping\_succesful}. The simulated environment was a bit more challenging, as demonstrated in the enclosed video \texttt{sim\_wrong\_loop\_closure}.\\
+%		\hline
+%		\textbf{Autonomous Navigation} & Autonomous navigation was evaluated based on the ability to reach a feasable goal state, and the ability to avoid static and dynamic obstacles. The global planner works as expected in both the simulator and in the real world. The simulated robot was frequently unable to reach its goal. The real robot successfully navigated a static and dynamic obstacle course (video \texttt{live\_navigation\_1} and \texttt{2}, and ''Obstruction detection and avoidance'').\\
+%		\hline
 		%\caption{}
-	\end{tabular}
-	\caption{Core Functionality}\label{tab:main_func}
-\end{table}
+%	\end{tabular}
+%	\caption{Result Summary}\label{tab:result}
+%\end{table}
+
+\subsubsection{Mobile application, ''Robot Leash''}
+
+The mobile App works as expected. The user can establish a Bluetooth connection to the robot and send velocity commands to the real and simulated mobile base. This tool proved to be invaluable, and was used during all mapping sessions, both real and simulated.
+
+\subsubsection{Operator Control Station}
+
+\subsubsection{Motor controller on XMEGA A3BU}
+
+An example of multi session mapping was recorded to the video ''\texttt{live\_multi\_session\_mapping}'' enclosed in the DVD. The live robot can successfully merge multiple maps. In Gazebo, the method is more vulnerable to similar features in different parts of the world.
+
+\subsubsection{Loop Closure Detection}
+
+Successful live loop closure detection is demonstrated in the video ''\texttt{live\_mapping\_succesful}''. The simulated environment was a bit more challenging, as demonstrated in the enclosed video ''\texttt{sim\_wrong\_loop\_closure}''.
+
+\subsubsection{Autonomous Navigation}
+
+Autonomous navigation was evaluated based on the ability to reach a feasable goal state, and the ability to avoid static and dynamic obstacles. The global planner works as expected in both the simulator and in the real world. The simulated robot was frequently unable to reach its goal. The real robot successfully navigated a static and dynamic obstacle course (video ''\texttt{live\_navigation\_1}'' and \texttt{2}, and ''Obstruction detection and avoidance'').
+
+
 
 \section{Simulation Results}
 
@@ -106,7 +126,9 @@ The map quality varied greatly between the mapping trials. The path of the robot
 	\label{fig:loop_closure_detection}
 \end{figure}
 
-Another error occurred during a multi session mapping trial. The robot detected a wrong loop closure at a location with similar features to a previously mapped location. This resulted in the map seen in figure \ref{fig:Incorrect_lc_detection}. Other localization problems were apparent when driving in open areas. The estimated location of the robot would fluctuate as when turning the robot as features passed in or out of view.
+Another error occurred during a multi session mapping trial. The robot detected a wrong loop closure at a location with similar features to a previously mapped location. This resulted in the map seen in figure \ref{fig:Incorrect_lc_detection}. Other localization problems were apparent when driving in open areas. The estimated location of the robot would fluctuate when turning the robot as features passed in or out of view.
+
+Sensor settings is another factor that had a high impact on the \ac{SLAM} quality. When sensor ranges of the Gazebo sensor plugins are set according to the sensors technical specifications, both localization and mapping will struggle. An increased sensor range in for the simulated sensors would increase the \ac{SLAM} robustness.
 
 \begin{figure}[h]
 	\centering
@@ -120,9 +142,9 @@ Another error occurred during a multi session mapping trial. The robot detected 
 
 Testing the navigation stack in Gazebo fulfilled two goals. The first goal was to learn how the system behaved with different parameters and to uncover potential problems with the system before attempting to test the live robot. The second goal was to evaluate the ability to relocate the robot and avoid obstacles. 
 
-The for the first trial, the robot footprint was extended well beyond the physical mobile base. The purpose of this was to prevent obstacles from getting too close to the Kinect and \ac{LIDAR}. As the minimum detectable range for the Kinect is $0.5 m$, the footprint was extended $0.5 m$ (measured minimum depth) beyond the front of the mobile base. A second parameter to be tuned is the obstacle inflation radius, i.e. the radius beyond each obstacle that is expensive or impossible to traverse. Figure \ref{fig:big_footprint} illustrates both the big footprint and the obstacle inflation radius.
+The for the first trial, the robot footprint was extended well beyond the physical mobile base. The purpose of this was to prevent obstacles from getting too close to the Kinect and \ac{LIDAR}. As the minimum detectable range for the Kinect is $0.5 m$ (measured minimum depth), the footprint was extended $0.5 m$ beyond the front of the mobile base. A second parameter to be tuned is the obstacle inflation radius, i.e. the radius beyond each obstacle that is expensive or impossible to traverse. Figure \ref{fig:big_footprint} illustrates both the big footprint and the obstacle inflation radius.
 
-During trials with the big footprint, the robot showed good collision avoidance but an aversion to narrow passages. Setting the obstacle inflation radius is also a dilemma in choosing between large margins for the global path or the ability to navigate through narrow passages. 
+During trials with the big footprint, the robot showed good collision avoidance capabilities but an aversion to narrow passages. Setting the obstacle inflation radius is also a dilemma in choosing between large margins for the global path or the ability to navigate through narrow passages. 
 
 \begin{figure}[h]
 	\centering
@@ -131,16 +153,17 @@ During trials with the big footprint, the robot showed good collision avoidance 
 	\label{fig:big_footprint}
 \end{figure}
 
-In later navigation sessions, the robot footprint was reduced to a size slightly larger than the physical robot base. During some of the testing sessions the robot would get stuck in the obstacles. 
+In later navigation sessions, the robot footprint was reduced to a size slightly larger than the physical robot base. During some of the testing sessions, the robot would get stuck near obstacles. 
 
-Sometimes, the robot would never actually reach the goal state, but rather circle around it. 
+Sometimes, the robot would never actually reach the goal state, but rather circle around it. This problem was not solved, but more relaxed goal tolerances mitigated the issue a little. 
 
-\subsection{Live Robot Results}
+\section{Live Robot Results}
 
-Due to time constraints, it was no time to tune the parameters of \ac{RTAB-Map}. \ac{RTAB-Map} is therefore used with the default parameters. 
+Due to time constraints, it was no time to tune the parameters of \ac{RTAB-Map}. \ac{RTAB-Map} is therefore used with the default parameters. An important distinction between the real and simulated system is found in the actuator, i.e. the motor controller of the mobile base. In the simulated system, the motor control card is emulated by a skid steering plugin. While the exact functionality of the skid steering plugin is unknown, it does ensure that the wheels follow the linear and angular velocity commands provided by \ac{ROS}. This is not the case for the real motor control card, as it lacks a feedback loop. The real robot velocity was in general slower that its simulated version.
 
 \subsubsection{Safety Features}
 
+The simulator offered the benefit of a risk free environment. This is not the case for the real robot. 
 
 \subsubsection{Loop Closure Detection}
 
@@ -183,11 +206,11 @@ In later experiments it was found that different mapping techniques and path cho
 
 \subsubsection{Multi Session Mapping}
 
-Multi session mapping was tested by performing an initial mapping run and then starting a second mapping session from an unknown location. All multi session mapping trials were successful.
+Multi session mapping was tested by performing an initial mapping run and then starting a second mapping session from an unknown location. All multi session mapping trials were successful. 
 
 \subsubsection{Navigating Among Static Obstacles}
 
-The first live navigation trials were performed by setting up a static obstacle course in a hallway. Only a few people were using this hallway, so multiple trials could be carried in under similar conditions. Most navigation trials were carried out in mapped areas.
+The first live navigation trials were performed by setting up a static obstacle course in a hallway. Only a few people were using this hallway, so multiple trials could be carried in under similar conditions. Most navigation trials were carried out in mapped areas. The robot performed well when navigating in known environments. In unknown environments, the robot will still plan a path. 
 
 
 

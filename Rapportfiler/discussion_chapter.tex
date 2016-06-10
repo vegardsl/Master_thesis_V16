@@ -7,7 +7,7 @@ So far the report has presented a large number of topics and implementations.
 
 This chapter will seek to assess the implementations presented in chapter \ref{chp:implementation} based on their performance recorded in chapter \ref{chp:testing}. The following discussions will include qualitative evaluation of suitability for offshore robotic maintenance.
 
-This chapter will examine the results presented in chapter \ref{chp:results} and discuss them in light of the initial problem description for this thesis. The first section will assess the extent to which the project covers the problem description. Then the potential strengths and weaknesses of each subsystem.
+This chapter will examine the results presented in chapter \ref{chp:results} and discuss them in light of the initial problem description for this thesis. The first section will assess the extent to which the project covers the problem description. Then follows a discussion on the strengths and weaknesses of each subsystem.
 
 
 \section{Task Fulfilment}
@@ -16,13 +16,15 @@ This chapter will examine the results presented in chapter \ref{chp:results} and
 
 \section{Overall Assessment}
 
-The overall system, as it is at the end of this master's project, is a functioning proof of concept for a mobile autonomous robot. All planned modules were implemented. Some of these, however, are only capable of demonstrating basic functionality and the possibility of more robust and complete implementations. The most important features, camera based mapping and navigation, were successfully implemented and configured. 
+The overall system, as it is at the end of this master's project, is a functioning proof of concept for a mobile autonomous robot. All planned modules were implemented. Some of these, however, are only capable of demonstrating basic functionality and the possibility of more robust and complete implementations. The most important features, camera based mapping and navigation, were successfully implemented and configured. The current implementations leaves much room for further improvements in terms of robustness, parameter tuning, functionality and ease of use.
 
 \subsection{Choice of Development Tools}
 
-Using \ac{ROS} as a development framework, might have been the most important factor that contributed to a functional solution. In the end, \ac{ROS} proved to be a flexible and rich tool, despite its novel structure and initial learning curve. Experienced users of \ac{ROS} will most likely be able to rapidly test and implement robot concepts.  Since its inception in 2007, \ac{ROS} has become a mature and rich set of tools and functionality packages that anyone can implement and develop further. The node structure is also a good way of structuring the entire system into self contained and reusable modules. This makes it easier to reuse parts of this implementation in later projects, and will hopefully benefit ensuing projects on this topic.
+Using \ac{ROS} as a development framework, might have been the most important factor that contributed to a functional solution. In the end, \ac{ROS} proved to be a flexible and rich tool, despite its novel structure and initial learning curve. Experienced users of \ac{ROS} will most likely be able to rapidly implement and test robot concepts.  Since its inception in 2007, \ac{ROS} has become a mature and rich set of tools and functionality packages that anyone can implement and develop further. The node structure is also a good way of structuring the entire system into self contained, manageable and reusable modules. This makes it easier to reuse parts of this implementation in later projects, and will hopefully benefit ensuing projects on this topic.
 
 \subsection{Assessment of Prototype Design}
+
+Roughly estimated, the robot prototype has driven approximately $1km$ during the master's project. Of these roughly $100-200m$ were driven in autonomous mode. The bulk of these distances were accomplished over a period of 3 intensive days, while the rest is spread throughout the semester. Time available for testing was somewhat reduced as a consequence of breakdowns or depleted batteries. 
 
 \subsubsection{Short}
 
@@ -42,13 +44,13 @@ Integrating and configuring \ac{ROS} with the existing robot was the most time c
 
 \section{Assessment of RTAB-Map}
 
-The mapping session results demonstrated both strengths and weaknesses  in the chosen mapping method \ac{RTAB-Map}. The results show that multi session mapping works rather well. Especially in environments with a sufficient amount of detectable visual features. 
+The mapping session results demonstrated both strengths and weaknesses  in the chosen mapping method, \ac{RTAB-Map}. The results show that multi session mapping works rather well if the conditions are favorable. Especially in environments with a sufficient amount of detectable visual features. 
 
 \subsection{Quality and Thoroughness of the Tests}
 
-\ac{RTAB-Map} was tested in a diverse set of indoor environments as well as in the simulated ''Asphalt'' world in Gazebo. A significant shortcoming of these tests was the lack of testing and comparing different parameter settings for the method. Further parameter tuning and better mapping techniques could have benefited the mapping performance.
+\ac{RTAB-Map} was tested in a diverse set of indoor environments as well as in the simulated ''Asphalt'' world in Gazebo. A significant shortcoming of these tests was the lack of testing and comparison of different parameter settings for the method. Further parameter tuning and better mapping techniques could have benefited the mapping performance.
 
-Another shortcoming is the small number of live mapping trials. Configuring and learning to use the mapping system was a time consuming process. Problems with the robot hardware and the environment itself gave rise to additional delays. The laptop running \ac{ROS} and the on-board car battery had to be recharged periodically, which was a time consuming process. The live loop closure tests were carried out at times when a lot of students were moving through the hallways. These factors made it difficult to perform comparable tests, and proved to be a complicating factor for the appearance based mapping system. 
+Another shortcoming is the small number of live mapping trials. Configuring and learning to use the mapping system was a time consuming process. Problems with the robot hardware and the environment itself gave rise to additional delays. The laptop running \ac{ROS} and the on-board car battery had to be recharged periodically, which took a considerable amount of time. The live loop closure tests were carried out at times when a lot of students were moving through the hallways. These factors made it difficult to perform comparable tests, and proved to be a complicating factor for the appearance based mapping system. 
 
 A third weakness in these trials is that the system was tested with only one sensor configuration. \ac{RTAB-Map} can utilize both a RGB-D camera, a LIDAR and odometers, but these tests were only carried out with the Kinect and the LIDAR.
 
