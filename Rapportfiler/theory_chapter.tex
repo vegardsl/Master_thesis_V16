@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-This chapter will provide the background theory which is necessary to understand the implementation described in chapter \ref{chp:implementation}. Section \ref{sec:terminology} introduces some robot terminology and concepts. Section \ref{sec:ros} provides a thorough introduction to \ac{ROS}, which is the framework of choice in this implementation. Next, follows a section on sensors. More specifically the Kinect for Xbox 360 and a \ac{LIDAR}, URG-04LX-UG01. The two final sections provide basic insight into \ac{SLAM} and autonomous navigation in \ac{ROS} respectively. 
+This chapter will provide the background theory which is necessary to understand the implementations described in chapter \ref{chp:implementation}. Section \ref{sec:terminology} introduces some robot terminology and concepts. Section \ref{sec:ros} provides a thorough introduction to \ac{ROS}, which is the framework of choice in this implementation. Next, follows a section on sensors. More specifically the Kinect for Xbox 360 and a \ac{LIDAR}, URG-04LX-UG01. The two final sections provide basic insight into \ac{SLAM} and autonomous navigation in \ac{ROS} respectively. 
 
 %\section{Modelling and Simulation}
 %\label{sec:modelling}
@@ -71,7 +71,7 @@ A \ac{ROS} system comprise a set of small programs that communicate with each ot
 
 \subsubsection{Project Structure and the \textit{catkin} Build System}
 \label{sec:catkin}
-The source code in a \ac{ROS} system is organized into packages. Each package provides a specific functionality to the system. Some packages can be downloaded and installed from a remote repository, while other packages will be created by the in-house developers for their specific robotic system. In this project, locally created ROS-packages were placed into a \textit{catkin workspace}. This workspace contains the  original source code and build specifications. Details are provided in chapter \ref{chp:implementation}. As presented in\cite{ROS_tut_pkg}, a general workspace structure is as follows:
+A \ac{ROS} project will usually utilize the \texttt{catkin} build system. \texttt{catkin} replaces \textit{Rosbuild} which is used for ROS Fuerte and earlier (this project uses \ac{ROS} Indigo). The source code in a \ac{ROS} system is organized into packages. Each package provides a specific functionality to the system. Some packages can be downloaded and installed from a remote repository, while other packages will be created by the in-house developers for their specific robotic system. In this project, locally created ROS-packages were placed into a \textit{catkin workspace}. This workspace contains the  original source code and build specifications. Implementation specific details are provided in chapter \ref{chp:implementation}. As described in \cite{ROS_tut_pkg}\footnote{\url{http://wiki.ros.org/ROS/Tutorials/CreatingPackage}} and \cite{ROS_catkin}, a general workspace structure is as follows:
 
 \begin{verbatim}
 workspace_folder/        -- CATKIN WORKSPACE
@@ -84,13 +84,18 @@ workspace_folder/        -- CATKIN WORKSPACE
     package_n/
       CMakeLists.txt     -- CMakeLists.txt file for package_n
       package.xml        -- Package manifest for package_n
+      
+  devel/                 -- DEVELOPMENT SPACE (set by CATKIN_DEVEL_PREFIX)
+    ...
+  build/                 -- BUILD SPACE
+    ...
 \end{verbatim}
 
-A \ac{ROS} project will usually utilize the catkin build system.
+Packages are build by running \texttt{catkin\_make} from the command line. Each package comes with two files: \texttt{CMakeLists.txt} and \texttt{package.xml}. In \texttt{CMakeLists.txt}, a developer can link to additional libraries, e.g. \ac{OpenCV}. The \texttt{package.xml} file, also known as the package manifest, contains a description of the package and its dependencies. The developer can specify details such as version number, licenses and contact information to the responsible maintainer.
 
 \subsubsection{\texttt{roslaunch}}
 
-\texttt{roslaunch}\cite{ROS_launch} is a \ac{ROS} package tool used to launch multiple nodes from a single command line. This is useful for larger projects with many nodes, interactions and parameters. Exactly which nodes to launch is defined in XML-files with the \textit{.launch} extension. In a launch file, the developer can group nodes together, pass arguments to the nodes and launch other launch files. Launch files can be launched from the command line as follows:
+\texttt{roslaunch}\cite{ROS_launch} is a \ac{ROS} package tool used to launch multiple nodes from a single command line. This is useful for larger projects with many nodes, interactions and parameters. Exactly which nodes to launch is defined in XML-files with the \textit{.launch} extension. In a launch file, the developer can group nodes together, pass arguments to the nodes and launch other launch files. Launch files can be launched from the command line as follows (do not include the brackets $<...>$):
 
 \begin{verbatim}
 $ roslaunch <package name> <launch file name>.launch <argument1>:=true
@@ -121,9 +126,7 @@ TurtleBot is a cheaper ROS-ready alternative to PR2. It is consists of a mobile 
 
 \paragraph{Robonaut 2}
 
-Robonaut 2\footnote{\ac{ROS} in space from ROSCon 2014: \url{https://vimeo.com/106993914}}, a dexterous humanoid robot, currently resides within the \ac{ISS} 400 km above the earth's surface. In 2014, a SpaceX Dracon capsule brought \ac{ROS} as well as a pair of legs for Robonaut up to the \ac{ISS}\cite{ROS_space}. Robonaut is designed for research on how robots can support the crew in maintaining and operating the space station. A potential application of Robonaut is to perform extra vehicular activities and other maintenance tasks, thus freeing up valuable time for the crew.
-
-Being the first robot with \ac{ROS} to be launched into space, 
+Robonaut 2\footnote{\ac{ROS} in space from ROSCon 2014: \url{https://vimeo.com/106993914}}, a dexterous humanoid robot, currently resides within the \ac{ISS} roughly 400 km above the earth's surface. In 2014, a SpaceX Dracon capsule brought \ac{ROS} as well as a pair of legs for Robonaut up to the \ac{ISS}\cite{ROS_space}. Robonaut is designed for research on how robots can support the crew in maintaining and operating the space station. A potential application of Robonaut is to perform extra vehicular activities and other maintenance tasks, thus freeing up valuable time for the crew.
 
 \paragraph{Industrial Hardware}
 
@@ -297,18 +300,18 @@ This mapping framework was not used in this project in order to limit the projec
     \label{fig:move_base_official}
 \end{figure}
 
-The navigation stack publishes velocity commands for translation and rotation in the $xy-plane$ in the form of a \texttt{geometry\_msgs/Twist} message with the default topic name ''\texttt{cmd\_vel}''. Mobile bases must constructed as either holonomic or differential drives.
+The navigation stack publishes velocity commands for translation and rotation in the $xy-plane$. Velocity commands are published in the form of a \texttt{geometry\_msgs/Twist} message with the default topic name ''\texttt{cmd\_vel}''. Mobile bases must be constructed as either holonomic or differential drives.
 
 \subsection{Global Planner}
 
-The \ac{ROS} navigation stack is equipped with a basic \textit{global planner}. This global planner is fitted with a set of basic path planning algorithms: e.g. Dijkstra and A*. Global path planning is performed on the global costmap which in turn is based on the 2D grid map published by a map server. A pre-mapped area is not strictly necessary for the global planner to plan a path. Instead it will just plan a naive path which can be corrected by the local planner as the robot moves along the planned trajectory.
+The \ac{ROS} navigation stack is equipped with a basic \textit{global planner}. This global planner is fitted with a set of basic path planning algorithms: e.g. Dijkstra and A*, where Dijkstra is the default option. Global path planning is performed on the global costmap which in turn is based on the 2D grid map published by a map server. A pre-mapped area is not strictly necessary for the global planner to plan a path. Instead it will just plan a naive path which can be corrected by the local planner as the robot moves along the planned trajectory.
 
 \subsection{Local Planner}
 
-Actual velocity commands from \texttt{move\_base} are published by the \textit{local planner}. The local planner will receive the global plan from the global planner, and calculate a new trajectory based on currently observed obstructions as well as the robot footprint and kinematics. Local obstructions are expressed in a dynamic grid map, i.e. the local costmap based, which is based a subset of the global map combined with real time sensor data. The dynamic local cost map enables the robot to avoid temporary and moving obstacles.
+Actual velocity commands from \texttt{move\_base} are published by the \textit{local planner}. The local planner will receive the global plan from the global planner, and calculate a new trajectory based on currently observed obstructions as well as the robot footprint and kinematics. Local obstructions are expressed in a dynamic grid map, i.e. the local costmap, which is based a subset of the global map combined with real time sensor data. The dynamic local cost map enables the robot to avoid temporary and moving obstacles.
 
-The local planner can use either the Trajectory Rollout or \ac{DWA} algorithm for trajectory planning.
+The local planner can use either the \textit{Trajectory Rollout} or \textit{\ac{DWA}} algorithm for trajectory planning.
 
-\subsection{Recovery Behaviours}
+\subsection{Recovery Behaviors}
 
-When the robot becomes stuck, it can be configured to perform a set of recovery behaviours. The default recovery behaviours available to \texttt{move\_base} are to clear the costmap, i.e. to remove obstacle information from the costmap, and to rotate in place, in the hope of discovering a new clear path. A typical sequence of behaviours is to clear the costmap, try to locate a path and then attempt an in place rotation before doing a second attempt to plan a path. If the entire series of recovery actions fails to reveal a clear path, the \texttt{move\_base} node will abort and consider the goal state to be infeasible\cite{koubaa2016robot}.
+When the robot becomes stuck, it can be configured to perform a set of recovery behaviors. The default recovery behaviors available to \texttt{move\_base} are to clear the costmap, i.e. to remove obstacle information from the costmap, and to rotate in place, in the hope of discovering a new clear path. A typical sequence of behaviors is to clear the costmap, try to locate a path and then attempt an in place rotation before doing a second attempt to plan a path. If the entire series of recovery actions fails to reveal a clear path, the \texttt{move\_base} node will abort and consider the goal state to be infeasible\cite{koubaa2016robot}.

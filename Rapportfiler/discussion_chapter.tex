@@ -3,11 +3,7 @@
 
 \section{Introduction}
 
-So far the report has presented a large number of topics and implementations.
-
-This chapter will seek to assess the implementations presented in chapter \ref{chp:implementation} based on their performance recorded in chapter \ref{chp:testing}. The following discussions will include qualitative evaluation of suitability for offshore robotic maintenance.
-
-This chapter will examine the results presented in chapter \ref{chp:results} and discuss them in light of the initial problem description for this thesis. The first section will assess the extent to which the project covers the problem description. Then follows a discussion on the strengths and weaknesses of each subsystem.
+This chapter seeks to assess the implementations presented in chapter \ref{chp:implementation}, based on their performance which is detailed in chapter \ref{chp:results}. The following discussions will include qualitative evaluation of suitability for offshore robotic maintenance. The first section will assess the extent to which the project covers the problem description. Then follows a discussion on the strengths and weaknesses of each subsystem.
 
 
 \section{Task Fulfilment}
@@ -24,22 +20,20 @@ Using \ac{ROS} as a development framework, might have been the most important fa
 
 \subsection{Assessment of Prototype Design}
 
-Roughly estimated, the robot prototype has driven approximately $1km$ during the master's project. Of these roughly $100-200m$ were driven in autonomous mode. The bulk of these distances were accomplished over a period of 3 intensive days, while the rest is spread throughout the semester. Time available for testing was somewhat reduced as a consequence of breakdowns or depleted batteries. 
-
-\subsubsection{Short}
+Roughly estimated, the robot prototype has driven approximately $1km$ during the master's project. Of these roughly $100-200m$ were driven in autonomous mode. The bulk of these distances were accomplished over a period of 3 intensive days, while the rest was spread throughout the last third of the semester. Time available for testing was somewhat reduced as a consequence of breakdowns or depleted batteries. 
 
 \subsubsection{Current Design and Robotic Maintenance}
 
-So far, the robot prototype has been developed for a few specific functionalities. A comprehensive and long-term approach towards designing a maintenance robot has not been a priority. This subsection will go through some specific design choices on the current robot, and discuss potential shortcomings. 
+So far, the robot prototype has been developed for a few specific functionalities, and coexistence has not been a priority. A comprehensive and long-term approach towards designing a maintenance robot has not been a priority. This subsection will go through some specific design choices on the current robot, and discuss potential shortcomings. 
 
 A typical offshore installation floor will most likely be made of steel and steel gratings with many holes, gaps and sharp edges\cite{graf2008mobile}. The current mobile base is better suited for completely even surfaces, and would benefit greatly for a more rugged set of wheels. \cite{graf2008mobile} is also referring to a minimum size for passage ways that could serve as guidelines for later prototypes. As the motor control card is an open loop system, slopes and increased friction for whatever reason affect the speed of the mobile base. This may cause the base to slow down, speed up or even stop completely if it is driving up a slope that is too steep.
 
-Given that the navigation stack in \ac{ROS} is thoroughly tested on square or circular bases, designing a new base to be either square or circular could increase the robustness of the navigation system. A holonomic drive could also make the robot more manoeuvrable, which may be useful in tight spaces.
+Given that the navigation stack in \ac{ROS} is thoroughly tested on square or circular bases, designing a new base to be either square or circular could increase the robustness of the navigation system. A holonomic drive could also make the robot more maneuverable, which may be useful in tight spaces.
 
 \section{Success and Quality of the ROS Integration}
 
-Integrating and configuring \ac{ROS} with the existing robot was the most time consuming task of this project. The current implementation is capable of autonomous navigation and long-term map building. Remote operation from the \ac{OCS} and Android device is also possible. 
-
+Integrating and configuring \ac{ROS} with the existing robot was the most time consuming task of this project. The current implementation is capable of autonomous navigation and long-term map building. Remote operation from the \ac{OCS} and Android device is also possible. A major shortcoming of the current configuration is the lack of usability. The current system is 
+cumbersome and difficult to use. A potential difficulty may be to separate the parts that work well from the more 'hacky' or unstable parts of the system. 
 
 
 \section{Assessment of RTAB-Map}
@@ -54,9 +48,11 @@ Another shortcoming is the small number of live mapping trials. Configuring and 
 
 A third weakness in these trials is that the system was tested with only one sensor configuration. \ac{RTAB-Map} can utilize both a RGB-D camera, a LIDAR and odometers, but these tests were only carried out with the Kinect and the LIDAR.
 
+Simulation in Gazebo has been an invaluable option throughout the project. However, the inherent difference between the real and the simulated wold should be discussed. A poorly designed simulator world could call into question whether the simulated results are representative for the mapping performance. A notable difference between the real and simulated trials, which should be kept in mind when reading the next subsection, is the how feature rich the simulated floors are. This will become apparent when the reader compares how the feature detectors extracts features. In the recorded material bundled with this thesis, it is apparent that the simulated floor is very feature rich compared to the real world floor. In retrospect, a simulated world with a simpler floor texture might have been better than \texttt{asphalt.world}.
+
 \subsection{Weaknesses}
 
-Appearance based loop closure detection with \ac{RTAB-Map} has many confirmed and potential weaknesses that must be addressed. Figure \ref{fig:gazebo_lc_features} from a simulator session illustrates an incorrect loop closure detection with a subsequent incorrect odometry correction of the previously visited locations. The figure shows that the matched features are based on the ground plane in the simulated world. Having a feature rich ground plane could be a weakness with the simulated world, as it is not was not a good analogue to the real input. The depth map generated by the Kinect was in fact quite sparse at the ground plane. Another error that occurred during simulations is incorrect merging of two maps of the same area (figure \ref{Incorrect_lc_detection}). This particular event was caused by having two very similar locations in the same area. A potential problem is that the appearance of the environment will change based on the time of day, time of year and potential wear and tear on the surroundings. How robust the feature detectors (\ac{SIFT}, \ac{SURF}, \ac{ORB} etc.) are to such changes was not investigated during this project.
+Appearance based loop closure detection with \ac{RTAB-Map} has many confirmed and potential weaknesses that must be addressed. Figure \ref{fig:gazebo_lc_features} from a simulator session illustrates an incorrect loop closure detection with a subsequent incorrect odometry correction of the previously visited locations. The figure shows that the matched features are based on the ground plane in the simulated world. Having a feature rich ground plane could be a weakness with the simulated world, as it is not was not a good analogue to the real world. The depth map generated by the Kinect was in fact quite sparse at the ground plane. Another error that occurred during simulations is incorrect merging of two maps of the same area (figure \ref{fig:Incorrect_lc_detection}). This particular event was caused by having two very similar locations in the same area. A potential problem is that the appearance of the environment will change based on the time of day, time of year and potential wear and tear on the surroundings. How robust the feature detectors (\ac{SIFT}, \ac{SURF}, \ac{ORB} etc.) are to such changes was not investigated during this project. This 
 
 \subsection{Strengths}
 

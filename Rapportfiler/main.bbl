@@ -1,6 +1,12 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{MEBF{\etalchar{+}}10}
 
+\bibitem[and]{android_bt_reference}
+Bluetoothdevice, android referencel.
+\newblock
+  \url{https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html}.
+\newblock Accessed: 04-2016.
+
 \bibitem[ARG]{ARGOS}
 {ARGOS} challenge.
 \newblock \url{http://www.argos-challenge.com/en}.
@@ -45,6 +51,11 @@ Kai Berger, Stephan Meister, Rahul Nair, and Daniel Kondermann.
 Robert Bogue.
 \newblock Europe continues to lead the way in the collaborative robot business.
 \newblock {\em Industrial Robot: An International Journal}, 43(1):6--11, 2016.
+
+\bibitem[Bro13]{brothaler2013opengl}
+Kevin Brothaler.
+\newblock {\em OpenGL ES 2 for Android}.
+\newblock The Pragmatic Programmers, 2013.
 
 \bibitem[Coo11]{cook2011mobile}
 Gerald Cook.
@@ -237,42 +248,47 @@ Pere Ridao, Marc Carreras, David Ribas, Pedro~J. Sanz, and Gabriel Oliver.
 \newblock Intervention auvs: The next challenge.
 \newblock {\em Annual Reviews in Control}, 40:227 -- 241, 2015.
 
-\bibitem[ROSa]{ROS_tut_pkg}
+\bibitem[ROSa]{ROS_catkin}
+catkin workspace wiki page.
+\newblock \url{http://wiki.ros.org/catkin/workspaces}.
+\newblock Accessed: 2016-02-05.
+
+\bibitem[ROSb]{ROS_tut_pkg}
 {ROS} create package tutorial.
 \newblock \url{http://wiki.ros.org/ROS/Tutorials/CreatingPackage}.
 \newblock Accessed: 2016-02-05.
 
-\bibitem[ROSb]{ROS_history}
+\bibitem[ROSc]{ROS_history}
 {ROS} history.
 \newblock \url{http://www.ros.org/history/}.
 \newblock Accessed: 2016-02-28.
 
-\bibitem[ROSc]{ROS_industrial}
+\bibitem[ROSd]{ROS_industrial}
 {ROS}-industrial.
 \newblock \url{http://rosindustrial.org/the-challenge/}.
 \newblock Accessed: 2016-04-05.
 
-\bibitem[ROSd]{ROS_industria_hardware}
+\bibitem[ROSe]{ROS_industria_hardware}
 {ROS}-industrial, supported hardware.
 \newblock \url{http://wiki.ros.org/Industrial/supported_hardware}.
 \newblock Accessed: 2016-04-05.
 
-\bibitem[ROSe]{ROS_install}
+\bibitem[ROSf]{ROS_install}
 {ROS} installation.
 \newblock \url{http://wiki.ros.org/indigo/Installation/Ubuntu}.
 \newblock Accessed: 2016-02-29.
 
-\bibitem[ROSf]{ROS_navigation_tuning}
+\bibitem[ROSg]{ROS_navigation_tuning}
 {ROS} navigation tuning guide.
 \newblock
   \url{http://wiki.ros.org/navigation/Tutorials/Navigation%20Tuning%20Guide}.
 
-\bibitem[ROSg]{ROS_space}
+\bibitem[ROSh]{ROS_space}
 {ROS} on the iss.
 \newblock \url{http://www.ros.org/news/2014/09/ros-running-on-iss.html}.
 \newblock Accessed: 2016-04-10.
 
-\bibitem[ROSh]{ROS_launch}
+\bibitem[ROSi]{ROS_launch}
 roslaunch.
 \newblock \url{http://wiki.ros.org/roslaunch}.
 \newblock Accessed: 2016-03-15.
@@ -292,6 +308,11 @@ Teknisk ukeblad: Ubemannede plattformer skal konkurrere med subsea.
 \newblock
   \url{http://www.tu.no/artikler/ubemannede-plattformer-skal-konkurrere-med-subsea/226868}.
 \newblock Accessed: 28-05-2016.
+
+\bibitem[tcp]{tcp_tut}
+Linuxhowtos.org - sockets tutorial.
+\newblock \url{http://www.linuxhowtos.org/C_C++/socket.htm}.
+\newblock Accessed: 03-2016.
 
 \bibitem[Vin14]{Vinnem2014}
 Jan-Erik Vinnem.

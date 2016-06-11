@@ -25,34 +25,35 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Robot model with frames for laser, Kinect, robot base and map. \relax }}{38}{figure.caption.100}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Sensor input placed with correct transformations from \texttt {base\_link}. \relax }}{38}{figure.caption.101}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Folders and files specific for the simulator.\relax }}{39}{figure.caption.102}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Nodes and topics for motion control. (see figure \ref {fig:minimum_graph} for an explanation of this figure)\relax }}{40}{figure.caption.103}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces The node \texttt {velocity\_ramp} limits the rate of change of the velocity command sent to the motor control card. The blue line represents commands entering \texttt {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{40}{figure.caption.104}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{41}{figure.caption.106}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Velocity command transmission sequence from the \texttt {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{46}{figure.caption.108}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{47}{figure.caption.110}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Operator Control Station (OCS) \ac {HMI}. The current skeleton implementation displays video from the robot. The operator can steer the robot by moving the yellow ball in the center screen. \relax }}{47}{figure.caption.112}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{48}{figure.caption.113}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces This is the caption \newline This is the second line}}{49}{figure.caption.114}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Files for configuring and launching the navigation stack.\relax }}{50}{figure.caption.120}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Detecting obstructions in 3d.\relax }}{50}{figure.caption.122}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces 3D Obstacle detection with the live robot. The nodelet \texttt {obstacles\_detection} filters out the floor and publishes a point cloud which can be sent to the \texttt {move\_base} node. The yellow arrow points to the local cost map, which is based on real-time sensor data and used by the local planner.\relax }}{51}{figure.caption.123}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Files within the package \texttt {mobile\_platform}.\relax }}{39}{figure.caption.103}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Nodes and topics for motion control. (see figure \ref {fig:minimum_graph} for an explanation of this figure).\relax }}{40}{figure.caption.104}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces The node \texttt {velocity\_ramp} limits the rate of change of the velocity command sent to the motor control card. The blue line represents commands entering \texttt {velocity\_ramp}, while the red line shows the acceleration constrained output command.\relax }}{41}{figure.caption.105}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite {aspunvik}, except for some improved connection for better short circuit prevention.\relax }}{42}{figure.caption.107}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Parameters for differential drive kinematics. Note that the frame vectors $\mathaccentV {vec}17E{z}$ and $\mathaccentV {vec}17E{x}$ refer to the base frame of the robot in this case, and not the world frame.\relax }}{43}{figure.caption.111}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Operator Control Station (OCS) \ac {HMI}. The current skeleton implementation displays live video from the robot. The operator can steer the robot by moving the yellow ball in the center screen. \relax }}{44}{figure.caption.112}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces A typical use case for ''Robot Leash''.\relax }}{46}{figure.caption.114}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Velocity command transmission sequence from the \texttt {motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).\relax }}{49}{figure.caption.109}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces This is the caption \newline This is the second line}}{50}{figure.caption.116}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Files for configuring and launching the navigation stack.\relax }}{51}{figure.caption.122}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Detecting obstructions in 3d.\relax }}{51}{figure.caption.124}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces 3D Obstacle detection with the live robot. The nodelet \texttt {obstacles\_detection} filters out the floor and publishes a point cloud which can be sent to the \texttt {move\_base} node. The yellow arrow points to the local cost map, which is based on real-time sensor data and used by the local planner.\relax }}{52}{figure.caption.125}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{55}{figure.caption.131}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of a resulting point cloud map after running \ac {RTAB-Map} in Gazebo. \relax }}{56}{figure.caption.132}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of an incorrect loop closure detection. The pink circles indicate matching features. The right part shows an incorrect map adjustment. Observe how the matching features are located on the asphalt plane.\relax }}{57}{figure.caption.133}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces An example of an accepted and correct loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{58}{figure.caption.134}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{59}{figure.caption.135}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }}{60}{figure.caption.136}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison between mapped occupancy grid and floor plan.\relax }}{61}{figure.caption.139}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces An example of an accepted loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{62}{figure.caption.140}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }}{63}{figure.caption.141}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{64}{figure.caption.145}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{64}{figure.caption.146}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{55}{figure.caption.133}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of a resulting point cloud map after running \ac {RTAB-Map} in Gazebo. \relax }}{56}{figure.caption.134}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of an incorrect loop closure detection. The pink circles indicate matching features. The right part shows an incorrect map adjustment. Observe how the matching features are located on the asphalt plane.\relax }}{57}{figure.caption.135}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces An example of an accepted and correct loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{57}{figure.caption.136}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{58}{figure.caption.137}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }}{59}{figure.caption.138}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison between mapped occupancy grid and floor plan.\relax }}{61}{figure.caption.141}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.\relax }}{62}{figure.caption.142}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }}{64}{figure.caption.143}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{figure.caption.147}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.148}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{72}{figure.caption.158}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{76}{figure.caption.159}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{80}{figure.caption.161}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{86}{figure.caption.162}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{83}{figure.caption.166}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{89}{figure.caption.166}
 \addvspace {10pt}

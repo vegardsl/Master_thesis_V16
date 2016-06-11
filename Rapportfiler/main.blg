@@ -16,12 +16,12 @@ A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: troubleshooting.aux
 A level-1 auxiliary file: dvd_contents.aux
 Database file #1: main.bib
-I was expecting a `,' or a `}'---line 93 of file main.bib
+I was expecting a `,' or a `}'---line 100 of file main.bib
  :   
  :   note = {Last accessed: 2016-06-02}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 471 of file main.bib
+I was expecting a `,' or a `}'---line 478 of file main.bib
  : keywords=Inspection; 
  :                      Maintenance; Robotics; Offshore platforms},
 I'm skipping whatever remains of this entry
@@ -42,14 +42,17 @@ Warning--to sort, need author or key in ARGOS
 Warning--to sort, need author or key in ROS_install
 Warning--to sort, need author or key in ROS_history
 Warning--to sort, need author or key in ROS_tut_pkg
+Warning--to sort, need author or key in ROS_catkin
 Warning--to sort, need author or key in ROS_launch
 Warning--to sort, need author or key in ROS_space
 Warning--to sort, need author or key in ROS_industrial
 Warning--to sort, need author or key in ROS_industria_hardware
 Warning--to sort, need author or key in kinect_discussion
 Warning--to sort, need author or key in kinect_hack
-Warning--to sort, need author or key in hokuyo_spec
 Warning--to sort, need author or key in rtabmap_setup
+Warning--to sort, need author or key in hokuyo_spec
+Warning--to sort, need author or key in tcp_tut
+Warning--to sort, need author or key in android_bt_reference
 Warning--to sort, need author or key in ROS_navigation_tuning
 Warning--can't use both author and editor fields in Berger2013
 Warning--empty author in deploymentsensabot

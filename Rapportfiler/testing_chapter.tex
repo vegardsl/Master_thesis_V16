@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-This chapter presents how the robot and the supporting implementations were tested and the results that where obtained. The same software system was used for both the simulated and live robot. It was still necessary to have some separate launch and configuration files for the simulated and hardware version (section \ref{sec:integration}). Section \ref{sec:testplan} provides an overview of the various features and components which were tested, and how these items are assessed. Next, in section \ref{sec:results_summary}, a brief overview of the results are presented. The two last sections will go through the more nuanced results and events from the simulations and live trials respectively. It was difficult to come up with a rigorous test plan because of time constraints. Much of the testing was done together with parameter tuning. 
+This chapter presents how the robot and the supporting implementations were tested and the results that where obtained. The same software system was used for both the simulated and live robot. It was still necessary to have some separate launch and configuration files for the simulated model and real hardware version (section \ref{sec:integration}). Section \ref{sec:testplan} provides an overview of the various features and components that were tested, and how these items are assessed. Next, in section \ref{sec:results_summary}, a brief overview of the results are presented. The two last sections will go through the more nuanced results and events from the simulations and live trials respectively. It was difficult to come up with a rigorous test plan because of time constraints. Much of the testing was done together with parameter tuning. 
 
 
 \section{Testplan}
@@ -16,7 +16,7 @@ The tests listed in tables \ref{tab:support_func} and \ref{tab:main_func} will b
 		\multicolumn{2}{c}{Supporting Functionality}\\
 		\hline
 		\textbf{Evaluate} & Description\\
-		\hline
+		\hline\hline
 		\textbf{Mobile application, ''Robot Leash''} & Use the mobile application to manually steer the robot.\\
 		\hline
 		\textbf{Operator Control Station} & Steer the robot from the \ac{OCS} while monitoring the robot through the live video stream. \\
@@ -73,6 +73,8 @@ The mobile App works as expected. The user can establish a Bluetooth connection 
 
 \subsubsection{Operator Control Station}
 
+Through the \ac{OCS}, an operator can connect to the robot via a TCP socket, stream video from an URL and control the robot by using the mouse. The current \ac{OCS} is a minimal application capable of demonstrating just the features mentioned, and not much more. The Kinect's narrow field of view makes it difficult to control the robot with high accuracy. A video demonstration of the \ac{OCS} is available as a digital attachment to this report under the name "ocs\_test".
+
 \subsubsection{Motor controller on XMEGA A3BU}
 
 An example of multi session mapping was recorded to the video ''\texttt{live\_multi\_session\_mapping}'' enclosed in the DVD. The live robot can successfully merge multiple maps. In Gazebo, the method is more vulnerable to similar features in different parts of the world.
@@ -83,7 +85,7 @@ Successful live loop closure detection is demonstrated in the video ''\texttt{li
 
 \subsubsection{Autonomous Navigation}
 
-Autonomous navigation was evaluated based on the ability to reach a feasable goal state, and the ability to avoid static and dynamic obstacles. The global planner works as expected in both the simulator and in the real world. The simulated robot was frequently unable to reach its goal. The real robot successfully navigated a static and dynamic obstacle course (video ''\texttt{live\_navigation\_1}'' and \texttt{2}, and ''Obstruction detection and avoidance'').
+Autonomous navigation was evaluated based on the ability to reach a feasable goal state, and the ability to avoid static and dynamic obstacles. The global planner works as expected in both the simulator and in the real world. The simulated robot was frequently unable to reach its goal. The real robot successfully navigated a static and dynamic obstacle course (video ''\texttt{live\_navigation\_1}'' and \texttt{2}, and ''Obstruction detection and avoidance''). It would fail if the new obstructions that come within the robots field of view are too close to the sensors, i.e. closer than $\approx 0.6m $. This can occur when the robot rounds tight corners or when a person steps in front of the robot within the minimum range. Distance margins to obstacles were sometimes too small.
 
 
 
@@ -103,14 +105,14 @@ The system was tested on a simulated model of the robot in Gazebo. A simulated e
 
 \ac{RTAB-Map} on the robot in Gazebo allowed controlled testing of edge cases in a controlled environment. The ''Asphalt'' world proved to be a challenge for \ac{RTAB-Map} - at least with the parameters that were used during testing. Figure \ref{fig:rviz_mapping_trial} shows an example of a resulting 3D map. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{rviz_mapping_trial_cropped}
 	\caption{An example of a resulting point cloud map after running \ac{RTAB-Map} in Gazebo. }
 	\label{fig:rviz_mapping_trial}
 \end{figure}
 
-The map quality varied greatly between the mapping trials. The path of the robot was found to have a significant impact on the recorded path between the stored locations in the \ac{RTAB-Map} system. An example of a problematic path is to drive the robot in parallel to a wall. Such a path creates few or none distinctive features as long as the robot follows this path. Figure \ref{fig:gazebo_lc_features} shows two problematic events. First, a loop closure is detected based on similarities detected on the asphalt plane. Because the loop closure is wrong, a wrong pose transform correction will be propagated backwards along the path of the robot, ultimately resulting in a displaced map.
+The map quality varied greatly between the mapping trials. The path of the robot was found to have a significant impact on the recorded path between the stored locations in the \ac{RTAB-Map} system. An example of a problematic path is to drive the robot in parallel to a wall. Such a path creates few or no distinctive features as long as the robot follows this path. Figure \ref{fig:gazebo_lc_features} shows two problematic events. First, a loop closure is detected based on similarities detected on the asphalt plane. Because the loop closure is wrong, a wrong pose transform correction will be propagated backwards along the path of the robot, ultimately resulting in a displaced map.
 
 \begin{figure}[h]
 	\centering
@@ -119,16 +121,16 @@ The map quality varied greatly between the mapping trials. The path of the robot
 	\label{fig:gazebo_lc_features}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{loop_closure_detection}
 	\caption{An example of an accepted and correct loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.}
 	\label{fig:loop_closure_detection}
 \end{figure}
 
-Another error occurred during a multi session mapping trial. The robot detected a wrong loop closure at a location with similar features to a previously mapped location. This resulted in the map seen in figure \ref{fig:Incorrect_lc_detection}. Other localization problems were apparent when driving in open areas. The estimated location of the robot would fluctuate when turning the robot as features passed in or out of view.
+Another error occurred during a multi session mapping trial. The robot detected a wrong loop closure at a location with similar features to a previously mapped location. This resulted in the map seen in figure \ref{fig:Incorrect_lc_detection}. Other localization problems were apparent when driving in open areas. The estimated location of the robot would fluctuate when changing the robot's heading as features passed in or out of view.
 
-Sensor settings is another factor that had a high impact on the \ac{SLAM} quality. When sensor ranges of the Gazebo sensor plugins are set according to the sensors technical specifications, both localization and mapping will struggle. An increased sensor range in for the simulated sensors would increase the \ac{SLAM} robustness.
+Sensor settings is another factor that had a high impact on the \ac{SLAM} quality. When sensor ranges of the Gazebo sensor plugins are set according to the sensors technical specifications, both localization and mapping will struggle. An increased sensor range in the simulated sensors would increase the \ac{SLAM} robustness.
 
 \begin{figure}[h]
 	\centering
@@ -144,7 +146,7 @@ Testing the navigation stack in Gazebo fulfilled two goals. The first goal was t
 
 The for the first trial, the robot footprint was extended well beyond the physical mobile base. The purpose of this was to prevent obstacles from getting too close to the Kinect and \ac{LIDAR}. As the minimum detectable range for the Kinect is $0.5 m$ (measured minimum depth), the footprint was extended $0.5 m$ beyond the front of the mobile base. A second parameter to be tuned is the obstacle inflation radius, i.e. the radius beyond each obstacle that is expensive or impossible to traverse. Figure \ref{fig:big_footprint} illustrates both the big footprint and the obstacle inflation radius.
 
-During trials with the big footprint, the robot showed good collision avoidance capabilities but an aversion to narrow passages. Setting the obstacle inflation radius is also a dilemma in choosing between large margins for the global path or the ability to navigate through narrow passages. 
+During trials with the big footprint, the robot showed good collision avoidance capabilities but a reduced ability to follow the planned path as well as an aversion to narrow passages. Setting the obstacle inflation radius is also a dilemma in choosing between large margins for the global path or the ability to navigate through narrow passages. 
 
 \begin{figure}[h]
 	\centering
@@ -169,7 +171,7 @@ The simulator offered the benefit of a risk free environment. This is not the ca
 
 Loop closure detection was carried out on the first floor of Gamle Elektro at Gløshaugen, NTNU (figure \ref{fig:mapping_gamle_elektro}). This environment provides a good mix of featureless and feature rich surroundings. It will also provide an additional challenge because of the many students that use the hallways. Most importantly, there are loops in the environment that allow testing of vision based loop closures and odometry error correction. 
 
-The first test run revealed two problems with the implementation, the first being odometry errors and the second being a failure to visually detect loop closures. Odometry based on laser scans would wrongfully indicate a change in the robot heading in some cases, and in other cases fail to correctly indicate heading changes when rounding corners. 
+The first large-scale test run revealed two problems with the implementation, the first being odometry errors and the second being a failure to visually detect loop closures. Odometry based on laser scans would wrongfully indicate a change in the robot heading in some cases, and in other cases fail to correctly indicate heading changes when rounding corners. The test run was recorded, and is available as a video on the DVD by the name: \texttt{live\_first\_large\_scale\_mapping.ogv}.
 
 In later experiments it was found that different mapping techniques and path choices could either prevent or cause odometry errors. It was also found that it is helpful to start a mapping session in an area that is rich in distinctive features. The map and floor plan comparison shown in figure \ref{fig:comparison} shows a map where a loop closure was successfully detected. In the same figure, notice how the upper hallway is misaligned to the rest of the map. The robot failed to detect any good visual features in this area. Figure \ref{fig:lc_match_live} shows the resulting point cloud map of the same area.
 
@@ -193,7 +195,7 @@ In later experiments it was found that different mapping techniques and path cho
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{lc_match_live}
-	\caption{An example of an accepted loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.}
+	\caption{An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.}
 	\label{fig:lc_match_live}
 \end{figure}
 
@@ -206,17 +208,17 @@ In later experiments it was found that different mapping techniques and path cho
 
 \subsubsection{Multi Session Mapping}
 
-Multi session mapping was tested by performing an initial mapping run and then starting a second mapping session from an unknown location. All multi session mapping trials were successful. 
+Multi session mapping was tested by performing an initial mapping run and then starting a second mapping session from an unknown(for the robot) location. All multi session mapping trials were successful. No special effort was made to reproduce the erroneous map merge(figure \ref{fig:Incorrect_lc_detection}) that occurred in the simulator. 
 
 \subsubsection{Navigating Among Static Obstacles}
 
-The first live navigation trials were performed by setting up a static obstacle course in a hallway. Only a few people were using this hallway, so multiple trials could be carried in under similar conditions. Most navigation trials were carried out in mapped areas. The robot performed well when navigating in known environments. In unknown environments, the robot will still plan a path. 
+The first live navigation trials were performed by setting up a static obstacle course in a hallway. Only a few people were using this hallway, so multiple trials could be carried in under similar conditions. Most navigation trials were carried out in mapped areas. The robot performed well when navigating in known environments. In unknown environments, the robot will still plan an optimistic path, but if it is unable to map or detect new obstructions, it collide.
 
 
 
 \subsubsection{Avoiding Moving Obstacles}
 
-The navigation stack is configured to use a static global map for global planning and a local cost map that is linked with the mobile base and is based on real time sensor data. The local cost map will receive LIDAR laser scans, Kinect point clouds and point clouds representing detected obstacles detected by \texttt{rtabmap}. Being a real-time map, the local cost map should enable the local planner to avoid people and other non-static obstacles.
+The navigation stack is configured to use a static global map for global planning and a local cost map that is linked with the mobile base and is based on real time sensor data. The local cost map will receive LIDAR laser scans, Kinect point clouds and point clouds representing obstacles detected by \texttt{rtabmap}'s nodelet, \texttt{obstacles\_detection}. Being a real-time map, the local cost map should enable the local planner to avoid people and other non-static obstacles.
 
 Moving obstacle avoidance testing was performed by having a person move into the planned path of the robot at different distances. Other avoidance situations would occur randomly as people were walking by the robot in the hallways. Tests showed that the robot is able to avoid non-static obstacles if the obstacle is observed at a distance larger than $0.5 - 0.8 m$. Figure \ref{fig:obstacle_avoidance} shows that the robot has successfully planned a new path around a person. If an obstacle appeared any closer than this, the new circumnavigating plan would either be too close to the original plan or not be planned at all. Detection and planning was not instantaneous. Some time would pass before the obstacle was detected and a new local plan was generated. This detection delay reduced the detectability of people walking by the robot. Figure \ref{fig:avoiding_moving_obstacles} shows an example of when the local cost map was lagging behind the actual moving obstacle.
 
@@ -243,8 +245,3 @@ Moving obstacle avoidance testing was performed by having a person move into the
 	\end{subfigure}
 	\caption{Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. }\label{fig:obstacle_avoidance}
 \end{figure}
-
-
-
-
-\section{Discussion}

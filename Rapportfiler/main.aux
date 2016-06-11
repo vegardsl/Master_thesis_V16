@@ -17,10 +17,11 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode`"\active
+\catcode `"\active 
+\reset@newl@bel
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
-\reset@newl@bel
 \newacroplural{ROV}[ROVs]{Remotely Operated Vehicles}
 \newacroplural{AUV}[AUVs]{Autonomous Underwater Vehicles}
 \newacroplural{AIV}[AIVs]{Autonomous Inspection Vehicles}
@@ -28,6 +29,8 @@
 \newacroplural{LIDAR}[LIDARs]{LIght Detection And Ranging devices}
 \newacroplural{RPAS}[RPAS]{Remotely Piloted Aerial Systems}
 \newacroplural{UAV}[UAVs]{Unmanned Aerial Vehicles}
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -90,6 +93,7 @@
 \@input{conclusion_chapter.aux}
 \bibstyle{alpha}
 \bibdata{main}
+\bibcite{android_bt_reference}{{and}{}{{}}{{}}}
 \bibcite{ARGOS}{{ARG}{}{{}}{{}}}
 \bibcite{StepwiseApproachToRobotics}{{AS12}{}{{}}{{}}}
 \bibcite{aspunvik}{{Asp13}{}{{}}{{}}}
@@ -98,11 +102,12 @@
 \bibcite{berg}{{Ber13}{}{{}}{{}}}
 \bibcite{Berger2013}{{BMNK13}{}{{}}{{}}}
 \bibcite{cobotsEurope}{{Bog16}{}{{}}{{}}}
+\bibcite{brothaler2013opengl}{{Bro13}{}{{}}{{}}}
 \bibcite{cook2011mobile}{{Coo11}{}{{}}{{}}}
 \bibcite{deploymentsensabot}{{dep12}{}{{}}{{}}}
 \bibcite{DRC}{{DRC}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{References}{79}{section*.161}}
 \bibcite{E24}{{E24}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{References}{75}{section*.160}}
 \bibcite{endres20143}{{EHS{$^{+}$}14}{}{{}}{{}}}
 \bibcite{ElReedy2012383}{{ER12a}{}{{}}{{}}}
 \bibcite{ElReedy2012563}{{ER12b}{}{{}}{{}}}
@@ -132,17 +137,19 @@
 \bibcite{peerless2016robot}{{PSM{$^{+}$}16}{}{{}}{{}}}
 \bibcite{rosbook15}{{QGS15}{}{{}}{{}}}
 \bibcite{Ridao2015227}{{RCR{$^{+}$}15}{}{{}}{{}}}
-\bibcite{ROS_tut_pkg}{{ROSa}{}{{}}{{}}}
-\bibcite{ROS_history}{{ROSb}{}{{}}{{}}}
-\bibcite{ROS_industrial}{{ROSc}{}{{}}{{}}}
-\bibcite{ROS_industria_hardware}{{ROSd}{}{{}}{{}}}
-\bibcite{ROS_install}{{ROSe}{}{{}}{{}}}
-\bibcite{ROS_navigation_tuning}{{ROSf}{}{{}}{{}}}
-\bibcite{ROS_space}{{ROSg}{}{{}}{{}}}
-\bibcite{ROS_launch}{{ROSh}{}{{}}{{}}}
+\bibcite{ROS_catkin}{{ROSa}{}{{}}{{}}}
+\bibcite{ROS_tut_pkg}{{ROSb}{}{{}}{{}}}
+\bibcite{ROS_history}{{ROSc}{}{{}}{{}}}
+\bibcite{ROS_industrial}{{ROSd}{}{{}}{{}}}
+\bibcite{ROS_industria_hardware}{{ROSe}{}{{}}{{}}}
+\bibcite{ROS_install}{{ROSf}{}{{}}{{}}}
+\bibcite{ROS_navigation_tuning}{{ROSg}{}{{}}{{}}}
+\bibcite{ROS_space}{{ROSh}{}{{}}{{}}}
+\bibcite{ROS_launch}{{ROSi}{}{{}}{{}}}
 \bibcite{rtabmap_setup}{{rta}{}{{}}{{}}}
 \bibcite{statoil_ubemannet}{{sta}{}{{}}{{}}}
 \bibcite{subsea_konkurranse}{{sub}{}{{}}{{}}}
+\bibcite{tcp_tut}{{tcp}{}{{}}{{}}}
 \bibcite{Vinnem2014}{{Vin14}{}{{}}{{}}}
 \bibcite{kinect_book}{{WA12}{}{{}}{{}}}
 \@writefile{toc}{\vspace {1em}\noindent \bfseries  Appendices\par \vspace {-.5em}}
@@ -150,5 +157,5 @@
 \@input{troubleshooting.aux}
 \@input{dvd_contents.aux}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{115}
-\memsetcounter{lastpage}{87}
+\memsetcounter{lastsheet}{121}
+\memsetcounter{lastpage}{93}
