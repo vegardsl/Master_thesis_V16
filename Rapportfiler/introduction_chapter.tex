@@ -3,7 +3,7 @@
 
 \section{About the Project}
 
-This thesis presents and documents this authors master's project, \textbf{TTK4900}, on robotic maintenance which was carried out at the Department of Engineering Cyberentics (ITK) in the spring of 2016. \textbf{TTK4900} is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks with the possibility of extension in case of a valid reason. The work presented in this thesis is carried out as independent work which is supervised by Professor Tor Onshus through regular status meetings.
+This thesis presents and documents this authors master's project, \textbf{TTK4900}, on robotic maintenance which was carried out at the Department of Engineering Cyberentics (ITK) in the spring of 2016. \textbf{TTK4900} is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks with the possibility of extension in case of a valid reason. The work presented in this thesis is carried out as independent work, which is supervised by Professor Tor Onshus through regular status meetings.
 
 %\subsection{Long Term Goal and Previous Work}
 
@@ -37,9 +37,13 @@ This author's specialization project\cite{lindrup} presented an obstruction dete
 
 \section{Implementation Overview}
 
+\subsection{Deciding on a Goal}
+
+To meet objective 4 in the problem description, it was decided to focus on vision based navigation. A robot with the ability to build a map of the surroundings and relocate autonomously was considered to be a good starting point for further development of vision based solutions.
+
 \subsection{Selecting Tools and Hardware}
 
-To meet objective 4 in the problem description, it was decided to focus on vision based navigation. A robot with the ability to build a map of the surroundings and relocate autonomously was considered to be a good starting point for further vision based solutions. As a continuation of this author's specialization project, the robot was equipped with a 3D camera, a Kinect for XBOX 360 capable of perceiving depth images at a high frame rate ($30 Hz$). 
+As a continuation of this author's specialization project, the robot was equipped with a 3D camera, a Kinect for XBOX 360 capable of perceiving depth images at a high frame rate ($30 Hz$). 
 
 To use the Kinect, the initial plan was to utilize the \ac{PCL} in combination with a \ac{SLAM} method (e.g. Kintinous\cite{Kintinous}). This approach came with a high degree of uncertainty that would reduce the project scope significantly, and increase the likelihood of an unsatisfactory result. The Robot Operating System (ROS), an open source robot software framework, came up as an alternative tool late in January. 
 
