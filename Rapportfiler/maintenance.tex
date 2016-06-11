@@ -22,12 +22,10 @@ This chapter provides a brief introduction to how topside maintenance is perform
 %Solution: Periodic maintenance.
 
 \section{Robotizing Offhsore Maintenance}
-
+\label{sec:robotizing_offhsore_maintenance}
 %In light of the factors listed earlier, maintenance and service robots will be designed with the following goals in mind\cite{AutonomousOG}:
 
-
-
-
+Recent research projects, concept labs and prototypes seem to focus on a solution where stationary or mobile robots serve in a supporting role in parallel to the dedicated process automation systems\cite{StepwiseApproachToRobotics}\cite{sintef_robot_consept}\cite{graf2008mobile}\cite{6094661}. 
 
 A feasibility study performed by researchers from \ac{Fraunhofer IPA}\cite{6094661} identified several topside production tasks and ranked them according to their resource demand. 
 %Table \ref{tab:tasks} shows the ranked tasks based on a preselected installation. While all tasks would benefit from ''robotizing'',  
@@ -57,7 +55,7 @@ A & Domestic service robot & To autonomously perform floor cleaning, catering, l
 \label{tab:tasks_capabilities}
 \end{table}
 
-\cite{6094661} suggests five tasks that will have a high impact on \ac{HSE} and efficiency:
+The feasability study from \cite{6094661} suggests five tasks that will have a high impact on \ac{HSE} and efficiency:
 \begin{itemize}
 \item Monitoring of gauges and meters
 \item (Visual) inspection of remote operated valves
@@ -66,6 +64,7 @@ A & Domestic service robot & To autonomously perform floor cleaning, catering, l
 \item Maintenance of gas and fire sensors
 \end{itemize}
 
+\cite{StepwiseApproachToRobotics} from ABB suggests a stepwise approach toward robotization. The suggested approach is to break each concept and problem down into specific manageable tasks, before allowing the developed solutions to mature by exposing them to increasingly realistic test scenarios. Another path towards robotization corresponds to the difficulty assessments and classifications in table \ref{tab:tasks_capabilities}\cite{graf2008mobile}. This roadmap starts with the bare necessities, e.g. tele-operation, ATEX certifications and safety. This will provide the foundation for developing inspection or surveillance robots, before the complexity can be increased by allowing robots to interact with and manipulate the processes. The end-goal is of course a fully autonomous maintenance system capable of operating the process itself\cite{graf2008mobile}.
 
 %\begin{table}[h!]
 %\centering
@@ -247,4 +246,4 @@ NRECs contribution, Sensabot, is a remotely operated inspection robot designed f
 
 Both ABB and SINTEF ICT has developed lab facilities to test various concepts for robotic maintenance. Both facilities use non-mobile robots which utilize a rich set of inspection and manipulation tools, as well as \ac{HMI} equipment for remote operation and control. The two research communities differ in that ABB has tested their solutions in real environments, which subjects their solution to ATEX requirements and an extensive risk management regime\cite{StepwiseApproachToRobotics}. SINTEF has a long list of contributui
 
-Another effort towards robotic maintenance is the ARGOS challenge (Autonomous Robot for Gas and Oil Sites). The purpose of the challenge is to promote innovation, understanding and awareness towards robotic maintenance of \ac{OG} sites in harsh environments\cite{ARGOS}.
+Another effort towards robotic maintenance is the ARGOS challenge (Autonomous Robot for Gas and Oil Sites). The purpose of the challenge is to promote innovation, understanding and awareness towards robotic maintenance of \ac{OG} sites in harsh environments\cite{ARGOS}\cite{AutonomousOG}.

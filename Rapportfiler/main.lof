@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces System Concept. An on-board computer using \ac {ROS} to handle actuators and sensors. Remote operation is available through an \ac {OCS} or a hand-held device with Bluetooth.\relax }}{4}{figure.caption.20}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Subsea 7's AIV. This is the first commercial autonomous inspection vehicle for subsea operations \cite {pressAIV}\relax }}{11}{figure.caption.35}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{11}{figure.caption.39}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Team HRP2-Tokyo's robot turning a valve during DARPA Robotics Challenge 2015 (Image credits: DARPA Robotics Challenge)\relax }}{12}{figure.caption.39}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces An early version of the maintenance robot ''Sensabot'', developed by National Robotic Engineering Center (NREC) (Image credits: NREC)\relax }}{12}{figure.caption.41}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces A minimal \ac {ROS} graph. There are two nodes, \texttt {node\_1} and \texttt {node\_2}. \texttt {node\_1} publishes data, i.e. a topic, by the name \texttt {topic\_1}. \texttt {node\_2} can receive the data by subscribing to \texttt {topic\_1}.\relax }}{17}{figure.caption.52}
@@ -51,9 +51,9 @@
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.148}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{76}{figure.caption.159}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{76}{figure.caption.160}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{86}{figure.caption.162}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{86}{figure.caption.163}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{89}{figure.caption.166}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{89}{figure.caption.167}
 \addvspace {10pt}

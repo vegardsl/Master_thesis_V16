@@ -23,18 +23,18 @@
 \contentsline {chapter}{\chapternumberline {2}Robotic Maintenance on Topside Offshore Platforms}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Robotizing Offhsore Maintenance}{6}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Structural Maintenance and Environmental Considerations}{6}{subsection.2.2.1}
-\contentsline {subsubsection}{Corrosion}{6}{section*.25}
+\contentsline {subsection}{\numberline {2.2.1}Structural Maintenance and Environmental Considerations}{7}{subsection.2.2.1}
+\contentsline {subsubsection}{Corrosion}{7}{section*.25}
 \contentsline {subsubsection}{Structural Fatigue}{8}{section*.27}
-\contentsline {subsection}{\numberline {2.2.2}Production-specific Hazards}{8}{subsection.2.2.2}
-\contentsline {subsubsection}{Hydrocarbon leaks}{8}{section*.30}
+\contentsline {subsection}{\numberline {2.2.2}Production-specific Hazards}{9}{subsection.2.2.2}
+\contentsline {subsubsection}{Hydrocarbon leaks}{9}{section*.30}
 \contentsline {subsubsection}{Fire}{9}{section*.32}
 \contentsline {subsubsection}{Explosions}{9}{section*.33}
-\contentsline {subsection}{\numberline {2.2.3}Implications for Robot Design}{9}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Implications for Robot Design}{10}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Robotic Maintenance Today}{10}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Trends and Potential}{10}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Subsea Maintenance and Inspection}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Disaster Response}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Disaster Response}{12}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Topside Offshore and Onshore Robotic Maintenance}{12}{subsection.2.3.4}
 \contentsline {chapter}{\chapternumberline {3}Background Theory}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}
@@ -109,8 +109,7 @@
 \contentsline {subsection}{\numberline {4.5.1}Robot Description Plugins}{38}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}ROS Nodes for Motion Control}{39}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Velocity Command Flow}{39}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Velocity Command Sources}{40}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Motor Control Card Firmware on XMEGA A3BU}{40}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.2}Motor Control Card Firmware on XMEGA A3BU}{40}{subsection.4.6.2}
 \contentsline {subsubsection}{ROS-Motor Driver Communication}{41}{section*.108}
 \contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{41}{section*.110}
 \contentsline {section}{\numberline {4.7}Operator Control Station (OCS)}{44}{section.4.7}
@@ -154,11 +153,11 @@
 \contentsline {section}{\numberline {6.3}Overall Assessment}{67}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Choice of Development Tools}{67}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Assessment of Prototype Design}{68}{subsection.6.3.2}
-\contentsline {subsubsection}{Current Design and Robotic Maintenance}{68}{section*.149}
+\contentsline {subsubsection}{Current Design and Robotic Maintenance}{68}{section*.150}
 \contentsline {section}{\numberline {6.4}Success and Quality of the ROS Integration}{68}{section.6.4}
 \contentsline {section}{\numberline {6.5}Assessment of RTAB-Map}{69}{section.6.5}
 \contentsline {subsection}{\numberline {6.5.1}Quality and Thoroughness of the Tests}{69}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Weaknesses}{69}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.2}Weaknesses}{70}{subsection.6.5.2}
 \contentsline {subsection}{\numberline {6.5.3}Strengths}{70}{subsection.6.5.3}
 \contentsline {subsection}{\numberline {6.5.4}Suitability For Robotic Maintenance}{70}{subsection.6.5.4}
 \contentsline {subsection}{\numberline {6.5.5}Mapping}{70}{subsection.6.5.5}
@@ -173,29 +172,29 @@
 \contentsline {section}{\numberline {7.1}Future Work}{75}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Autonomous Non-Destructive Testing}{75}{subsection.7.1.1}
 \contentsline {subsection}{\numberline {7.1.2}Large Scale Kinect Fusion - Kintinous}{75}{subsection.7.1.2}
-\contentsline {subsubsection}{Improve the Communication Protocols}{75}{section*.152}
-\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{76}{section*.153}
+\contentsline {subsubsection}{Improve the Communication Protocols}{75}{section*.153}
+\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{76}{section*.154}
 \contentsline {subsection}{\numberline {7.1.3}Hardware}{76}{subsection.7.1.3}
-\contentsline {subsubsection}{Kinect Sensor Location}{76}{section*.154}
-\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{76}{section*.155}
-\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{76}{section*.156}
-\contentsline {subsubsection}{Wheels}{76}{section*.158}
+\contentsline {subsubsection}{Kinect Sensor Location}{76}{section*.155}
+\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{76}{section*.156}
+\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{76}{section*.157}
+\contentsline {subsubsection}{Wheels}{76}{section*.159}
 \contentsline {section}{\numberline {7.2}Final Conclusion}{77}{section.7.2}
-\contentsline {chapter}{References}{79}{section*.161}
+\contentsline {chapter}{References}{79}{section*.162}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{85}{appendix.A}
 \contentsline {section}{\numberline {A.1}Hardware Setup}{85}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Equipment List}{85}{subsection.A.1.1}
 \contentsline {section}{\numberline {A.2}Installation}{85}{section.A.2}
 \contentsline {subsection}{\numberline {A.2.1}Software list}{85}{subsection.A.2.1}
-\contentsline {subsubsection}{Compatibility Issues}{86}{section*.163}
+\contentsline {subsubsection}{Compatibility Issues}{86}{section*.164}
 \contentsline {subsection}{\numberline {A.2.2}Install Ubuntu}{86}{subsection.A.2.2}
 \contentsline {subsection}{\numberline {A.2.3}Download ROS}{86}{subsection.A.2.3}
 \contentsline {section}{\numberline {A.3}Configuring the Project}{86}{section.A.3}
 \contentsline {subsection}{\numberline {A.3.1}Configuring the ROS Workspace}{86}{subsection.A.3.1}
 \contentsline {subsection}{\numberline {A.3.2}Configuring the Bluetooth Connection}{86}{subsection.A.3.2}
-\contentsline {subsubsection}{1 - Install Qt5}{87}{section*.164}
-\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{87}{section*.165}
+\contentsline {subsubsection}{1 - Install Qt5}{87}{section*.165}
+\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{87}{section*.166}
 \contentsline {appendix}{\chapternumberline {B}Troubleshooting}{89}{appendix.B}
 \contentsline {section}{\numberline {B.1}Introduction}{89}{section.B.1}
 \contentsline {section}{\numberline {B.2}Hardware}{89}{section.B.2}
