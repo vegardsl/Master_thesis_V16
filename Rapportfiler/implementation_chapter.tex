@@ -95,7 +95,7 @@ The calibration program needs to know the number of inner corners of the chessbo
 
 \subsection{Power Supply and Battery Safety}
 
-This system requires only a subset of the equipment mounted on the robot. A 24V battery used by Berg and Aspunvik is replaced by a $230VAC/24VDC$ converter. Besides the $AC/DC$ converter, the Kinect and wireless router are the only components which require a supply of $230V AC$. A possible power supply setup is shown in figure \ref{fig:power}.
+This system requires only a subset of the equipment mounted on the robot. A 24V battery used by M. Berg and P. Aspunvik(\cite{berg} and \cite{aspunvik}) is replaced by a $230VAC/24VDC$ converter. Besides the $AC/DC$ converter, the Kinect and wireless router are the only components which require a supply of $230V AC$. A possible power supply setup is shown in figure \ref{fig:power}.
 
 \begin{figure}[h]
 	\centering
@@ -104,7 +104,7 @@ This system requires only a subset of the equipment mounted on the robot. A 24V 
 	\label{fig:power}
 \end{figure}
 
-The car battery is now placed in the lower shelf in the rear compartment where it is surrounded by aluminium. This presents an unacceptable risk, because a short circuit is much more likely if the battery poles are uncovered. To reduce the possibility of having a short circuit, an isolating rubber pad was glued to the inner wall and roof next to the battery in the rear compartment. New isolated battery connections provide additional protection. 
+The car battery is now placed in the lower shelf in the rear compartment where it is surrounded by aluminium. This presents an unacceptable risk, because a short circuit is much more likely in this location if the battery poles are uncovered. To reduce the possibility of having a short circuit, an isolating rubber pad was glued to the inner wall and roof next to the battery in the rear compartment. New isolated battery connections provide additional protection. 
 
 \section{ROS Integration Overview}
 \label{sec:integration}
@@ -133,7 +133,7 @@ The robot software implementation is placed within a \texttt{catkin} workspace (
 	\label{fig:file_system}
 \end{figure}
 
-Each package will be introduced in the following sections. The purpose of presenting the file systems is to clarify which parts of the system that was implemented by this author. A short description of each package is given in table \ref{tab:list_packages}.
+Each package will be introduced in the following sections. The purpose of presenting the file systems is to clarify which parts of the system that was implemented by this author. A short description of each package is given in table \ref{tab:list_packages}, and their place in the workspace hierarchy is shown in figure \ref{fig:file_system}.
 
 \begin{table}
 	\centering
@@ -282,7 +282,7 @@ To properly simulate the robot, Gazebo needs a way to simulate the differential 
 
 \subsection{Robot Description Plugins}
 
-The \ac{URDF} model was expanded with plugins that simulate the motor control card, the \ac{LIDAR} and the Kinect. The plugins are provided by Gazebo and are intended for use in \ac{ROS}. 
+The \ac{URDF} model in \texttt{mar\_model\_sim.urdf} was expanded with plugins that simulate the motor control card, the \ac{LIDAR} and the Kinect. The plugins are provided by Gazebo and are intended for use in \ac{ROS}. 
 
 The motor controller is simulated by the \texttt{skid\_steer\_drive\_controller} plugin. This plugin was preferred over the \texttt{differential\_drive\_controller} because it supports four wheel joints instead of two, and because the skid steering controller was considered to be good enough. 
 
@@ -372,7 +372,7 @@ Within \ac{ROS}, velocity commands are passed around between nodes in the form o
 
 where each vector contains float values for the directions $x$, $y$ and $z$ with respect to the robot's base frame. Because of the motion constraints of this robot, only \texttt{linear.x} and \texttt{angular.z} are of relevance, and the data which is passed to the motor control card (XMEGA A3BU) is therefore limited to these two values. The motor control card must now translate the linear and angular velocities into wheel speeds. Next, these speeds must be related to a duty cycle for the \ac{PWM} signal which controls each of the four motors.
 
-To perform the translation, it is assumed that the mobile base can be described as a vehicle with differential drive steering. Wheel commands will only distinguish between left or right - not front or aft. Equations of motion which relates angular and linear velocity to wheel velocities can be found in\cite{cook2011mobile}. 
+To perform the translation, it is assumed that the mobile base can be described as a vehicle with differential drive steering. Wheel commands will only distinguish between left or right - not front or aft. Equations of motion which relates angular and linear velocity to wheel velocities can be found in\cite{cook2011mobile}, and are shown below:
 
 \begin{subequations}\label{eq:subeqns}
   	\begin{align}
@@ -395,7 +395,7 @@ $W$ is the spacing between the wheels as shown in figure \ref{fig:robot_kinemati
  \begin{figure}[H]
  	\centering
  	\begin{subfigure}[b]{0.58\textwidth}
- 		\includegraphics[width=\textwidth]{robot_kinematics}
+ 		\includegraphics[width=\textwidth]{robot_kinematics2}
  		\caption{Differential drive parameters.}
  		\label{fig:robot_kinematics}
  	\end{subfigure}
@@ -405,7 +405,7 @@ $W$ is the spacing between the wheels as shown in figure \ref{fig:robot_kinemati
  		\caption{Wheel diameter.}
  		\label{fig:wheel_diameter}
  	\end{subfigure}
- 	\caption{\label{fig:robot_kinematics}Parameters for differential drive kinematics. Note that the frame vectors $\vec{z}$ and $\vec{x}$ refer to the base frame of the robot in this case, and not the world frame.}
+ 	\caption{\label{fig:wheel_diameter}Parameters for differential drive kinematics. Note that the frame vectors $\vec{z}$ and $\vec{x}$ refer to the base frame of the robot in this case, and not the world frame.}
  \end{figure}
 
 A wheel command update cycle will begin, on the motor control card, when a new velocity setting is received from \ac{ROS}. After receiving the ''end-of-message'' token, ''\texttt{Esc}'', the receiver state machine will switch to the \texttt{after\_message} state (see figure \ref{fig:motor_cmd_sequence}). Three things will happen within the \texttt{after\_message} block of the state machine:
@@ -438,7 +438,7 @@ The \ac{OCS} itself will connect to \texttt{server\_wifi} by means of a TCP sock
 \end{figure}
 
 
-The \ac{OCS} is created with Qt5, a cross-platform framework with a vast set of APIs and a large framework for \ac{GUI} design and development. The \ac{GUI} was planned to consist of three screens, two multi function displays on each side of a control screen. In its current form, only the camera display on the left side is implemented, and the user can interact with a yellow ball on the center screen to control the robot. Code implementation for the center display, \texttt{RobotControlWidget} is based on sample code from the "elasticnodes" example of the Qt Toolkit\footnote{\url{http://doc.qt.io/qt-5/qtwidgets-graphicsview-elasticnodes-example.html}}. The yellow ball is defined by a \texttt{ControlNode} object. The position of the node is subjected to mass-spring-dampener dynamics, to ensure that the ball will return to center when released. Two force vectors $F_x$ and $F_y$ are calculated and applied to the motion equations of the \texttt{controlNode} at a constant rate.  
+The \ac{OCS} is created with Qt5, a cross-platform framework with a vast set of APIs and a large framework for \ac{GUI} design and development. The \ac{GUI} was planned to consist of three screens: two multi function displays on each side of a control screen. In its current form, only the camera display on the left side is implemented, and the user can interact with a yellow ball on the center screen to control the robot. Code implementation for the center display, \texttt{RobotControlWidget} is based on sample code from the "elasticnodes" example of the Qt Toolkit\footnote{\url{http://doc.qt.io/qt-5/qtwidgets-graphicsview-elasticnodes-example.html}}. The yellow ball is defined by a \texttt{ControlNode} object. The position of the node is subjected to mass-spring-dampener dynamics, to ensure that the ball will return to center when released. Two force vectors $F_x$ and $F_y$ are calculated and applied to the motion equations of the \texttt{controlNode} at a constant rate.  
 
 
 \section{The Hand Held Remote Control - \textit{Robot Leash}}
@@ -511,7 +511,7 @@ Sensor data can be sent directly to \texttt{rtabmap}.
 
 \subsubsection{3 - Kinect + LIDAR}
 
-This is the configuration that was used in this project. Odometry data is generated by a the scanmatcher within Hector SLAM (section \ref{sec:hector}). \texttt{rtabmap} receives point clouds
+This is the configuration that was used in this project. Odometry data is generated by a the scanmatcher within Hector SLAM (section \ref{sec:hector}). 
 
 \subsubsection{4 - Kinect + Odometry}
 
@@ -529,6 +529,8 @@ In this mode, odometry will be generated by the \texttt{rgbd\_odometry} node bun
 %		\textbf{Operator Control Station} & A simple Operator Control Station (OCS) based on Qt enables an operator to control the robot via a wireless TCP/IP connection. The \ac{OCS} can display a live video stream from the Kinect sensor. \\
 %	\end{tabular}
 %\end{center}
+
+\texttt{rtabmap} subscribes to two image topics. One topic for depth images, \texttt{/openni/depth/image\_raw}, and another for the rgb image, \texttt{/openni/rgb/image\_raw}. 
 
 \subsection{Adding 3D Obstruction Detection}
 

@@ -1,6 +1,13 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{MEBF{\etalchar{+}}10}
 
+\bibitem[Ama15]{fukushima_report}
+Director General~Yukiya Amano.
+\newblock {\em The Fukushima Daiichi Accident, Report By the Director General}.
+\newblock IAEA, 2015.
+\newblock
+  \url{http://www-pub.iaea.org/MTCD/Publications/PDF/Pub1710-ReportByTheDG-Web.pdf}.
+
 \bibitem[and]{android_bt_reference}
 Bluetoothdevice, android referencel.
 \newblock
@@ -313,6 +320,14 @@ Teknisk ukeblad: Ubemannede plattformer skal konkurrere med subsea.
 Linuxhowtos.org - sockets tutorial.
 \newblock \url{http://www.linuxhowtos.org/C_C++/socket.htm}.
 \newblock Accessed: 03-2016.
+
+\bibitem[TSSO{\etalchar{+}}10]{transeth2010robotic}
+Aksel~A Transeth, {\O}ystein Skotheim, Henrik Schumann-Olsen, Gorm Johansen,
+  Jens Thielemann, and Erik Kyrkjeb{\o}.
+\newblock A robotic concept for remote maintenance operations: A robust 3d
+  object detection and pose estimation method and a novel robot tool.
+\newblock In {\em Intelligent Robots and Systems (IROS), 2010 IEEE/RSJ
+  International Conference on}, pages 5099--5106. IEEE, 2010.
 
 \bibitem[Vin14]{Vinnem2014}
 Jan-Erik Vinnem.

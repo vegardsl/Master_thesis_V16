@@ -3,13 +3,13 @@
 
 \section{About the Project}
 
-This thesis presents and documents this authors master's project, \textbf{TTK4900}, on robotic maintenance which was carried out at the Department of Engineering Cyberentics (ITK) in the spring of 2016. \textbf{TTK4900} is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks with the possibility of extension in case of a valid reason. The work presented in this thesis is carried out as independent work, which is supervised by Professor Tor Onshus through regular status meetings.
+This thesis presents and documents this author's master's project, \textbf{TTK4900}, on robotic maintenance which was carried out at the Department of Engineering Cyberentics (ITK) in the spring of 2016. \textbf{TTK4900} is worth 30 credits (studiepoeng), and the project duration is set to 22 full-time weeks with the possibility of extension in case of a valid reason. The work presented in this thesis is carried out as independent work, which is supervised by Professor Tor Onshus through regular status meetings.
 
 %\subsection{Long Term Goal and Previous Work}
 
-\subsection{The Topic - Mobile Autonomous Robot}
+\subsection{The Project Proposal - Mobile Autonomous Robot}
 
-The robot system that was used in this project has been developed over the course of many preceding master and specialization projects. The long term goal of these projects is to develop mobile autonomous robot concepts for maintenance and inspection on topside offshore installations. The topic is given by Professor Tor Onshus at \ac{ITK}. A description of this topic\footnote{\url{http://folk.ntnu.no/onshus/Oppgaver.htm}}, suggests some possible applications for such a robot: 
+The robot system that was used in this project has been developed over the course of many preceding master and specialization projects. The long term goal of these projects is to develop mobile autonomous robot concepts for maintenance and inspection on topside offshore installations. The topic of this thesis is based on the project proposal which is given by Professor Tor Onshus at \ac{ITK}. A description of this proposal\footnote{\url{http://folk.ntnu.no/onshus/Oppgaver.htm}}, suggests some possible applications for such a robot: 
 
 \begin{itemize}
 	\item The robot could serve in a supporting role as a part of \ac{IO}.
@@ -25,15 +25,15 @@ The robot system that was used in this project has been developed over the cours
 The system in its current form is built around a robot manipulator arm, SCORBOT-ER4u. Kristian Saxrud Bekken focused on improving previous work on the system, which was done as early as 2005\cite{bekken}. Bekken's work comprise telepresence through a stereo video transmission, a collision avoidance system for the robot arm and an improved \ac{HMI} implementation.
 
 \subsubsection{Building the Mobile Platform}
-During the spring of 2013, Petter Aspunvik devoted his master's project to develop a mobile base for the robotic arm\cite{aspunvik}. Aspunvik's thesis has served as a user manual for many of the robot systems in the early stages of this project. The current motor control firmware used Aspunvik's implementation as a starting points.
+During the spring of 2013, Petter Aspunvik devoted his master's project to develop a mobile base for the robotic arm\cite{aspunvik}. Aspunvik's thesis has served as a user manual for many of the robot systems in the early stages of this project. The current motor control firmware used Aspunvik's implementation as a starting point.
 
 \subsubsection{Simultaneous Localization and Mapping}
 
-In parallel to Aspunvik's project, Mikael Berg developed a solution for \ac{SLAM} and autonomous navigation for the same robot\cite{berg}. His software is programmed in Google's Go language, and runs on Windows 7 within the pre-installed on-board computer. The resulting system successfully utilized Hector SLAM with a LIDAR and odometry from two encoder wheels for 2D navigation and \ac{SLAM}. Berg considered to create a solution based on \ac{ROS} which requires a Linux platform. In the end, he opted to target the Windows platform as this is the only operating system which is compatible with the robotic arm. The ''future work''-section in Berg's thesis suggests improvements in the form of 3D obstruction detection, because the LIDAR is limited to detection in a plane. He also mentions object recognition and dynamic re-planning as possible extensions. 
+In parallel to Aspunvik's project, Mikael Berg developed a solution for \ac{SLAM} and autonomous navigation for the same robot\cite{berg}. His software is programmed in Google's Go language, and runs on Windows 7 within the pre-installed on-board computer. The resulting system successfully utilized Hector SLAM with a LIDAR and odometry from two encoder wheels for 2D navigation and \ac{SLAM}. Berg considered to create a solution based on \ac{ROS} which requires a Linux platform. In the end, he opted to target the Windows platform as this apparently is the only operating system which is compatible with the robotic arm. The ''future work''-section in Berg's thesis suggests improvements in the form of 3D obstruction detection, because the LIDAR is limited to detection in a plane. He also mentions object recognition and dynamic re-planning as possible extensions. 
 
 \subsubsection{Last Year's Specialization Project}
 
-This author's specialization project\cite{lindrup} presented an obstruction detector based on two unsynchronized IP-cameras and a stereo matching algorithm in \ac{OpenCV}. Because the cameras were unsynchronized, the system would become useless whenever there is relative motion between the robot and the surroundings. The obstruction detector lacked a critical feature: a floor filter to separate the ground from potential obstructions. The implementation presented in this master's project is unrelated to the preceding specialization project, except for some useful c++ functions.
+This author's specialization project\cite{lindrup} presented an obstruction detector based on two unsynchronized IP-cameras and a stereo matching algorithm in \ac{OpenCV}. Because the cameras were unsynchronized, the system would become useless whenever there is relative motion between the robot and the surroundings. The obstruction detector lacked a critical feature: a floor filter to separate the ground from potential obstructions. The implementation presented in this master's project is unrelated to the preceding specialization project, except for some useful c++ functions and ideas that are brought forward.
 
 \section{Implementation Overview}
 

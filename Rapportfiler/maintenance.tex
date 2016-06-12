@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-This project is a small step towards a larger long-term goal concerning robotic maintenance on topside offshore installations. This chapter puts the implementation described in chapter \ref{chp:implementation}, into the context of the long-term goal. 
+This project is a small step towards a larger long-term goal concerning robotic maintenance on topside offshore installations. This chapter puts the implementation described in chapter \ref{chp:implementation} into the context of the long-term goal. 
 
 Over the last decade, the \ac{OG} industry has shown an increased interest in the potential benefits of automating the normal operation of remote offshore installations. Some satellite platforms, such as Sleipner B are already unmanned during normal operation, and the more recent Valemon platform is planned to become normally unmanned as well. It is now clear that robotics has several potential applications in process plants, and particularly in remote \ac{OG} installations. It is, however, difficult to predict how and to what extent robots will be applied in plant automation as other innovative solutions may arise\cite{statoil_ubemannet}\cite{subsea_konkurranse}\cite{E24}. Current research on plant automation is mainly motivated by two factors\cite{AutonomousOG} \cite{StepwiseApproachToRobotics}:
 
@@ -14,7 +14,7 @@ Over the last decade, the \ac{OG} industry has shown an increased interest in th
 
 An additional overarching driving factor is that \ac{OG} fields are becoming more difficult to reach. As \ac{OG} fields in shallow waters are depleted, production is moved to deeper waters. This complicates the extraction process and reduces the profit margin. A solution to this challenge is to increase efficiency through further automation. 
 
-This chapter provides a brief introduction to how topside maintenance is performed today, how these maintenance tasks could be robotized. The section is concluded with a discussion on how well modern robotics is suited for the task. 
+This chapter provides a brief introduction to how topside maintenance is performed today, how these maintenance tasks could be robotized. The chapter is concluded with a brief discussion on how well modern robotics is suited for the task. 
 
 %\subsection{Potential Maintenance Tasks}
 
@@ -63,6 +63,8 @@ The feasability study from \cite{6094661} suggests five tasks that will have a h
 \item Inspection of equipment for leakage
 \item Maintenance of gas and fire sensors
 \end{itemize}
+
+Recovery scenarios is another area of application for offshore robots. As explained in \cite{AutonomousOG}, a robot could be used to handle hazardous events that will lead to an evacuation of platform personnel. The robot could be a valuable tool in containing the hazardous situation quickly, thus reducing production downtime. 
 
 \cite{StepwiseApproachToRobotics} from ABB suggests a stepwise approach toward robotization. The suggested approach is to break each concept and problem down into specific manageable tasks, before allowing the developed solutions to mature by exposing them to increasingly realistic test scenarios. Another path towards robotization corresponds to the difficulty assessments and classifications in table \ref{tab:tasks_capabilities}\cite{graf2008mobile}. This roadmap starts with the bare necessities, e.g. tele-operation, ATEX certifications and safety. This will provide the foundation for developing inspection or surveillance robots, before the complexity can be increased by allowing robots to interact with and manipulate the processes. The end-goal is of course a fully autonomous maintenance system capable of operating the process itself\cite{graf2008mobile}.
 
@@ -179,7 +181,7 @@ Other design choices, e.g. the shape, size and equipment must fit the robots pur
  
 \subsection{Trends and Potential}
  
-The typical pre-programmed assembly robots still dominate the robotic market. They are usually found in manufacturing plants and large scale production facilities\cite{ifr_statistics}, e.g. the automotive industry, where they perform dull, tedious tasks much faster and with higher accuracy than people. A notable trend in modern robotics is increased human-robot collaboration\cite{cobotsEurope}. Many new robots are being build for the human workspace, both in terms of safety and collaborative functionality. This trend is a step along the way of moving robots out of the controlled environment of a factory floor, and into the real world where a high degree of autonomy is required.
+The typical pre-programmed assembly robots still dominate the robotic market. They are usually found in manufacturing plants and large scale production facilities\cite{ifr_statistics}, e.g. the automotive industry, where they perform dull, tedious tasks much faster and with higher accuracy than people. A notable trend in modern robotics is increased human-robot collaboration\cite{cobotsEurope}. Many new robots are being built for the human workspace, both in terms of safety and collaborative functionality. This trend is a step along the way of moving robots out of the controlled environment of a factory floor, and into the real world where a high degree of autonomy is required.
 
 A report by Metra Martech\cite{metraMartechGorle}, a market research firm referenced to by \ac{IFR}\footnote{http://www.ifr.org/robots-create-jobs/}, points to three areas with a high potential for robotic applications:
 
@@ -217,7 +219,7 @@ Subsea maintenance is perhaps the field that have seen the greatest advancements
 	%\vspace{-20pt}
 \end{wrapfigure}
 
-Robots in disaster response, relief and recovery solve many of the same problems faced by maintenance robots. Disasters, such as the tsunami which struck Japan in 2011, proved that much work needs to be done, both in terms of technical capabilities and logistical issues related to deployment and response times. The tsunami resulted in three core meltdowns at the Fukushima Daiichi Nuclear Power plant.
+Robots in disaster response, relief and recovery solve many of the same problems faced by maintenance robots. Disasters, such as the tsunami which struck Japan in 2011, proved that much work needs to be done, both in terms of technical capabilities and logistical issues related to deployment and response times. The tsunami resulted in three core meltdowns at the Fukushima Daiichi Nuclear Power plant\cite{fukushima_report}.
 
 Many of the robots which were deployed at the Fukushima Power Plant were already ageing, and the operators had to receive training before deployment, thus increasing the response time\cite{doi:10.1108/01439911211249715}. A paper from Japan Atomic Energy Agency\cite{doi:10.1108/01439911211249715} highlights how the lack of stakeholder involvement could have been the cause of long response times. The same paper points out that the robots were developed for the sake of development, and not with emergency response as the main purpose\cite{doi:10.1108/01439911211249715}. 
 
@@ -242,8 +244,8 @@ Mellon University.
 
 NRECs contribution, Sensabot, is a remotely operated inspection robot designed for harsh and remote environments\cite{deploymentsensabot}. It is not designed to be autonomous, but rather as a tool to move personnel from hazardous environments to safe remote control rooms. Sensabot mark II will be certified for zone 1 explosive environments. This year (2016), the plan is to test the robot on site at the Kashagan field in Kazakhstan\cite{peerless2016robot}.
 
-\ac{Fraunhofer IPA}\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, called \ac{MIMROex}. \ac{MIMROex} has capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. \ac{Fraunhofer IPA} put great emphasis on field testing on actual offshore installations.
+\ac{Fraunhofer IPA}\footnote{http://www.ipa.fraunhofer.de/en.html} has developed a robot, called \ac{MIMROex}. \ac{MIMROex} has capabilities which are quite similar to the prototype used during the work on this thesis. \ac{MIMROex} is equipped with a camera for visual inspections as well as microphones, vibration and sensors for fire and gas detection. It is also certifiable in accordance with the explosion protection standard IEC 60079\cite{MIMROex}. \ac{Fraunhofer IPA} has put great emphasis on field testing on actual offshore installations.
 
-Both ABB and SINTEF ICT has developed lab facilities to test various concepts for robotic maintenance. Both facilities use non-mobile robots which utilize a rich set of inspection and manipulation tools, as well as \ac{HMI} equipment for remote operation and control. The two research communities differ in that ABB has tested their solutions in real environments, which subjects their solution to ATEX requirements and an extensive risk management regime\cite{StepwiseApproachToRobotics}. SINTEF has a long list of contributui
+Both ABB and SINTEF ICT have developed lab facilities to test various concepts for robotic maintenance. Both facilities use non-mobile or semi mobile (gantries) robots which utilize a rich set of inspection and manipulation tools, as well as \ac{HMI} equipment for remote operation and control. The two research communities differ in that ABB has tested their solutions in real environments, which subjects their solution to ATEX requirements and an extensive risk management regime\cite{StepwiseApproachToRobotics}. SINTEF has a notable list of contributions to computer vision and 3D camera optics\footnote{http://www.sintef.no/en/information-and-communication-technology-ict/optical-measurement-systems-and-dataanalysis/}, and some of this research is geared towards inspection and maintenance. An example of this is a robot concept for replacing a battery in a wireless sensor by using 3D object detection\cite{transeth2010robotic}.
 
 Another effort towards robotic maintenance is the ARGOS challenge (Autonomous Robot for Gas and Oil Sites). The purpose of the challenge is to promote innovation, understanding and awareness towards robotic maintenance of \ac{OG} sites in harsh environments\cite{ARGOS}\cite{AutonomousOG}.

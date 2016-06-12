@@ -34,15 +34,11 @@ A robot can be described by a set of rigid \textit{links} connected to each othe
 
 \subsubsection{Mobile Bases}
 
-
-
-\subsection{Simulating in Gazebo}
-
-\section{ROS}
+\section{Robot Operating System (ROS)}
 \label{sec:ros}
 \subsection{Introduction}
 
-The \ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be tailored to meet the demands of a wide range of robots with varying complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can be perceived as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recommended \cite{ROS_install}.
+\ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be tailored to meet the demands of a wide range of robots with varying complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can be perceived as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recommended \cite{ROS_install}.
 
 Historic roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework. This framework eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. The framework can be used under the BSD open-source license\cite{BCD_license}. Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation, research and everything in between. 
 
@@ -67,7 +63,7 @@ A \ac{ROS} system comprise a set of small programs that communicate with each ot
 
 \subsubsection{tf}
 
-\texttt{tf}\cite{tf_paper} is a coordinate system transformation library used in \ac{ROS}. Parts of a \ac{ROS} system can listen to broadcasted transforms in the form of messages, \texttt{tf/tfMessage}, which describe a coordinate system transform between one or more parent-child link pairs. \texttt{tf} also provides timing information it the messages. This is a very important feature because a node may depend on synchronized sensor streams with many different coordinate frames. Comparing a laser scan with a point clout that was received seconds ago may lead to errors. 
+\texttt{tf}\cite{tf_paper} is a coordinate system transformation library used in \ac{ROS}. Parts of a \ac{ROS} system can listen to broadcasted transforms in the form of messages, \texttt{tf/tfMessage}, which describe a coordinate system transform between one or more parent-child link pairs. \texttt{tf} also provides timing information it the messages. This is a very important feature because a node may depend on synchronized sensor streams with many different coordinate frames. Comparing a laser scan with a point cloud that was received seconds ago may lead to errors. 
 
 \subsubsection{Project Structure and the \textit{catkin} Build System}
 \label{sec:catkin}
@@ -105,7 +101,7 @@ $ roslaunch <package name> <launch file name>.launch <argument1>:=true
 
 \subsubsection{Robot Modelling In URDF}
 
-\ac{URDF} is an XML-like format for describing robots. The robot description is made up of links and joints. Each link description contains information of, e.g., its shape, inertial tensor, collision boundaries. The links are connected to each other by joints.
+\ac{URDF} is an XML-like format for describing robots. The robot description is made up of links and joints. Each link description contains information of, e.g., its shape, inertial tensor, collision boundaries and other attributes. The links are connected to each other by joints.
 
 \subsubsection{Visialization in \texttt{rviz}}
 
@@ -131,25 +127,6 @@ Robonaut 2\footnote{\ac{ROS} in space from ROSCon 2014: \url{https://vimeo.com/1
 \paragraph{Industrial Hardware}
 
 The ROS-industrial program\cite{ROS_industrial} provides hardware interfaces to various industrial equipment. An example is ABB's IRB-2400, where \ac{ROS}-industrial provides package for motion planning software (MoveIt!) and trajectory downloading\cite{ROS_industria_hardware}. 
-
-\section{Software}
-
-\subsection{Qt}
-
-\subsection{PCL}
-
-\section{The Kinect Sensor}
-
-\section{Software Tools}
-
-\subsection{Point Cloud Library}
-
-\subsection{ROS}
-
-\subsection{Qt}
-
-
-\subsection{Current Research and Applications}
 
 \section{Introduction to Sensors in Autonomous Robots}
 
@@ -229,8 +206,6 @@ A planar laser sensor, known as e.g. laser proximity sensors or laser radars, ca
 
 
 \subsection{Odometers}
-
-\subsection{Sensor Fusion}
 
 
 \section{Simultaneous Localization and Mapping (SLAM)}

@@ -12,7 +12,7 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces A minimal \ac {ROS} graph. There are two nodes, \texttt {node\_1} and \texttt {node\_2}. \texttt {node\_1} publishes data, i.e. a topic, by the name \texttt {topic\_1}. \texttt {node\_2} can receive the data by subscribing to \texttt {topic\_1}.\relax }}{17}{figure.caption.52}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Kinect sensor components. (Image credits: Microsoft\cite {kinect_guide})\relax }}{22}{figure.caption.70}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Conceptual illustration of a graph created by \ac {RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Feature descriptors in $L_2$ and $L_7$ are sufficiently similar to accept this as a loop closure.\relax }}{25}{figure.caption.78}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Conceptual illustration of a graph created by \ac {RTAB-Map} over time $1 \leq t \leq 8 $. A loop closure hypothesis was accepted at $t=7$, as shown by the yellow arrow. Feature descriptors in $L_2$ and $L_7$ are sufficiently similar to accept this as a loop closure.\relax }}{24}{figure.caption.78}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces \texttt {move\_base} and the navigation stack. (Image credits: ros.org)\relax }}{26}{figure.caption.84}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Sensor locations for \leavevmode {\color {blue}LIDAR} and \leavevmode {\color {green}Kinect}. \relax }}{31}{figure.caption.90}
@@ -38,22 +38,22 @@
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Detecting obstructions in 3d.\relax }}{51}{figure.caption.124}
 \contentsline {figure}{\numberline {4.22}{\ignorespaces 3D Obstacle detection with the live robot. The nodelet \texttt {obstacles\_detection} filters out the floor and publishes a point cloud which can be sent to the \texttt {move\_base} node. The yellow arrow points to the local cost map, which is based on real-time sensor data and used by the local planner.\relax }}{52}{figure.caption.125}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{55}{figure.caption.133}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of a resulting point cloud map after running \ac {RTAB-Map} in Gazebo. \relax }}{56}{figure.caption.134}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of an incorrect loop closure detection. The pink circles indicate matching features. The right part shows an incorrect map adjustment. Observe how the matching features are located on the asphalt plane.\relax }}{57}{figure.caption.135}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces An example of an accepted and correct loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{57}{figure.caption.136}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{58}{figure.caption.137}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }}{59}{figure.caption.138}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison between mapped occupancy grid and floor plan.\relax }}{61}{figure.caption.141}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.\relax }}{62}{figure.caption.142}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }}{64}{figure.caption.143}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{figure.caption.147}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.148}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The ''Asphalt'' world in Gazebo. \relax }}{56}{figure.caption.135}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of a resulting point cloud map after running \ac {RTAB-Map} in Gazebo. \relax }}{56}{figure.caption.136}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of an incorrect loop closure detection. The pink circles indicate matching features. The right part shows an incorrect map adjustment. Observe how the matching features are located on the asphalt plane.\relax }}{57}{figure.caption.137}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces An example of an accepted and correct loop closure hypothesis. This example is from the ''Asphalt'' world simulated in Gazebo.\relax }}{57}{figure.caption.138}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces An example of incorrect map merging. This case occurred in the ''Asphalt'' world simulated in Gazebo.\relax }}{58}{figure.caption.139}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }}{59}{figure.caption.140}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison between mapped occupancy grid and floor plan.\relax }}{61}{figure.caption.142}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.\relax }}{62}{figure.caption.143}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }}{64}{figure.caption.144}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{figure.caption.148}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.149}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Worn omniwheel\relax }}{75}{figure.caption.161}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Worn omniwheel\relax }}{76}{figure.caption.160}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{86}{figure.caption.169}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{86}{figure.caption.163}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{89}{figure.caption.167}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{89}{figure.caption.173}
 \addvspace {10pt}
