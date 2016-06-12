@@ -21,25 +21,35 @@ Autonomous navigation, localization and mapping is among the fundamental tasks a
 
 \subsubsection{Point 5 - Assessment}
 
-An assessment of the project results is provided in chapter \ref{chp:discussion}. The tests leading up to the assessment, could have been more thorough.
+An assessment of the project results is provided in chapter \ref{chp:discussion}.
 
 \section{Final Conclusion}
 
+\subsubsection{Project Objective}
 
+The main objective of this project was to implement a vision based solution to a problem faced by a mobile, autonomous maintenance robot. \ac{SLAM} was chosen as the problem to be solved, as it is one of the fundamental requirements for a mobile robot.  To meet the objective, the robot was configured to use \ac{ROS} together with \ac{RTAB-Map}; a system for large scale appearance based \ac{SLAM}, developed by IntRoLab. An additional major implementation goal was to achieve autonomous navigation. A third objective was to implement an operator control station (\ac{OCS}) where an operator can monitor and control the robot via a wireless connection. 
 
-The main goal of this project was to implement a vision based solution to a problem faced by a mobile, autonomous maintenance robot. \ac{SLAM} was chosen as the problem to be solved, as it is one of the fundamental problems a mobile robot must handle.  To meet the goal, the robot was configured to use \ac{ROS} together with \ac{RTAB-Map}, a system for large scale appearance based \ac{SLAM}, developed by IntRoLab. An additional major implementation goal was to achieve autonomous navigation. A third objective was to implement an operator control station (\ac{OCS}) where an operator can monitor and control the robot via a wireless connection. 
+\subsubsection{Implementations}
 
-\ac{RTAB-Map} is configured to use a Kinect for Xbox 360 in combination with a \ac{LIDAR} to generate 2D occupancy grid maps and 3D point cloud maps of the environments. The current implementation is capable of building maps over multiple sessions. Scan matching from Hector SLAM provides odometry to \ac{RTAB-Map}. Using laser scans as a source of odometry was susceptible to errors in featureless areas, when the robot rounded corners and when people walked by or towards the robot. 
+\ac{RTAB-Map} is configured to use a Kinect for Xbox 360 in combination with a \ac{LIDAR} to generate 2D occupancy grid maps and 3D point cloud maps of the environments. The current implementation is capable of building maps over multiple sessions. Scan matching from Hector SLAM provides odometry to \ac{RTAB-Map}. 
 
-Testing sessions, performed in both a simulator and with a live mobile robot prototype, demonstrated \ac{RTAB-Map}'s ability to build maps and localize the robot within these maps.  Loop closure detection would work when a sufficient amount of visual features were available, but this was often not the case.
+The robot has been configured to use the navigation stack in \ac{ROS}. The navigation stack configuration enables the robot to plan and follow a path to a simple feasible goal. Additional capabilities include dynamic replanning in the case of obstructions, and 3D obstruction detection based on point clouds.
 
-Navigation tests on the live robot showed that the robot can navigate successfully in known and structured environments with some room maneuvering space. Navigation performance decreased in cluttered environments, e.g. office environments with many tables placed closely together.
+Three sources of control inputs, besides the navigation stack, was implemented: keyboard inputs for simple testing and input mode settings, commands over a TCP socket from the operator control station (\ac{OCS}) and commands received via a Bluetooth connection. The \ac{OCS} is capable of controlling the robot via the TCP socket, and display live video from the Kinect. An Android device is capable of establishing a Bluetooth connection to the robot, and send velocity commands over this connection.
 
-The implementations presented in this thesis is the first attempt at integrating the mobile robot prototype with \ac{ROS}. It is concluded that  \ac{ROS} is a good tool for prototyping, and it is recommended to continue using the framework in following projects on robotic maintenance.
+\subsubsection{Performance and Assessment}
 
+Testing sessions, performed in both a simulator and with a live mobile robot prototype, demonstrated \ac{RTAB-Map}'s ability to build maps and localize the robot within these maps.  Loop closure detection would work when a sufficient amount of visual features were available, but this was often not the case. Using laser scans as a source of odometry was susceptible to errors in featureless areas, when the robot rounded corners and when people walked by or towards the robot. 
 
+Navigation tests on the live robot demonstrated that the robot can navigate successfully in known and structured environments with some manoeuvring space. Navigation performance decreased in cluttered environments, e.g. office environments with many tables placed closely together.
 
-The Kinect and the LIDAR is currently placed in the front of the base. As the Kinect is unable to reliably measure depth any closer than $0.8 m$.
+\subsubsection{Recommendations}
 
-The navigation stack in \ac{ROS} has been configured for this mobile base, and enables the robot to autonomously move towards a goal location in a 2D map. 
+The mobile base requires an overhaul, and a new drive system should be considered. A new drive system should be dimensioned to support the robots weight and be more rugged. A holonomic drive system could yield a more agile robot. 
+
+The Kinect and the LIDAR is currently placed in the front of the base. As the Kinect is unable to reliably measure depth any closer than $0.8 m$. A new sensor location should be considered to avoid this blind-zone.
+
+As for \ac{RTAB-Map} there are factors that speak against the method as a mapping system of an offshore robot. The shortcomings  are essentially related to robustness to how the visual appearance of the surrounding change over time. It is recommended to continue testing of \ac{RTAB-Map}. The tests should include different sensor configurations and stereo cameras, as well as different lighting conditions.
+
+The implementations presented in this thesis is the first attempt at integrating the mobile robot prototype with \ac{ROS}. It is concluded that \ac{ROS} is a good tool for prototyping, and it is recommended to continue using the framework in subsequent projects on robotic maintenance. The current software is functional, but not much more. Future projects should strive to increase the system's usability and robustness.
 

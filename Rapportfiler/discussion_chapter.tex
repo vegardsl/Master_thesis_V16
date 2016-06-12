@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-This chapter seeks to assess the implementations presented in chapter \ref{chp:implementation} based on their performance which is detailed in chapter \ref{chp:results}. The following discussions seek to qualitatively evaluate how suitable the implementations are for offshore robotic maintenance. The first section will discuss the performance of the system as a whole. Next follows a discussion on the strengths and weaknesses of the navigation and mapping systems. The chapter is concluded with a section on future work. 
+This chapter seeks to assess the implementations presented in chapter \ref{chp:implementation} based on their performance which is detailed in chapter \ref{chp:results}. The following discussions will qualitatively evaluate how suitable the implementations are for offshore robotic maintenance. The first section will discuss the performance of the system as a whole. Next follows a discussion on the strengths and weaknesses of the navigation and mapping systems. The chapter is concluded with a section on future work. 
 
 \section{Overall Assessment}
 
@@ -112,7 +112,7 @@ The current design of the mobile base is struggling to support the weight of the
 
 \subsection{The Kinect}
 
-As mentioned in section \ref{}, the Kinect is an active sensor that measures depth by projecting an infra red speckle pattern onto the surroundings.  Kinect for Xbox 360 can't be used in commercial applications because of its license. There are, however, similar sensors that can replace the Kinect.
+As mentioned in section \ref{sec:kinect}, the Kinect is an active sensor that measures depth by projecting an infra red speckle pattern onto the surroundings.  Kinect for Xbox 360 can't be used in commercial applications because of its license. There are, however, similar sensors that can replace the Kinect.
 
 \subsection{Open Source Software and Security}
 
@@ -124,21 +124,23 @@ As mentioned in section \ref{}, the Kinect is an active sensor that measures dep
 
 Advancements in \ac{AI}, big data and machine learning opens up exciting possibilities for autonomous \ac{NDT}. Branches of this technology is usually encountered in the context of image recognition, i.e. teaching machines to understand what they see. The same concepts may be applied to forms of \ac{NDT} besides regular visual sensor input, such as ultra sound or eddy currents for corrosion detection.  
 
-\subsection{Large Scale Kinect Fusion - Kintinous}
+\subsection{Large Scale Kinect Fusion - Kintinuous}
 
-Kinect Fusion has great potential for augmented reality. Augmented reality is a concept which blends the real and virtual environment. This opens up opportunities to create realistic and immersive training scenarios for the operators. Unfortunately, Kinect Fusion is limited reconstructing a rather small volume depending on the resolution. By varying the resolution, volumes can at the least cover a normal office desk and at the most cover a small room \cite{keylist}.  
+Kinect Fusion has great potential for augmented reality. Augmented reality is a concept which blends the real and virtual environment. This opens up opportunities to create realistic and immersive training scenarios for the operators. Unfortunately, Kinect Fusion is limited reconstructing a rather small volume depending on the resolution. By varying the resolution, volumes can at the least cover a normal office desk and at the most cover a room smaller than $\leq 7 m^3$ \cite{newcombe2011kinectfusion}.  
 
-Kintinous...
+Kintinuous is an experimental extension of Kinect Fusion for large scale volume reconstruction. A guide on how to build Kintinous can be found  at \href{Github}{https://github.com/mp3guy/Kintinuous}. The procedure is complicated, as it usually is for experimental builds. It is recommended to attempt the procedure on a fresh install of Ubuntu 14.04 or 15.04 \cite{Kintinous}.
 
-A guide on how to build Kintinous can be found  at \href{Github}{https://github.com/mp3guy/Kintinuous}. The procedure is complicated, as it usually is for experimental builds. It is recommended to attempt the procedure on a fresh install of Ubuntu 14.04 or 15.04 \cite{Kintinous}.
+There may be other 3D reconstruction technologies available today It is recommended to perform a thorough literature study on the topic before selecting a technology to work with.
 
 \subsubsection{Improve the Communication Protocols}
 
 Communication between \ac{ROS} and the XMEGA A3BU, the Bluetooth device and the \ac{OCS}, all use the same pattern: A start byte \texttt{'':''}, the message with the speed setting and a stop byte \texttt{''Esc''}. In later projects, it could be beneficial to implement a more robust and rich communication protocol with more options for remote operation. 
 
+There is a problem with the dead-man switch implementation on the motor control card. A timer overflow interrupt is intended to trigger when new velocity commands seize to arrive, or if a deadlock occurs in the receiver cycle. When the interrupt is triggered, the motors will slow down, but not stop completely. This issue should be fixed in future projects.
+
 \subsubsection{Implement a Fully Functional Operator Control Station}
 
-At the end of this project, the \ac{OCS} provided functionality for moving the robot, and displaying live video from the Kinect. 
+At the end of this project, the \ac{OCS} provided functionality for moving the robot, and displaying live video from the Kinect. Future projects could focus on development of new control station designs, or perhaps even integration with a \ac{VR} telepresence system. Another option which may ease the implementation process, would be to distribute the \ac{ROS} system over multiple computers (which is supported by \ac{ROS}). A benefit of this is easy easy access to all \ac{ROS} tools and features. A drawback is that SDKs for various \ac{VR} equipment may be incompatible with Linux Ubuntu. 
 
 \subsection{Hardware}
 
@@ -158,7 +160,7 @@ Because this author used his own computer to control the robot, all features rel
 
 \subsubsection{Wheels}
 
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
 	\vspace{-20pt}
 	\begin{center}
 		\includegraphics[width=0.48\textwidth]{worn_wheel2}
