@@ -54,12 +54,12 @@
 \acronymused{LIDAR}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }}{59}{figure.caption.140}}
 \newlabel{fig:big_footprint}{{\M@TitleReference {5.6}{The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }}{59}{The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }{figure.caption.140}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Live Robot Results}{59}{section.5.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Live Robot Results}{60}{section.5.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Mapping}{60}{subsection.5.5.1}}
 \acronymused{RTAB-Map}
 \acronymused{RTAB-Map}
 \acronymused{ROS}
 \@writefile{toc}{\contentsline {subsubsection}{Loop Closure Detection}{60}{section*.141}}
-\@writefile{toc}{\contentsline {subsubsection}{Multi Session Mapping}{60}{section*.145}}
 \newlabel{fig:mapping_gamle_elektro}{{\M@TitleReference {5.7a}{Resulting occupancy grid after a mapping session. The mapping method is struggling with the hallway in the upper part of the image.\relax }}{61}{Resulting occupancy grid after a mapping session. The mapping method is struggling with the hallway in the upper part of the image.\relax }{figure.caption.142}{}}
 \newlabel{sub@fig:mapping_gamle_elektro}{{\M@TitleReference {a}{Resulting occupancy grid after a mapping session. The mapping method is struggling with the hallway in the upper part of the image.\relax }}{61}{Resulting occupancy grid after a mapping session. The mapping method is struggling with the hallway in the upper part of the image.\relax }{figure.caption.142}{}}
 \newlabel{fig:floorPlan}{{\M@TitleReference {5.7b}{Floor plan of Gamle Elektro, first floor.\relax }}{61}{Floor plan of Gamle Elektro, first floor.\relax }{figure.caption.142}{}}
@@ -68,18 +68,22 @@
 \newlabel{fig:comparison}{{\M@TitleReference {5.7}{Comparison between mapped occupancy grid and floor plan.\relax }}{61}{Comparison between mapped occupancy grid and floor plan.\relax }{figure.caption.142}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.\relax }}{62}{figure.caption.143}}
 \newlabel{fig:lc_match_live}{{\M@TitleReference {5.8}{An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.\relax }}{62}{An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.\relax }{figure.caption.143}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Navigating Among Static Obstacles}{62}{section*.146}}
-\@writefile{toc}{\contentsline {subsubsection}{Avoiding Moving Obstacles}{62}{section*.147}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref  {fig:mapping_gamle_elektro}.\relax }}{64}{figure.caption.144}}
-\newlabel{fig:lc_match_live_map}{{\M@TitleReference {5.9}{The resulting 3D map of the same area as in figure \ref  {fig:mapping_gamle_elektro}.\relax }}{64}{The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }{figure.caption.144}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{figure.caption.148}}
-\newlabel{fig:avoiding_moving_obstacles}{{\M@TitleReference {5.10}{Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }{figure.caption.148}{}}
-\newlabel{fig:obstructed_plan}{{\M@TitleReference {5.11a}{A person has moved into the path of the robot.\relax }}{65}{A person has moved into the path of the robot.\relax }{figure.caption.149}{}}
-\newlabel{sub@fig:obstructed_plan}{{\M@TitleReference {a}{A person has moved into the path of the robot.\relax }}{65}{A person has moved into the path of the robot.\relax }{figure.caption.149}{}}
-\newlabel{fig:corrected_plan}{{\M@TitleReference {5.11b}{A new path is planned, avoiding the new obstacle.\relax }}{65}{A new path is planned, avoiding the new obstacle.\relax }{figure.caption.149}{}}
-\newlabel{sub@fig:corrected_plan}{{\M@TitleReference {b}{A new path is planned, avoiding the new obstacle.\relax }}{65}{A new path is planned, avoiding the new obstacle.\relax }{figure.caption.149}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.149}}
-\newlabel{fig:obstacle_avoidance}{{\M@TitleReference {5.11}{Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }{figure.caption.149}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Multi Session Mapping}{62}{section*.145}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Navigation}{62}{subsection.5.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref  {fig:mapping_gamle_elektro}.\relax }}{63}{figure.caption.144}}
+\newlabel{fig:lc_match_live_map}{{\M@TitleReference {5.9}{The resulting 3D map of the same area as in figure \ref  {fig:mapping_gamle_elektro}.\relax }}{63}{The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }{figure.caption.144}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Global planning with the live robot. The green line illustrates the globally planned path. The inflated obstructions in the global costmap are highlighted as colored spots.\relax }}{63}{figure.caption.146}}
+\newlabel{fig:live_navigation2}{{\M@TitleReference {5.10}{Global planning with the live robot. The green line illustrates the globally planned path. The inflated obstructions in the global costmap are highlighted as colored spots.\relax }}{63}{Global planning with the live robot. The green line illustrates the globally planned path. The inflated obstructions in the global costmap are highlighted as colored spots.\relax }{figure.caption.146}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Navigating Among Static Obstacles}{64}{section*.147}}
+\@writefile{toc}{\contentsline {subsubsection}{Avoiding Moving Obstacles}{64}{section*.148}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{figure.caption.149}}
+\newlabel{fig:avoiding_moving_obstacles}{{\M@TitleReference {5.11}{Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }{figure.caption.149}{}}
+\newlabel{fig:obstructed_plan}{{\M@TitleReference {5.12a}{A person has moved into the path of the robot.\relax }}{65}{A person has moved into the path of the robot.\relax }{figure.caption.150}{}}
+\newlabel{sub@fig:obstructed_plan}{{\M@TitleReference {a}{A person has moved into the path of the robot.\relax }}{65}{A person has moved into the path of the robot.\relax }{figure.caption.150}{}}
+\newlabel{fig:corrected_plan}{{\M@TitleReference {5.12b}{A new path is planned, avoiding the new obstacle.\relax }}{65}{A new path is planned, avoiding the new obstacle.\relax }{figure.caption.150}{}}
+\newlabel{sub@fig:corrected_plan}{{\M@TitleReference {b}{A new path is planned, avoiding the new obstacle.\relax }}{65}{A new path is planned, avoiding the new obstacle.\relax }{figure.caption.150}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.150}}
+\newlabel{fig:obstacle_avoidance}{{\M@TitleReference {5.12}{Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }{figure.caption.150}{}}
 \@setckpt{testing_chapter}{
 \setcounter{page}{66}
 \setcounter{equation}{0}
@@ -95,7 +99,7 @@
 \setcounter{part}{0}
 \setcounter{chapter}{5}
 \setcounter{section}{5}
-\setcounter{subsection}{0}
+\setcounter{subsection}{2}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
@@ -131,7 +135,7 @@
 \setcounter{sheetsequence}{94}
 \setcounter{lastsheet}{121}
 \setcounter{lastpage}{93}
-\setcounter{figure}{11}
+\setcounter{figure}{12}
 \setcounter{lofdepth}{1}
 \setcounter{table}{2}
 \setcounter{lotdepth}{1}
@@ -139,7 +143,7 @@
 \setcounter{Hfootnote}{16}
 \setcounter{memhycontfloat}{0}
 \setcounter{Hpagenote}{0}
-\setcounter{bookmark@seq@number}{81}
+\setcounter{bookmark@seq@number}{83}
 \setcounter{AM@survey}{0}
 \setcounter{parentequation}{5}
 \setcounter{theorem}{0}

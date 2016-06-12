@@ -23,16 +23,6 @@ So far, the robot prototype has been developed for a few specific functionalitie
 
 Some time was spent on building a new rear compartment to house the various robot equipment, including the battery and both on-board computers. For internal power, the robot uses a 12 V car battery as a power source. Figure \ref{fig:sensor_connections} and \ref{fig:power} highlights the inefficient power supply layout. The Kinect requires a supply of 12V DC, which is supplied from an adapter plugged into a 230V AC source. Receiving 12 V directly from the battery might be a more efficient solution.
 
-\subsubsection{Current Design and Robotic Maintenance}
-\label{sec:design_maintenance}
-A typical offshore installation floor will most likely be made of steel and steel gratings with many holes, gaps and sharp edges\cite{graf2008mobile}. The current mobile base is better suited for completely even surfaces, and would benefit greatly for a more rugged set of wheels. \cite{graf2008mobile} is also referring to a minimum size for passage ways that could serve as guidelines for later prototypes. The suggested minimum workspace boundaries, $0.75m$ wide and $1.5m$ high corridors, imply that the prototype used in this project is too big, given its footprint of $80cm \times 37 cm$. Another problem is that the Kinect would have trouble with mapping and navigating in this environment, given its measured minimum range of $0.5m$, not to mention the reliable minimum depth of $0.8m$. In this autors's specialization project\cite{lindrup}, the minimum measurable depth of the obstruction detection was found to be $\approx 40 cm$. The minimum range was limited by the maximum disparity parameter. Increasing the detectable maximum disparity could reduce the detectable range even further, thus making it a better option for narrow spaces where depth ranges are short. 
-
-As the motor control card is an open loop system, slopes and increased friction for whatever reason will affect the speed of the mobile base. This may cause the base to slow down, speed up or even stop completely if it is driving up a slope that is too steep.
-
-Given that the navigation stack in \ac{ROS} is thoroughly tested on square or circular bases, designing a new base to be either square or circular could increase the robustness of the navigation system. A holonomic drive could also make the robot more maneuverable, which may be useful in tight spaces.
-
-
-
 \subsection{Success and Quality of the ROS Integration}
 
 Integrating and configuring \ac{ROS} with the existing robot was the most time consuming task of this project. The current implementation is capable of autonomous navigation and long-term map building. Remote operation from the \ac{OCS} and Android device is also possible. A major shortcoming of the current configuration is the lack of usability. The current system is 
@@ -78,28 +68,26 @@ As mentioned in section \ref{sec:weaknesses_mapping}, it is clear that an appear
 Section \ref{sec:robotizing_offhsore_maintenance} discussed the hazards of offshore \ac{OG} production and how a robot could respond to crisis situations such as hydrocarbon leaks, toxic gases or fires. Such events could alter the appearance of the environment, which in turn may knock out the \ac{SLAM} capabilities a robot.
 
 \section{Navigation}
-\begin{itemize}
-\item Rectangle base vs. square base.
-\item holonomic wheel.
-\item Open loop wheel control (stuck when friction is high.)
-\item Same as for mapping. Poor odometry when surrounding are in motion, or when laser features are difficult to detect. System can be fooled easily. 
-\end{itemize}
 
 Integrating the \ac{ROS} navigation stack into a new mobile base was in itself a fairly simple procedure. Finding a good configuration turned out to be a more complicated process. Navigation was tested on both the simulator and the live robot. It became apparent during the testing sessions that the behaviour of the simulated robot was not analogue to the real robot. Recall that the simulated robot is controlled by a slip steering plugin in Gazebo, while the real robot is closer to a differential drive vehicle. In addition, the motor control in the real robot is an open loop system. The wheel commands from \ac{ROS} will normally result in a lower linear velocity and yaw rate. A consequence of this discrepancy between the real and simulated robots, is that the performance assessment of navigation stack in the simulator will have a reduced weight.
 
 \subsection{The Tuning Process}
 
-There are no official tuning strategies for the navigation stack in \ac{ROS} besides a basic guide to give users a general idea of where to start and what to check\cite{ROS_navigation_tuning}. The tuning process is currently a ''change and check'' process partially based on guesswork or copying similar solutions from other projects. This is far from ideal, as it is both time consuming and a hindrance for finding an optimal solution. 
+There are no official tuning strategies for the navigation stack in \ac{ROS} besides a basic guide. The guide serves to give users a general idea of where to start and what to check\cite{ROS_navigation_tuning}. The tuning process is currently a ''change and check'' process, partially based on guesswork or of copying similar solutions from other projects. This is far from ideal, as it is both time consuming and a hindrance for finding an optimal solution. 
 
-It should be noted that the navigation stack has been thoroughly tested on robots with square or circular bases. The highly rectangular base ($80cm \times 37cm$) on this robot may have been a handicap.
+It should be noted that the navigation stack has been thoroughly tested on robots with square or circular bases. The highly rectangular base ($80cm \times 37cm$) on this robot may have been a handicap. 
+
+
 
 As with the \ac{SLAM} test sessions on the live robot, the cumbersome hardware and limited battery life significantly constrained the amount of time available for testing of the navigation stack. 
 
-Based on the test results, the live robot should have a higher minimum speed setting. If the motor control card is expanded with a speed regulator, the minimum speed may be reduced.
+
 
 \subsection{Performance}
 
-Live testing showed promising results, despite a few quirks. The live robot would reliably plan a path to a goal location and move the base to this location, given that the goal was feasible. Sometimes, the robot would stop a few centimetres before reaching the coal location.
+Live testing showed promising results, despite a few quirks. The live robot would reliably plan a path to a goal location and move the base to this location, given that the goal was feasible. Sometimes, the robot would stop a few centimetres before reaching the goal location.
+
+Based on the test results, the live robot should have a higher minimum speed setting than the simulated robot in order to overcome friction and other resisting forces. The reason for this is that the velocity command is matched against wheel speeds when the robot is off the ground, i.e. the wheels are spinning freely. If the motor control card is expanded with a speed regulator, the minimum speed may be reduced.
 
 \section{Suitability for Offshore Maintenance}
 
@@ -109,6 +97,14 @@ Kinect-like sensors and ROS could be useful. It is at least an excellent tool fo
 The current configuration has many shortcomings as a maintenance robot. In its current form, it is more suitable to test various technologies and concepts. 
 
 The current sensor configuration is set up to facilitate testing of \ac{SLAM} and navigation.
+
+\subsubsection{Current Design and Robotic Maintenance}
+\label{sec:design_maintenance}
+A typical offshore installation floor will most likely be made of steel and steel gratings with many holes, gaps and sharp edges\cite{graf2008mobile}. The current mobile base is better suited for completely even surfaces, and would benefit greatly for a more rugged set of wheels. \cite{graf2008mobile} is also referring to a minimum size for passage ways that could serve as guidelines for later prototypes. The suggested minimum workspace boundaries, $0.75m$ wide and $1.5m$ high corridors, imply that the prototype used in this project is too big, given its footprint of $80cm \times 37 cm$. Another problem is that the Kinect would have trouble with mapping and navigating in this environment, given its measured minimum range of $0.5m$, not to mention the reliable minimum depth of $0.8m$. In this autors's specialization project\cite{lindrup}, the minimum measurable depth of the obstruction detection was found to be $\approx 40 cm$. The minimum range was limited by the maximum disparity parameter. Increasing the detectable maximum disparity could reduce the detectable range even further, thus making it a better option for narrow spaces where depth ranges are short. 
+
+As the motor control card is an open loop system, slopes and increased friction for whatever reason will affect the speed of the mobile base. This may cause the base to slow down, speed up or even stop completely if it is driving up a slope that is too steep.
+
+Given that the navigation stack in \ac{ROS} is thoroughly tested on square or circular bases, designing a new base to be either square or circular could increase the robustness of the navigation system. A holonomic drive could also make the robot more maneuverable, which may be useful in tight spaces.
 
 The current design of the mobile base is struggling to support the weight of the robot. The small wheels are struggling with small obstacles such as door thresholds or floor gaps in the entrance to elevators. \ac{MIMROex}, a comparable robot, is equipped with a variant of a differential drive base with larger wheels suitable for driving over steel gratings and slippery surfaces.
 

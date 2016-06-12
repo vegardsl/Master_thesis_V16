@@ -116,8 +116,8 @@
 \contentsline {subsubsection}{5 - Kinect}{48}{section*.121}
 \contentsline {subsection}{\numberline {4.9.2}Adding 3D Obstruction Detection}{48}{subsection.4.9.2}
 \contentsline {section}{\numberline {4.10}Navigation}{48}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Global Path Planning}{48}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Local Path Planning}{48}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.1}Local Planner Parameters}{48}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Common Costmap Parameters}{48}{subsection.4.10.2}
 \contentsline {subsubsection}{Obstruction Detection}{48}{section*.123}
 \contentsline {chapter}{\chapternumberline {5}Results}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{53}{section.5.1}
@@ -132,63 +132,66 @@
 \contentsline {section}{\numberline {5.4}Simulation Results}{55}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Mapping}{55}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Autonomous Navigation}{58}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Live Robot Results}{59}{section.5.5}
+\contentsline {section}{\numberline {5.5}Live Robot Results}{60}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Mapping}{60}{subsection.5.5.1}
 \contentsline {subsubsection}{Loop Closure Detection}{60}{section*.141}
-\contentsline {subsubsection}{Multi Session Mapping}{60}{section*.145}
-\contentsline {subsubsection}{Navigating Among Static Obstacles}{62}{section*.146}
-\contentsline {subsubsection}{Avoiding Moving Obstacles}{62}{section*.147}
+\contentsline {subsubsection}{Multi Session Mapping}{62}{section*.145}
+\contentsline {subsection}{\numberline {5.5.2}Navigation}{62}{subsection.5.5.2}
+\contentsline {subsubsection}{Navigating Among Static Obstacles}{64}{section*.147}
+\contentsline {subsubsection}{Avoiding Moving Obstacles}{64}{section*.148}
 \contentsline {chapter}{\chapternumberline {6}Discussion}{67}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{67}{section.6.1}
 \contentsline {section}{\numberline {6.2}Overall Assessment}{67}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Choice of Development Tools}{67}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Assessment of Prototype Design}{68}{subsection.6.2.2}
-\contentsline {subsubsection}{Suboptimal Power Supply}{68}{section*.150}
-\contentsline {subsubsection}{Current Design and Robotic Maintenance}{68}{section*.151}
-\contentsline {subsection}{\numberline {6.2.3}Success and Quality of the ROS Integration}{69}{subsection.6.2.3}
+\contentsline {subsubsection}{Suboptimal Power Supply}{68}{section*.151}
+\contentsline {subsection}{\numberline {6.2.3}Success and Quality of the ROS Integration}{68}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Assessment of RTAB-Map}{69}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Quality and Thoroughness of the Tests}{69}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Weaknesses}{70}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Strengths}{71}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Suitability For Robotic Maintenance}{71}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.3}Strengths}{70}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Suitability For Robotic Maintenance}{70}{subsection.6.3.4}
 \contentsline {section}{\numberline {6.4}Navigation}{71}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}The Tuning Process}{72}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.1}The Tuning Process}{71}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Performance}{72}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Suitability for Offshore Maintenance}{73}{section.6.5}
+\contentsline {section}{\numberline {6.5}Suitability for Offshore Maintenance}{72}{section.6.5}
+\contentsline {subsubsection}{Current Design and Robotic Maintenance}{72}{section*.153}
 \contentsline {subsection}{\numberline {6.5.1}The Kinect}{73}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Open Source Software and Security}{73}{subsection.6.5.2}
 \contentsline {section}{\numberline {6.6}Future Work}{73}{section.6.6}
 \contentsline {subsection}{\numberline {6.6.1}Autonomous Non-Destructive Testing}{73}{subsection.6.6.1}
 \contentsline {subsection}{\numberline {6.6.2}Large Scale Kinect Fusion - Kintinous}{74}{subsection.6.6.2}
-\contentsline {subsubsection}{Improve the Communication Protocols}{74}{section*.154}
-\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{74}{section*.155}
+\contentsline {subsubsection}{Improve the Communication Protocols}{74}{section*.155}
+\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{74}{section*.156}
 \contentsline {subsection}{\numberline {6.6.3}Hardware}{74}{subsection.6.6.3}
-\contentsline {subsubsection}{Kinect Sensor Location}{74}{section*.156}
-\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{75}{section*.157}
-\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{75}{section*.158}
-\contentsline {subsubsection}{Wheels}{75}{section*.160}
+\contentsline {subsubsection}{Kinect Sensor Location}{74}{section*.157}
+\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{75}{section*.158}
+\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{75}{section*.159}
+\contentsline {subsubsection}{Wheels}{75}{section*.161}
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{77}{chapter.7}
 \contentsline {section}{\numberline {7.1}Problem Description Fulfillment}{77}{section.7.1}
-\contentsline {subsubsection}{Point 1 - Theory and state-of-the-art Solutions}{77}{section*.162}
-\contentsline {subsubsection}{Point 2 - Selection of Development Tools}{77}{section*.163}
-\contentsline {subsubsection}{Point 3 - Test Platform}{77}{section*.164}
-\contentsline {subsubsection}{Point 4 - Solutions and Implementations}{77}{section*.165}
-\contentsline {subsubsection}{Point 5 - Assessment}{78}{section*.166}
+\contentsline {subsubsection}{Point 1 - Theory and state-of-the-art Solutions}{77}{section*.163}
+\contentsline {subsubsection}{Point 2 - Selection of Development Tools}{77}{section*.164}
+\contentsline {subsubsection}{Point 3 - Test Platform}{77}{section*.165}
+\contentsline {subsubsection}{Point 4 - Solutions and Implementations}{77}{section*.166}
+\contentsline {subsubsection}{Point 5 - Assessment}{78}{section*.167}
 \contentsline {section}{\numberline {7.2}Final Conclusion}{78}{section.7.2}
-\contentsline {chapter}{References}{79}{section*.168}
+\contentsline {chapter}{References}{79}{section*.169}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{85}{appendix.A}
 \contentsline {section}{\numberline {A.1}Hardware Setup}{85}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Equipment List}{85}{subsection.A.1.1}
 \contentsline {section}{\numberline {A.2}Installation}{85}{section.A.2}
 \contentsline {subsection}{\numberline {A.2.1}Software list}{85}{subsection.A.2.1}
-\contentsline {subsubsection}{Compatibility Issues}{86}{section*.170}
+\contentsline {subsubsection}{Compatibility Issues}{86}{section*.171}
 \contentsline {subsection}{\numberline {A.2.2}Install Ubuntu}{86}{subsection.A.2.2}
 \contentsline {subsection}{\numberline {A.2.3}Download ROS}{86}{subsection.A.2.3}
 \contentsline {section}{\numberline {A.3}Configuring the Project}{86}{section.A.3}
 \contentsline {subsection}{\numberline {A.3.1}Configuring the ROS Workspace}{86}{subsection.A.3.1}
 \contentsline {subsection}{\numberline {A.3.2}Configuring the Bluetooth Connection}{86}{subsection.A.3.2}
-\contentsline {subsubsection}{1 - Install Qt5}{87}{section*.171}
-\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{87}{section*.172}
+\contentsline {subsubsection}{1 - Install Qt5}{87}{section*.172}
+\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{87}{section*.173}
+\contentsline {section}{\numberline {A.4}System Launch Procedure}{87}{section.A.4}
 \contentsline {appendix}{\chapternumberline {B}Troubleshooting}{89}{appendix.B}
 \contentsline {section}{\numberline {B.1}Introduction}{89}{section.B.1}
 \contentsline {section}{\numberline {B.2}Hardware}{89}{section.B.2}

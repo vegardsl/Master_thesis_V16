@@ -46,14 +46,15 @@
 \contentsline {figure}{\numberline {5.6}{\ignorespaces The robot footprint is illustrated by the clear rectangle that surrounds the robot model. The coloured areas are map locations with high cost. \relax }}{59}{figure.caption.140}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison between mapped occupancy grid and floor plan.\relax }}{61}{figure.caption.142}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces An example of an accepted loop closure hypothesis during a live mapping session. As before, the matched features are indicated by the pink circles.\relax }}{62}{figure.caption.143}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }}{64}{figure.caption.144}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{figure.caption.148}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.149}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The resulting 3D map of the same area as in figure \ref {fig:mapping_gamle_elektro}.\relax }}{63}{figure.caption.144}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Global planning with the live robot. The green line illustrates the globally planned path. The inflated obstructions in the global costmap are highlighted as colored spots.\relax }}{63}{figure.caption.146}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Avoiding moving obstacles with a new plan that circumnavigates the detected obstruction. In this situation, the obstacle was moving too fast for the local planner. The right leg is not yet registered as an obstacle.\relax }}{65}{figure.caption.149}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Moving obstacle avoidance. The local cost map, shown as coloured spots on the occupancy grid, is based on real-time sensor data. \relax }}{65}{figure.caption.150}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Worn omniwheel\relax }}{75}{figure.caption.161}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Worn omniwheel\relax }}{75}{figure.caption.162}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{86}{figure.caption.169}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Network hardware setup. \relax }}{86}{figure.caption.170}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{89}{figure.caption.173}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The set screw which holds the wheel onto the motor drive shaft.\relax }}{89}{figure.caption.174}
 \addvspace {10pt}

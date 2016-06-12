@@ -165,6 +165,8 @@ Sometimes, the robot would never actually reach the goal state, but rather circl
 
 \section{Live Robot Results}
 
+\subsection{Mapping}
+
 Due to time constraints, it was no time to tune the parameters of \ac{RTAB-Map}. \ac{RTAB-Map} is therefore used with the default parameters. An important distinction between the real and simulated system is found in the actuator, i.e. the motor controller of the mobile base. In the simulated system, the motor control card is emulated by a skid steering plugin. While the exact functionality of the skid steering plugin is unknown, it does ensure that the wheels follow the linear and angular velocity commands provided by \ac{ROS}. This is not the case for the real motor control card, as it lacks a feedback loop. The real robot velocity was in general slower that its simulated version.
 
 \subsubsection{Loop Closure Detection}
@@ -201,7 +203,7 @@ In figure \ref{fig:lc_match_live}, notice how the detected features are located 
 	\label{fig:lc_match_live}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{lc_match_live_map}
 	\caption{The resulting 3D map of the same area as in figure \ref{fig:mapping_gamle_elektro}.}
@@ -212,9 +214,20 @@ In figure \ref{fig:lc_match_live}, notice how the detected features are located 
 
 Multi session mapping was tested by performing an initial mapping run and then starting a second mapping session from an unknown(for the robot) location. All multi session mapping trials were successful. No special effort was made to reproduce the erroneous map merge(figure \ref{fig:Incorrect_lc_detection}) that occurred in the simulator. 
 
+\subsection{Navigation}
+
+Initial navigation sessions were dedicated to tuning the navigation stack. Changes were made to the parameters of the local planner. The minimum speed was increased to overcome friction. The goal tolerance was increased up to $20cm \: xy$-tolerance and $0.20 \: radians$ yaw tolerance.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{live_navigation2}
+	\caption{Global planning with the live robot. The green line illustrates the globally planned path. The inflated obstructions in the global costmap are highlighted as colored spots.}
+	\label{fig:live_navigation2}
+\end{figure} 
+
 \subsubsection{Navigating Among Static Obstacles}
 
-The first live navigation trials were performed by setting up a static obstacle course in a hallway. Only a few people were using this hallway, so multiple trials could be carried in under similar conditions. Most navigation trials were carried out in mapped areas. The robot performed well when navigating in known environments. In unknown environments, the robot will still plan an optimistic path, but if it is unable to map or detect new obstructions, it will collide. 
+The first live navigation trials were performed by setting up a static obstacle course in a hallway. Only a few people were using this hallway, so multiple trials could be carried in under similar conditions. Most navigation trials were carried out in mapped areas. The robot performed well when navigating in known environments. In unknown environments, the robot will still plan an optimistic path, but if it is unable to map or detect new obstructions, it will collide. An example of a typical test drive is shown in figure \ref{fig:live_navigation2}.
 
 
 

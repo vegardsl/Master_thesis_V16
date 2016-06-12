@@ -277,6 +277,8 @@ This mapping framework was not used in this project in order to limit the projec
 
 The navigation stack publishes velocity commands for translation and rotation in the $xy-plane$. Velocity commands are published in the form of a \texttt{geometry\_msgs/Twist} message with the default topic name ''\texttt{cmd\_vel}''. Mobile bases must be constructed as either holonomic or differential drives.
 
+The two following subsections introduce the global and the local costmaps respectively. These maps are both based on the \ac{ROS} package \texttt{costmap\_2d}. This package will inflate an area in a radius around the detected obstacles, 
+
 \subsection{Global Planner}
 
 The \ac{ROS} navigation stack is equipped with a basic \textit{global planner}. This global planner is fitted with a set of basic path planning algorithms: e.g. Dijkstra and A*, where Dijkstra is the default option. Global path planning is performed on the global costmap which in turn is based on the 2D grid map published by a map server. A pre-mapped area is not strictly necessary for the global planner to plan a path. Instead it will just plan a naive path which can be corrected by the local planner as the robot moves along the planned trajectory.

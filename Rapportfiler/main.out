@@ -69,8 +69,8 @@
 \BOOKMARK [2][-]{subsection.4.9.1}{Configuration}{section.4.9}% 69
 \BOOKMARK [2][-]{subsection.4.9.2}{Adding 3D Obstruction Detection}{section.4.9}% 70
 \BOOKMARK [1][-]{section.4.10}{Navigation}{chapter.4}% 71
-\BOOKMARK [2][-]{subsection.4.10.1}{Global Path Planning}{section.4.10}% 72
-\BOOKMARK [2][-]{subsection.4.10.2}{Local Path Planning}{section.4.10}% 73
+\BOOKMARK [2][-]{subsection.4.10.1}{Local Planner Parameters}{section.4.10}% 72
+\BOOKMARK [2][-]{subsection.4.10.2}{Common Costmap Parameters}{section.4.10}% 73
 \BOOKMARK [0][-]{chapter.5}{Results}{}% 74
 \BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 75
 \BOOKMARK [1][-]{section.5.2}{Testplan}{chapter.5}% 76
@@ -79,50 +79,53 @@
 \BOOKMARK [2][-]{subsection.5.4.1}{Mapping}{section.5.4}% 79
 \BOOKMARK [2][-]{subsection.5.4.2}{Autonomous Navigation}{section.5.4}% 80
 \BOOKMARK [1][-]{section.5.5}{Live Robot Results}{chapter.5}% 81
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 82
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 83
-\BOOKMARK [1][-]{section.6.2}{Overall Assessment}{chapter.6}% 84
-\BOOKMARK [2][-]{subsection.6.2.1}{Choice of Development Tools}{section.6.2}% 85
-\BOOKMARK [2][-]{subsection.6.2.2}{Assessment of Prototype Design}{section.6.2}% 86
-\BOOKMARK [2][-]{subsection.6.2.3}{Success and Quality of the ROS Integration}{section.6.2}% 87
-\BOOKMARK [1][-]{section.6.3}{Assessment of RTAB-Map}{chapter.6}% 88
-\BOOKMARK [2][-]{subsection.6.3.1}{Quality and Thoroughness of the Tests}{section.6.3}% 89
-\BOOKMARK [2][-]{subsection.6.3.2}{Weaknesses}{section.6.3}% 90
-\BOOKMARK [2][-]{subsection.6.3.3}{Strengths}{section.6.3}% 91
-\BOOKMARK [2][-]{subsection.6.3.4}{Suitability For Robotic Maintenance}{section.6.3}% 92
-\BOOKMARK [1][-]{section.6.4}{Navigation}{chapter.6}% 93
-\BOOKMARK [2][-]{subsection.6.4.1}{The Tuning Process}{section.6.4}% 94
-\BOOKMARK [2][-]{subsection.6.4.2}{Performance}{section.6.4}% 95
-\BOOKMARK [1][-]{section.6.5}{Suitability for Offshore Maintenance}{chapter.6}% 96
-\BOOKMARK [2][-]{subsection.6.5.1}{The Kinect}{section.6.5}% 97
-\BOOKMARK [2][-]{subsection.6.5.2}{Open Source Software and Security}{section.6.5}% 98
-\BOOKMARK [1][-]{section.6.6}{Future Work}{chapter.6}% 99
-\BOOKMARK [2][-]{subsection.6.6.1}{Autonomous Non-Destructive Testing}{section.6.6}% 100
-\BOOKMARK [2][-]{subsection.6.6.2}{Large Scale Kinect Fusion - Kintinous}{section.6.6}% 101
-\BOOKMARK [2][-]{subsection.6.6.3}{Hardware}{section.6.6}% 102
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 103
-\BOOKMARK [1][-]{section.7.1}{Problem Description Fulfillment}{chapter.7}% 104
-\BOOKMARK [1][-]{section.7.2}{Final Conclusion}{chapter.7}% 105
-\BOOKMARK [0][-]{section*.168}{References}{}% 106
-\BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 107
-\BOOKMARK [1][-]{section.A.1}{Hardware Setup}{appendix.A}% 108
-\BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 109
-\BOOKMARK [1][-]{section.A.2}{Installation}{appendix.A}% 110
-\BOOKMARK [2][-]{subsection.A.2.1}{Software list}{section.A.2}% 111
-\BOOKMARK [2][-]{subsection.A.2.2}{Install Ubuntu}{section.A.2}% 112
-\BOOKMARK [2][-]{subsection.A.2.3}{Download ROS}{section.A.2}% 113
-\BOOKMARK [1][-]{section.A.3}{Configuring the Project}{appendix.A}% 114
-\BOOKMARK [2][-]{subsection.A.3.1}{Configuring the ROS Workspace}{section.A.3}% 115
-\BOOKMARK [2][-]{subsection.A.3.2}{Configuring the Bluetooth Connection}{section.A.3}% 116
-\BOOKMARK [0][-]{appendix.B}{Troubleshooting}{}% 117
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 118
-\BOOKMARK [1][-]{section.B.2}{Hardware}{appendix.B}% 119
-\BOOKMARK [2][-]{subsection.B.2.1}{The Wheel Fell Off!}{section.B.2}% 120
-\BOOKMARK [1][-]{section.B.3}{ROS}{appendix.B}% 121
-\BOOKMARK [2][-]{subsection.B.3.1}{ERROR: tf2:ExtrapolationException}{section.B.3}% 122
-\BOOKMARK [1][-]{section.B.4}{Gazebo}{appendix.B}% 123
-\BOOKMARK [2][-]{subsection.B.4.1}{Error [Node.cc.90] No namespace found}{section.B.4}% 124
-\BOOKMARK [2][-]{subsection.B.4.2}{Dependency Issues When Installing gazebo2}{section.B.4}% 125
-\BOOKMARK [1][-]{section.B.5}{Ubuntu}{appendix.B}% 126
-\BOOKMARK [2][-]{subsection.B.5.1}{Ubuntu Freezes}{section.B.5}% 127
-\BOOKMARK [0][-]{appendix.C}{DVD Contents}{}% 128
+\BOOKMARK [2][-]{subsection.5.5.1}{Mapping}{section.5.5}% 82
+\BOOKMARK [2][-]{subsection.5.5.2}{Navigation}{section.5.5}% 83
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 84
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 85
+\BOOKMARK [1][-]{section.6.2}{Overall Assessment}{chapter.6}% 86
+\BOOKMARK [2][-]{subsection.6.2.1}{Choice of Development Tools}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.2}{Assessment of Prototype Design}{section.6.2}% 88
+\BOOKMARK [2][-]{subsection.6.2.3}{Success and Quality of the ROS Integration}{section.6.2}% 89
+\BOOKMARK [1][-]{section.6.3}{Assessment of RTAB-Map}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.3.1}{Quality and Thoroughness of the Tests}{section.6.3}% 91
+\BOOKMARK [2][-]{subsection.6.3.2}{Weaknesses}{section.6.3}% 92
+\BOOKMARK [2][-]{subsection.6.3.3}{Strengths}{section.6.3}% 93
+\BOOKMARK [2][-]{subsection.6.3.4}{Suitability For Robotic Maintenance}{section.6.3}% 94
+\BOOKMARK [1][-]{section.6.4}{Navigation}{chapter.6}% 95
+\BOOKMARK [2][-]{subsection.6.4.1}{The Tuning Process}{section.6.4}% 96
+\BOOKMARK [2][-]{subsection.6.4.2}{Performance}{section.6.4}% 97
+\BOOKMARK [1][-]{section.6.5}{Suitability for Offshore Maintenance}{chapter.6}% 98
+\BOOKMARK [2][-]{subsection.6.5.1}{The Kinect}{section.6.5}% 99
+\BOOKMARK [2][-]{subsection.6.5.2}{Open Source Software and Security}{section.6.5}% 100
+\BOOKMARK [1][-]{section.6.6}{Future Work}{chapter.6}% 101
+\BOOKMARK [2][-]{subsection.6.6.1}{Autonomous Non-Destructive Testing}{section.6.6}% 102
+\BOOKMARK [2][-]{subsection.6.6.2}{Large Scale Kinect Fusion - Kintinous}{section.6.6}% 103
+\BOOKMARK [2][-]{subsection.6.6.3}{Hardware}{section.6.6}% 104
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 105
+\BOOKMARK [1][-]{section.7.1}{Problem Description Fulfillment}{chapter.7}% 106
+\BOOKMARK [1][-]{section.7.2}{Final Conclusion}{chapter.7}% 107
+\BOOKMARK [0][-]{section*.169}{References}{}% 108
+\BOOKMARK [0][-]{appendix.A}{Setting Up the Project}{}% 109
+\BOOKMARK [1][-]{section.A.1}{Hardware Setup}{appendix.A}% 110
+\BOOKMARK [2][-]{subsection.A.1.1}{Equipment List}{section.A.1}% 111
+\BOOKMARK [1][-]{section.A.2}{Installation}{appendix.A}% 112
+\BOOKMARK [2][-]{subsection.A.2.1}{Software list}{section.A.2}% 113
+\BOOKMARK [2][-]{subsection.A.2.2}{Install Ubuntu}{section.A.2}% 114
+\BOOKMARK [2][-]{subsection.A.2.3}{Download ROS}{section.A.2}% 115
+\BOOKMARK [1][-]{section.A.3}{Configuring the Project}{appendix.A}% 116
+\BOOKMARK [2][-]{subsection.A.3.1}{Configuring the ROS Workspace}{section.A.3}% 117
+\BOOKMARK [2][-]{subsection.A.3.2}{Configuring the Bluetooth Connection}{section.A.3}% 118
+\BOOKMARK [1][-]{section.A.4}{System Launch Procedure}{appendix.A}% 119
+\BOOKMARK [0][-]{appendix.B}{Troubleshooting}{}% 120
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 121
+\BOOKMARK [1][-]{section.B.2}{Hardware}{appendix.B}% 122
+\BOOKMARK [2][-]{subsection.B.2.1}{The Wheel Fell Off!}{section.B.2}% 123
+\BOOKMARK [1][-]{section.B.3}{ROS}{appendix.B}% 124
+\BOOKMARK [2][-]{subsection.B.3.1}{ERROR: tf2:ExtrapolationException}{section.B.3}% 125
+\BOOKMARK [1][-]{section.B.4}{Gazebo}{appendix.B}% 126
+\BOOKMARK [2][-]{subsection.B.4.1}{Error [Node.cc.90] No namespace found}{section.B.4}% 127
+\BOOKMARK [2][-]{subsection.B.4.2}{Dependency Issues When Installing gazebo2}{section.B.4}% 128
+\BOOKMARK [1][-]{section.B.5}{Ubuntu}{appendix.B}% 129
+\BOOKMARK [2][-]{subsection.B.5.1}{Ubuntu Freezes}{section.B.5}% 130
+\BOOKMARK [0][-]{appendix.C}{DVD Contents}{}% 131
