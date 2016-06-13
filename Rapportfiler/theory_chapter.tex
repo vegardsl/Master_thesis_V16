@@ -115,6 +115,7 @@ $ roslaunch <package name> <launch file name>.launch <argument1>:=true
 
 \subsubsection{Simulation in Gazebo}
 
+Gazebo\footnote{\url{http://gazebosim.org/}} is a rigid body real-time simulator with good interfaces to \ac{ROS}. A developer can build a robot model by using \ac{URDF}, and spawn this model into a virtual 3D world in Gazebo. The simulator is integrated into \ac{ROS} by using the \texttt{ros\_gazebo} package. This simulator was used extensively over the course of this project, and allowed testing of all the implemented features, including \ac{SLAM} and navigation.
 
 \subsection{Notable Robots Running ROS}
 
@@ -204,17 +205,6 @@ Sensor specifications are given in table \ref{tab:kinect}. Note that the range v
 %    \caption{Awesome Image}
 %    \label{fig:kinect360}
 %\end{figure}
-
-
-\subsection{Planar Laser Sensors (LIDAR)}
-
-A planar laser sensor, known as e.g. laser proximity sensors or laser radars, can all be referred to as LIDARs. 
-
-\subsubsection{Scanning Laser Range Finder, URG-04LX-UG01}
-
-
-\subsection{Odometers}
-
 
 \section{Simultaneous Localization and Mapping (SLAM)}
 

@@ -204,7 +204,7 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 \label{eq:cuboid}
 \end{equation}
 
-The mass of each link is guesstimated. Consider the \texttt{base\_link} as an example. The base link was measured to be $5 \; mm$ thick, $37 \; cm$ wide and $80 \; cm$ long. Assuming that the density of aluminium\footnote{https://en.wikipedia.org/wiki/Aluminium} is $2.7 g/cm^3$, the mass of this link was calculated to be $\approx 4 kg$. The base link was defined as follows:
+The mass of each link is guesstimated. Consider the \texttt{base\_link} as an example. The base link was measured to be $5 \; mm$ thick, $37 \; cm$ wide and $80 \; cm$ long. Assuming that the density of aluminium\footnote{https://en.wikipedia.org/wiki/Aluminium} is $2.7 g/cm^3$, the mass of this link was calculated to be $\approx 4 kg$. Mass and volume calculations for the other links are given in chapter \ref{chp:mass}. The base link was defined as follows:
 
 \lstset{language=XML}
 \begin{lstlisting}
@@ -231,6 +231,8 @@ The mass of each link is guesstimated. Consider the \texttt{base\_link} as an ex
   </inertial>
 </link>
 \end{lstlisting}
+
+
 
 \subsection{Connecting the Links}
 
@@ -294,7 +296,7 @@ All nodes for motion control are located within the package \texttt{mobile\_base
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.65\textwidth]{mobile_platform_files}
+	\includegraphics[width=0.5\textwidth]{mobile_platform_files}
 	\caption{Files within the package \texttt{mobile\_platform}.}
 	\label{fig:mobile_platform_files}
 \end{figure}
@@ -318,6 +320,27 @@ The third topic \texttt{/switch\_setting} is a command used to select the veloci
 	\caption{Nodes and topics for motion control. (see figure \ref{fig:minimum_graph} for an explanation of this figure).}
 	\label{fig:move_base_nodes}
 \end{figure}
+
+\subsubsection{Keyboard Publisher}
+
+The first velocity command publisher was implemented as a local keyboard listener. Keystrokes are  registered by \texttt{getchar()} in a continuous while loop. The terminal behavior has been altered through a call to \texttt{system(''/bin/stty raw'')}, which will pass each keystroke directly to \texttt{getchar()}, without requiring the user to press \keystroke{Enter}. This will rented \keystroke{Ctrl}$+$\keystroke{C} useless, as the combination will be split into two inputs. A distilled keyboard listener loop is listed below:
+
+\begin{lstlisting}
+system ("/bin/stty raw"); 
+while (ros::ok()){
+  std_msgs::Char msg;
+  keypress = getchar();
+  if(keypress == 27) // Press 'Esc' to exit while loop.
+    break;
+  msg.data = keypress;
+  key_input_pub.publish(msg);
+}
+system ("/bin/stty cooked");
+\end{lstlisting}
+
+After a user has entered \keystroke{Ecs}, the program can be exited as normal with \keystroke{Ctrl}$+$\keystroke{C}.
+
+\subsubsection{Velocity Ramping}
 
 Rapid changes in the velocity command may cause excessive wear and tear on the equipment. The node \texttt{velocity\_ramp} has been added to ensure that the velocity command values will change smoothly. Implementation of this node is heavily based on example code from \cite{rosbook15}. The example code was translated from Python to C++, and adapted to fit into this particular system. Figure \ref{fig:velocity_ramp} shows an example of how \texttt{velocity\_ramp} works.
 
@@ -387,8 +410,8 @@ $W$ is the spacing between the wheels as shown in figure \ref{fig:robot_kinemati
  \begin{subequations}%\label{eq:subeqns}
  	\begin{align}
  	v &= R\omega \\
- 	v_{left} &=  \frac{2v - \omega W}{2}\\
- 	v_{right} &= \frac{2v + \omega W}{2} %\label{eq:subeq2}
+ 	v_{left} &=  \frac{2v - \omega W}{2}\label {eq:subeq1}\\
+ 	v_{right} &= \frac{2v + \omega W}{2} \label{eq:subeq2}
  	\end{align}
  \end{subequations}
 
@@ -416,7 +439,22 @@ A wheel command update cycle will begin, on the motor control card, when a new v
 	\item \texttt{tc\_restart(\&TCC1);}
 \end{enumerate}
 
-\texttt{tc\_restart(\&TCC1)} will reset the timer for \texttt{ovf\_interrupt\_callback}. This interrupt callback is intended to set the wheel speeds to zero if a steady stream of velocity commands are absent for whatever reason. This is done by entering a loop that will decrement the speed settings to zero, in order to ensure a smooth stop.
+\texttt{tc\_restart(\&TCC1)} will reset the timer for \texttt{ovf\_interrupt\_callback}. This interrupt callback is intended to set the wheel speeds to zero if a steady stream of velocity commands are absent for whatever reason. This is done by entering a loop that will decrement the speed settings to zero, in order to ensure a smooth stop. The speed update cycle is listed below. \texttt{calculate\_left\_wheel\_speed} returns a wheel speed as calculated in equation \ref{eq:subeq1}, before the new motor speed is set.
+
+\begin{lstlisting}
+void setSpeed(int16_t linear_speed_setting, 
+              int16_t angular_speed_setting)
+{
+    int16_t left_speed_setting = 
+            calculate_left_wheel_speed(linear_speed_setting,
+                                       angular_speed_setting);
+    int16_t right_speed_setting = 
+            calculate_right_wheel_speed(linear_speed_setting,
+                                        angular_speed_setting);
+    left_set_wheel_speed(left_speed_setting);
+    right_set_wheel_speed(right_speed_setting);
+}
+\end{lstlisting}
 
 \section{Operator Control Station (OCS)}
 

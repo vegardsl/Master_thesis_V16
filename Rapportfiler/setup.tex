@@ -120,3 +120,51 @@ This procedure is recorded to video ''start\_live\_robot'':
 	Consult the launch file to see argument options.
 	\item In the last terminal, launch navigation with\\ \texttt{\$ roslaunch mar\_2dnav move\_base.launch}
 \end{enumerate}
+
+\chapter{Robot Mass Calculations}
+\label{chp:mass}
+\begin{verbatim}
+	Mass density, Aluminium: 2,7 g/cm³
+	
+	----- Plate: -----
+	
+	Volume: 37x80x0,5 cm³ = 1480 cm³
+	Mass: 1480 cm³ x 2,7 g/cm³ = 4 kg
+	
+	----- Bottom: ----- 
+	
+	Volume:  Four side plates:  2 x 40 x 5 x 0,2 cm³ = 160 cm³
+	Aft and front:  2 x 36 x 5 x 0,2 cm³ = 72 cm³
+	Miscellanious :	4*70 = 280 cm³
+	
+	Total: 440cm³
+	
+	Mass:   Aluminium: 440 cm³ * 2,7g/cm³ = 1188 g = 1,2 kg
+	
+	
+	Wheel:	reference: 
+	http://www.superdroidrobots.com/shop/item.aspx/omni-wheel-and-shaft
+	-assembly-double-row/383/
+	
+	Mass m. shaft: 1,8 lbs = 816 g	
+	
+	Total mass, wheels: 4*816g = 3264 g = 3,3 kg 
+	
+	
+	
+	
+	----- Arm: -----
+	
+	Robot arm:	reference: http://www.intelitek.com/robots/scorbot-er-4u/
+	Controller reference: http://www.intelitek.com/robots/usb-controller/
+	
+	Robot arm mass: 10,8 kg
+	Robot controller mass: 7 kg
+	
+	----- Rear compartment (rack): -----
+	
+	Guessing at 20 kg (battery, computers, chassis etc.)
+	l_x = 35 cm
+	l_y = 37 cm
+	l_z = 40 cm
+\end{verbatim}
