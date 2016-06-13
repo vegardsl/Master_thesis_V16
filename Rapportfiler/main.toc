@@ -82,7 +82,7 @@
 \contentsline {section}{\numberline {3.5}Autonomous Navigation}{28}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Global Planner}{29}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Local Planner}{29}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Recovery Behaviors}{29}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Recovery Behaviors}{30}{subsection.3.5.3}
 \contentsline {chapter}{\chapternumberline {4}Implementation}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{31}{section.4.1}
 \contentsline {subsubsection}{Robot software in \ac {ROS}}{31}{section*.94}
@@ -91,127 +91,122 @@
 \contentsline {subsubsection}{Operator Control Station}{31}{section*.97}
 \contentsline {section}{\numberline {4.2}Hardware Setup}{32}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Second On-Board Computer and New Rear Compartment}{32}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Sensor Calibration and Setup}{32}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Power Supply and Battery Safety}{33}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}ROS Integration Overview}{34}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modeling}{36}{section.4.4}
+\contentsline {subsection}{\numberline {4.2.2}Sensor Calibration and Setup}{33}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Power Supply and Battery Safety}{34}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}ROS Integration Overview}{35}{section.4.3}
+\contentsline {section}{\numberline {4.4}Modeling}{37}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Physical Dimensions}{37}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Connecting the Links}{39}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Simulations}{39}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Robot Description Plugins}{40}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}ROS Nodes for Motion Control}{41}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Velocity Command Flow}{41}{subsection.4.6.1}
-\contentsline {subsubsection}{Keyboard Publisher}{42}{section*.113}
+\contentsline {subsubsection}{Keyboard Publisher}{43}{section*.113}
 \contentsline {subsubsection}{Velocity Ramping}{43}{section*.114}
-\contentsline {subsection}{\numberline {4.6.2}Motor Control Card Firmware on XMEGA A3BU}{44}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}Motor Control Card Firmware on XMEGA A3BU}{43}{subsection.4.6.2}
 \contentsline {subsubsection}{ROS-Motor Driver Communication}{45}{section*.118}
-\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{45}{section*.120}
-\contentsline {section}{\numberline {4.7}Operator Control Station (OCS)}{47}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Graphical User Interface}{48}{subsection.4.7.1}
-\contentsline {section}{\numberline {4.8}The Hand Held Remote Control - \textit {Robot Leash}}{48}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Application Structure}{49}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Interaction With the Robot}{50}{subsection.4.8.2}
-\contentsline {section}{\numberline {4.9}Mapping - Setting Up RTAB-Map}{50}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Configuration}{50}{subsection.4.9.1}
-\contentsline {subsubsection}{1 - Kinect + LIDAR + Odometry}{51}{section*.127}
-\contentsline {subsubsection}{2 - Kinect + Odometry + Fake 2D laser from Kinect}{51}{section*.128}
-\contentsline {subsubsection}{3 - Kinect + LIDAR}{51}{section*.129}
-\contentsline {subsubsection}{4 - Kinect + Odometry}{51}{section*.130}
-\contentsline {subsubsection}{5 - Kinect}{51}{section*.131}
-\contentsline {subsection}{\numberline {4.9.2}Adding 3D Obstruction Detection}{51}{subsection.4.9.2}
-\contentsline {section}{\numberline {4.10}Navigation}{51}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Local Planner Parameters}{52}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Common Costmap Parameters}{52}{subsection.4.10.2}
-\contentsline {subsubsection}{Obstruction Detection}{52}{section*.133}
-\contentsline {chapter}{\chapternumberline {5}Results}{57}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{57}{section.5.1}
-\contentsline {section}{\numberline {5.2}Testplan}{57}{section.5.2}
-\contentsline {section}{\numberline {5.3}Brief Summary of All Results}{58}{section.5.3}
-\contentsline {subsubsection}{Mobile application, ''Robot Leash''}{58}{section*.138}
-\contentsline {subsubsection}{Operator Control Station}{58}{section*.139}
-\contentsline {subsubsection}{Motor controller on XMEGA A3BU}{58}{section*.140}
-\contentsline {subsubsection}{Multi Session Mapping}{59}{section*.142}
-\contentsline {subsubsection}{Loop Closure Detection}{59}{section*.143}
-\contentsline {subsubsection}{Autonomous Navigation}{59}{section*.144}
-\contentsline {section}{\numberline {5.4}Simulation Results}{59}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Mapping}{60}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Autonomous Navigation}{62}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Live Robot Results}{64}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Mapping}{64}{subsection.5.5.1}
-\contentsline {subsubsection}{Loop Closure Detection}{64}{section*.151}
-\contentsline {subsubsection}{Multi Session Mapping}{65}{section*.155}
-\contentsline {subsection}{\numberline {5.5.2}Navigation}{65}{subsection.5.5.2}
-\contentsline {subsubsection}{Navigating Among Static Obstacles}{68}{section*.157}
-\contentsline {subsubsection}{Avoiding Moving Obstacles}{68}{section*.158}
-\contentsline {chapter}{\chapternumberline {6}Discussion}{71}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{71}{section.6.1}
-\contentsline {section}{\numberline {6.2}Overall Assessment}{71}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Choice of Development Tools}{71}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Assessment of Prototype Design}{72}{subsection.6.2.2}
-\contentsline {subsubsection}{Suboptimal Power Supply}{72}{section*.161}
-\contentsline {subsubsection}{Current Design and Robotic Maintenance}{72}{section*.162}
-\contentsline {subsection}{\numberline {6.2.3}Success and Quality of the ROS Integration}{73}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Assessment of RTAB-Map}{73}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Quality and Thoroughness of the Tests}{73}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Weaknesses}{74}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Strengths}{75}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Suitability For Robotic Maintenance}{75}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}Navigation}{76}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}The Tuning Process}{76}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Performance}{76}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Various Topics}{77}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}The Kinect}{77}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Open Source Software and Security}{77}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Future Work}{77}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Continued Work on This Project}{77}{subsection.6.6.1}
-\contentsline {subsubsection}{Further Testing and Assessment of \ac {RTAB-Map}}{77}{section*.164}
-\contentsline {subsubsection}{Improve the Communication Protocols}{77}{section*.165}
-\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{78}{section*.166}
-\contentsline {subsubsection}{Closed Loop Wheel Control}{78}{section*.167}
-\contentsline {subsection}{\numberline {6.6.2}Hardware}{78}{subsection.6.6.2}
-\contentsline {subsubsection}{Kinect Sensor Location}{78}{section*.168}
-\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{79}{section*.169}
-\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{79}{section*.170}
-\contentsline {subsubsection}{Mobile Base}{79}{section*.172}
-\contentsline {subsection}{\numberline {6.6.3}Suggestions and Ideas}{80}{subsection.6.6.3}
-\contentsline {subsubsection}{Autonomous Non-Destructive Testing}{80}{section*.174}
-\contentsline {subsubsection}{Augumented Reality and Large Scale Kinect Fusion - Kintinuous}{80}{section*.176}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{81}{chapter.7}
-\contentsline {section}{\numberline {7.1}Problem Description Fulfillment}{81}{section.7.1}
-\contentsline {subsubsection}{Point 1 - Theory and state-of-the-art Solutions}{81}{section*.177}
-\contentsline {subsubsection}{Point 2 - Selection of Development Tools}{81}{section*.178}
-\contentsline {subsubsection}{Point 3 - Test Platform}{81}{section*.179}
-\contentsline {subsubsection}{Point 4 - Solutions and Implementations}{81}{section*.180}
-\contentsline {subsubsection}{Point 5 - Assessment}{82}{section*.181}
-\contentsline {section}{\numberline {7.2}Final Conclusion}{82}{section.7.2}
-\contentsline {subsubsection}{Project Objective}{82}{section*.182}
-\contentsline {subsubsection}{Implementations}{82}{section*.183}
-\contentsline {subsubsection}{Performance and Assessment}{82}{section*.184}
-\contentsline {subsubsection}{Recommendations}{83}{section*.185}
-\contentsline {chapter}{References}{85}{section*.187}
+\contentsline {subsubsection}{From Velocity Commands to Wheel Commands}{47}{section*.120}
+\contentsline {section}{\numberline {4.7}Operator Control Station (OCS)}{49}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Graphical User Interface}{50}{subsection.4.7.1}
+\contentsline {section}{\numberline {4.8}The Hand Held Remote Control - \textit {Robot Leash}}{51}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Application Structure}{52}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Interaction With the Robot}{52}{subsection.4.8.2}
+\contentsline {section}{\numberline {4.9}Mapping - Setting Up RTAB-Map}{52}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Configuration}{53}{subsection.4.9.1}
+\contentsline {subsubsection}{1 - Kinect + LIDAR + Odometry}{53}{section*.127}
+\contentsline {subsubsection}{2 - Kinect + Odometry + Fake 2D laser from Kinect}{53}{section*.128}
+\contentsline {subsubsection}{3 - Kinect + LIDAR}{53}{section*.129}
+\contentsline {subsubsection}{4 - Kinect + Odometry}{53}{section*.130}
+\contentsline {subsubsection}{5 - Kinect}{53}{section*.131}
+\contentsline {subsection}{\numberline {4.9.2}Adding 3D Obstruction Detection}{54}{subsection.4.9.2}
+\contentsline {section}{\numberline {4.10}Navigation}{54}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Local Planner Parameters}{54}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Common Costmap Parameters}{55}{subsection.4.10.2}
+\contentsline {subsubsection}{Obstruction Detection}{55}{section*.133}
+\contentsline {chapter}{\chapternumberline {5}Results}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{59}{section.5.1}
+\contentsline {section}{\numberline {5.2}Testplan}{59}{section.5.2}
+\contentsline {section}{\numberline {5.3}Brief Summary of All Results}{60}{section.5.3}
+\contentsline {subsubsection}{Mobile application, ''Robot Leash''}{60}{section*.138}
+\contentsline {subsubsection}{Operator Control Station}{60}{section*.139}
+\contentsline {subsubsection}{Motor controller on XMEGA A3BU}{60}{section*.140}
+\contentsline {subsubsection}{Multi Session Mapping}{61}{section*.142}
+\contentsline {subsubsection}{Loop Closure Detection}{61}{section*.143}
+\contentsline {subsubsection}{Autonomous Navigation}{61}{section*.144}
+\contentsline {section}{\numberline {5.4}Simulation Results}{61}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Mapping}{62}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Autonomous Navigation}{64}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Live Robot Results}{66}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Mapping}{66}{subsection.5.5.1}
+\contentsline {subsubsection}{Loop Closure Detection}{66}{section*.151}
+\contentsline {subsubsection}{Multi Session Mapping}{67}{section*.155}
+\contentsline {subsection}{\numberline {5.5.2}Navigation}{67}{subsection.5.5.2}
+\contentsline {subsubsection}{Navigating Among Static Obstacles}{70}{section*.157}
+\contentsline {subsubsection}{Avoiding Moving Obstacles}{70}{section*.158}
+\contentsline {chapter}{\chapternumberline {6}Discussion}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{73}{section.6.1}
+\contentsline {section}{\numberline {6.2}Overall Assessment}{73}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Choice of Development Tools}{73}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Assessment of Prototype Design}{74}{subsection.6.2.2}
+\contentsline {subsubsection}{Suboptimal Power Supply}{74}{section*.161}
+\contentsline {subsubsection}{Current Design and Robotic Maintenance}{74}{section*.162}
+\contentsline {subsection}{\numberline {6.2.3}Success and Quality of the ROS Integration}{75}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Assessment of RTAB-Map}{75}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Quality and Thoroughness of the Tests}{75}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Weaknesses}{76}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Strengths}{77}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Suitability For Robotic Maintenance}{77}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Navigation}{78}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}The Tuning Process}{78}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Performance}{78}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Various Topics}{79}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}The Kinect}{79}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Open Source Software and Security}{79}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Future Work}{79}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Continued Work on This Project}{79}{subsection.6.6.1}
+\contentsline {subsubsection}{Further Testing and Assessment of \ac {RTAB-Map}}{79}{section*.164}
+\contentsline {subsubsection}{Improve the Communication Protocols}{79}{section*.165}
+\contentsline {subsubsection}{Implement a Fully Functional Operator Control Station}{80}{section*.166}
+\contentsline {subsubsection}{Closed Loop Wheel Control}{80}{section*.167}
+\contentsline {subsection}{\numberline {6.6.2}Hardware}{80}{subsection.6.6.2}
+\contentsline {subsubsection}{Kinect Sensor Location}{80}{section*.168}
+\contentsline {subsubsection}{Combine Stereo Cameras with Kinect-like Sensors}{81}{section*.169}
+\contentsline {subsubsection}{On-board Computer Suitable for Moving Platforms}{81}{section*.170}
+\contentsline {subsubsection}{Mobile Base}{81}{section*.172}
+\contentsline {subsection}{\numberline {6.6.3}Suggestions and Ideas}{82}{subsection.6.6.3}
+\contentsline {subsubsection}{Autonomous Non-Destructive Testing}{82}{section*.174}
+\contentsline {subsubsection}{Augumented Reality and Large Scale Kinect Fusion - Kintinuous}{82}{section*.176}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{83}{chapter.7}
+\contentsline {section}{\numberline {7.1}Problem Description Fulfillment}{83}{section.7.1}
+\contentsline {subsubsection}{Point 1 - Theory and state-of-the-art Solutions}{83}{section*.177}
+\contentsline {subsubsection}{Point 2 - Selection of Development Tools}{83}{section*.178}
+\contentsline {subsubsection}{Point 3 - Test Platform}{83}{section*.179}
+\contentsline {subsubsection}{Point 4 - Solutions and Implementations}{83}{section*.180}
+\contentsline {subsubsection}{Point 5 - Assessment}{84}{section*.181}
+\contentsline {section}{\numberline {7.2}Final Conclusion}{84}{section.7.2}
+\contentsline {subsubsection}{Project Objective}{84}{section*.182}
+\contentsline {subsubsection}{Implementations}{84}{section*.183}
+\contentsline {subsubsection}{Performance and Assessment}{84}{section*.184}
+\contentsline {subsubsection}{Recommendations}{85}{section*.185}
+\contentsline {chapter}{References}{87}{section*.187}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{91}{appendix.A}
-\contentsline {section}{\numberline {A.1}Hardware Setup}{91}{section.A.1}
-\contentsline {subsubsection}{Lead Battery Safety Precautions}{91}{section*.189}
-\contentsline {subsubsection}{Equipment List}{92}{section*.190}
-\contentsline {section}{\numberline {A.2}Installation}{92}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Software list}{92}{subsection.A.2.1}
-\contentsline {section}{\numberline {A.3}Configuring the Project}{93}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}Configuring the ROS Workspace}{93}{subsection.A.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Configuring the Bluetooth Connection}{93}{subsection.A.3.2}
-\contentsline {subsubsection}{1 - Install Qt5}{93}{section*.191}
-\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{93}{section*.192}
-\contentsline {section}{\numberline {A.4}System Launch Procedure}{94}{section.A.4}
-\contentsline {appendix}{\chapternumberline {B}Robot Mass Calculations}{97}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Troubleshooting}{99}{appendix.C}
-\contentsline {section}{\numberline {C.1}Introduction}{99}{section.C.1}
-\contentsline {section}{\numberline {C.2}Hardware}{99}{section.C.2}
-\contentsline {subsection}{\numberline {C.2.1}The Wheel Fell Off!}{99}{subsection.C.2.1}
-\contentsline {section}{\numberline {C.3}ROS}{100}{section.C.3}
-\contentsline {subsection}{\numberline {C.3.1}\leavevmode {\color {red}ERROR:} tf2:ExtrapolationException}{100}{subsection.C.3.1}
-\contentsline {section}{\numberline {C.4}Gazebo}{100}{section.C.4}
-\contentsline {subsection}{\numberline {C.4.1}\leavevmode {\color {red}Error [Node.cc.90]} No namespace found}{100}{subsection.C.4.1}
-\contentsline {subsection}{\numberline {C.4.2}Dependency Issues When Installing \textit {gazebo2}}{100}{subsection.C.4.2}
-\contentsline {section}{\numberline {C.5}Ubuntu}{101}{section.C.5}
-\contentsline {subsection}{\numberline {C.5.1}Ubuntu Freezes}{101}{subsection.C.5.1}
-\contentsline {appendix}{\chapternumberline {D}DVD Contents}{103}{appendix.D}
+\contentsline {appendix}{\chapternumberline {A}Setting Up the Project}{93}{appendix.A}
+\contentsline {section}{\numberline {A.1}Hardware Setup}{93}{section.A.1}
+\contentsline {subsubsection}{Lead Battery Safety Precautions}{93}{section*.189}
+\contentsline {subsubsection}{Equipment List}{94}{section*.190}
+\contentsline {section}{\numberline {A.2}Installation}{94}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Software list}{94}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Configuring the Project}{95}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Configuring the ROS Workspace}{95}{subsection.A.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Configuring the Bluetooth Connection}{95}{subsection.A.3.2}
+\contentsline {subsubsection}{1 - Install Qt5}{95}{section*.191}
+\contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{95}{section*.192}
+\contentsline {section}{\numberline {A.4}System Launch Procedure}{96}{section.A.4}
+\contentsline {appendix}{\chapternumberline {B}Robot Mass Calculations}{99}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Troubleshooting}{101}{appendix.C}
+\contentsline {section}{\numberline {C.1}Introduction}{101}{section.C.1}
+\contentsline {section}{\numberline {C.2}Hardware}{101}{section.C.2}
+\contentsline {section}{\numberline {C.3}ROS}{102}{section.C.3}
+\contentsline {section}{\numberline {C.4}Gazebo}{102}{section.C.4}
+\contentsline {section}{\numberline {C.5}Ubuntu}{103}{section.C.5}
+\contentsline {appendix}{\chapternumberline {D}DVD Contents}{105}{appendix.D}

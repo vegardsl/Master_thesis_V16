@@ -121,7 +121,7 @@ A more complete assessment of \ac{RTAB-Map} may support a better discussion on i
 
 \subsubsection{Improve the Communication Protocols}
 
-Communication between \ac{ROS} and the XMEGA A3BU, the Bluetooth device and the \ac{OCS}, all use the same pattern: A start byte \texttt{'':''}, the message with the speed setting and a stop byte \texttt{''Esc''}. In later projects, it could be beneficial to implement a more robust and rich communication protocol with more options for remote operation. 
+Communication between \ac{ROS} and the XMEGA A3BU, the Bluetooth device and the \ac{OCS}, all use the same pattern: A start byte \texttt{'':''}, the message with the speed setting and a stop byte \texttt{''Esc''}. In later projects, it could be beneficial to implement a more robust and rich communication protocol with more options for remote operation. A first step may be to stuff all the bytes into a buffer prior to writing the message.
 
 There is a problem with the dead-man switch implementation on the motor control card. A timer overflow interrupt is intended to trigger when new velocity commands seize to arrive, or if a deadlock occurs in the receiver cycle. When the interrupt is triggered, the motors will slow down, but not stop completely. This issue should be fixed in future projects.
 

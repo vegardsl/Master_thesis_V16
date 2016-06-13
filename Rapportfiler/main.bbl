@@ -166,7 +166,12 @@ Kinect for windows, hack.
 Kinect for windows programming guide.
 \newblock \url{https://msdn.microsoft.com/en-us/library/hh855348.aspx}.
 
-\bibitem[Kind]{Kintinous}
+\bibitem[kind]{kinect_spec}
+Kinect for windows, specifications.
+\newblock \url{https://msdn.microsoft.com/en-us/library/jj131033.aspx}.
+\newblock Accessed: 10-06-2016.
+
+\bibitem[Kine]{Kintinous}
 Kintinous.
 \newblock \url{https://github.com/mp3guy/Kintinuous}.
 \newblock Accessed: 2016-03-21.

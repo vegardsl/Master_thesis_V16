@@ -49,23 +49,23 @@ The previous robot chassis did not facilitate any good wiring solutions. The cab
 
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{lidar_and_kinect}
+	\includegraphics[width=0.7\textwidth]{lidar_and_kinect}
 	\caption{Sensor locations for \textcolor{blue}{LIDAR} and \textcolor{green}{Kinect}. }
 	\label{fig:kinect_and_lidar}
 \end{figure}
 
 \subsection{Sensor Calibration and Setup}
 
+Only support for the Kinect and the \ac{LIDAR} sensor was integrated into this system. Odometry from the two wheel encoders was not included because of time constraints on the project. Figure \ref{fig:sensor_connections} illustrates how the sensors and the wireless router is connected to the \ac{ROS} computer and how they are supplied with power.
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\textwidth]{sensor_connections}
+	\includegraphics[width=0.9\textwidth]{sensor_connections}
 	\caption{Sensor and power supply connections. }
 	\label{fig:sensor_connections}
 \end{figure}
-
-Only support for the Kinect and the \ac{LIDAR} sensor was integrated into this system. Odometry from the two wheel encoders was not included because of time constraints on the project. Figure \ref{fig:sensor_connections} illustrates how the sensors and the wireless router is connected to the \ac{ROS} computer and how they are supplied with power.
 
 Calibrating both the Kinect and the \ac{LIDAR} is a straight forward procedure with \ac{ROS}. The Hokuyo \ac{LIDAR} will in fact be calibrated automatically when the node is launched. Calibrating the Kinect is actually not strictly necessary because the lens distortion is very low. However, because there already is a calibration tool available in \ac{ROS}\footnote{ROS calibration guide: \url{http://wiki.ros.org/openni_launch/Tutorials/IntrinsicCalibration}} that is easy to use, there is no good reason to not calibrate. Calibration is highly recommended in the \ac{RTAB-Map} configuration tutorial for \ac{ROS}\cite{rtabmap_setup}. The calibration procedure is as follows:
 
@@ -97,9 +97,9 @@ The calibration program needs to know the number of inner corners of the chessbo
 
 This system requires only a subset of the equipment mounted on the robot. A 24V battery used by M. Berg and P. Aspunvik(\cite{berg} and \cite{aspunvik}) is replaced by a $230VAC/24VDC$ converter. Besides the $AC/DC$ converter, the Kinect and wireless router are the only components which require a supply of $230V AC$. A possible power supply setup is shown in figure \ref{fig:power}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{power}
+	\includegraphics[width=0.9\textwidth]{power}
 	\caption{Example of a feasible power supply setup.}
 	\label{fig:power}
 \end{figure}
@@ -205,6 +205,8 @@ I_{cuboid} = \frac{1}{12}m \begin{bmatrix}
 \end{equation}
 
 The mass of each link is guesstimated. Consider the \texttt{base\_link} as an example. The base link was measured to be $5 \; mm$ thick, $37 \; cm$ wide and $80 \; cm$ long. Assuming that the density of aluminium\footnote{https://en.wikipedia.org/wiki/Aluminium} is $2.7 g/cm^3$, the mass of this link was calculated to be $\approx 4 kg$. Mass and volume calculations for the other links are given in chapter \ref{chp:mass}. The base link was defined as follows:
+
+\newpage
 
 \lstset{language=XML}
 \begin{lstlisting}
@@ -358,31 +360,36 @@ XMEGA A3BU is an evaluation board developed by Atmel. The The implementation pre
 
 The firmware will now receive angular and linear velocity commands based on the \texttt{geometry\_msgs/Twist} message format in \ac{ROS}, and translate these into the command format used by each motor. Speed settings for each motor is based on \ac{PWM}. 
 
+\newpage
+
 There were two requirements for this implementation: 
 \begin{enumerate}
 \item When velocity commands from the operating system are either absent or incomplete, the robot shall stop.
 \item The program shall translate linear and angular velocity commands into wheel commands.
 \end{enumerate}
 
+The connections in figure \ref{fig:conn_diag_motors} are the same as in \cite{aspunvik}, except for the installation of more secure connections under the robot. The old connections were insecure, and the risk of short circuits was substantial.
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{conn_diag_motors}
+	\includegraphics[width=1\textwidth]{conn_diag_motors}
 	\caption{Connections between each wheel motor driver and the motor control card, XMEGA A3BU. The connections are unchanged from \cite{aspunvik}, except for some improved connection for better short circuit prevention.}
 	\label{fig:conn_diag_motors}
 \end{figure}
 
-The connections in figure \ref{fig:conn_diag_motors} are the same as in \cite{aspunvik}, except for the installation of more secure connections under the robot. The old connections were insecure, and the risk of short circuits was substantial.
+\newpage
 
 \subsubsection{ROS-Motor Driver Communication}
 
 Communications between the motor control card and \ac{ROS} is done via a USB serial port. The node \texttt{motor\_driver\_interface} within the package \texttt{mobile\_platform} is responsible for transmitting velocity commands via the comport. The node is hard-coded to communicate via \texttt{/dev/ttyACM1}.  The velocity update transmission cycle is shown as a sequence diagram in figure \ref{fig:motor_cmd_sequence}. The transmission cycle is initiated each time \texttt{motor\_driver\_interface} receives a velocity message on the topic \texttt{/cmd\_vel\_ramped}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{motor_cmd_sequence}
 	\caption{Velocity command transmission sequence from the \texttt{motor\_driver\_interface} in the ROS computer to the motor control card (XMEGA A3BU).}
 	\label{fig:motor_cmd_sequence}
 \end{figure}
+
 
 \subsubsection{From Velocity Commands to Wheel Commands}
 \label{sec:velocity2wheels}
@@ -478,6 +485,25 @@ The \ac{OCS} itself will connect to \texttt{server\_wifi} by means of a TCP sock
 
 The \ac{OCS} is created with Qt5, a cross-platform framework with a vast set of APIs and a large framework for \ac{GUI} design and development. The \ac{GUI} was planned to consist of three screens: two multi function displays on each side of a control screen. In its current form, only the camera display on the left side is implemented, and the user can interact with a yellow ball on the center screen to control the robot. Code implementation for the center display, \texttt{RobotControlWidget} is based on sample code from the "elasticnodes" example of the Qt Toolkit\footnote{\url{http://doc.qt.io/qt-5/qtwidgets-graphicsview-elasticnodes-example.html}}. The yellow ball is defined by the \texttt{ControlNode} class. The position of the node is subjected to mass-spring-dampener dynamics, to ensure that the ball will return to center when released. Two force vectors $F_x$ and $F_y$ are calculated and applied to the motion equations of the \texttt{controlNode}. Force calculations are performed at a constant rate which defines $\Delta t$ used in the position update calculation.  
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{device_select}
+		\caption{First activity with device list.}
+		\label{fig:device_select}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{bt_request}
+		\caption{The user is prompted to pair with the robot.}
+		\label{fig:bt_request}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{using_app}
+		\caption{Controlling the robot with the stick.}
+		\label{fig:using_app}
+	\end{subfigure}
+	\caption{\label{fig:app_screens}A typical use case for ''Robot Leash''.}
+\end{figure}
 
 \section{The Hand Held Remote Control - \textit{Robot Leash}}
 
@@ -490,25 +516,14 @@ Because the \ac{OCS} is only partially implemented, an operator will not have ac
 	\item The smartphone and the robot is now paired, and velocity commands from the blue control stick are passed to the robot via Bluetooth. The velocity command switch on the robot, \texttt{velocity\_cmd\_switch}, must be set to \texttt{/cmd\_vel\_bt}.
 \end{enumerate}
 
-\begin{figure}[H]
+
+
+\begin{sidewaysfigure}[!ht]
 	\centering
-	\begin{subfigure}[b]{0.30\textwidth}
-		\includegraphics[width=\textwidth]{device_select}
-		\caption{First activity with device list.}
-		\label{fig:device_select}
-	\end{subfigure}
-		\begin{subfigure}[b]{0.30\textwidth}
-			\includegraphics[width=\textwidth]{bt_request}
-			\caption{The user is prompted to pair with the robot.}
-			\label{fig:bt_request}
-		\end{subfigure}
-	\begin{subfigure}[b]{0.30\textwidth}
-		\includegraphics[width=\textwidth]{using_app}
-		\caption{Controlling the robot with the stick.}
-		\label{fig:using_app}
-	\end{subfigure}
-	\caption{\label{fig:app_screens}A typical use case for ''Robot Leash''.}
-\end{figure}
+	\includegraphics[width=1\textwidth]{android_sequence}
+	\caption[This is the caption \newline This is the second line]{\begin{minipage}[t]{.8\linewidth}Sequence diagram illustrating how user touch gestures are detected and propagated \\through the application, before being transmitted as commands to the robot. \end{minipage}}
+	\label{fig:android_sequence}
+\end{sidewaysfigure}
 
 \subsection{Application Structure}
 
@@ -523,12 +538,7 @@ Android and Qt offers the option to choose either a secure or non-secure connect
 
 http://developer.samsung.com/technical-doc/view.do?v=T000000117
 
-\begin{sidewaysfigure}[ht]
-	\centering
-	\includegraphics[width=1\textwidth]{android_sequence}
-	\caption[This is the caption \newline This is the second line]{\begin{minipage}[t]{.8\linewidth}Sequence diagram illustrating how user touch gestures are detected and propagated \\through the application, before being transmitted as commands to the robot. \end{minipage}}
-	\label{fig:android_sequence}
-\end{sidewaysfigure}
+
 
 
 \section{Mapping - Setting Up RTAB-Map}
@@ -574,18 +584,20 @@ In this mode, odometry will be generated by the \texttt{rgbd\_odometry} node bun
 
 The package \texttt{rtabmap\_ros} contains a 3D obstacle detector in addition to the mapping node \texttt{rtabmap}. To enable 3D obstruction, point cloud data from the Kinect is passed through the nodelet \texttt{obstacles\_detection}. The filtered point cloud is sent to \texttt{move\_base} where it will be used in the local costmap.
 
-\section{Navigation}
-\label{sec:navigation}
-Autonomous navigation in this project is limited to use of the navigation stack in \ac{ROS}, which was introduced in section \ref{sec:navigation_theory}. The stack will be used in its most basic form. The configuration was initially based on a tutorial at \texttt{ros.org}\footnote{http://wiki.ros.org/navigation/Tutorials/RobotSetup}. The implementation consists of one launch file for the node \texttt{move\_base}, and a set of configuration files for each component within \texttt{move\_base}. Figure \ref{fig:mar_2dnav} shows how these files were structured. As with \ac{RTAB-Map}, the configuration process consist of connecting \texttt{move\_base} to the rest of the network, by deciding which topics it shall subscribe to. 
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{mar_2dnav}
 	\caption{Files for configuring and launching the navigation stack.}
 	\label{fig:mar_2dnav}
 \end{figure}
 
+\section{Navigation}
+\label{sec:navigation}
+Autonomous navigation in this project is limited to use of the navigation stack in \ac{ROS}, which was introduced in section \ref{sec:navigation_theory}. The stack will be used in its most basic form. The configuration was initially based on a tutorial at \texttt{ros.org}\footnote{http://wiki.ros.org/navigation/Tutorials/RobotSetup}. The implementation consists of one launch file for the node \texttt{move\_base}, and a set of configuration files for each component within \texttt{move\_base}. Figure \ref{fig:mar_2dnav} shows how these files were structured. As with \ac{RTAB-Map}, the configuration process consist of connecting \texttt{move\_base} to the rest of the network, by deciding which topics it shall subscribe to. 
+
 \subsection{Local Planner Parameters}
+
+The configuration file for the local planner was configured with some initial settings before testing in the simulator and on the live system. The final parameters can be found in the file \texttt{base\_local\_planner\_params.yaml}.
 
 \subsection{Common Costmap Parameters}
 
@@ -593,18 +605,19 @@ As the same costmap package is used for both the local and global costmaps, ther
 
 \subsubsection{Obstruction Detection}
 
+Configuration of the 3D obstruction detector, consists of linking a point cloud topic to the node \texttt{obstacles\_detection}, and pass the resulting filtered pointcloud to \texttt{move\_base}. The local costmap configuration file \texttt{local\_costmap\_params.yaml} must be configured to receive this point cloud by adding a \texttt{point\_cloud\_sensor} field to the file. The result of a successfully configured 3D obstacle detector is shown in figure \ref{fig:3d_obstruction1} and \ref{fig:live_3d_obstacle2}.
 
 \begin{figure}
 	\centering
 	\begin{subfigure}[b]{0.53\textwidth}
 		\includegraphics[width=\textwidth]{3d_obstruction1_left}
 		\caption{A point cloud representation of the obstruction. Notice how the local costmap is based on the detected point cloud.}
-		\label{fig:device_select}
+		\label{fig:3d_obstruction1_left}
 	\end{subfigure}
 		\begin{subfigure}[b]{0.45\textwidth}
 			\includegraphics[width=\textwidth]{3d_obstruction1_right}
 			\caption{The obstruction in the Gazebo simulator. Notice how the LIDAR only detects the wheels below the container.}
-			\label{fig:bt_request}
+			\label{fig:3d_obstruction1_right}
 		\end{subfigure}
 	\caption{\label{fig:3d_obstruction1}Detecting obstructions in 3d.}
 \end{figure}

@@ -46,7 +46,7 @@ The mobile base used in this thesis is a hybrid between a skid steering drive, a
 
 \ac{ROS} is a collection of software libraries, tools and drivers intended for robot software development. A \ac{ROS} installation can be tailored to meet the demands of a wide range of robots with varying complexity. \ac{ROS} is usually installed in the form of an already built Debian-package. These packages are only compatible with a few versions of Ubuntu which are specified on the \ac{ROS} homepage. When installed and configured, \ac{ROS} will run on top of Linux, and can be perceived as and extention of Linux itself. Installing \ac{ROS} from source is possible, but not recommended \cite{ROS_install}.
 
-Historic roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework. This framework eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. The framework can be used under the BSD open-source license\cite{BCD_license}. Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation, research and everything in between. 
+Historic roots of \ac{ROS} can be traced back to Stanford University at the beginning of the 2000s. At Stanford, several robotics software frameworks, including \ac{STAIR} and the \ac{PR} program, were created to provide dynamic, flexible and well tested foundations for further robot development and research. In 2007, a nearby start-up company and robot incubator, Willow Garage, sought to build upon these concepts, and initiated a collaborative and open development process of a new software framework. This framework eventually became \ac{ROS}\cite{ROS_history}\cite{rosbook15}. The framework can be used under the BSD open-source license. Today, \ac{ROS} comes in many forms and comprise hundreds of advanced packages, algorithms and drivers, making it applicable for hobbyists, industrial automation, research and everything in between. 
 
 \subsection{Important ROS Concepts}
 \label{sec:ros_concepts}
@@ -195,7 +195,7 @@ Sensor specifications are given in table \ref{tab:kinect}. Note that the range v
 		\textbf{Normal (Reliable) Depth Range} & $0.8m < x < 4m$\\
 		\hline\hline
 	\end{tabular}
-	\caption{Kinect for Xbox 360 Specifications.}\label{tab:kinect}
+	\caption{Kinect for Xbox 360 Specifications\cite{kinect_book}\cite{kinect_spec}.}\label{tab:kinect}
 \end{table}
 
 
@@ -246,11 +246,11 @@ The source code and \ac{ROS} wrapper is currently maintained, and new features a
 
 \subsubsection{Loop Closure Detection}
 
-At regular predefined intervals, \ac{RTAB-Map} will take a snapshot image $I$ and run this image through a feature detector (e.g. \ac{SURF} or \ac{SIFT}). The obtained image descriptors will be quantized to a descriptor vocabulary, i.e. a bag-of-words. The bag of words associated with an image constitutes the signature of location $L$, i.e. the location at which the image was taken. When the new location, $L$, is added to the graph, \ac{RTAB-Map} will update an a posteriori probability density function for each loop closure hypothesis $S$. 
+At regular predefined intervals, \ac{RTAB-Map} will take a snapshot image $I$ and run this image through a feature detector (e.g. \ac{SURF} or \ac{SIFT}). The obtained image descriptors will be quantized to a descriptor vocabulary, i.e. a bag-of-words. The bag of words associated with an image, constitutes the signature of location $L$, i.e. the location at which the image was taken. When the new location, $L$, is added to the graph, \ac{RTAB-Map} will update an a posteriori probability density function for each loop closure hypothesis $S$ by means of a Bayes filter. A loop closure hypothesis may be accepted if the belief that the robot is at a new location is below a threshold $T_{loop}$. Then a link in the traversal graph will be created to represent the closed loop, as illustrated in figure \ref{rtabmap_graph}.\cite{labbe13appearance}.
 
 \subsubsection{On-line Mapping of Large Environments}
 
-As the graph of locations grow, the time it takes to check for loop closures will also grow. In \ac{RTAB-Map}, this problem is handled by a memory management scheme, where memory is split into \ac{STM}, \ac{WM} and \ac{LTM}.
+As the graph of locations grow, the time it takes to check for loop closures will also grow. In \ac{RTAB-Map}, this problem is handled by a memory management scheme, where memory is split into \ac{STM}, \ac{WM} and \ac{LTM}. Loop closure detection is performed on locations in \ac{WM}. To satisfy the real time constraint, set by the rate of adding new locations to the graph, \ac{RTAB-Map} will tranfer images from \ac{WM} to \ac{LTM}. An accepted loop closure hypothesis will trigger a transfer from \ac{LTM} bach to \ac{WM}.\cite{labbe13appearance}.
 
 \subsection{RGBD SLAM and Octomap}
 

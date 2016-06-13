@@ -6,7 +6,7 @@ This chapter contains proposed solutions to some of the problems that was encoun
 
 \section{Hardware}
 
-\subsection{The Wheel Fell Off!}
+\subsection*{The Wheel Fell Off!}
 
 During a test drive with the robot, the base collapsed because one of the wheel shafts had slipped out of the motor drive shaft. The solution to the problem is simply to tighten the set screw which connects the motor shaft to the wheel. The set screw is shown in figure \ref{fig:set_screw}.
 
@@ -19,7 +19,7 @@ During a test drive with the robot, the base collapsed because one of the wheel 
 
 \section{ROS}
 
-\subsection{\textcolor{red}{ERROR:} tf2:ExtrapolationException}
+\subsection*{\textcolor{red}{ERROR:} tf2:ExtrapolationException}
 \label{sec:tfException}
 When running the released ROS distribution binary of \texttt{RTAB-Map} installed with \texttt{apt-get} on the robot, the node would crash after a few iterations. The error message is as follows:
 
@@ -32,7 +32,7 @@ The requested transform is milliseconds ahead of ''now''. This issue was fixed b
 
 \section{Gazebo}
 
-\subsection{\textcolor{red}{Error [Node.cc.90]} No namespace found}
+\subsection*{\textcolor{red}{Error [Node.cc.90]} No namespace found}
 
 \textbf{Solution: } Remember to source the \textit{gazebo} installation. In this case, with \textit{gazebo-2.2} installed as recommended for \ac{ROS} Indigo, the setup file can be sourced by typing
 
@@ -40,7 +40,7 @@ The requested transform is milliseconds ahead of ''now''. This issue was fixed b
 	$ source /usr/share/gazebo-2.2/setup.sh
 \end{verbatim}
 
-\subsection{Dependency Issues When Installing \textit{gazebo2}}
+\subsection*{Dependency Issues When Installing \textit{gazebo2}}
 
 This problem was encountered after removing gazebo and then typing
 
@@ -64,7 +64,7 @@ $ sudo apt-get install <NAME OF THE UNINSTALLED DEPENDENCY>
 
 \section{Ubuntu}
 
-\subsection{Ubuntu Freezes}
+\subsection*{Ubuntu Freezes}
 
 Sometimes during work with the project, Ubuntu would freeze and become unresponsive to keyboard input and mouse clicks. The mouse could be moved around, but was otherwise unresponsive. This event occurred exclusively when using \texttt{rviz} and displaying a camera topic as an image in the lower left corner of the \ac{GUI}. The following steps from a post at \href{http://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes/36717#36717}{askubuntu.com}\footnote{What to do when Ubuntu freezes: \url{http://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes/36717\#36717}}, solves the problem.
 %\cite{Reboot_Ubuntu}:
