@@ -1,4 +1,13 @@
 \pagestyle{empty}
 \begin{abstract}
-A mobile robot prototype built during prece
+Robotic maintenance has been an issue in several master's theses and specialization projects at the Department of Engineering Cybernetics (ITK) at NTNU over many years. This thesis continues the topic, and focuses at camera-based mapping and navigation in conjunction with automated maintenance, and automated maintenance in general. The aim of the exercise is to implement one or more functionalities based on camera-based sensors in a mobile autonomous robot. This is accomplished by acquiring knowledge of existing solutions and future requirements within automated maintenance.
+
+A mobile robot prototype has been configured to run ROS (Robot Operating System), a middleware framework that is suited to the development of robotic systems. The system uses RTAB-Map (Real-Time Appearance Based Mapping) to survey the surroundings and a built navigation stack in ROS to navigate autonomously against easy targets in the map. The method uses a Kinect for Xbox 360 as the main sensor and a 2D laser scanner to the surveying and odometry.
+
+It is also developed functional concepts for two support functions, an Android application for remote control over Bluetooth and a remote central (OCS) developed in Qt. Remote Central is a skeletal implementation that is able to remotely control the robot via WiFi, as well as to display video from the robot's camera.
+
+Test results indicate that the robot is able to form 3D and 2D map of the surroundings. The method has weaknesses that are related to the ability to find visual features. Laser Based odometry can be tricked when the environment is changing, and when there are few unique features. Further testing has demonstrated that the robot can navigate autonomously, but there is still room for improvement. Better results can be achieved with a new movable platform and further tuning of the system.
+
+In conclusion, ROS works well as a development tools for robots, and the current system is suitable for further development. RTAB-Maps suitability for use on an industrial installation is still uncertain and requires further testing.
+
 \end{abstract}

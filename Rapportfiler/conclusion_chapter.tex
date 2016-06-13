@@ -41,11 +41,11 @@ Three sources of control inputs, besides the navigation stack, was implemented: 
 
 Testing sessions, performed in both a simulator and with a live mobile robot prototype, demonstrated \ac{RTAB-Map}'s ability to build maps and localize the robot within these maps.  Loop closure detection would work when a sufficient amount of visual features were available, but this was often not the case. Using laser scans as a source of odometry was susceptible to errors in featureless areas, when the robot rounded corners and when people walked by or towards the robot. 
 
-Navigation tests on the live robot demonstrated that the robot can navigate successfully in known and structured environments with some manoeuvring space. Navigation performance decreased in cluttered environments, e.g. office environments with many tables placed closely together.
+Navigation tests on the live robot demonstrated that the robot can navigate successfully in known and structured environments with some maneuvering space. Navigation performance decreased in cluttered environments, e.g. office environments with many tables placed closely together.
 
 \subsubsection{Recommendations}
 
-The mobile base requires an overhaul, and a new drive system should be considered. A new drive system should be dimensioned to support the robots weight and be more rugged. A holonomic drive system could yield a more agile robot. 
+The mobile base requires an overhaul, and a new drive system should be considered. A new drive system should be dimensioned to support the robots weight and be more rugged, so it can handle uneven surfaces. A holonomic drive system could yield a more agile robot. 
 
 The Kinect and the LIDAR is currently placed in the front of the base. As the Kinect is unable to reliably measure depth any closer than $0.8 m$. A new sensor location should be considered to avoid this blind-zone.
 

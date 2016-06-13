@@ -2,7 +2,28 @@
 
 \section{Hardware Setup}
 
-\subsection{Equipment List}
+For a guide on how to connect the hardware, consult figure \ref{fig:power} and \ref{fig:sensor_connections}. Otherwise, see the hardware list. A principal connection diagram for the network is shown in figure \ref{fig:network_setup}. The router should already be configured for communications. In not, consult \cite{aspunvik}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.85\textwidth]{network_setup}
+	\caption{Network hardware setup. }
+	\label{fig:network_setup}
+\end{figure}
+
+\subsubsection{Lead Battery Safety Precautions}
+
+The lead battery used in this project (black 24V 48Ah, Biltema), is contains a large amount of energy and highly corrosive sulfuric acid. Remember to read the warning label, and Handle the battery with care. 
+
+An explosive mix of hydrogen and oxygen may be formed when charging the battery. Some safety precautions are necessary to handle the risk:
+
+\begin{itemize}
+	\item Always charge the battery in a well ventilated area. 
+	\item Turn the charger off before removing the connecting clamps.
+	\item Allow some time to pass after charging before connecting or disconnecting cables to the battery poles.
+\end{itemize} 
+
+\subsubsection{Equipment List}
 \begin{itemize}
 	\item A computer that can be mounted on the robot. The computer must run on Linux Ubuntu (13.10 or 14.04 for ROS Indigo) and have a Bluetooth adapter.
 	\item Two wireless routers (for example TP-Link).
@@ -14,36 +35,29 @@
 	\item A Kinect for XBOX 360 or an equivalent OpenNI depth camera.
 \end{itemize}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.85\textwidth]{network_setup}
-	\caption{Network hardware setup. }
-	\label{fig:network_setup}
-\end{figure}
+
 
 \section{Installation}
 
 \subsection{Software list}
 
+This guide assumes that ROS Indigo is being used on a comparable system, for example Ubuntu 14.04. A guide for installing either ROS or Ubuntu is best aquired elsewhere. For ROS, see \url{ros.org}. Indigo was chosen primarily because of \texttt{openni\_launch}. 
+
 \begin{description}
 	\item[Hector SLAM for ROS] Install with \begin{verbatim} sudo apt-get install ros-indigo-hector-slam \end{verbatim}
 	\item[Web video server node] Install with \begin{verbatim} sudo apt-get install ros-indigo-web-video-server \end{verbatim}
 	\item[LIDAR driver] Install with \begin{verbatim} sudo apt-get install ros-indigo-hokuyo-node \end{verbatim}
+	\item[RTAB-Map] Installed from source. Guide available at\\
+	\url{https://github.com/introlab/rtabmap/wiki/Installation#ros}
+	\item[Gazebo]  Install with \begin{verbatim} sudo apt-get install ros-indigo-gazebo-ros-pkgs \end{verbatim}
+	Otherwise, consult \url{http://wiki.ros.org/gazebo_ros_pkgs}.
 \end{description}
-
-
-
-\subsubsection{Compatibility Issues}
-
-Indigo, Ubuntu etc.
-
-\subsection{Install Ubuntu}
-
-\subsection{Download ROS}
 
 \section{Configuring the Project}
 
 \subsection{Configuring the ROS Workspace}
+
+Assuming that ROS is installed and properly configured, the first step in configuring the project is to create a catkin workspace. The custom ROS packages bundled with the digital attachments, should be placed in the \texttt{src} folder within the catkin workspace.
 
 \subsection{Configuring the Bluetooth Connection}
 
@@ -82,8 +96,27 @@ Change these paths to the correct paths on your system.
 
 \section{System Launch Procedure}
 
-Preparations:
+This procedure assumes that the \ac{ROS} implementation source code is placed in the \texttt{src} folder of a catkin workspace, and that he project has been built successfully. The first step is to go through a hardware checklist:
 
 \begin{enumerate}
-	\item Open four terminal windows.	
+	\item Verify that the motor control board is connected to the wheel drivers, as shown in figure \ref{fig:conn_diag_motors}.
+	\item Kinect, router and motors are connected to either internal or external power.
+	\item Ensure that all USB ports are free. Exceptions apply to devices such as the Kinect or a mouse. 
+	\item Connect the Hokuyo lidar (URG-04LX-UG01) to a USB port.
+	\item Connect the motor control card to a USB port. Ensure that it is connected after the LIDAR. Ensure that the correct firmware is installed on the board.
+\end{enumerate}
+
+This procedure is recorded to video ''start\_live\_robot'': 
+
+\begin{enumerate}
+	\item Open five terminal windows.
+	\item Launch \texttt{roscore} in one of the windows
+	\item \texttt{cd} to \texttt{<your\_catkin\_workspace>/src/mar/scripts>}
+	\item In this folder, run \texttt{\$ sudo ./setup\_hokuyo.sh}
+	\item In the remaining three terminals, \texttt{cd} to your catkin workspace.
+	\item In each of the terminals, run \texttt{\$ source ./devel/setup.bash}
+	\item In one terminal, bring up the robot with\\ \texttt{\$ roslaunch mar mar\_bringup.launch}
+	\item In another terminal, launch rtabmap with\\ \texttt{\$ roslaunch mar rtabmap.launch}\\
+	Consult the launch file to see argument options.
+	\item In the last terminal, launch navigation with\\ \texttt{\$ roslaunch mar\_2dnav move\_base.launch}
 \end{enumerate}

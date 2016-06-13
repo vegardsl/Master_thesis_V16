@@ -69,7 +69,7 @@ The tests listed in tables \ref{tab:support_func} and \ref{tab:main_func} will b
 
 \subsubsection{Mobile application, ''Robot Leash''}
 
-The mobile App works as expected. The user can establish a Bluetooth connection to the robot and send velocity commands to the real and simulated mobile base. This tool proved to be invaluable, and was used during all mapping sessions, both real and simulated.
+The mobile App works as expected. The user can establish a Bluetooth connection to the robot and send velocity commands to the real and simulated mobile base. This tool proved to be invaluable, and was used during all mapping sessions, both real and simulated. An emergency stop functionon in the Bluetooth server node, \texttt{bt\_server}, was tested by switching of the Bluetooth adapter on the robot computer while driving. On the server, this event is successfully handled within the function \texttt{clientDisconnected()}.
 
 \subsubsection{Operator Control Station}
 
@@ -77,7 +77,7 @@ Through the \ac{OCS}, an operator can connect to the robot via a TCP socket, str
 
 \subsubsection{Motor controller on XMEGA A3BU}
 
-The motor control card can receive velocity commands received from \ac{ROS}, and translate them into wheel commands. The vehicle stops when the \texttt{motor\_driver\_interface} program in \ac{ROS} is killed. When this node is killed, the motor control card must be reset. The motor control card's ability to move the robot is demonstrated in all recorded videos of the live robot. When the robot system was running on internal battery power, the motor control card had a high probability of resetting. This is caused by poor \ac{EMC} due to noisy inverters and poor immunity in the motor control card. The problem can be mitigated to some degree by ensuring that the motor control card is properly grounded to the robot chassis.
+The motor control card can receive velocity commands received from \ac{ROS}, and translate them into wheel commands. The vehicle slows down, but does not come to a complete stop when the \texttt{motor\_driver\_interface} program in \ac{ROS} is killed.  The function \texttt{ovf\_interrupt\_callback} is intended to be responsible for stopping the robot. Comments on this issue, and an untested suggestion for a possible solution is added to the source code. When this node is killed, the motor control card must be reset. The motor control card's ability to move the robot is demonstrated in all recorded videos of the live robot. When the robot system was running on internal battery power, the motor control card had a high probability of resetting. This is caused by poor \ac{EMC} due to noisy inverters and poor immunity in the motor control card. The problem can be mitigated to some degree by ensuring that the motor control card is properly grounded to the robot chassis.
 
 \subsubsection{Multi Session Mapping}
 

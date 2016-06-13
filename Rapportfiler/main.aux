@@ -17,10 +17,11 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\catcode`"\active
+\catcode `"\active 
+\reset@newl@bel
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
-\reset@newl@bel
 \newacroplural{ROV}[ROVs]{Remotely Operated Vehicles}
 \newacroplural{AUV}[AUVs]{Autonomous Underwater Vehicles}
 \newacroplural{AIV}[AIVs]{Autonomous Inspection Vehicles}
@@ -28,6 +29,8 @@
 \newacroplural{LIDAR}[LIDARs]{LIght Detection And Ranging devices}
 \newacroplural{RPAS}[RPAS]{Remotely Piloted Aerial Systems}
 \newacroplural{UAV}[UAVs]{Unmanned Aerial Vehicles}
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
 \@istfilename{main.xdy}
 \@glsorder{word}
 \select@language{norsk}
@@ -101,7 +104,7 @@
 \bibcite{cobotsEurope}{{Bog16}{}{{}}{{}}}
 \bibcite{brothaler2013opengl}{{Bro13}{}{{}}{{}}}
 \bibcite{cook2011mobile}{{Coo11}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{References}{83}{section*.178}}
+\@writefile{toc}{\contentsline {chapter}{References}{85}{section*.186}}
 \bibcite{deploymentsensabot}{{dep12}{}{{}}{{}}}
 \bibcite{DRC}{{DRC}{}{{}}{{}}}
 \bibcite{E24}{{E24}{}{{}}{{}}}
@@ -129,6 +132,7 @@
 \bibcite{labbe14online}{{LM14}{}{{}}{{}}}
 \bibcite{tbd}{{MEBF{$^{+}$}10}{}{{}}{{}}}
 \bibcite{MIMROex}{{MIM}{}{{}}{{}}}
+\bibcite{newcombe2011kinectfusion}{{NIH{$^{+}$}11}{}{{}}{{}}}
 \bibcite{6094661}{{PBB11}{}{{}}{{}}}
 \bibcite{pressAIV}{{pre}{}{{}}{{}}}
 \bibcite{peerless2016robot}{{PSM{$^{+}$}16}{}{{}}{{}}}
@@ -155,5 +159,5 @@
 \@input{troubleshooting.aux}
 \@input{dvd_contents.aux}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{122}
-\memsetcounter{lastpage}{97}
+\memsetcounter{lastsheet}{126}
+\memsetcounter{lastpage}{101}

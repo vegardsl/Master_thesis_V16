@@ -225,6 +225,14 @@ Eitan Marder-Eppstein, Eric Berger, Tully Foote, Brian Gerkey, and Kurt
 \newblock
   \url{http://www.ipa.fraunhofer.de/fileadmin/user_upload/Kompetenzen/Roboter-_und_Assistenzsysteme/Industrielle_und_gewerbliche_Servicerobotik/English_Documents/Product_sheet_MIMROex_Mobile_maintenance_and_inspection_robot_for_process_plants.pdf}.
 
+\bibitem[NIH{\etalchar{+}}11]{newcombe2011kinectfusion}
+Richard~A Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim,
+  Andrew~J Davison, Pushmeet Kohi, Jamie Shotton, Steve Hodges, and Andrew
+  Fitzgibbon.
+\newblock Kinectfusion: Real-time dense surface mapping and tracking.
+\newblock In {\em Mixed and augmented reality (ISMAR), 2011 10th IEEE
+  international symposium on}, pages 127--136. IEEE, 2011.
+
 \bibitem[PBB11]{6094661}
 K.~Pfeiffer, M.~Bengel, and A.~Bubeck.
 \newblock Offshore robotics - survey, implementation, outlook.

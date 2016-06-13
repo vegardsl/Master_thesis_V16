@@ -1,10 +1,15 @@
 \pagestyle{empty}
 \renewcommand{\abstractname}{Sammendrag}
 \begin{abstract}
-Robotisert vedlikehold har vært et tema i flere masteroppgaver og fordypningsprosjekter ved Institutt for teknisk kybernetikk (ITK) - NTNU over mange år. Denne oppgaven viderefører temaet, og ser nærmere på kamerabasert kartlegging og navigasjon i forbindelse med robotisert vedlikehold, samt robotisert vedlikehold generelt. Målet med oppgaven er å implementere en eller flere funksjonaliteter basert på kamerabaserte sensorer i en mobil autonom robot.  Dette gjøres ved å skaffe kunnskap om eksisterende løsninger og fremtidige behov innen robotisert vedlikehold. 
+Robotisert vedlikehold har vært et tema i flere masteroppgaver og fordypningsprosjekter ved Institutt for teknisk kybernetikk (ITK) - NTNU over mange år. Denne oppgaven viderefører temaet, og ser nærmere på kamerabasert kartlegging og navigasjon i forbindelse med robotisert vedlikehold, samt robotisert vedlikehold generelt. Målet med oppgaven er å implementere én eller flere funksjonaliteter basert på kamerabaserte sensorer i en mobil autonom robot.  Dette gjøres ved å skaffe kunnskap om eksisterende løsninger og fremtidige behov innen robotisert vedlikehold. 
 
-En mobil robot prototype er blitt konfigurert til å kjøre ROS (Robot Operating System), et mellomvare rammeverk som er velegnet til utvikling av robotsystemer. Systemet benytter RTAB-Map (Real-Time Appearence Based Mapping) til å kartlegge omgivelsene og en innebygget navigasjons-stack i ROS for å navigere autonomt mot enkle mål i kartet.
+En mobil robot prototype er blitt konfigurert til å kjøre ROS (Robot Operating System), et mellomvare rammeverk som er velegnet til utvikling av robotsystemer. Systemet benytter RTAB-Map (Real-Time Appearance Based Mapping) til å kartlegge omgivelsene og en innebygget navigasjons-stack i ROS for å navigere autonomt mot enkle mål i kartet. Metoden benytter en Kinect for Xbox 360 som hovensensor, og en 2D laserskanner til både kartlegging og odometri.
 
 Det er i tillegg utviklet fungerende konsepter for to støttefunksjoner, en Android applikasjon for fjernstyring over Bluetooth og en fjernstyringssentral (OCS) utviklet i Qt. Fjernstyringssentralen er en skjelett-implementasjon som er i stand til å fjernstyre roboten via Wifi, samt å vise video fra robotens kamera.
+
+Testresultatene viser at roboten er i stand til å danne 3D- og 2D-kart av omgivelsene. Metoden har svakheter som er knyttet til evnen til å finne visuelle kjennemerker. Laserbasert odometri kan lures når omgivelsene er i endring, og når det er få unike kjennemerker. Videre testing har demonstrert at roboten kan navigere autonomt, men det er fortsatt rom for forbedringer. Bedre resultater kan oppnås med en ny bevegelig plattform og videre tuning av systemet.
+
+Den endelige konklusjonen er at ROS fungerer godt som utviklingsverktøy for roboter, og at det nåværende systemet er egnet for videre utvikling. RTAB-Maps egnethet til bruk på en industriell installasjon er fremdeles usikkert, og krever videre testing.
+
 
 \end{abstract}

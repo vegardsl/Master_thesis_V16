@@ -12,7 +12,7 @@ This chapter will provide the background theory which is necessary to understand
 
 \subsubsection{Joints and Links}
 
-A robot can be described by a set of rigid \textit{links} connected to each other by \textit{joints}. A link is described by a set of kinematic attributes based on its shape and mass. A joint between two links describe the freedom of movement between the coordinate systems of each link. When a set of links and joints are put together, they will define the kinematic tree of the robot, i.e. how the robot and its components can move. Typical joint classes are:
+A robot can be described by a set of rigid \textit{links} connected to each other by \textit{joints}. A link is described by a set of kinematic attributes based on its shape and mass. A joint between two links describe the freedom of movement between the coordinate systems, or frames, of each link. The link can also define the linear translation and rotations from parent frame to child frame. When a set of links and joints are put together, they will define the kinematic tree of the robot, i.e. how the robot and its components can move. Typical joint classes are:
 
 %\begin{description}[align=right]
 %	\item[Static] Transforms between links are constant.
@@ -30,9 +30,15 @@ A robot can be described by a set of rigid \textit{links} connected to each othe
 	\end{tabular}
 \end{center}
 
-\subsubsection{Coordinate Systems and Poses}
+%\subsubsection{Coordinate Systems and Poses}
 
 \subsubsection{Mobile Bases}
+
+All ground based mobile bases can be separated into two main categories: holonomic or non-holonomic. In this thesis, a holonomic drive system will have three degrees of freedom, two of which are translational in the $xy$-plane, and the third accounts for rotation about the vertical $z$-axis. Holonomic drive robots will often be equipped with mechanum wheels or omniwheels arranged in a specific pattern. A non-holonomic drive will usually be constrained to forwards/backwards translation and a rotation about the vertical axis. Ackerman steering is the solution found in cars. Robots will often use a differential drive systems, which two large driven wheels, and at least one supporting wheel, for example a caster wheel.
+
+For a navigation system, the major difference between a holonomic and non-holonomic is essentially that a holonomic drive is path independent, while a non-holonomic drive is path dependent. This implies that a holonomic drive can simply translate towards the goal state, while the non-holonomic drive must execute a sequence of rotations and translations to reach the goal state. The potential benefits of a holonomic drive becomes clear when considering the problem of parallel parking.
+
+The mobile base used in this thesis is a hybrid between a skid steering drive, as in tracked vehicles, and a differential drive. The kinematics of the base is modeled as if it is a differential drive in section \ref{sec:velocity2wheels}.
 
 \section{Robot Operating System (ROS)}
 \label{sec:ros}
@@ -138,7 +144,7 @@ A depth camera can be described as a regular color video camera with the ability
 
 Different variations of depth cameras will usually fall into one of two categories: active or passive. Passive sensors perceive the surroundings as it is, without actively interfering with the environment as a part of the sensing process. A typical passive RGB-D sensor is the stereo camera. Stereo cameras use a stream of synchronized image pairs to perceive depth. The image pairs are displaced along the horizontal axis, and the depth information is extracted by searching for mutual information in the image pairs. How far the information is displaced from the left to the right image is directly related to how far away from the camera the information source is located. 
 
-Active sensors depend on some form of projection onto the surroundings. For depth cameras, the projection is usually in the form of laser or infra red light. In RGB-D cameras it is essential that the projected light is distinguishable from the visible spectrum. The Kinect sensor used in this project is an example of an active RGB-D sensor. A proper introduction to the Kinect will follow shortly.
+Active sensors depend on some form of projection onto the surroundings. For depth cameras, the projection is usually in the form of laser or infra red light. In RGB-D cameras it is essential that the projected light is distinguishable from the visible spectrum. The Kinect sensor used in this project is an example of an active RGB-D sensor.
 
 \subsection{Kinect for Xbox 360}
 \label{sec:kinect}

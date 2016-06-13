@@ -37,17 +37,21 @@ This author's specialization project\cite{lindrup} presented an obstruction dete
 
 \section{Implementation Overview}
 
-\subsection{Deciding on a Goal}
+\subsubsection{Deciding on a Goal}
 
 To meet objective 4 in the problem description, it was decided to focus on vision based navigation. A robot with the ability to build a map of the surroundings and relocate autonomously was considered to be a good starting point for further development of vision based solutions.
 
-\subsection{Selecting Tools and Hardware}
+\subsubsection{Limitations}
+
+During the implementation process, the focus has been on getting the system to work. Robustness, optimization and elegance has been abandoned in favor of the opportunity to increase the scope of the project.
+
+\subsubsection{Selecting Tools and Hardware}
 
 As a continuation of this author's specialization project, the robot was equipped with a 3D camera, a Kinect for XBOX 360 capable of perceiving depth images at a high frame rate ($30 Hz$). 
 
 To use the Kinect, the initial plan was to utilize the \ac{PCL} in combination with a \ac{SLAM} method (e.g. Kintinous\cite{Kintinous}). This approach came with a high degree of uncertainty that would reduce the project scope significantly, and increase the likelihood of an unsatisfactory result. The Robot Operating System (ROS), an open source robot software framework, came up as an alternative tool late in January. 
 
-The work and solutions presented in this thesis revolves around the process of integrating ROS with the mobile robot from \cite{aspunvik} and \cite{berg}. Installing ROS on Ubuntu Linux is by far the easiest way to begin using the framework. For this reason, and to avoid interfering with another project on the same robot, it was decided that an additional computer running Linux should be fitted to the robot. The mobile robot from \cite{aspunvik} and \cite{berg} was refitted to accommodate the Kinect and the second computer.
+The work and solutions presented in this thesis revolves around the process of integrating ROS with the mobile robot from \cite{aspunvik} and \cite{berg}. Installing ROS on Ubuntu Linux is by far the easiest way to begin using the framework. For this reason, and to avoid interfering with another project on the same robot, it was decided that an additional computer running Linux should be fitted to the robot. The mobile robot from \cite{aspunvik} and \cite{berg} was refitted to accommodate the Kinect and the second computer. The new robot platform configuration is shown in figure \ref{fig:robot}.
 
 Two supporting tools were implemented in addition to the robot software: a simple concept of an \ac{OCS} and a hand held remote control implemented on a smartphone. An overview of the complete system is shown in figure \ref{fig:conseptDrawing}.
 
@@ -58,7 +62,24 @@ Two supporting tools were implemented in addition to the robot software: a simpl
 	\label{fig:conseptDrawing}
 \end{figure}
 
-\subsection{Functionality}
+ \begin{figure}[H]
+ 	\centering
+ 	\begin{subfigure}[b]{0.60\textwidth}
+ 		\includegraphics[width=\textwidth]{robot_side}
+ 		\caption{Robot left side.}
+ 		\label{fig:robot_side}
+ 	\end{subfigure}
+ 	\begin{subfigure}[b]{0.32\textwidth}
+ 		
+ 		\includegraphics[width=\textwidth]{robot_front}
+ 		\caption{Robot front.}
+ 		\label{fig:robot_front}
+ 	\end{subfigure}
+ 	\caption{}\label{fig:robot}
+ \end{figure}
+
+
+\subsubsection{Functionality}
 
 \begin{enumerate}
 \item Simultaneous localization and mapping based on computer vision.
@@ -70,16 +91,28 @@ Two supporting tools were implemented in addition to the robot software: a simpl
 \item The robot can receive velocity commands over WiFi.
 \end{enumerate} 
 
+
+
 \section{Thesis Structure}
 
 \subsubsection{Chapter \ref{chp:maintenance} - Robotic Maintenance on Topside Offshore Platforms} 
 
+Chapter \ref{chp:maintenance} serves as motivation and background for the rest of the thesis. The chapter is to explain the state of automated maintenance is today, and to create a basis for comparison between field tested solutions and this prototype.
+
 \subsubsection{Chapter \ref{chp:theory} - Background Theory}
+The next chapter introduces the background theory which is necessary to understand the implementations presented in chapter \ref{chp:implementation}. 
 
 \subsubsection{Chapter \ref{chp:implementation} - Implementation}
+Presents the implementations that were developed during the project. The structure of the robot system, both hardware and software, is documented.
 
 \subsubsection{Chapter \ref{chp:results} - Results}
 
+This chapter explains how the implementations were tested, and presents the ensuing test results. 
+
 \subsubsection{Chapter \ref{chp:discussion} - Discussion}
 
+The discussion chapter contains an assessment of the results and implementations from chapters \ref{chp:implementation} and \ref{chp:results}. The findings are discussed in light their fitness for robotic maintenance. The last section of this chapter  
+
 \subsubsection{Chapter \ref{chp:conclusion} - Conclusion}
+
+The concluding chapter will highlight how well the objectives in the initial problem description are covered. The final result and recommendations for future work is summed up in a final conclusion at the end of this chapter.

@@ -362,7 +362,7 @@ Communications between the motor control card and \ac{ROS} is done via a USB ser
 \end{figure}
 
 \subsubsection{From Velocity Commands to Wheel Commands}
-
+\label{sec:velocity2wheels}
 Within \ac{ROS}, velocity commands are passed around between nodes in the form of the message \texttt{geometry\_msgs/Twist}. This message type can be viewed as a \textit{struct} with the following contents:
 
 \begin{verbatim}
@@ -388,7 +388,7 @@ $W$ is the spacing between the wheels as shown in figure \ref{fig:robot_kinemati
  	\begin{align}
  	v &= R\omega \\
  	v_{left} &=  \frac{2v - \omega W}{2}\\
- 	v_{right} &= \frac{2v - \omega W}{2} %\label{eq:subeq2}
+ 	v_{right} &= \frac{2v + \omega W}{2} %\label{eq:subeq2}
  	\end{align}
  \end{subequations}
 

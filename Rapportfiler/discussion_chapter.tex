@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-This chapter seeks to assess the implementations presented in chapter \ref{chp:implementation} based on their performance which is detailed in chapter \ref{chp:results}. The following discussions will qualitatively evaluate how suitable the implementations are for offshore robotic maintenance. The first section will discuss the performance of the system as a whole. Next follows a discussion on the strengths and weaknesses of the navigation and mapping systems. The chapter is concluded with a section on future work. 
+This chapter will assess the implementations presented in chapter \ref{chp:implementation} based on their performance which is detailed in chapter \ref{chp:results}. The following discussions will qualitatively evaluate how suitable the implementations are for offshore robotic maintenance. The first section will discuss the performance of the system as a whole. Next follows a discussion on the strengths and weaknesses of the navigation and mapping systems. The chapter is concluded with a section on future work. 
 
 \section{Overall Assessment}
 
@@ -23,6 +23,16 @@ So far, the robot prototype has been developed for a few specific functionalitie
 
 Some time was spent on building a new rear compartment to house the various robot equipment, including the battery and both on-board computers. For internal power, the robot uses a 12 V car battery as a power source. Figure \ref{fig:sensor_connections} and \ref{fig:power} highlights the inefficient power supply layout. The Kinect requires a supply of 12V DC, which is supplied from an adapter plugged into a 230V AC source. Receiving 12 V directly from the battery might be a more efficient solution.
 
+\subsubsection{Current Design and Robotic Maintenance}
+\label{sec:design_maintenance}
+A typical offshore installation floor will most likely be made of steel and steel gratings with many holes, gaps and sharp edges\cite{graf2008mobile}. The current mobile base is better suited for completely even surfaces, and would benefit greatly for a more rugged set of wheels. \cite{graf2008mobile} is also referring to a minimum size for passage ways that could serve as guidelines for later prototypes. The suggested minimum workspace boundaries, $0.75m$ wide and $1.5m$ high corridors, imply that the prototype used in this project is too big, given its footprint of $80cm \times 37 cm$. Another problem is that the Kinect would have trouble with mapping and navigating in this environment, given its measured minimum range of $0.5m$, not to mention the reliable minimum depth of $0.8m$. In this author's specialization project\cite{lindrup}, the minimum measurable depth of the obstruction detection was found to be $\approx 40 cm$. The minimum range was limited by the maximum disparity parameter. Increasing the detectable maximum disparity could reduce the detectable range even further, thus making it a better option for narrow spaces where depth ranges are short. 
+
+As the motor control card is an open loop system, slopes and increased friction for whatever reason will affect the speed of the mobile base. This may cause the base to slow down, speed up or even stop completely if it is driving up a slope that is too steep.
+
+Given that the navigation stack in \ac{ROS} is thoroughly tested on square or circular bases, designing a new base to be either square or circular could increase the robustness of the navigation system. A holonomic drive could also make the robot more maneuverable, which may be useful in tight spaces.
+
+The current design of the mobile base is struggling to support the weight of the robot. The small wheels are struggling with small obstacles such as door thresholds or floor gaps in the entrance to elevators. \ac{MIMROex}, a comparable robot, is equipped with a variant of a differential drive base with larger wheels suitable for driving over steel gratings and slippery surfaces.
+
 \subsection{Success and Quality of the ROS Integration}
 
 Integrating and configuring \ac{ROS} with the existing robot was the most time consuming task of this project. The current implementation is capable of autonomous navigation and long-term map building. Remote operation from the \ac{OCS} and Android device is also possible. A major shortcoming of the current configuration is the lack of usability. The current system is 
@@ -34,7 +44,7 @@ cumbersome and difficult to use. A potential difficulty may be to separate the p
 The mapping session results demonstrated both strengths and weaknesses  in the chosen mapping method, \ac{RTAB-Map}. The results show that multi session mapping works rather well if the conditions are favorable, e.g. in environments with a sufficient amount of detectable visual features. 
 
 \subsection{Quality and Thoroughness of the Tests}
-
+\label{sec:test_quality}
 \ac{RTAB-Map} was tested in a diverse set of indoor environments as well as in the simulated ''Asphalt'' world in Gazebo. A significant shortcoming of these tests was the lack of testing and comparison of different parameter settings for the method. Further parameter tuning and better mapping techniques could have benefited the mapping performance.
 
 Another shortcoming is the small number of live mapping trials. Configuring and learning to use the mapping system was a time consuming process. Problems with the robot hardware and the environment itself gave rise to additional delays. The laptop running \ac{ROS} and the on-board car battery had to be recharged periodically, which took a considerable amount of time. The live loop closure tests were carried out at times when a lot of students were moving through the hallways. These factors made it difficult to perform comparable tests, and proved to be a complicating factor for the appearance based mapping system. 
@@ -89,26 +99,7 @@ Live testing showed promising results, despite a few quirks. The live robot woul
 
 Based on the test results, the live robot should have a higher minimum speed setting than the simulated robot in order to overcome friction and other resisting forces. The reason for this is that the velocity command is matched against wheel speeds when the robot is off the ground, i.e. the wheels are spinning freely. If the motor control card is expanded with a speed regulator, the minimum speed may be reduced.
 
-\section{Suitability for Offshore Maintenance}
-
-This is just a prototype. Mobility issues.
-Kinect-like sensors and ROS could be useful. It is at least an excellent tool for ''rapid'' prototyping.
-
-The current configuration has many shortcomings as a maintenance robot. In its current form, it is more suitable to test various technologies and concepts. 
-
-The current sensor configuration is set up to facilitate testing of \ac{SLAM} and navigation.
-
-\subsubsection{Current Design and Robotic Maintenance}
-\label{sec:design_maintenance}
-A typical offshore installation floor will most likely be made of steel and steel gratings with many holes, gaps and sharp edges\cite{graf2008mobile}. The current mobile base is better suited for completely even surfaces, and would benefit greatly for a more rugged set of wheels. \cite{graf2008mobile} is also referring to a minimum size for passage ways that could serve as guidelines for later prototypes. The suggested minimum workspace boundaries, $0.75m$ wide and $1.5m$ high corridors, imply that the prototype used in this project is too big, given its footprint of $80cm \times 37 cm$. Another problem is that the Kinect would have trouble with mapping and navigating in this environment, given its measured minimum range of $0.5m$, not to mention the reliable minimum depth of $0.8m$. In this autors's specialization project\cite{lindrup}, the minimum measurable depth of the obstruction detection was found to be $\approx 40 cm$. The minimum range was limited by the maximum disparity parameter. Increasing the detectable maximum disparity could reduce the detectable range even further, thus making it a better option for narrow spaces where depth ranges are short. 
-
-As the motor control card is an open loop system, slopes and increased friction for whatever reason will affect the speed of the mobile base. This may cause the base to slow down, speed up or even stop completely if it is driving up a slope that is too steep.
-
-Given that the navigation stack in \ac{ROS} is thoroughly tested on square or circular bases, designing a new base to be either square or circular could increase the robustness of the navigation system. A holonomic drive could also make the robot more maneuverable, which may be useful in tight spaces.
-
-The current design of the mobile base is struggling to support the weight of the robot. The small wheels are struggling with small obstacles such as door thresholds or floor gaps in the entrance to elevators. \ac{MIMROex}, a comparable robot, is equipped with a variant of a differential drive base with larger wheels suitable for driving over steel gratings and slippery surfaces.
-
-
+\section{Various Topics}
 
 \subsection{The Kinect}
 
@@ -120,17 +111,13 @@ As mentioned in section \ref{sec:kinect}, the Kinect is an active sensor that me
 
 \section{Future Work}
 
-\subsection{Autonomous Non-Destructive Testing}
+\subsection{Continued Work on This Project}
 
-Advancements in \ac{AI}, big data and machine learning opens up exciting possibilities for autonomous \ac{NDT}. Branches of this technology is usually encountered in the context of image recognition, i.e. teaching machines to understand what they see. The same concepts may be applied to forms of \ac{NDT} besides regular visual sensor input, such as ultra sound or eddy currents for corrosion detection.  
+There is much left to do on the project, even if the current robot system is used. The only hardware requirement to pick up the work where this author left off, is a new on-board computer running \ac{ROS} Indigo. The mobile base will also require an overhaul.
 
-\subsection{Large Scale Kinect Fusion - Kintinuous}
+\subsubsection{Further Testing and Assessment of \ac{RTAB-Map}}
 
-Kinect Fusion has great potential for augmented reality. Augmented reality is a concept which blends the real and virtual environment. This opens up opportunities to create realistic and immersive training scenarios for the operators. Unfortunately, Kinect Fusion is limited reconstructing a rather small volume depending on the resolution. By varying the resolution, volumes can at the least cover a normal office desk and at the most cover a room smaller than $\leq 7 m^3$ \cite{newcombe2011kinectfusion}.  
-
-Kintinuous is an experimental extension of Kinect Fusion for large scale volume reconstruction. A guide on how to build Kintinous can be found  at \href{Github}{https://github.com/mp3guy/Kintinuous}. The procedure is complicated, as it usually is for experimental builds. It is recommended to attempt the procedure on a fresh install of Ubuntu 14.04 or 15.04 \cite{Kintinous}.
-
-There may be other 3D reconstruction technologies available today It is recommended to perform a thorough literature study on the topic before selecting a technology to work with.
+A more complete assessment of \ac{RTAB-Map} may support a better discussion on its suitability for offshore maintenance missions. As mentioned in section \ref{sec:test_quality}, only one of the possible sensor configurations were tested. It may be that the mapping process will benefit from dead reckoning odometry from encoder wheels. Furthermore, since \ac{RTAB-Map} can be used with stereo cameras, is could be useful to compare passive and active depth sensors.
 
 \subsubsection{Improve the Communication Protocols}
 
@@ -142,35 +129,57 @@ There is a problem with the dead-man switch implementation on the motor control 
 
 At the end of this project, the \ac{OCS} provided functionality for moving the robot, and displaying live video from the Kinect. Future projects could focus on development of new control station designs, or perhaps even integration with a \ac{VR} telepresence system. Another option which may ease the implementation process, would be to distribute the \ac{ROS} system over multiple computers (which is supported by \ac{ROS}). A benefit of this is easy easy access to all \ac{ROS} tools and features. A drawback is that SDKs for various \ac{VR} equipment may be incompatible with Linux Ubuntu. 
 
+An important functionality on the server side, is to set velocity commands to zero when the connection to the \ac{OCS} is lost, or when new velocity updates are absent. This functionality was not implemented.
+
+\subsubsection{Closed Loop Wheel Control}
+
+By implementing a closed loop wheel controller, the actual velocity of the robot will be closer to the commanded velocity. In the current system, a velocity command will be translated directly into a wheel speed setting.
+
 \subsection{Hardware}
 
-Several hardware-related issues became apparent over the course of the project - especially toward the final weeks. These issues are likely the results of many disconnected projects on the same hardware.
+Several hardware-related issues became apparent over the course of the project - especially toward the final weeks. These issues are likely the results of many disconnected projects on the same hardware over the years.
 
 \subsubsection{Kinect Sensor Location}
 
-This is the first semester in which a Kinect has been used on the robot. At the moment, the sensor is placed directly over the \ac{LIDAR} device. Because the depth sensor in the Kinect for XBOX 360 has a minimum range of roughly $0.5 m$, it cannot detect objects within reach of the robot arm. It is recommended to find a new location further back on the robot. 
+This is the first semester in which a Kinect has been used on the robot. At the moment, the sensor is placed directly over the \ac{LIDAR} device at the front of the robot. Because the depth sensor in the Kinect for XBOX 360 has a minimum range of roughly $0.5 m$, it cannot detect objects within reach of the robot arm. It is recommended to find a new location further back on the robot. 
 
 \subsubsection{Combine Stereo Cameras with Kinect-like Sensors}
 
-As mentioned, both active and passive depth cameras have limitations. The Kinect does function in direct sunlight, but it can measure depth in the dark. Passive depth sensors, for example stereo cameras, does depend on visible light to sense anything at all. While RTAB-Map does depend on visibility for loop closure detection, there are  other \ac{SLAM} methods, e.g. \textit{Kinect Fusion}, which do not. An implementation could use a light sensor to sense light that may interfere with the Kinect. Light levels could be compared to a threshold and switch between the stereo cameras or the Kinect depending on how well each sensor will work in the current conditions. 
+As mentioned, both active and passive depth cameras have limitations. The Kinect does function in direct sunlight, but it can measure depth in the dark because of the projected infra red pattern. Passive depth sensors, for example stereo cameras, does depend on visible light to sense anything at all. While RTAB-Map do depend on visibility for loop closure detection, there are  other \ac{SLAM} methods, e.g. \textit{Kinect Fusion}, which do not. An implementation could use a light sensor to sense light that may interfere with the Kinect. Light levels could be compared to a threshold and switch between the stereo cameras or the Kinect depending on how well each sensor will work in the current conditions. 
 
 \subsubsection{On-board Computer Suitable for Moving Platforms}
 
-Because this author used his own computer to control the robot, all features related to \ac{ROS} was removed from the robot at the end of the project. A new computer should be equipped with \ac{SSD} storage
+Because this author used his own computer to control the robot, all features related to \ac{ROS} was removed from the robot at the end of the project. A new computer should be equipped with \ac{SSD} storage, as it is less vulnerable to vibrations and potential crashes.
 
-\subsubsection{Wheels}
+\subsubsection{Mobile Base}
 
-\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{wrapfigure}{r}{0.48\textwidth}
 	\vspace{-20pt}
 	\begin{center}
-		\includegraphics[width=0.48\textwidth]{worn_wheel2}
+		\includegraphics[width=0.43\textwidth]{worn_wheel2}
 	\end{center}
 	
 	\caption{Worn omniwheel}
 	\label{fig:worn_wheel}
 	%\vspace{-20pt}
-\end{wrapfigure}
+\end{wrapfigure} 
 
-There were mainly two issues with the omni-wheels this semester: They are worn out, and one wheel slipped out of the motor drive shaft. The rubber on a few of the perpendicular rollers is loose and about to fall off the plastic rims. This causes the robot to shake, which can damage spinning hard disk drives or shake the sensors out of their calibrated positions.   
+There were mainly two issues with the omni-wheels this semester: They are worn out, and one wheel slipped out of the motor drive shaft. The rubber on a few of the perpendicular rollers is loose and about to fall off the plastic rims. This causes the robot to shake, which can damage spinning hard disk drives or shake the sensors out of their calibrated positions. 
 
 A new set of wheels should be able to carry the weight of the robot, and enable the robot to drive over small barriers such as door sills and steel grates. This will most likely prompt a redesign of the mobile base.
+
+A new design of the mobile base should consider the potential benefits of a holonomic drive system.
+
+\subsection{Suggestions and Ideas}
+
+\subsubsection{Autonomous Non-Destructive Testing}
+
+Advancements in \ac{AI}, big data and machine learning opens up exciting possibilities for autonomous \ac{NDT}. Branches of this technology is usually encountered in the context of image recognition, i.e. teaching machines to understand what they see. The same concepts may be applied to forms of \ac{NDT} besides regular visual sensor input, such as ultra sound or eddy currents for corrosion detection.  
+
+\subsubsection{Augumented Reality and Large Scale Kinect Fusion - Kintinuous}
+
+Kinect Fusion has great potential for augmented reality. Augmented reality is a concept which blends the real and virtual environment. This opens up opportunities to create realistic and immersive training scenarios for the operators. Unfortunately, Kinect Fusion is limited reconstructing a rather small volume depending on the resolution. By varying the resolution, volumes can at the least cover a normal office desk and at the most cover a room smaller than $\leq 7 m^3$ \cite{newcombe2011kinectfusion}.  
+
+Kintinuous is an experimental extension of Kinect Fusion for large scale volume reconstruction. A guide on how to build Kintinous can be found  on the project's Github page\footnote{\url{https://github.com/mp3guy/Kintinuous}}. The procedure is complicated, as it usually is for experimental builds. It is recommended to attempt the procedure on a fresh install of Ubuntu 14.04 or 15.04 \cite{Kintinous}.
+
+There may be other 3D reconstruction technologies available today that are better options than Kintinuous. It is recommended to perform a thorough literature study on the topic before selecting a technology to work with.
