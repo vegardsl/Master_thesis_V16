@@ -118,10 +118,10 @@
 \contentsline {subsubsection}{3 - Kinect + LIDAR}{53}{section*.129}
 \contentsline {subsubsection}{4 - Kinect + Odometry}{53}{section*.130}
 \contentsline {subsubsection}{5 - Kinect}{53}{section*.131}
-\contentsline {subsection}{\numberline {4.9.2}Adding 3D Obstruction Detection}{54}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.2}Adding 3D Obstruction Detection}{53}{subsection.4.9.2}
 \contentsline {section}{\numberline {4.10}Navigation}{54}{section.4.10}
 \contentsline {subsection}{\numberline {4.10.1}Local Planner Parameters}{54}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Common Costmap Parameters}{55}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.2}Common Costmap Parameters}{54}{subsection.4.10.2}
 \contentsline {subsubsection}{Obstruction Detection}{55}{section*.133}
 \contentsline {chapter}{\chapternumberline {5}Results}{59}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{59}{section.5.1}
@@ -201,6 +201,7 @@
 \contentsline {subsection}{\numberline {A.3.2}Configuring the Bluetooth Connection}{95}{subsection.A.3.2}
 \contentsline {subsubsection}{1 - Install Qt5}{95}{section*.191}
 \contentsline {subsubsection}{2- Enabling Qt5 in a ROS node}{95}{section*.192}
+\contentsline {subsubsection}{Debugging Device in Android Studio}{96}{section*.193}
 \contentsline {section}{\numberline {A.4}System Launch Procedure}{96}{section.A.4}
 \contentsline {appendix}{\chapternumberline {B}Robot Mass Calculations}{99}{appendix.B}
 \contentsline {appendix}{\chapternumberline {C}Troubleshooting}{101}{appendix.C}
